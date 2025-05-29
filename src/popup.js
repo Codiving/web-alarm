@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const memoInput = document.getElementById("memoInput");
   const resetIcon = document.getElementById("reset");
   const canceldEdit = document.getElementById("cancelEdit");
+  const oneTimeAlarm = document.getElementById("oneTimeAlarm");
+
   canceldEdit.textContent = chrome.i18n.getMessage("popup_html_cancel");
 
   resetIcon.addEventListener("click", () => {
@@ -300,12 +302,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "0"
     )}:${String(alarmDate.getMinutes()).padStart(2, "0")}`;
 
+    const isOneTime = oneTimeAlarm.checked;
     const id = crypto.randomUUID();
     const newAlarm = {
       id,
       time: formattedTime,
       days: selectedDays,
-      memo
+      memo,
+      isOneTime
     };
 
     chrome.storage.local.get("alarms", result => {
@@ -432,6 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
           chrome.i18n.getMessage("popup_html_alarm_setting_label");
       });
 
+      oneTimeAlarm.checked = false;
       memoInput.value = "";
 
       chrome.storage.local.set({ lastSelectedDays: selectedDays });

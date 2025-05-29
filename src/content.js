@@ -59,10 +59,18 @@ function showOverlayWithAlarm(alarm) {
     }
 
     const closedTime = new Date(new Date().getTime() + 60 * 1000);
-    chrome.storage.local.get(["closedAlarms"], function (result) {
+    chrome.storage.local.get(["alarms", "closedAlarms"], function (result) {
+      const alarms = result.alarms || [];
       const closedAlarms = result.closedAlarms || {};
-      closedAlarms[alarm.id] = String(closedTime);
-      chrome.storage.local.set({ closedAlarms });
+
+      if (alarm?.isOneTime) {
+        // isOneTime인 경우 alarms에서 삭제
+        const newAlarms = alarms.filter(a => a.id !== alarm.id);
+        chrome.storage.local.set({ alarms: newAlarms, closedAlarms });
+      } else {
+        closedAlarms[alarm.id] = String(closedTime);
+        chrome.storage.local.set({ closedAlarms });
+      }
     });
 
     clearInterval(intervalId);
@@ -94,11 +102,11 @@ function checkAlarms() {
   const dayMap = ["일", "월", "화", "수", "목", "금", "토"];
   const todayKorean = dayMap[today];
 
-  chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
+  chrome.storage.local.get(["alarms", "closedAlarms"], result => {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    alarms.forEach((alarm) => {
+    alarms.forEach(alarm => {
       const { time, days, id } = alarm;
       const [alarmHours, alarmMinutes] = time.split(":");
 
