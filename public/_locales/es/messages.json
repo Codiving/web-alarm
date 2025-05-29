@@ -32,5 +32,9 @@
   "content_js_alarm": { "message": "Alarma" },
   "content_js_alarm_close": {
     "message": "Haz clic en la pantalla para cerrar la ventana de alarma."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Se activa una vez independientemente del día de la semana establecido y luego se elimina."
+  },
+  "popup_html_oneTime_alarm": { "message": "Alarma de una sola vez" }
 }

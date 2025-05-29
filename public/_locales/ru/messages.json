@@ -34,5 +34,9 @@
   "content_js_alarm": { "message": "Будильник" },
   "content_js_alarm_close": {
     "message": "Щелчок по экрану закроет окно будильника."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Срабатывает один раз независимо от установленного дня недели и затем удаляется."
+  },
+  "popup_html_oneTime_alarm": { "message": "Одноразовый будильник" }
 }

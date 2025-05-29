@@ -28,5 +28,9 @@
   "content_js_alarm": { "message": "Báo thức" },
   "content_js_alarm_close": {
     "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "निर्धारित सप्ताह के दिन की परवाह किए बिना यह एक बार सक्रिय होगा और फिर हटा दिया जाएगा।"
+  },
+  "popup_html_oneTime_alarm": { "message": "एक बार का अलार्म" }
 }

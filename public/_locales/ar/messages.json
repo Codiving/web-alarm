@@ -24,5 +24,9 @@
   "alert_input_time": { "message": "يرجى إدخال وقت التنبيه المتكرر." },
   "alert_empty_day": { "message": "اختر الأيام التي تريد ضبط التنبيه لها." },
   "content_js_alarm": { "message": "منبه" },
-  "content_js_alarm_close": { "message": "انقر على الشاشة لإغلاق التنبيه." }
+  "content_js_alarm_close": { "message": "انقر على الشاشة لإغلاق التنبيه." },
+  "popup_html_oneTime_tooltip": {
+    "message": "يحدث مرة واحدة فقط بغض النظر عن اليوم المحدد ثم يُحذف."
+  },
+  "popup_html_oneTime_alarm": { "message": "تنبيه لمرة واحدة" }
 }

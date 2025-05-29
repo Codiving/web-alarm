@@ -32,5 +32,9 @@
   "content_js_alarm": { "message": "Alarme" },
   "content_js_alarm_close": {
     "message": "Clicar na tela fechará a janela do alarme."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Ocorre uma vez, independentemente do dia da semana configurado, e depois é excluído."
+  },
+  "popup_html_oneTime_alarm": { "message": "Alarme único" }
 }

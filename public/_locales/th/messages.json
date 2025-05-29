@@ -26,5 +26,9 @@
   "content_js_alarm": { "message": "นาฬิกาปลุก" },
   "content_js_alarm_close": {
     "message": "การคลิกที่หน้าจอจะปิดหน้าต่างนาฬิกาปลุก"
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "จะทำงานเพียงครั้งเดียวโดยไม่คำนึงถึงวันในสัปดาห์ที่ตั้งไว้ แล้วจะถูกลบ"
+  },
+  "popup_html_oneTime_alarm": { "message": "การเตือนครั้งเดียว" }
 }

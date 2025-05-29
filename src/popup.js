@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('label[for="saturday"').textContent =
     chrome.i18n.getMessage("popup_html_sat");
 
+  document.querySelector(".tooltiptext").textContent = chrome.i18n.getMessage(
+    "popup_html_oneTime_tooltip"
+  );
+  document.querySelector(".toggle-label").textContent = chrome.i18n.getMessage(
+    "popup_html_oneTime_alarm"
+  );
+
   document.title = chrome.i18n.getMessage("extName");
 
   const setAlarmButton = document.getElementById("setAlarm");

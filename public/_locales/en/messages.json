@@ -64,5 +64,9 @@
   },
   "content_js_alarm_close": {
     "message": "Clicking the screen will close the alarm window."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Occurs once regardless of the set weekday and then is deleted."
+  },
+  "popup_html_oneTime_alarm": { "message": "One-time alarm" }
 }

@@ -30,5 +30,9 @@
   "content_js_alarm": { "message": "अलार्म" },
   "content_js_alarm_close": {
     "message": "स्क्रीन पर क्लिक करने से अलार्म विंडो बंद हो जाएगी।"
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Kích hoạt một lần bất kể ngày trong tuần đã đặt, sau đó sẽ bị xóa."
+  },
+  "popup_html_oneTime_alarm": { "message": "Báo thức một lần" }
 }

@@ -67,5 +67,9 @@
   },
   "content_js_alarm_close": {
     "message": "Clicking the screen will close the alarm window."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "无论设定的星期几，都会仅响一次，然后被删除。"
+  },
+  "popup_html_oneTime_alarm": { "message": "一次性闹钟" }
 }

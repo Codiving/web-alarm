@@ -34,5 +34,9 @@
   "content_js_alarm": { "message": "Alarme" },
   "content_js_alarm_close": {
     "message": "Cliquer sur l'écran fermera la fenêtre d'alarme."
-  }
+  },
+  "popup_html_oneTime_tooltip": {
+    "message": "Se déclenche une seule fois, quel que soit le jour défini, puis est supprimé."
+  },
+  "popup_html_oneTime_alarm": { "message": "Alarme unique" }
 }

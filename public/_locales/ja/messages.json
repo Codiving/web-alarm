@@ -24,5 +24,9 @@
   "alert_input_time": { "message": "请输入重复闹钟时间。" },
   "alert_empty_day": { "message": "请选择要设置闹钟的日期。" },
   "content_js_alarm": { "message": "闹钟" },
-  "content_js_alarm_close": { "message": "点击屏幕将关闭闹钟窗口。" }
+  "content_js_alarm_close": { "message": "点击屏幕将关闭闹钟窗口。" },
+  "popup_html_oneTime_tooltip": {
+    "message": "設定された曜日に関係なく1回だけ作動し、その後削除されます。"
+  },
+  "popup_html_oneTime_alarm": { "message": "1回限りのアラーム" }
 }
