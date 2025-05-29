@@ -14,14 +14,14 @@
     },
     "default_popup": "popup.html"
   },
-  "host_permissions": ["https://*/*", "http://*/*"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
   "content_scripts": [
     {
-      "matches": ["https://*/*", "http://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["contentCss.css"]
     }
