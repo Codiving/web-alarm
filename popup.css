@@ -326,3 +326,35 @@ input:checked + .slider:before {
   font-size: 14px;
   color: #333;
 }
+
+/*  */
+.tooltip {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  border-radius: 6px;
+  padding: 16px 12px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  box-shadow: 0 4px 12px #1d1919e0;
+  left: 35%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
