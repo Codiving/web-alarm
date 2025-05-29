@@ -1,0 +1,34 @@
+{
+  "extName": { "message": "Web-Alarm" },
+  "extDescription": { "message": "Stellt stille Alarme auf Websites bereit." },
+  "popup_html_alarm_setting_label": { "message": "Alarm einstellen" },
+  "popup_html_alarm_edit_label": { "message": "Alarm bearbeiten" },
+  "popup_html_time_label": { "message": "Alarmzeit" },
+  "popup_html_day_select_label": { "message": "Wochentage auswählen" },
+  "popup_html_memo_label": { "message": "Notiz" },
+  "popup_html_set_alarm_button": { "message": "Alarm hinzufügen" },
+  "popup_html_alarm_list_label": { "message": "Eingestellte Alarme" },
+  "popup_html_sun": { "message": "So" },
+  "popup_html_mon": { "message": "Mo" },
+  "popup_html_tue": { "message": "Di" },
+  "popup_html_wed": { "message": "Mi" },
+  "popup_html_thu": { "message": "Do" },
+  "popup_html_fri": { "message": "Fr" },
+  "popup_html_sat": { "message": "Sa" },
+  "popup_html_exist_time": {
+    "message": "Zu dieser Zeit ist bereits ein Alarm gesetzt."
+  },
+  "popup_html_save": { "message": "Speichern" },
+  "popup_html_cancel": { "message": "Abbrechen" },
+  "time_label": { "message": "Zeit" },
+  "everyday_label": { "message": "Jeden Tag" },
+  "memo_label": { "message": "Notiz" },
+  "alert_input_time": {
+    "message": "Bitte geben Sie eine Wiederholungszeit ein."
+  },
+  "alert_empty_day": { "message": "Bitte wählen Sie die Tage für den Alarm." },
+  "content_js_alarm": { "message": "Alarm" },
+  "content_js_alarm_close": {
+    "message": "Ein Klick auf den Bildschirm schließt das Alarmfenster."
+  }
+}

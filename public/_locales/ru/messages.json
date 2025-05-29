@@ -1,0 +1,38 @@
+{
+  "extName": { "message": "Веб-будильник" },
+  "extDescription": {
+    "message": "Предоставляет бесшумные будильники на веб-сайтах."
+  },
+  "popup_html_alarm_setting_label": { "message": "Установить будильник" },
+  "popup_html_alarm_edit_label": { "message": "Редактировать будильник" },
+  "popup_html_time_label": { "message": "Время будильника" },
+  "popup_html_day_select_label": { "message": "Выбрать дни" },
+  "popup_html_memo_label": { "message": "Заметка" },
+  "popup_html_set_alarm_button": { "message": "Добавить будильник" },
+  "popup_html_alarm_list_label": { "message": "Установленные будильники" },
+  "popup_html_sun": { "message": "Вс" },
+  "popup_html_mon": { "message": "Пн" },
+  "popup_html_tue": { "message": "Вт" },
+  "popup_html_wed": { "message": "Ср" },
+  "popup_html_thu": { "message": "Чт" },
+  "popup_html_fri": { "message": "Пт" },
+  "popup_html_sat": { "message": "Сб" },
+  "popup_html_exist_time": {
+    "message": "Будильник уже установлен на это время."
+  },
+  "popup_html_save": { "message": "Сохранить" },
+  "popup_html_cancel": { "message": "Отмена" },
+  "time_label": { "message": "Время" },
+  "everyday_label": { "message": "Каждый день" },
+  "memo_label": { "message": "Заметка" },
+  "alert_input_time": {
+    "message": "Пожалуйста, введите время для повторяющегося будильника."
+  },
+  "alert_empty_day": {
+    "message": "Пожалуйста, выберите дни, на которые вы хотите установить будильник."
+  },
+  "content_js_alarm": { "message": "Будильник" },
+  "content_js_alarm_close": {
+    "message": "Щелчок по экрану закроет окно будильника."
+  }
+}

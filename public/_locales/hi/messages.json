@@ -1,0 +1,32 @@
+{
+  "extName": { "message": "Báo thức Web" },
+  "extDescription": { "message": "Cung cấp báo thức im lặng trên trang web." },
+  "popup_html_alarm_setting_label": { "message": "Cài đặt báo thức" },
+  "popup_html_alarm_edit_label": { "message": "Chỉnh sửa báo thức" },
+  "popup_html_time_label": { "message": "Thời gian báo thức" },
+  "popup_html_day_select_label": { "message": "Chọn ngày" },
+  "popup_html_memo_label": { "message": "Ghi chú" },
+  "popup_html_set_alarm_button": { "message": "Thêm báo thức" },
+  "popup_html_alarm_list_label": { "message": "Báo thức đã đặt" },
+  "popup_html_sun": { "message": "CN" },
+  "popup_html_mon": { "message": "T2" },
+  "popup_html_tue": { "message": "T3" },
+  "popup_html_wed": { "message": "T4" },
+  "popup_html_thu": { "message": "T5" },
+  "popup_html_fri": { "message": "T6" },
+  "popup_html_sat": { "message": "T7" },
+  "popup_html_exist_time": { "message": "Đã có báo thức vào thời gian đó." },
+  "popup_html_save": { "message": "Lưu" },
+  "popup_html_cancel": { "message": "Hủy" },
+  "time_label": { "message": "Thời gian" },
+  "everyday_label": { "message": "Mỗi ngày" },
+  "memo_label": { "message": "Ghi chú" },
+  "alert_input_time": {
+    "message": "Vui lòng nhập thời gian lặp lại báo thức."
+  },
+  "alert_empty_day": { "message": "Vui lòng chọn ngày để đặt báo thức." },
+  "content_js_alarm": { "message": "Báo thức" },
+  "content_js_alarm_close": {
+    "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
+  }
+}

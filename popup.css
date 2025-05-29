@@ -1,0 +1,268 @@
+/* 모든 요소의 기본 스타일을 리셋 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+/* 텍스트 관련 요소들의 기본 스타일 제거 */
+body,
+p,
+li,
+ul,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  background: none;
+  outline: none; /* 버튼의 기본 아웃라인 제거 */
+}
+
+label {
+  user-select: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  width: 600px;
+  max-height: 355px;
+  /* 318px 355px */
+  gap: 24px;
+  box-sizing: border-box;
+  color: #333;
+  display: flex;
+}
+
+#alarm-input-container {
+  width: 250px;
+}
+
+#alarm-list-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input#repeatTime,
+input#memoInput,
+button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input.alarm-color {
+  padding: 0px;
+  margin-top: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  width: 45px;
+  height: 33px;
+  flex-shrink: 0;
+}
+
+#alarmList {
+  list-style: none;
+  padding: 4px;
+}
+
+#alarmList li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#color-select,
+#alarm-type,
+#oneTimeAlarm,
+#repeatingAlarm,
+#day-select-container {
+  margin-bottom: 16px;
+}
+
+label#time_label,
+label#memo_label {
+  margin-bottom: 4px;
+}
+
+#day_select_label_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+#day_select_label_container img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+#day_select_label_container img:hover {
+  box-shadow: 0 0 10px 5px rgba(31, 31, 31, 0.08);
+}
+
+#colorPicker {
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+#day-select-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-select-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.day-select-item label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#setAlarm {
+  margin-top: 12px;
+}
+
+.alarm-msg {
+  margin: 0;
+}
+
+.delete-icon {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  transition: all 0.2s ease;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.delete-icon:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.4);
+}
+
+.edit-icon {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  transition: all 0.2s ease;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.edit-icon:hover {
+  box-shadow: 0 0 10px 3px #007bff;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.highlight {
+  transition: box-shadow 0.5s ease;
+}
+
+@keyframes error-blink-shadow {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 0px 4px 4px #f006;
+  }
+}
+
+@keyframes success-blink-shadow {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 0px 4px 4px #007bff;
+  }
+}
+
+li.error-blinking {
+  animation: error-blink-shadow 1s ease-in-out 5;
+}
+
+li.success-blinking {
+  animation: success-blink-shadow 1s ease-in-out 5;
+}
+
+.editing {
+  outline: 2px solid #007bff;
+}
+
+#cancelEdit {
+  display: none;
+  margin-top: 12px;
+  background-color: #e0e0e0;
+  color: black;
+}

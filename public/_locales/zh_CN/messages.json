@@ -1,0 +1,71 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": { "message": "Provides silent alarms on websites." },
+  "popup_html": { "message": "---------------------------------------------" },
+  "popup_html_alarm_setting_label": {
+    "message": "Set Alarm"
+  },
+  "popup_html_alarm_edit_label": {
+    "message": "Edit Alarm"
+  },
+  "popup_html_time_label": {
+    "message": "Alarm Time"
+  },
+  "popup_html_day_select_label": {
+    "message": "Select Days"
+  },
+  "popup_html_memo_label": {
+    "message": "Memo"
+  },
+  "popup_html_set_alarm_button": {
+    "message": "Add Alarm"
+  },
+  "popup_html_alarm_list_label": {
+    "message": "Set Alarms"
+  },
+  "popup_html_sun": {
+    "message": "Sun"
+  },
+  "popup_html_mon": {
+    "message": "Mon"
+  },
+  "popup_html_tue": {
+    "message": "Tue"
+  },
+  "popup_html_wed": {
+    "message": "Wed"
+  },
+  "popup_html_thu": {
+    "message": "Thu"
+  },
+  "popup_html_fri": {
+    "message": "Fri"
+  },
+  "popup_html_sat": {
+    "message": "Sat"
+  },
+  "popup_html_exist_time": {
+    "message": "An alarm already exists for that time."
+  },
+  "popup_html_save": {
+    "message": "Save"
+  },
+  "popup_html_cancel": {
+    "message": "Cancel"
+  },
+  "popup_js": { "message": "---------------------------------------------" },
+  "time_label": { "message": "Time" },
+  "everyday_label": { "message": "Everyday" },
+  "memo_label": { "message": "Memo" },
+  "alert_input_time": { "message": "Please enter a repeat alarm time." },
+  "alert_empty_day": {
+    "message": "Please select the days you want to set the alarm for."
+  },
+  "content_js": { "message": "---------------------------------------------" },
+  "content_js_alarm": {
+    "message": "Alarm"
+  },
+  "content_js_alarm_close": {
+    "message": "Clicking the screen will close the alarm window."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "extName": { "message": "वेब अलार्म" },
+  "extDescription": { "message": "वेबसाइटों पर मूक अलार्म प्रदान करता है।" },
+  "popup_html_alarm_setting_label": { "message": "अलार्म सेट करें" },
+  "popup_html_alarm_edit_label": { "message": "अलार्म संपादित करें" },
+  "popup_html_time_label": { "message": "अलार्म समय" },
+  "popup_html_day_select_label": { "message": "दिन चुनें" },
+  "popup_html_memo_label": { "message": "नोट" },
+  "popup_html_set_alarm_button": { "message": "अलार्म जोड़ें" },
+  "popup_html_alarm_list_label": { "message": "सेट किए गए अलार्म" },
+  "popup_html_sun": { "message": "रवि" },
+  "popup_html_mon": { "message": "सोम" },
+  "popup_html_tue": { "message": "मंगल" },
+  "popup_html_wed": { "message": "बुध" },
+  "popup_html_thu": { "message": "गुरु" },
+  "popup_html_fri": { "message": "शुक्र" },
+  "popup_html_sat": { "message": "शनि" },
+  "popup_html_exist_time": {
+    "message": "इस समय के लिए पहले से अलार्म सेट है।"
+  },
+  "popup_html_save": { "message": "सहेजें" },
+  "popup_html_cancel": { "message": "रद्द करें" },
+  "time_label": { "message": "समय" },
+  "everyday_label": { "message": "हर दिन" },
+  "memo_label": { "message": "नोट" },
+  "alert_input_time": {
+    "message": "कृपया दोहराने वाले अलार्म का समय दर्ज करें।"
+  },
+  "alert_empty_day": { "message": "कृपया अलार्म के लिए दिन चुनें।" },
+  "content_js_alarm": { "message": "अलार्म" },
+  "content_js_alarm_close": {
+    "message": "स्क्रीन पर क्लिक करने से अलार्म विंडो बंद हो जाएगी।"
+  }
+}

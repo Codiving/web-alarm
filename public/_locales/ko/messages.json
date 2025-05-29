@@ -1,0 +1,68 @@
+{
+  "extName": { "message": "웹 알람" },
+  "extDescription": { "message": "웹사이트에서 무음 알람을 제공합니다." },
+  "popup_html_alarm_setting_label": {
+    "message": "알람 설정"
+  },
+  "popup_html_alarm_edit_label": {
+    "message": "알람 수정"
+  },
+  "popup_html_time_label": {
+    "message": "알람 시간"
+  },
+  "popup_html_day_select_label": {
+    "message": "요일 선택"
+  },
+  "popup_html_memo_label": {
+    "message": "메모"
+  },
+  "popup_html_set_alarm_button": {
+    "message": "알람 추가"
+  },
+  "popup_html_alarm_list_label": {
+    "message": "설정된 알람"
+  },
+  "popup_html_sun": {
+    "message": "일"
+  },
+  "popup_html_mon": {
+    "message": "월"
+  },
+  "popup_html_tue": {
+    "message": "화"
+  },
+  "popup_html_wed": {
+    "message": "수"
+  },
+  "popup_html_thu": {
+    "message": "목"
+  },
+  "popup_html_fri": {
+    "message": "금"
+  },
+  "popup_html_sat": {
+    "message": "토"
+  },
+  "popup_html_exist_time": {
+    "message": "해당 시간에 이미 알람이 설정되어 있습니다."
+  },
+  "popup_html_save": {
+    "message": "저장"
+  },
+  "popup_html_cancel": {
+    "message": "취소"
+  },
+  "time_label": { "message": "시간" },
+  "everyday_label": { "message": "매일" },
+  "memo_label": { "message": "메모" },
+  "alert_input_time": { "message": "반복 알람 시간을 입력해 주세요." },
+  "alert_empty_day": {
+    "message": "알람을 설정할 요일을 선택해 주세요."
+  },
+  "content_js_alarm": {
+    "message": "알람"
+  },
+  "content_js_alarm_close": {
+    "message": "화면을 클릭하면 알람 창이 닫힙니다."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "extName": { "message": "Allarme Web" },
+  "extDescription": { "message": "Fornisce allarmi silenziosi sui siti web." },
+  "popup_html_alarm_setting_label": { "message": "Imposta allarme" },
+  "popup_html_alarm_edit_label": { "message": "Modifica allarme" },
+  "popup_html_time_label": { "message": "Ora dell'allarme" },
+  "popup_html_day_select_label": { "message": "Seleziona giorni" },
+  "popup_html_memo_label": { "message": "Memo" },
+  "popup_html_set_alarm_button": { "message": "Aggiungi allarme" },
+  "popup_html_alarm_list_label": { "message": "Allarmi impostati" },
+  "popup_html_sun": { "message": "Dom" },
+  "popup_html_mon": { "message": "Lun" },
+  "popup_html_tue": { "message": "Mar" },
+  "popup_html_wed": { "message": "Mer" },
+  "popup_html_thu": { "message": "Gio" },
+  "popup_html_fri": { "message": "Ven" },
+  "popup_html_sat": { "message": "Sab" },
+  "popup_html_exist_time": {
+    "message": "Esiste già un allarme per quell'ora."
+  },
+  "popup_html_save": { "message": "Salva" },
+  "popup_html_cancel": { "message": "Annulla" },
+  "time_label": { "message": "Ora" },
+  "everyday_label": { "message": "Ogni giorno" },
+  "memo_label": { "message": "Memo" },
+  "alert_input_time": { "message": "Inserisci un'ora per l'allarme ripetuto." },
+  "alert_empty_day": {
+    "message": "Seleziona i giorni per cui desideri impostare l'allarme."
+  },
+  "content_js_alarm": { "message": "Allarme" },
+  "content_js_alarm_close": {
+    "message": "Cliccando sullo schermo si chiuderà la finestra dell'allarme."
+  }
+}

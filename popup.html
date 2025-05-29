@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./popupCss.css" />
+    <title></title>
+    <!-- title은 빈 상태로 둡니다. -->
+  </head>
+  <body>
+    <div id="alarm-input-container">
+      <h1 id="alarm_setting_label"></h1>
+
+      <!-- 반복 알림 옵션 -->
+      <div id="repeatingAlarm">
+        <label for="repeatTime" id="time_label"></label>
+        <input type="time" id="repeatTime" />
+      </div>
+
+      <!-- 요일 선택 -->
+      <div id="day-select-container">
+        <div id="day_select_label_container">
+          <label id="day_select_label"></label>
+          <img id="reset" alt="Reset" src="/icons/reset-icon.svg" />
+        </div>
+        <div id="day-select-wrap">
+          <!-- 반복 가능한 항목을 template으로 리팩토링 -->
+          <div class="day-select-item">
+            <input type="checkbox" id="sunday" />
+            <label for="sunday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="monday" />
+            <label for="monday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="tuesday" />
+            <label for="tuesday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="wednesday" />
+            <label for="wednesday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="thursday" />
+            <label for="thursday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="friday" />
+            <label for="friday"></label>
+          </div>
+          <div class="day-select-item">
+            <input type="checkbox" id="saturday" />
+            <label for="saturday"></label>
+          </div>
+        </div>
+      </div>
+
+      <div id="memo">
+        <label for="memoInput" id="memo_label"></label>
+        <input type="text" id="memoInput" />
+      </div>
+
+      <button id="setAlarm"></button>
+      <button id="cancelEdit"></button>
+    </div>
+    <div id="alarm-list-container">
+      <h2 id="alarm_list_label"></h2>
+      <ul id="alarmList"></ul>
+    </div>
+    <script src="popupScript.js"></script>
+  </body>
+</html>
