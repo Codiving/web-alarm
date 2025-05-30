@@ -35,9 +35,11 @@ function updateCurrentTime(overlay) {
     now.getMinutes()
   ).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}`;
 
-  const currentTimeElement = overlay.querySelector(".current-time");
-  if (currentTimeElement) {
-    currentTimeElement.textContent = currentTime;
+  if (overlay) {
+    const currentTimeElement = overlay.querySelector(".current-time");
+    if (currentTimeElement) {
+      currentTimeElement.textContent = currentTime;
+    }
   }
 }
 
@@ -49,17 +51,11 @@ function handleOverlayClick(alarm, overlay, intervalId) {
 
   const closedTime = new Date(new Date().getTime() + 60 * 1000);
 
-  chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
-    const alarms = result.alarms || [];
+  chrome.storage.local.get(["closedAlarms"], (result) => {
     const closedAlarms = result.closedAlarms || {};
 
-    if (alarm.isOneTime) {
-      const newAlarms = alarms.filter((a) => a.id !== alarm.id);
-      chrome.storage.local.set({ alarms: newAlarms, closedAlarms });
-    } else {
-      closedAlarms[alarm.id] = String(closedTime);
-      chrome.storage.local.set({ closedAlarms });
-    }
+    closedAlarms[alarm.id] = String(closedTime);
+    chrome.storage.local.set({ closedAlarms });
   });
 
   clearInterval(intervalId);
@@ -150,17 +146,25 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
   if (areaName === "local" && changes.closedAlarms) {
     const closedAlarms = changes.closedAlarms.newValue || {};
 
-    for (const alarmId of Object.keys(closedAlarms)) {
-      const entry = overlayMap.get(alarmId);
-      if (entry) {
-        const { overlay, intervalId } = entry;
-        if (document.body.contains(overlay)) {
-          document.body.removeChild(overlay);
+    chrome.storage.local.get(["alarms"], (result) => {
+      const alarms = result.alarms || [];
+
+      for (const alarmId of Object.keys(closedAlarms)) {
+        const entry = overlayMap.get(alarmId);
+        if (entry) {
+          const { overlay, intervalId } = entry;
+          if (document.body.contains(overlay)) {
+            document.body.removeChild(overlay);
+          }
+          clearInterval(intervalId);
+          overlayMap.delete(alarmId);
+
+          const findIndex = alarms.findIndex((alarm) => alarm.id === alarmId);
+          alarms.splice(findIndex, 1);
+          chrome.storage.local.set({ alarms });
         }
-        clearInterval(intervalId);
-        overlayMap.delete(alarmId);
       }
-    }
+    });
 
     // 닫힘 처리 후 남은 overlay 있으면 마지막 overlay 보여주기
     if (overlayMap.size > 0) {

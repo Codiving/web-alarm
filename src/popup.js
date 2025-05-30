@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonGroup.appendChild(editButton);
     buttonGroup.appendChild(deleteButton);
 
+    li.id = alarm.id;
     li.appendChild(wrap);
     li.appendChild(buttonGroup);
 
@@ -436,3 +437,17 @@ function getSelectedDays() {
   });
   return days;
 }
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "ALARM_CLOSED") {
+    const deletedAlarm = message.alarms;
+
+    const alarmList = document.getElementById("alarmList");
+    if (!alarmList) return;
+
+    const liToRemove = document.getElementById(deletedAlarm.id);
+    if (liToRemove && liToRemove.parentElement === alarmList) {
+      alarmList.removeChild(liToRemove);
+    }
+  }
+});
