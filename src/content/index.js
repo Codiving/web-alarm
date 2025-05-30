@@ -4,7 +4,7 @@ import {
   removeOverlayEntry,
   showOverlay,
   updateOverlayVisibility,
-} from "./content/overlayManager.js";
+} from "./overlayManager.js";
 
 // 현재 알람 목록 확인 및 조건 충족 시 overlay 표시
 function checkAlarms() {

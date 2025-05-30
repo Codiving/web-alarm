@@ -9,18 +9,18 @@ export default defineConfig({
       input: {
         popup: resolve(__dirname, "popup.html"),
         background: resolve(__dirname, "src/background.js"),
-        content: resolve(__dirname, "src/content.js"),
-        popupScript: resolve(__dirname, "src/popup.js"),
-        popupCss: resolve(__dirname, "popup.css"),
-        contentCss: resolve(__dirname, "content.css")
+        content: resolve(__dirname, "src/content/index.js"),
+        popupScript: resolve(__dirname, "src/popup/index.js"),
+        popupCss: resolve(__dirname, "src/popup/popup.css"),
+        contentCss: resolve(__dirname, "src/content/content.css"),
       },
       output: {
         inlineDynamicImports: false,
         entryFileNames: "[name].js",
-        assetFileNames: "[name].[ext]"
-      }
+        assetFileNames: "[name].[ext]",
+      },
     },
     outDir: "dist",
-    emptyOutDir: true
-  }
+    emptyOutDir: true,
+  },
 });
