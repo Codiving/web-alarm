@@ -8,62 +8,61 @@ function createOverlay(alarm) {
   overlay.id = `web-alarm-${alarm.id}`;
   overlay.dataset.id = alarm.id;
 
-  const messageBox = document.createElement("div");
-  messageBox.className = "message-box";
-  overlay.appendChild(messageBox);
-
-  const closeMessage = document.createElement("p");
-  closeMessage.className = "alarm-close-message";
-  closeMessage.innerText = chrome.i18n.getMessage("content_js_alarm_close");
-  overlay.appendChild(closeMessage);
-
-  messageBox.innerHTML = `
-    <p class="current-time"></p>
-    <p class="alarm-time">${chrome.i18n.getMessage("content_js_alarm")} : ${
+  /**
+   * overlay에 보여지는 텍스트
+   * 시간, 메모, close 관련 텍스트
+   */
+  overlay.innerHTML = `
+    <div class="message-box">
+      <p class="current-time"></p>
+      <p class="alarm-time">${chrome.i18n.getMessage("content_js_alarm")} : ${
     alarm.time
   }</p>
-    ${alarm.memo.length ? `<p class="alarm-memo">${alarm.memo}</p>` : ""}
+      ${alarm.memo ? `<p class="alarm-memo">${alarm.memo}</p>` : ""}
+    </div>
+    <p class="alarm-close-message">${chrome.i18n.getMessage(
+      "content_js_alarm_close"
+    )}</p>
   `;
 
   return overlay;
 }
 
+// 인자로 넘어온 시간을 HH:mm으로 반환
+function formatTime(date) {
+  return [date.getHours(), date.getMinutes(), date.getSeconds()]
+    .map((unit) => String(unit).padStart(2, "0"))
+    .join(":");
+}
+
 // 현재 시각을 overlay에 표시
 function updateCurrentTime(overlay) {
-  const now = new Date();
-  const currentTime = `${String(now.getHours()).padStart(2, "0")}:${String(
-    now.getMinutes()
-  ).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}`;
+  if (!overlay) return;
 
-  if (overlay) {
-    const currentTimeElement = overlay.querySelector(".current-time");
-    if (currentTimeElement) {
-      currentTimeElement.textContent = currentTime;
-    }
-  }
+  const currentTimeElement = overlay.querySelector(".current-time");
+  if (!currentTimeElement) return;
+
+  currentTimeElement.textContent = formatTime(new Date());
 }
 
 // overlay 클릭 시 처리 로직
 function handleOverlayClick(alarm, overlay, intervalId) {
-  if (document.body.contains(overlay)) {
-    document.body.removeChild(overlay);
-  }
+  removeOverlay(overlay);
 
   const alarmId = alarm.id;
-  const closedTime = new Date(new Date().getTime() + 60 * 1000);
+  const closedTime = new Date(new Date().getTime() + 60 * 1000).toISOString();
 
   chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    const findIndex = alarms.findIndex((alarm) => alarm.id === alarmId);
-    const alarm = alarms[findIndex];
+    const index = alarms.findIndex((a) => a.id === alarmId);
+    const foundAlarm = alarms[index];
 
-    if (alarm.isOneTime) {
+    if (foundAlarm?.isOneTime) {
       alarms.splice(findIndex, 1);
-      chrome.storage.local.set({ alarms });
     }
-    closedAlarms[alarmId] = String(closedTime);
+    closedAlarms[alarmId] = closedTime;
 
     chrome.storage.local.set({ alarms, closedAlarms });
 
@@ -72,10 +71,20 @@ function handleOverlayClick(alarm, overlay, intervalId) {
   });
 
   // 남은 overlay가 있다면 마지막 것만 표시
+  updateLastOverlayVisibility();
+}
+
+function removeOverlay(overlay) {
+  if (document.body.contains(overlay)) {
+    document.body.removeChild(overlay);
+  }
+}
+
+function updateLastOverlayVisibility() {
   if (overlayMap.size > 0) {
-    const lastEntry = Array.from(overlayMap.values()).pop();
-    if (lastEntry) {
-      lastEntry.overlay.style.display = "flex";
+    const lastOverlay = Array.from(overlayMap.values()).pop();
+    if (lastOverlay) {
+      lastOverlay.overlay.style.display = "flex";
     }
   } else {
     document.body.style.overflow = originalBodyOverflow || "";
@@ -102,7 +111,7 @@ function showOverlayWithAlarm(alarm) {
   const overlay = createOverlay(alarm);
   updateCurrentTime(overlay);
 
-  const intervalId = setInterval(updateCurrentTime, 1000);
+  const intervalId = setInterval(() => updateCurrentTime(overlay), 1000);
 
   overlayMap.set(alarm.id, { overlay, intervalId });
 
