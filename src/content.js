@@ -49,17 +49,27 @@ function handleOverlayClick(alarm, overlay, intervalId) {
     document.body.removeChild(overlay);
   }
 
+  const alarmId = alarm.id;
   const closedTime = new Date(new Date().getTime() + 60 * 1000);
 
-  chrome.storage.local.get(["closedAlarms"], (result) => {
+  chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
+    const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    closedAlarms[alarm.id] = String(closedTime);
-    chrome.storage.local.set({ closedAlarms });
-  });
+    const findIndex = alarms.findIndex((alarm) => alarm.id === alarmId);
+    const alarm = alarms[findIndex];
 
-  clearInterval(intervalId);
-  overlayMap.delete(alarm.id);
+    if (alarm.isOneTime) {
+      alarms.splice(findIndex, 1);
+      chrome.storage.local.set({ alarms });
+    }
+    closedAlarms[alarmId] = String(closedTime);
+
+    chrome.storage.local.set({ alarms, closedAlarms });
+
+    clearInterval(intervalId);
+    overlayMap.delete(alarmId);
+  });
 
   // 남은 overlay가 있다면 마지막 것만 표시
   if (overlayMap.size > 0) {
@@ -93,6 +103,7 @@ function showOverlayWithAlarm(alarm) {
   updateCurrentTime(overlay);
 
   const intervalId = setInterval(updateCurrentTime, 1000);
+
   overlayMap.set(alarm.id, { overlay, intervalId });
 
   overlay.addEventListener("click", () => {
@@ -146,25 +157,17 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
   if (areaName === "local" && changes.closedAlarms) {
     const closedAlarms = changes.closedAlarms.newValue || {};
 
-    chrome.storage.local.get(["alarms"], (result) => {
-      const alarms = result.alarms || [];
-
-      for (const alarmId of Object.keys(closedAlarms)) {
-        const entry = overlayMap.get(alarmId);
-        if (entry) {
-          const { overlay, intervalId } = entry;
-          if (document.body.contains(overlay)) {
-            document.body.removeChild(overlay);
-          }
-          clearInterval(intervalId);
-          overlayMap.delete(alarmId);
-
-          const findIndex = alarms.findIndex((alarm) => alarm.id === alarmId);
-          alarms.splice(findIndex, 1);
-          chrome.storage.local.set({ alarms });
+    for (const alarmId of Object.keys(closedAlarms)) {
+      const entry = overlayMap.get(alarmId);
+      if (entry) {
+        const { overlay, intervalId } = entry;
+        if (document.body.contains(overlay)) {
+          document.body.removeChild(overlay);
         }
+        clearInterval(intervalId);
+        overlayMap.delete(alarmId);
       }
-    });
+    }
 
     // 닫힘 처리 후 남은 overlay 있으면 마지막 overlay 보여주기
     if (overlayMap.size > 0) {
