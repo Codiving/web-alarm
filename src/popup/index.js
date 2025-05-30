@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const wrap = document.createElement("div");
     wrap.style.display = "flex";
     wrap.style.flexDirection = "column";
+    wrap.style.gap = "3px";
 
     const timeSpan = document.createElement("span");
     timeSpan.textContent = `${chrome.i18n.getMessage("time_label")}: ${
@@ -131,10 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
       chrome.i18n.getMessage(`popup_html_${day_locale[day]}`)
     );
 
-    daysSpan.textContent =
-      alarmDays.length === 7
-        ? chrome.i18n.getMessage("everyday_label")
-        : translatedDays.join(", ");
+    daysSpan.textContent = alarm.isOneTime
+      ? chrome.i18n.getMessage("popup_html_oneTime_alarm")
+      : alarmDays.length === 7
+      ? chrome.i18n.getMessage("everyday_label")
+      : translatedDays.join(", ");
 
     const memoSpan = document.createElement("span");
     memoSpan.textContent = ` ${chrome.i18n.getMessage("memo_label")}: ${
