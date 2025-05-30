@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   canceldEdit.addEventListener("click", () => {
     canceldEdit.style.display = "none";
     resetIcon.click();
+    document.getElementById("oneTimeAlarm").checked = false;
 
     const alarmItems = alarmList.querySelectorAll("li");
     alarmItems[editingIndex].classList.remove("editing");
@@ -228,6 +229,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 메모 세팅
       document.getElementById("memoInput").value = alarm.memo || "";
+
+      // 일회용 확인
+      document.getElementById("oneTimeAlarm").checked =
+        alarm?.isOneTime || false;
 
       // 편집 중인 인덱스 저장
       editingIndex = index;
