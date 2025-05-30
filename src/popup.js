@@ -1,3 +1,5 @@
+import { applyPopupLocales } from "./locale";
+
 let editingIndex = null;
 const day_locale = {
   일: "sun",
@@ -6,48 +8,11 @@ const day_locale = {
   수: "wed",
   목: "thu",
   금: "fri",
-  토: "sat"
+  토: "sat",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("alarm_setting_label").textContent =
-    chrome.i18n.getMessage("popup_html_alarm_setting_label");
-  document.getElementById("time_label").textContent = chrome.i18n.getMessage(
-    "popup_html_time_label"
-  );
-  document.getElementById("day_select_label").textContent =
-    chrome.i18n.getMessage("popup_html_day_select_label");
-  document.getElementById("memo_label").textContent = chrome.i18n.getMessage(
-    "popup_html_memo_label"
-  );
-  document.getElementById("setAlarm").textContent = chrome.i18n.getMessage(
-    "popup_html_set_alarm_button"
-  );
-  document.getElementById("alarm_list_label").textContent =
-    chrome.i18n.getMessage("popup_html_alarm_list_label");
-  document.querySelector('label[for="sunday"').textContent =
-    chrome.i18n.getMessage("popup_html_sun");
-  document.querySelector('label[for="monday"').textContent =
-    chrome.i18n.getMessage("popup_html_mon");
-  document.querySelector('label[for="tuesday"').textContent =
-    chrome.i18n.getMessage("popup_html_tue");
-  document.querySelector('label[for="wednesday"').textContent =
-    chrome.i18n.getMessage("popup_html_wed");
-  document.querySelector('label[for="thursday"').textContent =
-    chrome.i18n.getMessage("popup_html_thu");
-  document.querySelector('label[for="friday"').textContent =
-    chrome.i18n.getMessage("popup_html_fri");
-  document.querySelector('label[for="saturday"').textContent =
-    chrome.i18n.getMessage("popup_html_sat");
-
-  document.querySelector(".tooltiptext").textContent = chrome.i18n.getMessage(
-    "popup_html_oneTime_tooltip"
-  );
-  document.querySelector(".toggle-label").textContent = chrome.i18n.getMessage(
-    "popup_html_oneTime_alarm"
-  );
-
-  document.title = chrome.i18n.getMessage("extName");
+  applyPopupLocales();
 
   const setAlarmButton = document.getElementById("setAlarm");
   const repeatTimeInput = document.getElementById("repeatTime");
@@ -67,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
       wednesday: "수",
       thursday: "목",
       friday: "금",
-      saturday: "토"
+      saturday: "토",
     };
 
-    Object.keys(dayMap).forEach(id => {
+    Object.keys(dayMap).forEach((id) => {
       const checkbox = document.getElementById(id);
       checkbox.checked = false;
     });
@@ -90,13 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 편집 중인 알람의 버튼 숨기기
     const allGroups = document.querySelectorAll(".button-group");
-    allGroups.forEach(group => {
+    allGroups.forEach((group) => {
       group.style.display = "flex";
     });
   });
 
   // 마지막 선택된 요일을 복원
-  chrome.storage.local.get("lastSelectedDays", result => {
+  chrome.storage.local.get("lastSelectedDays", (result) => {
     const lastSelectedDays = result.lastSelectedDays || [];
     const dayMapReverse = {
       일: "sunday",
@@ -105,11 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
       수: "wednesday",
       목: "thursday",
       금: "friday",
-      토: "saturday"
+      토: "saturday",
     };
 
     if (lastSelectedDays.length) {
-      lastSelectedDays.forEach(day => {
+      lastSelectedDays.forEach((day) => {
         const checkboxId = dayMapReverse[day];
         const checkbox = document.getElementById(checkboxId);
         if (checkbox) {
@@ -118,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     } else {
       ["monday", "tuesday", "wednesday", "thursday", "friday"].forEach(
-        checkboxId => {
+        (checkboxId) => {
           const checkbox = document.getElementById(checkboxId);
           if (checkbox) {
             checkbox.checked = true;
@@ -129,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Enter 키 입력 시 알람 설정 실행
-  memoInput.addEventListener("keydown", event => {
+  memoInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
       setAlarmButton.click();
@@ -141,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const minutes = String(now.getMinutes()).padStart(2, "0");
   repeatTimeInput.value = `${hours}:${minutes}`;
 
-  chrome.storage.local.get("alarms", result => {
+  chrome.storage.local.get("alarms", (result) => {
     const alarms = result.alarms || [];
     alarms.forEach((alarm, index) => {
       addAlarmToDOM(alarm, index);
@@ -162,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const daysSpan = document.createElement("span");
     const alarmDays = alarm.days || [];
-    const translatedDays = alarmDays.map(day =>
+    const translatedDays = alarmDays.map((day) =>
       chrome.i18n.getMessage(`popup_html_${day_locale[day]}`)
     );
 
@@ -207,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function deleteAlarm(index) {
-    chrome.storage.local.get("alarms", result => {
+    chrome.storage.local.get("alarms", (result) => {
       const alarms = result.alarms || [];
       alarms.splice(index, 1);
       chrome.storage.local.set({ alarms }, () => {
@@ -220,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function editAlarm(index) {
-    chrome.storage.local.get("alarms", result => {
+    chrome.storage.local.get("alarms", (result) => {
       const alarms = result.alarms || [];
       const alarm = alarms[index];
       if (!alarm) return;
@@ -235,15 +200,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "wednesday",
         "thursday",
         "friday",
-        "saturday"
+        "saturday",
       ];
       // 모두 체크 해제
-      allDays.forEach(dayId => {
+      allDays.forEach((dayId) => {
         const checkbox = document.getElementById(dayId);
         if (checkbox) checkbox.checked = false;
       });
       // 알람에 저장된 요일만 체크
-      alarm.days.forEach(dayKor => {
+      alarm.days.forEach((dayKor) => {
         const dayMapReverse = {
           일: "sunday",
           월: "monday",
@@ -251,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
           수: "wednesday",
           목: "thursday",
           금: "friday",
-          토: "saturday"
+          토: "saturday",
         };
         const checkboxId = dayMapReverse[dayKor];
         const checkbox = document.getElementById(checkboxId);
@@ -274,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 편집 중인 알람의 버튼 숨기기
       const allGroups = document.querySelectorAll(".button-group");
-      allGroups.forEach(group => {
+      allGroups.forEach((group) => {
         group.style.display = "none";
       });
 
@@ -316,10 +281,10 @@ document.addEventListener("DOMContentLoaded", () => {
       time: formattedTime,
       days: selectedDays,
       memo,
-      isOneTime
+      isOneTime,
     };
 
-    chrome.storage.local.get("alarms", result => {
+    chrome.storage.local.get("alarms", (result) => {
       const alarms = result.alarms || [];
       if (editingIndex !== null) {
         // 편집 모드: 기존 알람 수정
@@ -328,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (i === editingIndex) continue;
           const existing = alarms[i];
           if (existing.time === formattedTime) {
-            const overlapDays = existing.days.filter(day =>
+            const overlapDays = existing.days.filter((day) =>
               selectedDays.includes(day)
             );
             if (overlapDays.length > 0) {
@@ -339,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
               if (targetItem) {
                 targetItem.scrollIntoView({
                   behavior: "smooth",
-                  block: "center"
+                  block: "center",
                 });
 
                 targetItem.classList.add("error-blinking");
@@ -358,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ...alarms[editingIndex],
           time: formattedTime,
           days: selectedDays,
-          memo
+          memo,
         };
 
         document.getElementById("setAlarm").textContent =
@@ -366,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 편집 중인 알람의 버튼 숨기기
         const allGroups = document.querySelectorAll(".button-group");
-        allGroups.forEach(group => {
+        allGroups.forEach((group) => {
           group.style.display = "flex";
         });
 
@@ -377,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < alarms.length; i++) {
           const existing = alarms[i];
           if (existing.time === newAlarm.time) {
-            const overlapDays = existing.days.filter(day =>
+            const overlapDays = existing.days.filter((day) =>
               newAlarm.days.includes(day)
             );
 
@@ -390,7 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
               if (targetItem) {
                 targetItem.scrollIntoView({
                   behavior: "smooth",
-                  block: "center"
+                  block: "center",
                 });
 
                 targetItem.classList.add("error-blinking");
@@ -459,11 +424,11 @@ function getSelectedDays() {
     wednesday: "수",
     thursday: "목",
     friday: "금",
-    saturday: "토"
+    saturday: "토",
   };
 
   const days = [];
-  Object.keys(dayMap).forEach(id => {
+  Object.keys(dayMap).forEach((id) => {
     const checkbox = document.getElementById(id);
     if (checkbox && checkbox.checked) {
       days.push(dayMap[id]);
