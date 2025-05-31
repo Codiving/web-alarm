@@ -3,10 +3,13 @@
     "dev": "vite",
     "build": "vite build"
   },
+  "type": "module",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
     "chrome-types": "^0.1.345",
     "exceljs": "^4.4.0",
     "path": "^0.12.7",
+    "tailwindcss": "^4.1.8",
     "vite": "^6.2.5"
   },
   "devDependencies": {
