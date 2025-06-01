@@ -176,7 +176,7 @@ export default function AddAlarm({
             if (dbAlarms === null) return;
 
             // 수정
-            if (alarm) {
+            if (upperAlarm) {
               if (dbAlarms === null) return;
               const newAlarms = dbAlarms.map(a => {
                 if (a.id !== alarm.id) return a;
@@ -189,6 +189,10 @@ export default function AddAlarm({
             else {
               await setToStorage<Alarm[]>("alarms", [...dbAlarms, alarm]);
             }
+
+            onChangeDialog("add", {
+              open: false
+            });
           }}
           className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
         >
