@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { EditAlarm } from "../AlarmList";
+import { Alarm, EditAlarm } from "../AlarmList";
 
 const ITEM_HEIGHT = 60;
 const AM_PM = ["오전", "오후"];
@@ -82,14 +82,13 @@ const getTimeInfo = (alarm: EditAlarm) => {
 };
 
 interface TimePickerProps {
-  alarm: EditAlarm;
+  alarm: Alarm;
+  onChangeAlarm: (alarm: Alarm) => void;
 }
 
-export default function TimePicker({ alarm }: TimePickerProps) {
-  const { isAM, hour: h, minute: m } = getTimeInfo(alarm);
-  const [ampm, setAmpm] = useState(isAM ? "오전" : "오후");
-  const [hour, setHour] = useState(h);
-  const [minute, setMinute] = useState(m);
+export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
+  const { isAM, hour, minute } = getTimeInfo(alarm);
+  const ampm = isAM ? "오전" : "오후";
 
   const ampmRef = useRef<HTMLDivElement>(null);
   const hourRef = useRef<HTMLDivElement>(null);
@@ -118,19 +117,54 @@ export default function TimePicker({ alarm }: TimePickerProps) {
       <List
         items={["오전", "오후"]}
         selected={ampm}
-        onSelect={setAmpm}
+        onSelect={meridiem => {
+          const [hour, minute] = alarm.time.split(":");
+          const nHour = Number(hour);
+
+          if (meridiem === "오전") {
+            if (nHour > 12) {
+              const newHour = nHour - 12;
+              onChangeAlarm({
+                ...alarm,
+                time: `${String(newHour).padStart(2, "0")}:${minute}`
+              });
+            }
+          } else {
+            if (nHour < 12) {
+              const newHour = nHour + 12;
+              onChangeAlarm({
+                ...alarm,
+                time: `${String(newHour).padStart(2, "0")}:${minute}`
+              });
+            }
+          }
+        }}
         className="text-[20px]"
       />
       <List
         items={HOURS}
         selected={hour}
-        onSelect={setHour}
+        onSelect={hour => {
+          const [, minute] = alarm.time.split(":");
+
+          onChangeAlarm({
+            ...alarm,
+            time: `${hour.padStart(2, "0")}:${minute}`
+          });
+        }}
         className="text-[32px]"
       />
       <List
         items={MINUTES}
         selected={minute}
-        onSelect={setMinute}
+        onSelect={minute => {
+          const [hour] = alarm.time.split(":");
+
+          onChangeAlarm({
+            ...alarm,
+            time: `${hour}:${minute.padStart(2, "0")}`
+          });
+        }}
         className="text-[32px]"
       />
     </div>

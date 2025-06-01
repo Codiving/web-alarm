@@ -103,7 +103,7 @@ export default function AddAlarm({
     >
       <div>
         <Header alarm={alarm} onChangeDialog={onChangeDialog} />
-        <TimePicker alarm={alarm} />
+        <TimePicker alarm={alarm} onChangeAlarm={setAlarm} />
       </div>
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch
