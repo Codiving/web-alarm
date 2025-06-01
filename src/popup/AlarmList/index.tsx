@@ -8,7 +8,7 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
   return (
     <div
       id="alarm-list-overlay"
-      className="flex flex-col gap-[8px] px-[12px] py-[20px] h-[400px]"
+      className="flex flex-col gap-[8px] px-[12px] py-[8px] h-[400px]"
     >
       <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
         Web Alarm
@@ -17,9 +17,16 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
         {[...Array(10)].map((_, i) => (
           <div
             key={i}
-            className="text-white p-[8px] w-full rounded-xl bg-[#5c5c5c]"
+            className="text-white p-[12px] pb-[10px] w-full rounded-xl bg-[#5c5c5c] flex justify-between"
           >
-            aaaaa
+            <div className="flex flex-col">
+              <p className="text-[14px]">월, 화, 수, 목, 금</p>
+              <div className="flex items-end gap-[12px]">
+                <span>오전</span>
+                <span className="text-[28px] mb-[-5px]">07:00</span>
+              </div>
+            </div>
+            <div>아이콘 리스트</div>
           </div>
         ))}
       </div>
