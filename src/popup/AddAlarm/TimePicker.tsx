@@ -85,7 +85,7 @@ export default function TimePicker() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-2 w-full text-center font-bold mt-[10px]">
+    <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
       <List
         items={["오전", "오후"]}
         selected={ampm}

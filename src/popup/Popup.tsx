@@ -29,9 +29,9 @@ export default function Popup() {
   };
 
   return (
-    <div className="relative w-[300px] h-[400px] bg-[#434040] overflow-hidden">
-      {dialog.add.open && <AddAlarm onChangeDialog={onChangeDialog} />}
-      <AlarmList onChangeDialog={onChangeDialog} />
+    <div className="relative w-[330px] h-[400px] bg-[#434040] overflow-hidden">
+      {!dialog.add.open && <AddAlarm onChangeDialog={onChangeDialog} />}
+      {dialog.add.open && <AlarmList onChangeDialog={onChangeDialog} />}
     </div>
   );
 }
