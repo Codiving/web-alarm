@@ -17,13 +17,13 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
         {[...Array(10)].map((_, i) => (
           <div
             key={i}
-            className="text-white p-[12px] pb-[10px] w-full rounded-xl bg-[#5c5c5c] flex justify-between"
+            className="text-white p-[10px] pb-[8px] w-full rounded-xl bg-[#5c5c5c] flex justify-between"
           >
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-[6px]">
               <p className="text-[14px]">월, 화, 수, 목, 금</p>
-              <div className="flex items-end gap-[12px]">
+              <div className="flex items-end gap-[14px]">
                 <span>오전</span>
-                <span className="text-[28px] mb-[-5px]">07:00</span>
+                <span className="text-[24px] mb-[-4px]">07:00</span>
               </div>
             </div>
             <div>아이콘 리스트</div>
