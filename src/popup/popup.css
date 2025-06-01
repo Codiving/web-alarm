@@ -293,21 +293,24 @@ input:checked + .slider:before {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  text-align: center;
+  /* min-width: 300px; */
   background-color: #fff;
   color: #333;
-  text-align: left;
   border-radius: 6px;
-  padding: 16px 12px;
-  position: absolute;
+  padding: 10px 8px;
+  position: fixed;
+
+  top: 160px;
+  right: 30px;
+  left: 100px;
   z-index: 1;
-  top: 100%;
-  margin-top: 10px;
+  /* top: 100%; */
+  /* margin-top: 10px; */
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
   box-shadow: 0 4px 12px #1d1919e0;
-  left: 35%;
   font-size: 14px;
 }
 
