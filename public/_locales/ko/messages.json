@@ -1,5 +1,5 @@
 {
-  "extName": { "message": "웹 알람" },
+  "extName": { "message": "Web Alarm" },
   "extDescription": { "message": "웹사이트에서 무음 알람을 제공합니다." },
   "popup_html_alarm_setting_label": {
     "message": "알람 설정"
@@ -22,25 +22,25 @@
   "popup_html_alarm_list_label": {
     "message": "설정된 알람"
   },
-  "popup_html_sun": {
+  "sun": {
     "message": "일"
   },
-  "popup_html_mon": {
+  "mon": {
     "message": "월"
   },
-  "popup_html_tue": {
+  "tue": {
     "message": "화"
   },
-  "popup_html_wed": {
+  "wed": {
     "message": "수"
   },
-  "popup_html_thu": {
+  "thu": {
     "message": "목"
   },
-  "popup_html_fri": {
+  "fri": {
     "message": "금"
   },
-  "popup_html_sat": {
+  "sat": {
     "message": "토"
   },
   "popup_html_exist_time": {

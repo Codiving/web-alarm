@@ -4,17 +4,17 @@ const ID_MAP = {
   day_select_label: "popup_html_day_select_label",
   memo_label: "popup_html_memo_label",
   setAlarm: "popup_html_set_alarm_button",
-  alarm_list_label: "popup_html_alarm_list_label",
+  alarm_list_label: "popup_html_alarm_list_label"
 };
 
 const DAY_LABELS = [
-  { selector: 'label[for="sunday"]', message: "popup_html_sun" },
-  { selector: 'label[for="monday"]', message: "popup_html_mon" },
-  { selector: 'label[for="tuesday"]', message: "popup_html_tue" },
-  { selector: 'label[for="wednesday"]', message: "popup_html_wed" },
-  { selector: 'label[for="thursday"]', message: "popup_html_thu" },
-  { selector: 'label[for="friday"]', message: "popup_html_fri" },
-  { selector: 'label[for="saturday"]', message: "popup_html_sat" },
+  { selector: 'label[for="sunday"]', message: "sun" },
+  { selector: 'label[for="monday"]', message: "mon" },
+  { selector: 'label[for="tuesday"]', message: "tue" },
+  { selector: 'label[for="wednesday"]', message: "wed" },
+  { selector: 'label[for="thursday"]', message: "thu" },
+  { selector: 'label[for="friday"]', message: "fri" },
+  { selector: 'label[for="saturday"]', message: "sat" }
 ];
 
 const applyPopupLocales = () => {

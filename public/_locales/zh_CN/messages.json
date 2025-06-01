@@ -23,25 +23,25 @@
   "popup_html_alarm_list_label": {
     "message": "Set Alarms"
   },
-  "popup_html_sun": {
+  "sun": {
     "message": "Sun"
   },
-  "popup_html_mon": {
+  "mon": {
     "message": "Mon"
   },
-  "popup_html_tue": {
+  "tue": {
     "message": "Tue"
   },
-  "popup_html_wed": {
+  "wed": {
     "message": "Wed"
   },
-  "popup_html_thu": {
+  "thu": {
     "message": "Thu"
   },
-  "popup_html_fri": {
+  "fri": {
     "message": "Fri"
   },
-  "popup_html_sat": {
+  "sat": {
     "message": "Sat"
   },
   "popup_html_exist_time": {

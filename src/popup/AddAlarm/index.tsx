@@ -3,16 +3,8 @@ import { OnChangeDialog } from "../Popup";
 import Header from "./Header";
 import TimePicker from "./TimePicker";
 import { t } from "../../utils/i18n";
+import { DAYS } from "../AlarmList";
 
-const DAYS = [
-  t("popup_html_sun"),
-  t("popup_html_mon"),
-  t("popup_html_tue"),
-  t("popup_html_wed"),
-  t("popup_html_thu"),
-  t("popup_html_fri"),
-  t("popup_html_sat")
-];
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
 }

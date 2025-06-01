@@ -1,12 +1,30 @@
 import { useEffect, useState } from "react";
 import { OnChangeDialog } from "../Popup";
+import { t } from "../../utils/i18n";
 
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
 }
 
-const DAY = ["일", "월", "화", "수", "목", "금", "토"] as const;
-type Day = (typeof DAY)[number];
+const DAY_LOCALE_MAP: { [key in Day]: string } = {
+  일: t("sun"),
+  월: t("mon"),
+  화: t("tue"),
+  수: t("wed"),
+  목: t("thu"),
+  금: t("fri"),
+  토: t("sat")
+} as const;
+export const DAYS = [
+  t("sun"),
+  t("mon"),
+  t("tue"),
+  t("wed"),
+  t("thu"),
+  t("fri"),
+  t("sat")
+] as const;
+type Day = (typeof DAYS)[number];
 
 interface Alarm {
   id: string;
@@ -38,7 +56,7 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
       className="select-none flex flex-col gap-[8px] px-[12px] py-[8px] h-[400px]"
     >
       <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
-        Web Alarm
+        {t("extName")}
       </h1>
       <div className="scrollbar-hide overflow-auto flex-1 flex flex-col gap-[8px]">
         {alarms.map(alarm => {
@@ -71,7 +89,9 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
                       />
                     </svg>
                     <p className="text-[14px]">
-                      {isOneTime ? "일회용" : days.join(", ")}
+                      {isOneTime
+                        ? "일회용"
+                        : days.map(day => DAY_LOCALE_MAP[day]).join(", ")}
                     </p>
                   </div>
                   <div className="flex items-end gap-[14px]">
