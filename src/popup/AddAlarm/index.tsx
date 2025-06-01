@@ -72,7 +72,7 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOn, onToggle }) => {
 };
 
 export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
-  const [days, setDays] = useState<number[]>([]);
+  const [days, setDays] = useState<number[]>([1, 2, 3, 4, 5]);
   const [isOn, setIsOn] = useState(false);
 
   return (
