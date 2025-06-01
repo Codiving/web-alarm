@@ -25,7 +25,7 @@ export default function Header({ onChangeDialog }: HeaderProps) {
           points="31,38.32 13.391,21 31,3.68 28.279,1 8,21.01 28.279,41 "
         />
       </svg>
-      <span className="text-white font-bold">
+      <span className="text-white font-bold text-[16px]">
         {t("popup_html_set_alarm_button")}
       </span>
       <svg
