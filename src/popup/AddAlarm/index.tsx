@@ -4,7 +4,7 @@ import Header from "./Header";
 import TimePicker from "./TimePicker";
 import { t } from "../../utils/i18n";
 import { Alarm, Day, DAY_TO_KOREAN, DAYS, EditAlarm } from "../AlarmList";
-import { getFromStorage } from "../storage";
+import { getFromStorage, setToStorage } from "../storage";
 
 interface AlarmListProps {
   alarm: EditAlarm | null;
@@ -13,11 +13,11 @@ interface AlarmListProps {
 }
 
 type ToggleSwitchProps = {
-  isOn: boolean;
+  isOneTime: boolean;
   onToggle: (newState: boolean) => void;
 };
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOn, onToggle }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOneTime, onToggle }) => {
   return (
     <div className="flex justify-end items-center gap-[4px]">
       <div className="tooltip">
@@ -56,7 +56,7 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOn, onToggle }) => {
           <input
             type="checkbox"
             id="oneTimeAlarm"
-            checked={isOn}
+            checked={isOneTime}
             onChange={e => onToggle(e.target.checked)}
           />
           <span className="slider"></span>
@@ -66,14 +66,29 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOn, onToggle }) => {
   );
 };
 
+const getCurrentTime = (): string => {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  return `${hours}:${minutes}`;
+};
+
 export default function AddAlarm({
-  alarm,
+  alarm: upperAlarm,
   onChangeAlarm,
   onChangeDialog
 }: AlarmListProps) {
-  const [days, setDays] = useState<Day[]>(["월", "화", "수", "목", "금"]);
-  const [isOn, setIsOn] = useState(false);
-  const [memo, setMemo] = useState(alarm?.memo ?? "");
+  const [alarm, setAlarm] = useState(
+    upperAlarm ?? {
+      id: crypto.randomUUID(),
+      days: ["월", "화", "수", "목", "금"],
+      isOneTime: false,
+      memo: "",
+      time: getCurrentTime()
+    }
+  );
+
+  const { days, isOneTime, memo, time } = alarm;
 
   useEffect(() => {
     return () => {
@@ -91,7 +106,15 @@ export default function AddAlarm({
         <TimePicker alarm={alarm} />
       </div>
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
-        <ToggleSwitch isOn={isOn} onToggle={setIsOn} />
+        <ToggleSwitch
+          isOneTime={isOneTime}
+          onToggle={isOneTime =>
+            setAlarm(prev => ({
+              ...prev,
+              isOneTime
+            }))
+          }
+        />
         <div className="flex flex-col gap-[4px]">
           <p className="pl-[12px] text-white font-bold text-[14px]">
             활성화된 요일
@@ -105,9 +128,15 @@ export default function AddAlarm({
                   <span
                     onClick={() => {
                       if (isSelected) {
-                        setDays(prev => prev.filter(d => d !== dayKorean));
+                        setAlarm(prev => ({
+                          ...prev,
+                          days: prev.days.filter(d => d !== dayKorean)
+                        }));
                       } else {
-                        setDays(prev => [...prev, dayKorean]);
+                        setAlarm(prev => ({
+                          ...prev,
+                          days: [...prev.days, dayKorean]
+                        }));
                       }
                     }}
                     key={day}
@@ -132,7 +161,12 @@ export default function AddAlarm({
             className="focus:outline-none focus:ring-0 px-[8px] text-[14px] bg-white mx-[8px] rounded-[8px] h-[34px] placeholder:text-[14px]"
             placeholder="메모"
             value={memo}
-            onChange={e => setMemo(e.target.value)}
+            onChange={e =>
+              setAlarm(prev => ({
+                ...prev,
+                memo: e.target.value
+              }))
+            }
           />
         </div>
         <button
@@ -146,16 +180,14 @@ export default function AddAlarm({
               if (dbAlarms === null) return;
               const newAlarms = dbAlarms.map(a => {
                 if (a.id !== alarm.id) return a;
-                return {
-                  ...a,
-                  days,
-                  isOneTime: isOn,
-                  memo
-                };
+                return alarm;
               });
+
+              await setToStorage<Alarm[]>("alarms", newAlarms);
             }
             // 생성
             else {
+              await setToStorage<Alarm[]>("alarms", [...dbAlarms, alarm]);
             }
           }}
           className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
