@@ -84,7 +84,7 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
         <Header onChangeDialog={onChangeDialog} />
         <TimePicker />
       </div>
-      <div className="bg-[#6e6c6c] flex-1 mt-[12px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
+      <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch isOn={isOn} onToggle={setIsOn} />
         <div className="flex flex-col gap-[4px]">
           <p className="pl-[12px] text-white font-bold text-[14px]">
@@ -106,7 +106,7 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
                     key={day}
                     className="cursor-pointer py-[4px] px-[6px] my-[6px] mx-[2px] rounded-xl text-[13px]"
                     style={{
-                      color: isSelected ? "#fff" : undefined,
+                      color: isSelected ? "#fff" : "#fff",
                       backgroundColor: isSelected ? "#4a90e2" : "#ccc",
                       boxShadow: isSelected
                         ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
@@ -120,7 +120,15 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-col gap-[4px] mt-[12px]">
+          <input
+            className="focus:outline-none focus:ring-0 px-[8px] text-[14px] bg-white mx-[8px] rounded-[8px] h-[34px] placeholder:text-[14px]"
+            placeholder="메모"
+          />
+        </div>
+        <button className="hover:brightness-110 duration-300 text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer">
+          저장
+        </button>
       </div>
     </div>
   );
