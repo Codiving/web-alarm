@@ -75,7 +75,6 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
   const [days, setDays] = useState<number[]>([]);
   const [isOn, setIsOn] = useState(false);
 
-  const [enabled, setEnabled] = useState(false);
   return (
     <div
       id="add-alarm-overlay"
@@ -108,7 +107,10 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
                     className="cursor-pointer py-[4px] px-[6px] my-[6px] mx-[2px] rounded-xl text-[13px]"
                     style={{
                       color: isSelected ? "#fff" : undefined,
-                      backgroundColor: isSelected ? "#4a90e2" : "#ccc"
+                      backgroundColor: isSelected ? "#4a90e2" : "#ccc",
+                      boxShadow: isSelected
+                        ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
+                        : undefined
                     }}
                   >
                     {day}
@@ -118,6 +120,7 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
