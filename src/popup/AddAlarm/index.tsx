@@ -78,13 +78,13 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
   return (
     <div
       id="add-alarm-overlay"
-      className="z-10 absolute inset-0 w-full h-full bg-[#434040] flex flex-col justify-between"
+      className="select-none absolute inset-0 w-full h-full bg-[#434040] flex flex-col justify-between"
     >
       <div>
         <Header onChangeDialog={onChangeDialog} />
         <TimePicker />
       </div>
-      <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
+      <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch isOn={isOn} onToggle={setIsOn} />
         <div className="flex flex-col gap-[4px]">
           <p className="pl-[12px] text-white font-bold text-[14px]">
