@@ -11,7 +11,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
+/* 
 #alarm-input-container {
   width: 250px;
 }
@@ -219,7 +219,7 @@ li.success-blinking {
 
 .editing {
   outline: 2px solid #007bff;
-}
+} */
 
 #cancelEdit {
   display: none;
@@ -232,9 +232,10 @@ li.success-blinking {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   justify-content: flex-end;
   gap: 8px;
+  padding-right: 12px;
 }
 
 /* 토글 스위치 스타일 */
@@ -281,11 +282,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(18px);
-}
-
-.toggle-label {
-  font-size: 14px;
-  color: #333;
 }
 
 /*  */
