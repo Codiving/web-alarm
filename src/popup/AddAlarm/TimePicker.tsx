@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { EditAlarm } from "../AlarmList";
 
 const ITEM_HEIGHT = 60;
 const AM_PM = ["오전", "오후"];
@@ -51,16 +52,45 @@ const List = ({ items, selected, onSelect, className }: ListProps) => {
   );
 };
 
-export default function TimePicker() {
-  const now = new Date();
-  const currentHours = now.getHours();
-  const isAM = currentHours < 12;
-  const hours12 = currentHours % 12 === 0 ? "12" : String(currentHours % 12);
-  const currentMinutes = String(now.getMinutes());
+const getTimeInfo = (alarm: EditAlarm) => {
+  if (!alarm) {
+    const now = new Date();
+    const currentHours = now.getHours();
+    const isAM = currentHours < 12;
+    const hours12 = currentHours % 12 === 0 ? "12" : String(currentHours % 12);
+    const currentMinutes = String(now.getMinutes());
 
+    return {
+      isAM,
+      hour: hours12,
+      minute: currentMinutes
+    };
+  }
+
+  const { time } = alarm;
+  const [hour24, numberMinute] = time.split(":").map(Number);
+  const hour12 = hour24 % 12 === 0 ? "12" : String(hour24 % 12);
+  const hour = String(hour12);
+  const minute = String(numberMinute);
+  const isAM = hour24 < 12;
+
+  return {
+    isAM,
+    hour,
+    minute
+  };
+};
+
+interface TimePickerProps {
+  alarm: EditAlarm;
+}
+
+export default function TimePicker({ alarm }: TimePickerProps) {
+  const { isAM, hour: h, minute: m } = getTimeInfo(alarm);
+  console.log("alarm ; ", getTimeInfo(alarm));
   const [ampm, setAmpm] = useState(isAM ? "오전" : "오후");
-  const [hour, setHour] = useState(hours12);
-  const [minute, setMinute] = useState(currentMinutes);
+  const [hour, setHour] = useState(h);
+  const [minute, setMinute] = useState(m);
 
   const ampmRef = useRef<HTMLDivElement>(null);
   const hourRef = useRef<HTMLDivElement>(null);
@@ -77,6 +107,13 @@ export default function TimePicker() {
       });
     }
   };
+
+  // useEffect(() => {
+  //   const { isAM, hour, minute } = getTimeInfo(alarm);
+  //   setAmpm(isAM ? "오전" : "오후");
+  //   setHour(hour);
+  //   setMinute(minute);
+  // }, []);
 
   useEffect(() => {
     scrollTo(ampmRef, AM_PM.indexOf(ampm));

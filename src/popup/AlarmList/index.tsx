@@ -4,6 +4,7 @@ import { t } from "../../utils/i18n";
 
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
+  onChangeAlarm: (alarm: EditAlarm) => void;
 }
 
 const DAY_LOCALE_MAP: { [key in Day]: string } = {
@@ -26,7 +27,9 @@ export const DAYS = [
 ] as const;
 type Day = (typeof DAYS)[number];
 
-interface Alarm {
+export type EditAlarm = Alarm | null;
+
+export interface Alarm {
   id: string;
   time: string;
   days: Day[];
@@ -34,7 +37,10 @@ interface Alarm {
   memo: string;
 }
 
-export default function AlarmList({ onChangeDialog }: AlarmListProps) {
+export default function AlarmList({
+  onChangeDialog,
+  onChangeAlarm
+}: AlarmListProps) {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
   useEffect(() => {
@@ -62,7 +68,7 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
         {alarms.map(alarm => {
           const { id, time, days, isOneTime, memo } = alarm;
           const [hour24, numberMinute] = time.split(":").map(Number);
-          const hour12 = hour24 % 12;
+          const hour12 = hour24 % 12 === 0 ? "12" : hour24 % 12;
           const hour = String(hour12).padStart(2, "0");
           const minute = String(numberMinute).padStart(2, "0");
           const isAM = hour24 < 12;
@@ -100,7 +106,15 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
                   </div>
                 </div>
                 <div className="items-start flex gap-[6px]">
-                  <span className="cursor-pointer py-[4px] px-[8px] text-[14px] bg-[#434040] hover:bg-[#2d2a2a] duration-300 rounded-[12px] text-[#ff8800]">
+                  <span
+                    onClick={() => {
+                      onChangeAlarm(alarm);
+                      onChangeDialog("add", {
+                        open: true
+                      });
+                    }}
+                    className="cursor-pointer py-[4px] px-[8px] text-[14px] bg-[#434040] hover:bg-[#2d2a2a] duration-300 rounded-[12px] text-[#ff8800]"
+                  >
                     수정
                   </span>
                   <span className="cursor-pointer py-[4px] px-[8px] text-[14px] bg-[#434040] hover:bg-[#2d2a2a] duration-300 rounded-[12px] text-[#ff8800]">

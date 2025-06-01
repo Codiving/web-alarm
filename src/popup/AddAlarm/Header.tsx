@@ -1,11 +1,13 @@
 import { t } from "../../utils/i18n";
+import { EditAlarm } from "../AlarmList";
 import { OnChangeDialog } from "../Popup";
 
 interface HeaderProps {
+  alarm: EditAlarm;
   onChangeDialog: OnChangeDialog;
 }
 
-export default function Header({ onChangeDialog }: HeaderProps) {
+export default function Header({ alarm, onChangeDialog }: HeaderProps) {
   return (
     <div className="p-[8px] flex justify-between items-center">
       <svg
@@ -26,7 +28,7 @@ export default function Header({ onChangeDialog }: HeaderProps) {
         />
       </svg>
       <span className="text-white font-bold text-[16px]">
-        {t("popup_html_set_alarm_button")}
+        {alarm ? "알람 수정" : "알람 추가"}
       </span>
       <svg
         className="invisible"

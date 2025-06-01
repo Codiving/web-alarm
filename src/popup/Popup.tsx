@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AddAlarm from "./AddAlarm";
-import AlarmList from "./AlarmList";
+import AlarmList, { EditAlarm } from "./AlarmList";
 
 const DIALOG = {
   add: {
@@ -17,6 +17,7 @@ export type OnChangeDialog = <K extends DialogKey>(
 
 export default function Popup() {
   const [dialog, setDialog] = useState(DIALOG);
+  const [alarm, setAlarm] = useState<EditAlarm>(null);
 
   const onChangeDialog = <K extends DialogKey>(
     key: K,
@@ -28,10 +29,23 @@ export default function Popup() {
     }));
   };
 
+  const onChangeAlarm = (alarm: EditAlarm) => setAlarm(alarm);
+
   return (
     <div className="relative w-[330px] h-[400px] bg-[#434040] overflow-hidden">
-      {dialog.add.open && <AddAlarm onChangeDialog={onChangeDialog} />}
-      {!dialog.add.open && <AlarmList onChangeDialog={onChangeDialog} />}
+      {dialog.add.open && (
+        <AddAlarm
+          alarm={alarm}
+          onChangeAlarm={onChangeAlarm}
+          onChangeDialog={onChangeDialog}
+        />
+      )}
+      {!dialog.add.open && (
+        <AlarmList
+          onChangeAlarm={onChangeAlarm}
+          onChangeDialog={onChangeDialog}
+        />
+      )}
     </div>
   );
 }

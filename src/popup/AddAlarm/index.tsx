@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { OnChangeDialog } from "../Popup";
 import Header from "./Header";
 import TimePicker from "./TimePicker";
 import { t } from "../../utils/i18n";
-import { DAYS } from "../AlarmList";
+import { DAYS, EditAlarm } from "../AlarmList";
 
 interface AlarmListProps {
+  alarm: EditAlarm | null;
+  onChangeAlarm: (id: EditAlarm | null) => void;
   onChangeDialog: OnChangeDialog;
 }
 
@@ -63,9 +65,19 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOn, onToggle }) => {
   );
 };
 
-export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
+export default function AddAlarm({
+  alarm,
+  onChangeAlarm,
+  onChangeDialog
+}: AlarmListProps) {
   const [days, setDays] = useState<number[]>([1, 2, 3, 4, 5]);
   const [isOn, setIsOn] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      onChangeAlarm(null);
+    };
+  }, []);
 
   return (
     <div
@@ -73,8 +85,8 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
       className="select-none absolute inset-0 w-full h-full bg-[#434040] flex flex-col justify-between"
     >
       <div>
-        <Header onChangeDialog={onChangeDialog} />
-        <TimePicker />
+        <Header alarm={alarm} onChangeDialog={onChangeDialog} />
+        <TimePicker alarm={alarm} />
       </div>
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch isOn={isOn} onToggle={setIsOn} />
@@ -118,7 +130,10 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
             placeholder="메모"
           />
         </div>
-        <button className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer">
+        <button
+          onClick={() => {}}
+          className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
+        >
           저장
         </button>
       </div>
