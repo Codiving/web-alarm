@@ -6,14 +6,19 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "chrome-types": "^0.1.345",
     "exceljs": "^4.4.0",
     "path": "^0.12.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.8",
     "vite": "^6.2.5"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.322",
+    "@vitejs/plugin-react": "^4.5.0",
     "typescript": "^5.8.3"
   }
 }

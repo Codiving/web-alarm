@@ -1,5 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 import { resolve } from "path";
+import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -24,5 +25,5 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true
   },
-  plugins: [tailwindcss()]
+  plugins: [tailwindcss(), react()]
 });
