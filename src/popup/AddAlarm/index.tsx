@@ -107,7 +107,7 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
                     className="cursor-pointer py-[4px] px-[6px] my-[6px] mx-[2px] rounded-xl text-[13px]"
                     style={{
                       color: isSelected ? "#fff" : "#fff",
-                      backgroundColor: isSelected ? "#4a90e2" : "#ccc",
+                      backgroundColor: isSelected ? "#ff8800" : "#ccc",
                       boxShadow: isSelected
                         ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
                         : undefined
@@ -126,7 +126,7 @@ export default function AddAlarm({ onChangeDialog }: AlarmListProps) {
             placeholder="메모"
           />
         </div>
-        <button className="hover:brightness-110 duration-300 text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer">
+        <button className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer">
           저장
         </button>
       </div>
