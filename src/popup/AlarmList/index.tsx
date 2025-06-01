@@ -8,17 +8,21 @@ export default function AlarmList({ onChangeDialog }: AlarmListProps) {
   return (
     <div
       id="alarm-list-overlay"
-      className="px-[12px] py-[20px] flex flex-col gap-[8px] h-[400px] overflow-auto"
+      className="flex flex-col gap-[8px] px-[12px] py-[20px] h-[400px]"
     >
-      {[...Array(10)].map((_, i) => (
-        <div
-          key={i}
-          className="text-white p-[8px] w-full rounded-xl bg-[#5c5c5c]"
-        >
-          aaaaa
-        </div>
-      ))}
-
+      <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
+        Web Alarm
+      </h1>
+      <div className="scrollbar-hide overflow-auto flex-1 flex flex-col gap-[8px]">
+        {[...Array(10)].map((_, i) => (
+          <div
+            key={i}
+            className="text-white p-[8px] w-full rounded-xl bg-[#5c5c5c]"
+          >
+            aaaaa
+          </div>
+        ))}
+      </div>
       <svg
         id="add-alarm-btn"
         className="duration-200 hover:scale-[1.07] bg-[rgba(0,0,0,0.36)] shadow-[0_5px_15px_rgba(0,0,0,0.35)] absolute left-1/2 transform -translate-x-1/2 bottom-[10px] cursor-pointer rounded-full p-[6px]"
