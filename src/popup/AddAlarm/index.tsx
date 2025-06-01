@@ -3,7 +3,8 @@ import { OnChangeDialog } from "../Popup";
 import Header from "./Header";
 import TimePicker from "./TimePicker";
 import { t } from "../../utils/i18n";
-import { DAYS, EditAlarm } from "../AlarmList";
+import { Alarm, Day, DAY_TO_KOREAN, DAYS, EditAlarm } from "../AlarmList";
+import { getFromStorage } from "../storage";
 
 interface AlarmListProps {
   alarm: EditAlarm | null;
@@ -70,8 +71,9 @@ export default function AddAlarm({
   onChangeAlarm,
   onChangeDialog
 }: AlarmListProps) {
-  const [days, setDays] = useState<number[]>([1, 2, 3, 4, 5]);
+  const [days, setDays] = useState<Day[]>(["월", "화", "수", "목", "금"]);
   const [isOn, setIsOn] = useState(false);
+  const [memo, setMemo] = useState(alarm?.memo ?? "");
 
   useEffect(() => {
     return () => {
@@ -96,15 +98,16 @@ export default function AddAlarm({
           </p>
           <div className="rounded-[12px] mx-[8px]">
             <div className="grid grid-cols-7 text-center">
-              {DAYS.map((day, index) => {
-                const isSelected = days.includes(index);
+              {DAYS.map(day => {
+                const dayKorean = DAY_TO_KOREAN[day];
+                const isSelected = days.includes(dayKorean);
                 return (
                   <span
                     onClick={() => {
                       if (isSelected) {
-                        setDays(prev => prev.filter(day => day !== index));
+                        setDays(prev => prev.filter(d => d !== dayKorean));
                       } else {
-                        setDays(prev => [...prev, index]);
+                        setDays(prev => [...prev, dayKorean]);
                       }
                     }}
                     key={day}
@@ -128,10 +131,33 @@ export default function AddAlarm({
           <input
             className="focus:outline-none focus:ring-0 px-[8px] text-[14px] bg-white mx-[8px] rounded-[8px] h-[34px] placeholder:text-[14px]"
             placeholder="메모"
+            value={memo}
+            onChange={e => setMemo(e.target.value)}
           />
         </div>
         <button
-          onClick={() => {}}
+          onClick={async () => {
+            const dbAlarms = await getFromStorage<Alarm[]>("alarms");
+
+            if (dbAlarms === null) return;
+
+            // 수정
+            if (alarm) {
+              if (dbAlarms === null) return;
+              const newAlarms = dbAlarms.map(a => {
+                if (a.id !== alarm.id) return a;
+                return {
+                  ...a,
+                  days,
+                  isOneTime: isOn,
+                  memo
+                };
+              });
+            }
+            // 생성
+            else {
+            }
+          }}
           className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
         >
           저장

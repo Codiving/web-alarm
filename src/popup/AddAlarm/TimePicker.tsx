@@ -87,7 +87,6 @@ interface TimePickerProps {
 
 export default function TimePicker({ alarm }: TimePickerProps) {
   const { isAM, hour: h, minute: m } = getTimeInfo(alarm);
-  console.log("alarm ; ", getTimeInfo(alarm));
   const [ampm, setAmpm] = useState(isAM ? "오전" : "오후");
   const [hour, setHour] = useState(h);
   const [minute, setMinute] = useState(m);
@@ -107,13 +106,6 @@ export default function TimePicker({ alarm }: TimePickerProps) {
       });
     }
   };
-
-  // useEffect(() => {
-  //   const { isAM, hour, minute } = getTimeInfo(alarm);
-  //   setAmpm(isAM ? "오전" : "오후");
-  //   setHour(hour);
-  //   setMinute(minute);
-  // }, []);
 
   useEffect(() => {
     scrollTo(ampmRef, AM_PM.indexOf(ampm));

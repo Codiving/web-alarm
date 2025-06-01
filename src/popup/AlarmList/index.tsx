@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { OnChangeDialog } from "../Popup";
 import { t } from "../../utils/i18n";
+import { getFromStorage } from "../storage";
 
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
@@ -16,6 +17,15 @@ const DAY_LOCALE_MAP: { [key in Day]: string } = {
   금: t("fri"),
   토: t("sat")
 } as const;
+export const DAY_TO_KOREAN = {
+  [t("sun")]: "일",
+  [t("mon")]: "월",
+  [t("tue")]: "화",
+  [t("wed")]: "수",
+  [t("thu")]: "목",
+  [t("fri")]: "금",
+  [t("sat")]: "토"
+};
 export const DAYS = [
   t("sun"),
   t("mon"),
@@ -25,7 +35,7 @@ export const DAYS = [
   t("fri"),
   t("sat")
 ] as const;
-type Day = (typeof DAYS)[number];
+export type Day = (typeof DAYS)[number];
 
 export type EditAlarm = Alarm | null;
 
@@ -44,16 +54,17 @@ export default function AlarmList({
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
   useEffect(() => {
-    chrome.storage.local.get("alarms", result => {
-      const dbAlarms = (result.alarms || []) as Alarm[];
+    (async () => {
+      const dbAlarms = await getFromStorage<Alarm[]>("alarms");
+
+      if (dbAlarms === null) return;
       dbAlarms.sort((a, b) => {
         const [aH, aM] = a.time.split(":").map(Number);
         const [bH, bM] = b.time.split(":").map(Number);
         return aH !== bH ? aH - bH : aM - bM;
       });
-      console.log("dbAlarms : ", dbAlarms);
       setAlarms(dbAlarms);
-    });
+    })();
   }, []);
 
   return (
