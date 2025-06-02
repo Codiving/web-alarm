@@ -98,8 +98,7 @@ export const getInitAlarm = () => {
     isOneTime: false,
     memo: "",
     time: getCurrentTime(),
-    date: "", // 생성 시는 데이터 넣지 않고 위에(index.tsx) 있는 date state 사용함
-    isActive: true
+    date: "" // 생성 시는 데이터 넣지 않고 위에(index.tsx) 있는 date state 사용함
   };
 
   return alarm;
