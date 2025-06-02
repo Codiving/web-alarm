@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
 import { DAY_TO_KOREAN, DAYS } from "../../type/day";
 import { OnChangeDialog } from "../Popup";
@@ -25,6 +25,7 @@ export default function AddAlarm({
   onChangeAlarm,
   onChangeDialog,
 }: AlarmListProps) {
+  const [canSave, setCanSave] = useState(false);
   const [alarm, setAlarm] = useState(
     upperAlarm ?? {
       id: crypto.randomUUID(),
@@ -37,7 +38,15 @@ export default function AddAlarm({
 
   const { days, isOneTime, memo } = alarm;
 
+  const ampmRef = useRef<string>(null);
+  const hourRef = useRef<string>(null);
+  const minuteRef = useRef<string>(null);
+
   useEffect(() => {
+    setTimeout(() => {
+      setCanSave(true);
+    }, 1500);
+
     return () => {
       onChangeAlarm(null);
     };
@@ -50,7 +59,13 @@ export default function AddAlarm({
     >
       <div>
         <Header alarm={alarm} onChangeDialog={onChangeDialog} />
-        <TimePicker alarm={alarm} onChangeAlarm={setAlarm} />
+        <TimePicker
+          alarm={alarm}
+          onChangeAlarm={setAlarm}
+          ampmRef={ampmRef}
+          hourRef={hourRef}
+          minuteRef={minuteRef}
+        />
       </div>
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch
@@ -118,6 +133,9 @@ export default function AddAlarm({
         </div>
         <button
           onClick={async () => {
+            // TimePicker 애니메이션 시간 확보
+            if (!canSave) return;
+
             const dbAlarms = await getFromStorage<Alarm[]>("alarms");
 
             if (dbAlarms === null) return;

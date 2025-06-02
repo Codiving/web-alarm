@@ -122,15 +122,20 @@ const getTimeInfo = (alarm: EditAlarm) => {
 interface TimePickerProps {
   alarm: Alarm;
   onChangeAlarm: (alarm: Alarm) => void;
+  ampmRef: React.RefObject<string | null>;
+  hourRef: React.RefObject<string | null>;
+  minuteRef: React.RefObject<string | null>;
 }
 
-export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
+export default function TimePicker({
+  alarm,
+  onChangeAlarm,
+  ampmRef,
+  hourRef,
+  minuteRef,
+}: TimePickerProps) {
   const { isAM, hour, minute } = getTimeInfo(alarm);
   const ampm = isAM ? "오전" : "오후";
-
-  const ampmRef = useRef<string>(null);
-  const hourRef = useRef<string>(null);
-  const minuteRef = useRef<string>(null);
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
