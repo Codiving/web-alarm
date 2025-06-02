@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이미지 가운데 정렬 캔버스</title>
+  </head>
+  <body>
+    <input type="file" id="fileInput" accept="image/*" />
+    <br />
+    <canvas
+      id="canvas"
+      width="1280"
+      height="800"
+      style="border: 1px solid #ccc"
+    ></canvas>
+    <br />
+    <button id="downloadBtn">이미지 다운로드</button>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      const fileInput = document.getElementById("fileInput");
+      const downloadBtn = document.getElementById("downloadBtn");
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const img = new Image();
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+          img.onload = function () {
+            // 배경색 칠하기 (검정색)
+            ctx.fillStyle = "#000000";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 이미지 크기와 위치 계산 (가운데 정렬)
+            const x = (canvas.width - img.width) / 2;
+            const y = (canvas.height - img.height) / 2;
+
+            ctx.drawImage(img, x, y);
+          };
+          img.src = event.target.result;
+        };
+
+        reader.readAsDataURL(file);
+      });
+
+      downloadBtn.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.download = "output.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+    </script>
+  </body>
+</html>
