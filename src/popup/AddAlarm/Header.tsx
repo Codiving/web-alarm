@@ -1,4 +1,3 @@
-import { t } from "../../utils/i18n";
 import { EditAlarm } from "../AlarmList";
 import { OnChangeDialog } from "../Popup";
 

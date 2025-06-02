@@ -1,53 +1,88 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../AlarmList";
 
-const ITEM_HEIGHT = 60;
+const TEMP = "" as const;
 const AM_PM = ["오전", "오후"];
+const paddedAMPM = [TEMP, ...AM_PM, TEMP];
+
 const HOURS = Array.from({ length: 12 }, (_, i) => String(i + 1));
+const paddedHOURS = [TEMP, ...HOURS, TEMP];
+
 const MINUTES = Array.from({ length: 60 }, (_, i) => String(i));
+const paddedMINUTES = [TEMP, ...MINUTES, TEMP];
+
+const CENTER_ITEM_HEIGHT = 50;
+const OTHER_ITEM_HEIGHT = 30;
 
 interface ListProps {
   items: string[];
   selected: string;
-  onSelect: (val: string) => void;
   className: string;
 }
 
-const List = ({ items, selected, onSelect, className }: ListProps) => {
+const List = ({ items, selected, className }: ListProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [centerIndex, setCenterIndex] = useState(0);
+
+  const totalHeightAt = (index: number) =>
+    index * OTHER_ITEM_HEIGHT - (CENTER_ITEM_HEIGHT - OTHER_ITEM_HEIGHT);
 
   useEffect(() => {
     const index = items.indexOf(selected);
     if (index >= 0 && ref.current) {
       ref.current.scrollTo({
-        top: index * ITEM_HEIGHT,
-        behavior: "auto"
+        top: totalHeightAt(index),
+        behavior: "auto",
       });
+      setCenterIndex(index);
     }
   }, [selected]);
+
+  const handleScroll = () => {
+    if (!ref.current) return;
+    const scrollTop = ref.current.scrollTop;
+    const visibleCenter = scrollTop + CENTER_ITEM_HEIGHT;
+    const index = Math.round(
+      (visibleCenter - OTHER_ITEM_HEIGHT) / OTHER_ITEM_HEIGHT
+    );
+    setCenterIndex(index);
+  };
 
   return (
     <div
       ref={ref}
+      onScroll={handleScroll}
       className="overflow-y-auto scroll-smooth snap-y snap-mandatory"
       style={{
         scrollbarWidth: "none",
         WebkitOverflowScrolling: "touch",
-        height: ITEM_HEIGHT
+        height: OTHER_ITEM_HEIGHT * 2 + CENTER_ITEM_HEIGHT,
       }}
     >
-      {items.map(item => (
-        <div
-          key={item}
-          className={`flex items-center justify-center snap-center text-white ${className}`}
-          style={{
-            height: ITEM_HEIGHT
-          }}
-          onClick={() => onSelect(item)}
-        >
-          {String(item).padStart(2, "0")}
-        </div>
-      ))}
+      {items.map((item, idx) => {
+        const isCenter = idx === centerIndex;
+        const height = isCenter ? CENTER_ITEM_HEIGHT : OTHER_ITEM_HEIGHT;
+        const fontSize = isCenter ? "20px" : "16px";
+        const color = isCenter ? "white" : "gray";
+        const opacity = isCenter ? 1 : 0.6;
+        const text = item === TEMP ? "" : item.padStart(2, "0");
+
+        return (
+          <div
+            key={item + idx}
+            className={`flex items-center justify-center snap-center ${className}`}
+            style={{
+              height,
+              fontSize,
+              color,
+              opacity,
+              transition: "all 0.2s ease",
+            }}
+          >
+            {text}
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -63,7 +98,7 @@ const getTimeInfo = (alarm: EditAlarm) => {
     return {
       isAM,
       hour: hours12,
-      minute: currentMinutes
+      minute: currentMinutes,
     };
   }
 
@@ -77,7 +112,7 @@ const getTimeInfo = (alarm: EditAlarm) => {
   return {
     isAM,
     hour,
-    minute
+    minute,
   };
 };
 
@@ -100,8 +135,8 @@ export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
   ) => {
     if (ref.current) {
       ref.current.scrollTo({
-        top: ITEM_HEIGHT * index,
-        behavior: "smooth"
+        top: CENTER_ITEM_HEIGHT * index,
+        behavior: "smooth",
       });
     }
   };
@@ -114,59 +149,9 @@ export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
-      <List
-        items={["오전", "오후"]}
-        selected={ampm}
-        onSelect={meridiem => {
-          const [hour, minute] = alarm.time.split(":");
-          const nHour = Number(hour);
-
-          if (meridiem === "오전") {
-            if (nHour > 12) {
-              const newHour = nHour - 12;
-              onChangeAlarm({
-                ...alarm,
-                time: `${String(newHour).padStart(2, "0")}:${minute}`
-              });
-            }
-          } else {
-            if (nHour < 12) {
-              const newHour = nHour + 12;
-              onChangeAlarm({
-                ...alarm,
-                time: `${String(newHour).padStart(2, "0")}:${minute}`
-              });
-            }
-          }
-        }}
-        className="text-[20px]"
-      />
-      <List
-        items={HOURS}
-        selected={hour}
-        onSelect={hour => {
-          const [, minute] = alarm.time.split(":");
-
-          onChangeAlarm({
-            ...alarm,
-            time: `${hour.padStart(2, "0")}:${minute}`
-          });
-        }}
-        className="text-[32px]"
-      />
-      <List
-        items={MINUTES}
-        selected={minute}
-        onSelect={minute => {
-          const [hour] = alarm.time.split(":");
-
-          onChangeAlarm({
-            ...alarm,
-            time: `${hour}:${minute.padStart(2, "0")}`
-          });
-        }}
-        className="text-[32px]"
-      />
+      <List items={paddedAMPM} selected={ampm} className="text-[20px]" />
+      <List items={paddedHOURS} selected={hour} className="text-[32px]" />
+      <List items={paddedMINUTES} selected={minute} className="text-[32px]" />
     </div>
   );
 }

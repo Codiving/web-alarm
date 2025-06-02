@@ -1,70 +1,16 @@
 import { useEffect, useState } from "react";
+import { Alarm, DAY_TO_KOREAN, DAYS, EditAlarm } from "../AlarmList";
 import { OnChangeDialog } from "../Popup";
+import { getFromStorage, setToStorage } from "../storage";
 import Header from "./Header";
 import TimePicker from "./TimePicker";
-import { t } from "../../utils/i18n";
-import { Alarm, Day, DAY_TO_KOREAN, DAYS, EditAlarm } from "../AlarmList";
-import { getFromStorage, setToStorage } from "../storage";
+import ToggleSwitch from "./ToggleSwitch";
 
 interface AlarmListProps {
   alarm: EditAlarm | null;
   onChangeAlarm: (id: EditAlarm | null) => void;
   onChangeDialog: OnChangeDialog;
 }
-
-type ToggleSwitchProps = {
-  isOneTime: boolean;
-  onToggle: (newState: boolean) => void;
-};
-
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ isOneTime, onToggle }) => {
-  return (
-    <div className="flex justify-end items-center gap-[4px]">
-      <div className="tooltip">
-        <span className="tooltiptext">
-          설정된 요일과 상관 없이 1번 발생하고 삭제됩니다.
-        </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20px"
-          height="20px"
-          viewBox="0 0 24 24"
-          fill="#6e6c6c"
-          className="mt-[2px]"
-        >
-          <g id="Warning / Info">
-            <path
-              id="Vector"
-              d="M12 11V16M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21ZM12.0498 8V8.1L11.9502 8.1002V8H12.0498Z"
-              stroke="#fff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </div>
-
-      <div className="one-time-toggle">
-        <label
-          htmlFor="oneTimeAlarm"
-          className="text-[14px] text-white font-bold"
-        >
-          1회용 알람
-        </label>
-        <label className="switch">
-          <input
-            type="checkbox"
-            id="oneTimeAlarm"
-            checked={isOneTime}
-            onChange={e => onToggle(e.target.checked)}
-          />
-          <span className="slider"></span>
-        </label>
-      </div>
-    </div>
-  );
-};
 
 const getCurrentTime = (): string => {
   const now = new Date();
@@ -76,7 +22,7 @@ const getCurrentTime = (): string => {
 export default function AddAlarm({
   alarm: upperAlarm,
   onChangeAlarm,
-  onChangeDialog
+  onChangeDialog,
 }: AlarmListProps) {
   const [alarm, setAlarm] = useState(
     upperAlarm ?? {
@@ -84,11 +30,11 @@ export default function AddAlarm({
       days: ["월", "화", "수", "목", "금"],
       isOneTime: false,
       memo: "",
-      time: getCurrentTime()
+      time: getCurrentTime(),
     }
   );
 
-  const { days, isOneTime, memo, time } = alarm;
+  const { days, isOneTime, memo } = alarm;
 
   useEffect(() => {
     return () => {
@@ -108,10 +54,10 @@ export default function AddAlarm({
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
         <ToggleSwitch
           isOneTime={isOneTime}
-          onToggle={isOneTime =>
-            setAlarm(prev => ({
+          onToggle={(isOneTime) =>
+            setAlarm((prev) => ({
               ...prev,
-              isOneTime
+              isOneTime,
             }))
           }
         />
@@ -121,21 +67,21 @@ export default function AddAlarm({
           </p>
           <div className="rounded-[12px] mx-[8px]">
             <div className="grid grid-cols-7 text-center">
-              {DAYS.map(day => {
+              {DAYS.map((day) => {
                 const dayKorean = DAY_TO_KOREAN[day];
                 const isSelected = days.includes(dayKorean);
                 return (
                   <span
                     onClick={() => {
                       if (isSelected) {
-                        setAlarm(prev => ({
+                        setAlarm((prev) => ({
                           ...prev,
-                          days: prev.days.filter(d => d !== dayKorean)
+                          days: prev.days.filter((d) => d !== dayKorean),
                         }));
                       } else {
-                        setAlarm(prev => ({
+                        setAlarm((prev) => ({
                           ...prev,
-                          days: [...prev.days, dayKorean]
+                          days: [...prev.days, dayKorean],
                         }));
                       }
                     }}
@@ -146,7 +92,7 @@ export default function AddAlarm({
                       backgroundColor: isSelected ? "#ff8800" : "#ccc",
                       boxShadow: isSelected
                         ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
-                        : undefined
+                        : undefined,
                     }}
                   >
                     {day}
@@ -161,10 +107,10 @@ export default function AddAlarm({
             className="focus:outline-none focus:ring-0 px-[8px] text-[14px] bg-white mx-[8px] rounded-[8px] h-[34px] placeholder:text-[14px]"
             placeholder="메모"
             value={memo}
-            onChange={e =>
-              setAlarm(prev => ({
+            onChange={(e) =>
+              setAlarm((prev) => ({
                 ...prev,
-                memo: e.target.value
+                memo: e.target.value,
               }))
             }
           />
@@ -178,7 +124,7 @@ export default function AddAlarm({
             // 수정
             if (upperAlarm) {
               if (dbAlarms === null) return;
-              const newAlarms = dbAlarms.map(a => {
+              const newAlarms = dbAlarms.map((a) => {
                 if (a.id !== alarm.id) return a;
                 return alarm;
               });
@@ -191,7 +137,7 @@ export default function AddAlarm({
             }
 
             onChangeDialog("add", {
-              open: false
+              open: false,
             });
           }}
           className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
