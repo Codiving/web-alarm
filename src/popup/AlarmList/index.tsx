@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
 import { DAY_LOCALE_MAP } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";
-import { getFromStorage } from "../storage";
+import { getFromStorage, setToStorage } from "../storage";
+import EditDeleteButton from "./EditDeleteButton";
 import FloatingAddButton from "./FloatingAddButton";
 import Memo from "./Memo";
 
@@ -15,7 +16,7 @@ interface AlarmListProps {
 
 export default function AlarmList({
   onChangeDialog,
-  onChangeAlarm,
+  onChangeAlarm
 }: AlarmListProps) {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
@@ -24,24 +25,27 @@ export default function AlarmList({
   const openEditAlarmLayer = (alarm: Alarm) => {
     onChangeAlarm(alarm);
     onChangeDialog("add", {
-      open: true,
+      open: true
     });
   };
 
+  const fetchAlarms = useCallback(async () => {
+    const dbAlarms = await getFromStorage<Alarm[]>("alarms");
+
+    if (dbAlarms === null) return;
+    dbAlarms.sort((a, b) => {
+      const [aH, aM] = a.time.split(":").map(Number);
+      const [bH, bM] = b.time.split(":").map(Number);
+      return aH !== bH ? aH - bH : aM - bM;
+    });
+    setAlarms(dbAlarms);
+  }, []);
+
   useEffect(() => {
     (async () => {
-      const dbAlarms = await getFromStorage<Alarm[]>("alarms");
-      console.log("dbAlarms ; ", dbAlarms);
-
-      if (dbAlarms === null) return;
-      dbAlarms.sort((a, b) => {
-        const [aH, aM] = a.time.split(":").map(Number);
-        const [bH, bM] = b.time.split(":").map(Number);
-        return aH !== bH ? aH - bH : aM - bM;
-      });
-      setAlarms(dbAlarms);
+      await fetchAlarms();
     })();
-  }, []);
+  }, [fetchAlarms]);
 
   return (
     <div
@@ -52,7 +56,7 @@ export default function AlarmList({
         {t("extName")}
       </h1>
       <div className="scrollbar-hide overflow-auto flex-1 flex flex-col gap-[8px]">
-        {alarms.map((alarm) => {
+        {alarms.map(alarm => {
           const { id, days, isOneTime, memo } = alarm;
           const { hour, minute, meridiem } = getTimeInfo(alarm);
 
@@ -70,6 +74,7 @@ export default function AlarmList({
                       height="16px"
                       viewBox="0 0 28 28"
                       fill="none"
+                      className="shrink-0"
                     >
                       <path
                         clip-rule="evenodd"
@@ -81,7 +86,7 @@ export default function AlarmList({
                     <p className="text-[14px]">
                       {isOneTime
                         ? t("oneTimeAlarm")
-                        : days.map((day) => DAY_LOCALE_MAP[day]).join(", ")}
+                        : days.map(day => DAY_LOCALE_MAP[day]).join(", ")}
                     </p>
                   </div>
                   <div className="flex items-end gap-[14px]">
@@ -89,19 +94,16 @@ export default function AlarmList({
                     <span className="text-[24px] mb-[-4px]">{`${hour}:${minute}`}</span>
                   </div>
                 </div>
-                <div className="items-start flex gap-[6px]">
-                  <span
-                    onClick={() => {
-                      openEditAlarmLayer(alarm);
-                    }}
-                    className="cursor-pointer py-[4px] px-[8px] text-[14px] bg-[#434040] hover:bg-[#2d2a2a] duration-300 rounded-[12px] text-[#ff8800]"
-                  >
-                    수정
-                  </span>
-                  <span className="cursor-pointer py-[4px] px-[8px] text-[14px] bg-[#434040] hover:bg-[#2d2a2a] duration-300 rounded-[12px] text-[#ff8800]">
-                    삭제
-                  </span>
-                </div>
+                <EditDeleteButton
+                  onEdit={() => {
+                    openEditAlarmLayer(alarm);
+                  }}
+                  onDelete={async () => {
+                    const filtered = alarms.filter(a => a.id !== alarm.id);
+                    await setToStorage("alarms", filtered);
+                    await fetchAlarms();
+                  }}
+                />
               </div>
               {/*  */}
               {Boolean(memo) && <Memo memo={memo} />}
