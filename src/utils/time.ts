@@ -1,4 +1,4 @@
-import { EditAlarm } from "../type/alarm";
+import { Alarm, EditAlarm } from "../type/alarm";
 import { t } from "./i18n";
 
 const getTimeParts = (hours24: number, minutes: number) => {
@@ -11,7 +11,7 @@ const getTimeParts = (hours24: number, minutes: number) => {
     isAM,
     meridiem: isAM ? am : pm,
     hour: String(hour12).padStart(2, "0"),
-    minute: String(minutes).padStart(2, "0"),
+    minute: String(minutes).padStart(2, "0")
   };
 };
 
@@ -25,8 +25,12 @@ export const getTimeInfo = (alarm: EditAlarm) => {
   return getTimeParts(hour24, minute);
 };
 
-export const isValidDate = (paramDate: string): boolean => {
-  const [year, month, day] = paramDate.split("-").map(Number);
+export const isValidDate = (paramDate: IDate): boolean => {
+  const { year: sYear, month: sMonth, day: sDay } = paramDate;
+  const year = Number(sYear);
+  const month = Number(sMonth);
+  const day = Number(sDay);
+
   if (
     !Number.isInteger(day) ||
     !Number.isInteger(month) ||
@@ -50,4 +54,53 @@ export const isValidDate = (paramDate: string): boolean => {
     date.getMonth() === month - 1 &&
     date.getDate() === day
   );
+};
+
+export const getDateInfo = (date: string) => {
+  const [year, month, day] = date.split("-");
+  return {
+    year,
+    month,
+    day
+  };
+};
+
+export interface IDate {
+  day: string;
+  month: string;
+  year: string;
+}
+
+export const getInitDate = () => {
+  const today = new Date();
+  const year = String(today.getFullYear());
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+
+  return {
+    year,
+    month,
+    day
+  };
+};
+
+const getCurrentTime = (): string => {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  return `${hours}:${minutes}`;
+};
+
+export const getInitAlarm = () => {
+  const alarm: Alarm = {
+    id: crypto.randomUUID(),
+    days: ["월", "화", "수", "목", "금"],
+    isOneTime: false,
+    memo: "",
+    time: getCurrentTime(),
+    date: "", // 생성 시는 데이터 넣지 않고 위에(index.tsx) 있는 date state 사용함
+    isActive: true
+  };
+
+  return alarm;
 };
