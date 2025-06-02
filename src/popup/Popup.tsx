@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { EditAlarm } from "../type/alarm";
 import AddAlarm from "./AddAlarm";
-import AlarmList, { EditAlarm } from "./AlarmList";
+import AlarmList from "./AlarmList";
 
 const DIALOG = {
   add: {
-    open: false
-  }
+    open: false,
+  },
 };
 
 type DialogType = typeof DIALOG; // DIALOG 객체의 타입 추론
@@ -23,9 +24,9 @@ export default function Popup() {
     key: K,
     value: DialogType[K]
   ) => {
-    setDialog(prev => ({
+    setDialog((prev) => ({
       ...prev,
-      [key]: value
+      [key]: value,
     }));
   };
 

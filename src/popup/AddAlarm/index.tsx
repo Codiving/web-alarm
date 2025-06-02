@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Alarm, DAY_TO_KOREAN, DAYS, EditAlarm } from "../AlarmList";
+import { Alarm, EditAlarm } from "../../type/alarm";
+import { DAY_TO_KOREAN, DAYS } from "../../type/day";
 import { OnChangeDialog } from "../Popup";
 import { getFromStorage, setToStorage } from "../storage";
 import Header from "./Header";

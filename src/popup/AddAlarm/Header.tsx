@@ -1,4 +1,4 @@
-import { EditAlarm } from "../AlarmList";
+import { EditAlarm } from "../../type/alarm";
 import { OnChangeDialog } from "../Popup";
 
 interface HeaderProps {

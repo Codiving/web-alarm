@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Alarm, EditAlarm } from "../AlarmList";
+import { Alarm, EditAlarm } from "../../type/alarm";
 
 const TEMP = "" as const;
 const AM_PM = ["오전", "오후"];
