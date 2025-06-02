@@ -18,7 +18,9 @@ function checkAlarms() {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    alarms.forEach((alarm) => {
+    console.log("alarms", alarms);
+
+    alarms.forEach((alarm: any) => {
       const { time, days, id } = alarm;
       const [alarmHours, alarmMinutes] = time.split(":");
 

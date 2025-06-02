@@ -1,9 +1,7 @@
-import { formatTime } from "./timeUtils";
-
-let originalBodyOverflow = null;
+let originalBodyOverflow: any = null;
 const overlayMap = new Map();
 
-function createOverlay(alarm) {
+function createOverlay(alarm: any) {
   const overlay = document.createElement("div");
   overlay.className = "web-alarm";
   overlay.id = `web-alarm-${alarm.id}`;
@@ -25,16 +23,23 @@ function createOverlay(alarm) {
   return overlay;
 }
 
-function updateCurrentTime(overlay) {
+function getCurrentTime() {
+  const date = new Date();
+  return [date.getHours(), date.getMinutes(), date.getSeconds()]
+    .map((u) => String(u).padStart(2, "0"))
+    .join(":");
+}
+
+function updateCurrentTime(overlay: any) {
   if (!overlay) return;
 
   const currentTimeElement = overlay.querySelector(".current-time");
   if (!currentTimeElement) return;
 
-  currentTimeElement.textContent = formatTime(new Date());
+  currentTimeElement.textContent = getCurrentTime();
 }
 
-function showOverlay(alarm) {
+function showOverlay(alarm: any) {
   if (overlayMap.has(alarm.id)) return;
 
   if (overlayMap.size === 0) {
@@ -61,7 +66,7 @@ function showOverlay(alarm) {
   document.body.appendChild(overlay);
 }
 
-function removeOverlay(overlay) {
+function removeOverlay(overlay: any) {
   if (document.body.contains(overlay)) {
     document.body.removeChild(overlay);
   }
@@ -79,15 +84,15 @@ function updateOverlayVisibility() {
   }
 }
 
-function getOverlayEntry(alarmId) {
+function getOverlayEntry(alarmId: any) {
   return overlayMap.get(alarmId);
 }
 
-function removeOverlayEntry(alarmId) {
+function removeOverlayEntry(alarmId: any) {
   overlayMap.delete(alarmId);
 }
 
-function handleOverlayClick(alarm, overlay, intervalId) {
+function handleOverlayClick(alarm: any, overlay: any, intervalId: any) {
   removeOverlay(overlay);
 
   const alarmId = alarm.id;
@@ -97,7 +102,7 @@ function handleOverlayClick(alarm, overlay, intervalId) {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    const index = alarms.findIndex((a) => a.id === alarmId);
+    const index = alarms.findIndex((a: any) => a.id === alarmId);
     const foundAlarm = alarms[index];
 
     if (foundAlarm?.isOneTime) {
