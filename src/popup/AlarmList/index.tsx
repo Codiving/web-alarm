@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Alarm, EditAlarm } from "src/type/alarm";
-import { DAY_LOCALE_MAP } from "src/type/day";
+import { Alarm, EditAlarm } from "../../type/alarm";
+import { DAY_LOCALE_MAP } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";

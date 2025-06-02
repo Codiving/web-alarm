@@ -17,10 +17,10 @@ const OTHER_ITEM_HEIGHT = 30;
 interface ListProps {
   items: string[];
   selected: string;
-  className: string;
+  label?: string;
 }
 
-const List = ({ items, selected, className }: ListProps) => {
+const List = ({ items, selected, label }: ListProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [centerIndex, setCenterIndex] = useState(0);
 
@@ -62,7 +62,7 @@ const List = ({ items, selected, className }: ListProps) => {
       {items.map((item, idx) => {
         const isCenter = idx === centerIndex;
         const height = isCenter ? CENTER_ITEM_HEIGHT : OTHER_ITEM_HEIGHT;
-        const fontSize = isCenter ? "20px" : "16px";
+        const fontSize = isCenter ? (label ? "20px" : "28px") : "16px";
         const color = isCenter ? "white" : "gray";
         const opacity = isCenter ? 1 : 0.6;
         const text = item === TEMP ? "" : item.padStart(2, "0");
@@ -70,7 +70,7 @@ const List = ({ items, selected, className }: ListProps) => {
         return (
           <div
             key={item + idx}
-            className={`flex items-center justify-center snap-center ${className}`}
+            className={"flex items-center justify-center snap-center"}
             style={{
               height,
               fontSize,
@@ -149,9 +149,9 @@ export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
-      <List items={paddedAMPM} selected={ampm} className="text-[20px]" />
-      <List items={paddedHOURS} selected={hour} className="text-[32px]" />
-      <List items={paddedMINUTES} selected={minute} className="text-[32px]" />
+      <List label="meridiem" items={paddedAMPM} selected={ampm} />
+      <List items={paddedHOURS} selected={hour} />
+      <List items={paddedMINUTES} selected={minute} />
     </div>
   );
 }

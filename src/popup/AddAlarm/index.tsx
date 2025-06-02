@@ -141,7 +141,7 @@ export default function AddAlarm({
               open: false,
             });
           }}
-          className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[12px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
+          className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[8px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
         >
           저장
         </button>
