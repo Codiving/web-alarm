@@ -1,4 +1,4 @@
-import { EditAlarm } from "src/popup/AlarmList";
+import { EditAlarm } from "../type/alarm";
 import { t } from "./i18n";
 
 const getTimeParts = (hours24: number, minutes: number) => {

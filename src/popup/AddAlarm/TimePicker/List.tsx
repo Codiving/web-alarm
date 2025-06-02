@@ -1,15 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Alarm, EditAlarm } from "../../type/alarm";
-
-const TEMP = "" as const;
-const AM_PM = ["오전", "오후"];
-const paddedAMPM = [TEMP, ...AM_PM, TEMP];
-
-const HOURS = Array.from({ length: 12 }, (_, i) => String(i + 1));
-const paddedHOURS = [TEMP, ...HOURS, TEMP];
-
-const MINUTES = Array.from({ length: 60 }, (_, i) => String(i));
-const paddedMINUTES = [TEMP, ...MINUTES, TEMP];
+import { TEMP } from ".";
 
 const CENTER_ITEM_HEIGHT = 50;
 const OTHER_ITEM_HEIGHT = 30;
@@ -21,7 +11,7 @@ interface ListProps {
   valueRef: React.RefObject<string | null>;
 }
 
-const List = ({ items, selected, label, valueRef }: ListProps) => {
+export default function List({ items, selected, label, valueRef }: ListProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [centerIndex, setCenterIndex] = useState(0);
 
@@ -86,62 +76,6 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
           </div>
         );
       })}
-    </div>
-  );
-};
-
-const getTimeInfo = (alarm: EditAlarm) => {
-  if (!alarm) {
-    const now = new Date();
-    const currentHours = now.getHours();
-    const isAM = currentHours < 12;
-    const hours12 = currentHours % 12 === 0 ? "12" : String(currentHours % 12);
-    const currentMinutes = String(now.getMinutes());
-
-    return {
-      isAM,
-      hour: hours12,
-      minute: currentMinutes,
-    };
-  }
-
-  const { time } = alarm;
-  const [hour24, numberMinute] = time.split(":").map(Number);
-  const hour12 = hour24 % 12 === 0 ? "12" : String(hour24 % 12);
-  const hour = String(hour12);
-  const minute = String(numberMinute);
-  const isAM = hour24 < 12;
-
-  return {
-    isAM,
-    hour,
-    minute,
-  };
-};
-
-interface TimePickerProps {
-  alarm: Alarm;
-  onChangeAlarm: (alarm: Alarm) => void;
-}
-
-export default function TimePicker({ alarm, onChangeAlarm }: TimePickerProps) {
-  const { isAM, hour, minute } = getTimeInfo(alarm);
-  const ampm = isAM ? "오전" : "오후";
-
-  const ampmRef = useRef<string>(null);
-  const hourRef = useRef<string>(null);
-  const minuteRef = useRef<string>(null);
-
-  return (
-    <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
-      <List
-        valueRef={ampmRef}
-        label="meridiem"
-        items={paddedAMPM}
-        selected={ampm}
-      />
-      <List valueRef={hourRef} items={paddedHOURS} selected={hour} />
-      <List valueRef={minuteRef} items={paddedMINUTES} selected={minute} />
     </div>
   );
 }
