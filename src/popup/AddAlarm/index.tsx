@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
 import { DAY_TO_KOREAN, DAYS } from "../../type/day";
+import { isValidDate } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";
 import { getFromStorage, setToStorage } from "../storage";
 import Header from "./Header";
@@ -158,6 +159,15 @@ export default function AddAlarm({
           onClick={async () => {
             // TimePicker 애니메이션 시간 확보
             if (!canSave) return;
+
+            if (alarm.isOneTime) {
+              const dateValidation = isValidDate(alarm.date);
+
+              if (!dateValidation) {
+                alert("올바른 날짜가 아닙니다.");
+                return;
+              }
+            }
 
             const dbAlarms = (await getFromStorage<Alarm[]>("alarms")) || [];
 

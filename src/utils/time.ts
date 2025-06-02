@@ -24,3 +24,30 @@ export const getTimeInfo = (alarm: EditAlarm) => {
   const [hour24, minute] = alarm.time.split(":").map(Number);
   return getTimeParts(hour24, minute);
 };
+
+export const isValidDate = (paramDate: string): boolean => {
+  const [year, month, day] = paramDate.split("-").map(Number);
+  if (
+    !Number.isInteger(day) ||
+    !Number.isInteger(month) ||
+    !Number.isInteger(year)
+  ) {
+    return false;
+  }
+
+  if (month < 1 || month > 12) {
+    return false;
+  }
+
+  if (day < 1 || day > 31) {
+    return false;
+  }
+
+  // JavaScript의 Date 객체를 이용해 실제 유효한 날짜인지 검사
+  const date = new Date(year, month - 1, day);
+  return (
+    date.getFullYear() === year &&
+    date.getMonth() === month - 1 &&
+    date.getDate() === day
+  );
+};
