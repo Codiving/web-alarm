@@ -33,6 +33,7 @@ export default function AddAlarm({
       isOneTime: false,
       memo: "",
       time: getCurrentTime(),
+      date: "",
     }
   );
 
@@ -78,44 +79,66 @@ export default function AddAlarm({
           }
         />
         <div className="flex flex-col gap-[4px]">
-          <p className="pl-[12px] text-white font-bold text-[14px]">
-            활성화된 요일
+          <p className="pl-[10px] text-white font-bold text-[14px]">
+            {isOneTime ? "활성화된 요일" : "활성화된 날짜"}
           </p>
           <div className="rounded-[12px] mx-[8px]">
-            <div className="grid grid-cols-7 text-center">
-              {DAYS.map((day) => {
-                const dayKorean = DAY_TO_KOREAN[day];
-                const isSelected = days.includes(dayKorean);
-                return (
-                  <span
-                    onClick={() => {
-                      if (isSelected) {
-                        setAlarm((prev) => ({
-                          ...prev,
-                          days: prev.days.filter((d) => d !== dayKorean),
-                        }));
-                      } else {
-                        setAlarm((prev) => ({
-                          ...prev,
-                          days: [...prev.days, dayKorean],
-                        }));
-                      }
-                    }}
-                    key={day}
-                    className="cursor-pointer py-[4px] px-[6px] my-[6px] mx-[2px] rounded-xl text-[13px]"
-                    style={{
-                      color: isSelected ? "#fff" : "#fff",
-                      backgroundColor: isSelected ? "#ff8800" : "#ccc",
-                      boxShadow: isSelected
-                        ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
-                        : undefined,
-                    }}
-                  >
-                    {day}
-                  </span>
-                );
-              })}
-            </div>
+            {!isOneTime && (
+              <div className="h-[50px] grid grid-cols-7 gap-[2px] text-center">
+                {DAYS.map((day) => {
+                  const dayKorean = DAY_TO_KOREAN[day];
+                  const isSelected = days.includes(dayKorean);
+                  return (
+                    <span
+                      onClick={() => {
+                        if (isSelected) {
+                          setAlarm((prev) => ({
+                            ...prev,
+                            days: prev.days.filter((d) => d !== dayKorean),
+                          }));
+                        } else {
+                          setAlarm((prev) => ({
+                            ...prev,
+                            days: [...prev.days, dayKorean],
+                          }));
+                        }
+                      }}
+                      key={day}
+                      className="self-baseline cursor-pointer py-[4px] px-[6px] my-[6px] rounded-xl text-[13px]"
+                      style={{
+                        color: isSelected ? "#fff" : "#fff",
+                        backgroundColor: isSelected ? "#ff8800" : "#ccc",
+                        boxShadow: isSelected
+                          ? "inset 0 1px 5px 0 rgba(0, 0, 0, 0.25)"
+                          : undefined,
+                      }}
+                    >
+                      {day}
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+            {isOneTime && (
+              <div className="h-[50px] grid grid-cols-3 gap-[4px]">
+                <div className="flex flex-col gap-[3px]">
+                  <p className="text-white text-[12px] tracking-[1.2px]">DAY</p>
+                  <input className="p-[4px] rounded-[4px] h-[28px] bg-white focus:outline-none focus:ring-0 border border-gray-400" />
+                </div>
+                <div className="flex flex-col gap-[3px]">
+                  <p className="text-white text-[12px] tracking-[1.2px]">
+                    MONTH
+                  </p>
+                  <input className="p-[4px] rounded-[4px] h-[28px] bg-white focus:outline-none focus:ring-0 border border-gray-400" />
+                </div>
+                <div className="flex flex-col gap-[3px]">
+                  <p className="text-white text-[12px] tracking-[1.2px]">
+                    YEAR
+                  </p>
+                  <input className="p-[4px] rounded-[4px] h-[28px] bg-white focus:outline-none focus:ring-0 border border-gray-400" />
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div className="flex flex-col gap-[4px] mt-[12px]">
@@ -136,9 +159,7 @@ export default function AddAlarm({
             // TimePicker 애니메이션 시간 확보
             if (!canSave) return;
 
-            const dbAlarms = await getFromStorage<Alarm[]>("alarms");
-
-            if (dbAlarms === null) return;
+            const dbAlarms = (await getFromStorage<Alarm[]>("alarms")) || [];
 
             // 수정
             if (upperAlarm) {
