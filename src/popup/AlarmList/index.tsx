@@ -78,7 +78,7 @@ export default function AlarmList({
   useEffect(() => {
     const handleMessage = (message: any) => {
       if (message.type === "ALARM_CLOSED") {
-        console.log("일회성 알람이 종료되었습니다:", message.alarms);
+        // console.log("일회성 알람이 종료되었습니다:", message.alarms);
         loadAlarms();
       }
     };
