@@ -1,4 +1,4 @@
-import { getFromStorage } from "src/popup/storage";
+import { getFromStorage } from "../popup/storage";
 import { t } from "../utils/i18n";
 
 export const DAY_LOCALE_MAP: { [key in Day]: string } = {

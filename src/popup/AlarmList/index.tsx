@@ -8,6 +8,7 @@ import { getFromStorage, setToStorage } from "../storage";
 import EditDeleteButton from "./EditDeleteButton";
 import FloatingAddButton from "./FloatingAddButton";
 import Memo from "./Memo";
+import SettingButton from "./SettingButton";
 
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
@@ -97,9 +98,14 @@ export default function AlarmList({
       id="alarm-list-overlay"
       className="select-none flex flex-col gap-[8px] px-[12px] py-[8px] h-[450px]"
     >
-      <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
-        {t("extName")}
-      </h1>
+      <div className="flex justify-between items-center">
+        <SettingButton className="invisible" />
+
+        <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
+          {t("extName")}
+        </h1>
+        <SettingButton className="cursor-pointer" />
+      </div>
       <div className="flex gap-[4px]">
         <button
           onClick={async () => {
