@@ -76,7 +76,7 @@ export const getIs24HourFormat = async () => {
   const lang = chrome.i18n.getUILanguage() as Lang;
   const { is24HourFormat } = DATE_ORDER_BY_LOCALE[lang];
 
-  const dbValue = getFromStorage("is24HourFormat");
+  const dbValue = await getFromStorage("is24HourFormat");
 
   if (typeof dbValue === "boolean") {
     return dbValue;
