@@ -36,5 +36,7 @@
   "all": { "message": "Tutti" },
   "normalAlarm": { "message": "Allarme normale" },
   "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" }
+  "twelveHourFormat": { "message": "12h" },
+  "timeFormat": { "message": "Formato orario" },
+  "setting": { "message": "Impostazione" }
 }

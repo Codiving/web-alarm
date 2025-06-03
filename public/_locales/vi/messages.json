@@ -36,5 +36,7 @@
   "all": { "message": "Tất cả" },
   "normalAlarm": { "message": "Báo thức thông thường" },
   "twentyFourHourFormat": { "message": "24 giờ" },
-  "twelveHourFormat": { "message": "12 giờ" }
+  "twelveHourFormat": { "message": "12 giờ" },
+  "timeFormat": { "message": "Định dạng thời gian" },
+  "setting": { "message": "Cài đặt" }
 }

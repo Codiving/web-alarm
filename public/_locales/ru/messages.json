@@ -36,5 +36,7 @@
   "all": { "message": "Все" },
   "normalAlarm": { "message": "Обычный будильник" },
   "twentyFourHourFormat": { "message": "24ч" },
-  "twelveHourFormat": { "message": "12ч" }
+  "twelveHourFormat": { "message": "12ч" },
+  "timeFormat": { "message": "Формат времени" },
+  "setting": { "message": "Настройка" }
 }

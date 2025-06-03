@@ -34,5 +34,7 @@
   "all": { "message": "全部" },
   "normalAlarm": { "message": "普通闹钟" },
   "twentyFourHourFormat": { "message": "24小时" },
-  "twelveHourFormat": { "message": "12小时" }
+  "twelveHourFormat": { "message": "12小时" },
+  "timeFormat": { "message": "时间格式" },
+  "setting": { "message": "设置" }
 }

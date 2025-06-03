@@ -36,5 +36,7 @@
   "all": { "message": "全体" },
   "normalAlarm": { "message": "通常アラーム" },
   "twentyFourHourFormat": { "message": "24時間" },
-  "twelveHourFormat": { "message": "12時間" }
+  "twelveHourFormat": { "message": "12時間" },
+  "timeFormat": { "message": "時刻形式" },
+  "setting": { "message": "設定" }
 }

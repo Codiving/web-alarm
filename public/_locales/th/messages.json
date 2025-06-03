@@ -34,5 +34,7 @@
   "all": { "message": "ทั้งหมด" },
   "normalAlarm": { "message": "นาฬิกาปลุกปกติ" },
   "twentyFourHourFormat": { "message": "24 ชม." },
-  "twelveHourFormat": { "message": "12 ชม." }
+  "twelveHourFormat": { "message": "12 ชม." },
+  "timeFormat": { "message": "รูปแบบเวลา" },
+  "setting": { "message": "การตั้งค่า" }
 }

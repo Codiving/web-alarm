@@ -36,5 +36,7 @@
   "all": { "message": "सभी" },
   "normalAlarm": { "message": "सामान्य अलार्म" },
   "twentyFourHourFormat": { "message": "24 घंटे" },
-  "twelveHourFormat": { "message": "12 घंटे" }
+  "twelveHourFormat": { "message": "12 घंटे" },
+  "timeFormat": { "message": "समय प्रारूप" },
+  "setting": { "message": "सेटिंग" }
 }

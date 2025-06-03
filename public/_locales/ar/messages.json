@@ -34,5 +34,7 @@
   "all": { "message": "الكل" },
   "normalAlarm": { "message": "منبه عادي" },
   "twentyFourHourFormat": { "message": "24 ساعة" },
-  "twelveHourFormat": { "message": "12 ساعة" }
+  "twelveHourFormat": { "message": "12 ساعة" },
+  "timeFormat": { "message": "تنسيق الوقت" },
+  "setting": { "message": "الإعدادات" }
 }
