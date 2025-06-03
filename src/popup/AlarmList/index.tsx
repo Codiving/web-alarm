@@ -16,7 +16,6 @@ interface AlarmListProps {
   type: string;
   onChangeType: (type: string) => void;
   is24HourFormat: boolean;
-  onChangeIs24HourFormat: (format: boolean) => Promise<void>;
 }
 
 const TYPES = [t("all"), t("normalAlarm"), t("oneTimeAlarm")] as const;
@@ -45,8 +44,7 @@ export default function AlarmList({
   onChangeAlarm,
   type: upperType,
   onChangeType,
-  is24HourFormat,
-  onChangeIs24HourFormat
+  is24HourFormat
 }: AlarmListProps) {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
@@ -108,30 +106,7 @@ export default function AlarmList({
           }}
         />
       </div>
-      <div className="flex gap-[4px]">
-        <button
-          onClick={async () => {
-            await onChangeIs24HourFormat(true);
-          }}
-          className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
-          style={{
-            backgroundColor: is24HourFormat ? "#0000005c" : "#5c5c5c"
-          }}
-        >
-          {t("twentyFourHourFormat")}
-        </button>
-        <button
-          onClick={async () => {
-            await onChangeIs24HourFormat(false);
-          }}
-          className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
-          style={{
-            backgroundColor: !is24HourFormat ? "#0000005c" : "#5c5c5c"
-          }}
-        >
-          {t("twelveHourFormat")}
-        </button>
-      </div>
+
       <div className="flex gap-[4px]">
         {TYPES.map(type => {
           return (
@@ -139,7 +114,7 @@ export default function AlarmList({
               onClick={() => {
                 onChangeType(type);
               }}
-              className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
+              className="shrink-0 flex-1 cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
               style={{
                 backgroundColor: type === upperType ? "#0000005c" : "#5c5c5c"
               }}

@@ -50,10 +50,15 @@ export default function Popup() {
           type={type}
           onChangeType={type => setType(type)}
           is24HourFormat={is24HourFormat}
+        />
+      )}
+      {dialog === "setting" && (
+        <Setting
+          onChangeDialog={onChangeDialog}
+          is24HourFormat={is24HourFormat}
           onChangeIs24HourFormat={onChangeIs24HourFormat}
         />
       )}
-      {dialog === "setting" && <Setting onChangeDialog={onChangeDialog} />}
     </div>
   );
 }
