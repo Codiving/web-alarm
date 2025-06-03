@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
 import { t } from "../../utils/i18n";
-import { getIs24HourFormat } from "../../type/day";
 
 const TEMP = "" as const;
 const AM_PM = ["오전", "오후"];
@@ -15,8 +14,8 @@ const paddedHOURS_24 = [TEMP, ...HOURS_24, TEMP];
 const MINUTES = Array.from({ length: 60 }, (_, i) => String(i));
 const paddedMINUTES = [TEMP, ...MINUTES, TEMP];
 
-const CENTER_ITEM_HEIGHT = 50;
-const OTHER_ITEM_HEIGHT = 30;
+const CENTER_ITEM_HEIGHT = 70;
+const OTHER_ITEM_HEIGHT = 40;
 
 interface ListProps {
   items: string[];
@@ -70,11 +69,11 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
         const height = isCenter ? CENTER_ITEM_HEIGHT : OTHER_ITEM_HEIGHT;
         const fontSize = label
           ? isCenter
-            ? "20px"
-            : "16px"
+            ? "24px"
+            : "20px"
           : isCenter
-          ? "28px"
-          : "16px";
+          ? "32px"
+          : "20px";
         const color = isCenter ? "white" : "gray";
         const opacity = isCenter ? 1 : 0.6;
         const text = item === TEMP ? "" : item.padStart(2, "0");
@@ -145,15 +144,16 @@ interface TimePickerProps {
   ampmRef: React.RefObject<string | null>;
   hourRef: React.RefObject<string | null>;
   minuteRef: React.RefObject<string | null>;
+  is24HourFormat: boolean;
 }
 
 export default function TimePicker({
   alarm,
   ampmRef,
   hourRef,
-  minuteRef
+  minuteRef,
+  is24HourFormat
 }: TimePickerProps) {
-  const is24HourFormat = getIs24HourFormat();
   const timeInfo = getTimeInfo(alarm, is24HourFormat);
   const hour = timeInfo.hour;
   const minute = timeInfo.minute;

@@ -2,7 +2,6 @@ import { getHHMM, IDate, isPastTime, isValidDate } from "../../utils/time";
 import { Alarm } from "../../type/alarm";
 import { getFromStorage, setToStorage } from "../storage";
 import { t } from "../../utils/i18n";
-import { getIs24HourFormat } from "../../type/day";
 
 interface SaveButtonProps {
   isUpdate: boolean;
@@ -13,6 +12,7 @@ interface SaveButtonProps {
   ampmRef: React.RefObject<string | null>;
   hourRef: React.RefObject<string | null>;
   minuteRef: React.RefObject<string | null>;
+  is24HourFormat: boolean;
 }
 
 export default function SaveButton({
@@ -23,9 +23,9 @@ export default function SaveButton({
   onClose,
   ampmRef,
   hourRef,
-  minuteRef
+  minuteRef,
+  is24HourFormat
 }: SaveButtonProps) {
-  const is24HourFormat = getIs24HourFormat();
   return (
     <button
       onClick={async () => {

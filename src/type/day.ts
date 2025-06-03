@@ -1,3 +1,4 @@
+import { getFromStorage } from "src/popup/storage";
 import { t } from "../utils/i18n";
 
 export const DAY_LOCALE_MAP: { [key in Day]: string } = {
@@ -71,8 +72,14 @@ export const DATE_ORDER_BY_LOCALE = {
   }
 } as const;
 
-export const getIs24HourFormat = () => {
+export const getIs24HourFormat = async () => {
   const lang = chrome.i18n.getUILanguage() as Lang;
   const { is24HourFormat } = DATE_ORDER_BY_LOCALE[lang];
+
+  const dbValue = getFromStorage("is24HourFormat");
+
+  if (typeof dbValue === "boolean") {
+    return dbValue;
+  }
   return is24HourFormat;
 };

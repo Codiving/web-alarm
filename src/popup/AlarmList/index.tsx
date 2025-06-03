@@ -1,11 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
-import {
-  DATE_ORDER_BY_LOCALE,
-  DAY_LOCALE_MAP,
-  getIs24HourFormat,
-  Lang
-} from "../../type/day";
+import { DATE_ORDER_BY_LOCALE, DAY_LOCALE_MAP, Lang } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";
@@ -19,6 +14,8 @@ interface AlarmListProps {
   onChangeAlarm: (alarm: EditAlarm) => void;
   type: string;
   onChangeType: (type: string) => void;
+  is24HourFormat: boolean;
+  onChangeIs24HourFormat: (format: boolean) => Promise<void>;
 }
 
 const TYPES = [t("all"), t("normalAlarm"), t("oneTimeAlarm")] as const;
@@ -46,9 +43,10 @@ export default function AlarmList({
   onChangeDialog,
   onChangeAlarm,
   type: upperType,
-  onChangeType
+  onChangeType,
+  is24HourFormat,
+  onChangeIs24HourFormat
 }: AlarmListProps) {
-  const is24HourFormat = getIs24HourFormat();
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
   const openAddAlarmLayer = () => onChangeDialog("add", { open: true });
@@ -97,11 +95,35 @@ export default function AlarmList({
   return (
     <div
       id="alarm-list-overlay"
-      className="select-none flex flex-col gap-[8px] px-[12px] py-[8px] h-[400px]"
+      className="select-none flex flex-col gap-[8px] px-[12px] py-[8px] h-[450px]"
     >
       <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
         {t("extName")}
       </h1>
+      <div className="flex gap-[4px]">
+        <button
+          onClick={async () => {
+            await onChangeIs24HourFormat(true);
+          }}
+          className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
+          style={{
+            backgroundColor: is24HourFormat ? "#0000005c" : "#5c5c5c"
+          }}
+        >
+          24시간
+        </button>
+        <button
+          onClick={async () => {
+            await onChangeIs24HourFormat(false);
+          }}
+          className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
+          style={{
+            backgroundColor: !is24HourFormat ? "#0000005c" : "#5c5c5c"
+          }}
+        >
+          12시간
+        </button>
+      </div>
       <div className="flex gap-[4px]">
         {TYPES.map(type => {
           return (

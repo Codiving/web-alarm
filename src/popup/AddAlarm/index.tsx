@@ -16,12 +16,14 @@ interface AlarmListProps {
   alarm: EditAlarm | null;
   onChangeAlarm: (id: EditAlarm | null) => void;
   onChangeDialog: OnChangeDialog;
+  is24HourFormat: boolean;
 }
 
 export default function AddAlarm({
   alarm: upperAlarm,
   onChangeAlarm,
-  onChangeDialog
+  onChangeDialog,
+  is24HourFormat
 }: AlarmListProps) {
   const [canSave, setCanSave] = useState(false);
   const [date, setDate] = useState(
@@ -109,6 +111,7 @@ export default function AddAlarm({
           ampmRef={ampmRef}
           hourRef={hourRef}
           minuteRef={minuteRef}
+          is24HourFormat={is24HourFormat}
         />
       </div>
       <div className="flex flex-col bg-[#6e6c6c] flex-1 mt-[12px] mx-[4px] px-[4px] rounded-t-xl shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
@@ -124,6 +127,7 @@ export default function AddAlarm({
         </div>
         <MemoInput memo={memo} onChange={handleMemo} />
         <SaveButton
+          is24HourFormat={is24HourFormat}
           isUpdate={!!upperAlarm}
           canSave={canSave}
           alarm={alarm}
