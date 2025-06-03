@@ -1,6 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
-import { DATE_ORDER_BY_LOCALE, DAY_LOCALE_MAP, Lang } from "../../type/day";
+import {
+  DATE_ORDER_BY_LOCALE,
+  DAY_LOCALE_MAP,
+  DAY_ORDER,
+  Lang
+} from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { getFromStorage, setToStorage } from "../storage";
@@ -165,7 +170,13 @@ export default function AlarmList({
                         ? `${t("oneTimeAlarm")} / ${getDate(alarm.date)}`
                         : days.length === 7
                         ? t("everyday")
-                        : days.map(day => DAY_LOCALE_MAP[day]).join(", ")}
+                        : [...days]
+                            .sort(
+                              (a, b) =>
+                                DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b)
+                            )
+                            .map(day => DAY_LOCALE_MAP[day])
+                            .join(", ")}
                     </p>
                   </div>
                   <div className="flex items-end gap-[14px]">

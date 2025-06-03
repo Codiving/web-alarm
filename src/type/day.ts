@@ -1,6 +1,8 @@
 import { getFromStorage } from "../popup/storage";
 import { t } from "../utils/i18n";
 
+export const DAY_ORDER = ["일", "월", "화", "수", "목", "금", "토"];
+
 export const DAY_LOCALE_MAP: { [key in Day]: string } = {
   일: t("sun"),
   월: t("mon"),
