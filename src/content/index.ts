@@ -1,27 +1,38 @@
+import { Alarm } from "../type/alarm";
 import {
   getOverlayEntry,
   removeOverlay,
   removeOverlayEntry,
   showOverlay,
-  updateOverlayVisibility,
+  updateOverlayVisibility
 } from "./overlayManager.js";
+
+function getCurrentTimestamp() {
+  const now = new Date();
+
+  return {
+    yyyy: String(now.getFullYear()),
+    mm: String(now.getMonth() + 1).padStart(2, "0"),
+    dd: String(now.getDate()).padStart(2, "0"),
+    hour: String(now.getHours()).padStart(2, "0"),
+    minute: String(now.getMinutes()).padStart(2, "0")
+  };
+}
 
 // 현재 알람 목록 확인 및 조건 충족 시 overlay 표시
 function checkAlarms() {
+  const { yyyy, mm, dd, hour, minute } = getCurrentTimestamp();
   const now = new Date();
-  const hours = String(now.getHours()).padStart(2, "0");
-  const minutes = String(now.getMinutes()).padStart(2, "0");
+
   const dayMap = ["일", "월", "화", "수", "목", "금", "토"];
   const todayKorean = dayMap[now.getDay()];
 
-  chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
+  chrome.storage.local.get(["alarms", "closedAlarms"], result => {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
-    console.log("alarms", alarms);
-
-    alarms.forEach((alarm: any) => {
-      const { time, days, id } = alarm;
+    alarms.forEach((alarm: Alarm) => {
+      const { time, days, id, isOneTime, date } = alarm;
       const [alarmHours, alarmMinutes] = time.split(":");
 
       if (closedAlarms[id]) {
@@ -34,9 +45,16 @@ function checkAlarms() {
         }
       }
 
+      // 일회용 알람인 경우 날짜까지 같은지 확인
+      if (isOneTime) {
+        const currentDate = `${yyyy}-${mm}-${dd}`;
+        if (currentDate !== date) {
+          return;
+        }
+      }
       if (
-        alarmHours === hours &&
-        alarmMinutes === minutes &&
+        alarmHours === hour &&
+        alarmMinutes === minute &&
         days.includes(todayKorean)
       ) {
         showOverlay(alarm);

@@ -108,6 +108,9 @@ export default function AddAlarm({
           canSave={canSave}
           alarm={alarm}
           date={date}
+          ampmRef={ampmRef}
+          hourRef={hourRef}
+          minuteRef={minuteRef}
           onClose={() =>
             onChangeDialog("add", {
               open: false

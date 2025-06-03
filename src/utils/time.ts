@@ -25,7 +25,9 @@ export const getTimeInfo = (alarm: EditAlarm) => {
   return getTimeParts(hour24, minute);
 };
 
-export const isValidDate = (paramDate: IDate): boolean => {
+export const isValidDate = (
+  paramDate: IDate
+): "falsyDate" | "cantBeforeDate" | "today" | "success" => {
   const { year: sYear, month: sMonth, day: sDay } = paramDate;
   const year = Number(sYear);
   const month = Number(sMonth);
@@ -36,24 +38,69 @@ export const isValidDate = (paramDate: IDate): boolean => {
     !Number.isInteger(month) ||
     !Number.isInteger(year)
   ) {
-    return false;
+    return "falsyDate";
   }
 
   if (month < 1 || month > 12) {
-    return false;
+    return "falsyDate";
   }
 
   if (day < 1 || day > 31) {
+    return "falsyDate";
+  }
+
+  // 유효한 실제 날짜인지 확인
+  const inputDate = new Date(year, month - 1, day);
+  if (
+    inputDate.getFullYear() !== year ||
+    inputDate.getMonth() !== month - 1 ||
+    inputDate.getDate() !== day
+  ) {
+    return "falsyDate";
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const inputDay = new Date(inputDate);
+  inputDay.setHours(0, 0, 0, 0);
+
+  if (inputDay < today) {
+    return "cantBeforeDate";
+  }
+
+  if (inputDay.getTime() === today.getTime()) {
+    return "today";
+  }
+
+  return "success";
+};
+
+interface ITime {
+  hour: string;
+  minute: string;
+}
+
+export const isPastTime = (param: ITime): boolean => {
+  const hour = Number(param.hour);
+  const minute = Number(param.minute);
+
+  if (
+    isNaN(hour) ||
+    hour < 0 ||
+    hour > 23 ||
+    isNaN(minute) ||
+    minute < 0 ||
+    minute > 59
+  ) {
     return false;
   }
 
-  // JavaScript의 Date 객체를 이용해 실제 유효한 날짜인지 검사
-  const date = new Date(year, month - 1, day);
-  return (
-    date.getFullYear() === year &&
-    date.getMonth() === month - 1 &&
-    date.getDate() === day
-  );
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const inputMinutes = hour * 60 + minute;
+
+  return inputMinutes < nowMinutes;
 };
 
 export const getDateInfo = (date: string) => {
