@@ -1,4 +1,4 @@
-import { IDate, isPastTime, isValidDate } from "../../utils/time";
+import { getHHMM, IDate, isPastTime, isValidDate } from "../../utils/time";
 import { Alarm } from "../../type/alarm";
 import { getFromStorage, setToStorage } from "../storage";
 import { t } from "../../utils/i18n";
@@ -33,14 +33,14 @@ export default function SaveButton({
         if (!hourRef.current) return;
         if (!minuteRef.current) return;
 
-        const hours24 = Number(hourRef.current);
-        const hour12 = hours24 % 12 === 0 ? 12 : hours24 % 12;
-
+        const hour = hourRef.current;
         const minute = minuteRef.current;
-        const time = `${String(hour12).padStart(2, "0")}:${minute.padStart(
-          2,
-          "0"
-        )}`;
+
+        const time = getHHMM(
+          ampmRef.current === "오전",
+          hourRef.current,
+          minuteRef.current
+        );
 
         const newAlarm = {
           ...alarm,
@@ -62,7 +62,7 @@ export default function SaveButton({
           // 오늘인 경우 시간까지 검사
           if (dateValidation === "today") {
             const isPast = isPastTime({
-              hour: String(hours24),
+              hour,
               minute
             });
             if (isPast) {

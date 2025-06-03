@@ -150,3 +150,18 @@ export const getInitAlarm = () => {
 
   return alarm;
 };
+
+export const getHHMM = (isAM: boolean, hour: string, minute: string) => {
+  const hours24 = Number(hour);
+
+  const hour12 = () => {
+    if (isAM) {
+      return hours24 === 12 ? "00" : String(hours24).padStart(2, "0");
+    } else {
+      return hours24 === 12 ? "12" : String(hours24 + 12).padStart(2, "0");
+    }
+  };
+
+  const time = `${hour12()}:${String(minute).padStart(2, "0")}`;
+  return time;
+};
