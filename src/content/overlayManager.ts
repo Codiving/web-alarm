@@ -1,5 +1,3 @@
-import { t } from "../utils/i18n";
-
 let originalBodyOverflow: any = null;
 const overlayMap = new Map();
 
@@ -12,10 +10,14 @@ function createOverlay(alarm: any) {
   overlay.innerHTML = `
     <div class="message-box">
       <p class="current-time"></p>
-      <p class="alarm-time">${t("alarm")} : ${alarm.time}</p>
+      <p class="alarm-time">${chrome.i18n.getMessage("alarm")} : ${
+    alarm.time
+  }</p>
       ${alarm.memo ? `<p class="alarm-memo">${alarm.memo}</p>` : ""}
     </div>
-    <p class="alarm-close-message">${t("closeAlarmMessage")}</p>
+    <p class="alarm-close-message">${chrome.i18n.getMessage(
+      "closeAlarmMessage"
+    )}</p>
   `;
 
   return overlay;
