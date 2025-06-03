@@ -5,35 +5,17 @@ import AddAlarm from "./AddAlarm";
 import AlarmList from "./AlarmList";
 import { getIs24HourFormat } from "../type/day";
 import { setToStorage } from "./storage";
+import Setting from "./Setting";
 
-const DIALOG = {
-  add: {
-    open: false
-  }
-};
-
-type DialogType = typeof DIALOG; // DIALOG 객체의 타입 추론
-type DialogKey = keyof DialogType;
-export type OnChangeDialog = <K extends DialogKey>(
-  key: K,
-  value: DialogType[K]
-) => void;
+export type Dialog = "add" | "list" | "setting";
 
 export default function Popup() {
-  const [dialog, setDialog] = useState(DIALOG);
+  const [dialog, setDialog] = useState<Dialog>("list");
   const [alarm, setAlarm] = useState<EditAlarm>(null);
   const [type, setType] = useState<string>(t("all"));
   const [is24HourFormat, setIs24HourFormat] = useState<boolean | null>(null);
 
-  const onChangeDialog = <K extends DialogKey>(
-    key: K,
-    value: DialogType[K]
-  ) => {
-    setDialog(prev => ({
-      ...prev,
-      [key]: value
-    }));
-  };
+  const onChangeDialog = (dialog: Dialog) => setDialog(dialog);
 
   const onChangeAlarm = (alarm: EditAlarm) => setAlarm(alarm);
 
@@ -53,7 +35,7 @@ export default function Popup() {
 
   return (
     <div className="relative w-[330px] h-[450px] bg-[#434040] overflow-hidden">
-      {dialog.add.open && (
+      {dialog === "add" && (
         <AddAlarm
           alarm={alarm}
           onChangeAlarm={onChangeAlarm}
@@ -61,7 +43,7 @@ export default function Popup() {
           is24HourFormat={is24HourFormat}
         />
       )}
-      {!dialog.add.open && (
+      {dialog === "list" && (
         <AlarmList
           onChangeAlarm={onChangeAlarm}
           onChangeDialog={onChangeDialog}
@@ -71,6 +53,7 @@ export default function Popup() {
           onChangeIs24HourFormat={onChangeIs24HourFormat}
         />
       )}
+      {dialog === "setting" && <Setting onChangeDialog={onChangeDialog} />}
     </div>
   );
 }

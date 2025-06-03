@@ -3,15 +3,15 @@ import { Alarm, EditAlarm } from "../../type/alarm";
 import { DATE_ORDER_BY_LOCALE, DAY_LOCALE_MAP, Lang } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
-import { OnChangeDialog } from "../Popup";
 import { getFromStorage, setToStorage } from "../storage";
 import EditDeleteButton from "./EditDeleteButton";
 import FloatingAddButton from "./FloatingAddButton";
 import Memo from "./Memo";
 import SettingButton from "./SettingButton";
+import { Dialog } from "../Popup";
 
 interface AlarmListProps {
-  onChangeDialog: OnChangeDialog;
+  onChangeDialog: (dialog: Dialog) => void;
   onChangeAlarm: (alarm: EditAlarm) => void;
   type: string;
   onChangeType: (type: string) => void;
@@ -50,13 +50,11 @@ export default function AlarmList({
 }: AlarmListProps) {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
-  const openAddAlarmLayer = () => onChangeDialog("add", { open: true });
+  const openAddAlarmLayer = () => onChangeDialog("add");
 
   const openEditAlarmLayer = (alarm: Alarm) => {
     onChangeAlarm(alarm);
-    onChangeDialog("add", {
-      open: true
-    });
+    onChangeDialog("add");
   };
 
   const fetchAlarms = useCallback(async () => {
@@ -100,11 +98,15 @@ export default function AlarmList({
     >
       <div className="flex justify-between items-center">
         <SettingButton className="invisible" />
-
         <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
           {t("extName")}
         </h1>
-        <SettingButton className="cursor-pointer" />
+        <SettingButton
+          className="cursor-pointer"
+          onClick={() => {
+            onChangeDialog("setting");
+          }}
+        />
       </div>
       <div className="flex gap-[4px]">
         <button

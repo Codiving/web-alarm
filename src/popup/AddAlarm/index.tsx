@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { EditAlarm } from "../../type/alarm";
 import { getDateInfo, getInitAlarm, getInitDate } from "../../utils/time";
-import { OnChangeDialog } from "../Popup";
+import { Dialog } from "../Popup";
 import AlarmDate from "./AlarmDate";
 import AlarmDays from "./AlarmDays";
 import Header from "./Header";
@@ -15,8 +15,8 @@ import { getFromStorage } from "../storage";
 interface AlarmListProps {
   alarm: EditAlarm | null;
   onChangeAlarm: (id: EditAlarm | null) => void;
-  onChangeDialog: OnChangeDialog;
   is24HourFormat: boolean;
+  onChangeDialog: (dialog: Dialog) => void;
 }
 
 export default function AddAlarm({
@@ -135,11 +135,7 @@ export default function AddAlarm({
           ampmRef={ampmRef}
           hourRef={hourRef}
           minuteRef={minuteRef}
-          onClose={() =>
-            onChangeDialog("add", {
-              open: false
-            })
-          }
+          onClose={() => onChangeDialog("list")}
         />
       </div>
     </div>

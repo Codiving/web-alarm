@@ -1,10 +1,10 @@
 import { t } from "../../utils/i18n";
 import { EditAlarm } from "../../type/alarm";
-import { OnChangeDialog } from "../Popup";
+import { Dialog } from "../Popup";
 
 interface HeaderProps {
   alarm: EditAlarm;
-  onChangeDialog: OnChangeDialog;
+  onChangeDialog: (dialog: Dialog) => void;
 }
 
 export default function Header({ alarm, onChangeDialog }: HeaderProps) {
@@ -12,7 +12,7 @@ export default function Header({ alarm, onChangeDialog }: HeaderProps) {
     <div className="p-[8px] flex justify-between items-center">
       <svg
         onClick={() => {
-          onChangeDialog("add", { open: false });
+          onChangeDialog("list");
         }}
         id="close-alarm-overlay"
         className="cursor-pointer"
