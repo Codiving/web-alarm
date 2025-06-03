@@ -27,5 +27,6 @@
   "year": { "message": "Anno" },
   "invalidDate": { "message": "Data non valida" },
   "pastDateNotAllowed": { "message": "Date passate non consentite" },
-  "pastTimeNotAllowed": { "message": "Orari passati non consentiti" }
+  "pastTimeNotAllowed": { "message": "Orari passati non consentiti" },
+  "everyday": { "message": "Ogni giorno" }
 }

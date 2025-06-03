@@ -27,5 +27,6 @@
   "year": { "message": "Год" },
   "invalidDate": { "message": "Недопустимая дата" },
   "pastDateNotAllowed": { "message": "Установка прошедшей даты запрещена" },
-  "pastTimeNotAllowed": { "message": "Установка прошедшего времени запрещена" }
+  "pastTimeNotAllowed": { "message": "Установка прошедшего времени запрещена" },
+  "everyday": { "message": "Каждый день" }
 }

@@ -31,5 +31,6 @@
   },
   "pastTimeNotAllowed": {
     "message": "Les heures passées ne sont pas autorisées"
-  }
+  },
+  "everyday": { "message": "Tous les jours" }
 }

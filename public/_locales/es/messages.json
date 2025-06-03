@@ -27,5 +27,6 @@
   "year": { "message": "Año" },
   "invalidDate": { "message": "Fecha inválida" },
   "pastDateNotAllowed": { "message": "No se permiten fechas pasadas" },
-  "pastTimeNotAllowed": { "message": "No se permiten horas pasadas" }
+  "pastTimeNotAllowed": { "message": "No se permiten horas pasadas" },
+  "everyday": { "message": "Todos los días" }
 }

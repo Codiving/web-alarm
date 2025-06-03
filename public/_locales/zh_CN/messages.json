@@ -27,5 +27,6 @@
   "year": { "message": "年" },
   "invalidDate": { "message": "无效日期" },
   "pastDateNotAllowed": { "message": "不允许选择过去的日期" },
-  "pastTimeNotAllowed": { "message": "不允许选择过去的时间" }
+  "pastTimeNotAllowed": { "message": "不允许选择过去的时间" },
+  "everyday": { "message": "每天" }
 }

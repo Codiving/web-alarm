@@ -27,5 +27,6 @@
   "year": { "message": "साल" },
   "invalidDate": { "message": "अमान्य तिथि" },
   "pastDateNotAllowed": { "message": "अतीत की तिथि स्वीकार नहीं है" },
-  "pastTimeNotAllowed": { "message": "अतीत का समय स्वीकार नहीं है" }
+  "pastTimeNotAllowed": { "message": "अतीत का समय स्वीकार नहीं है" },
+  "everyday": { "message": "हर दिन" }
 }

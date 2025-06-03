@@ -27,5 +27,6 @@
   "year": { "message": "年" },
   "invalidDate": { "message": "無効な日付です" },
   "pastDateNotAllowed": { "message": "過去の日付は設定できません" },
-  "pastTimeNotAllowed": { "message": "過去の時間は設定できません" }
+  "pastTimeNotAllowed": { "message": "過去の時間は設定できません" },
+  "everyday": { "message": "毎日" }
 }

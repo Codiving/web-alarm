@@ -27,5 +27,6 @@
   "year": { "message": "Year" },
   "invalidDate": { "message": "Invalid date" },
   "pastDateNotAllowed": { "message": "Past dates are not allowed" },
-  "pastTimeNotAllowed": { "message": "Past times are not allowed" }
+  "pastTimeNotAllowed": { "message": "Past times are not allowed" },
+  "everyday": { "message": "Everyday" }
 }

@@ -27,5 +27,6 @@
   "year": { "message": "Năm" },
   "invalidDate": { "message": "Ngày không hợp lệ" },
   "pastDateNotAllowed": { "message": "Không cho phép chọn ngày trong quá khứ" },
-  "pastTimeNotAllowed": { "message": "Không cho phép chọn thời gian đã qua" }
+  "pastTimeNotAllowed": { "message": "Không cho phép chọn thời gian đã qua" },
+  "everyday": { "message": "Hàng ngày" }
 }

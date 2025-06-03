@@ -86,6 +86,8 @@ export default function AlarmList({
                     <p className="text-[14px]">
                       {isOneTime
                         ? t("oneTimeAlarm")
+                        : days.length === 7
+                        ? t("everyday")
                         : days.map(day => DAY_LOCALE_MAP[day]).join(", ")}
                     </p>
                   </div>
