@@ -105,7 +105,7 @@ export default function AddAlarm({
       className="select-none absolute inset-0 w-full h-full bg-[#434040] flex flex-col justify-between"
     >
       <div>
-        <Header isEdit={Boolean(alarm)} onChangeDialog={onChangeDialog} />
+        <Header isEdit={Boolean(upperAlarm)} onChangeDialog={onChangeDialog} />
         <TimePicker
           alarm={alarm}
           ampmRef={ampmRef}
