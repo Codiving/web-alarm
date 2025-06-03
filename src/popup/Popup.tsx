@@ -2,11 +2,12 @@ import { useState } from "react";
 import { EditAlarm } from "../type/alarm";
 import AddAlarm from "./AddAlarm";
 import AlarmList from "./AlarmList";
+import { t } from "../utils/i18n";
 
 const DIALOG = {
   add: {
-    open: false,
-  },
+    open: false
+  }
 };
 
 type DialogType = typeof DIALOG; // DIALOG 객체의 타입 추론
@@ -19,14 +20,15 @@ export type OnChangeDialog = <K extends DialogKey>(
 export default function Popup() {
   const [dialog, setDialog] = useState(DIALOG);
   const [alarm, setAlarm] = useState<EditAlarm>(null);
+  const [type, setType] = useState<string>(t("all"));
 
   const onChangeDialog = <K extends DialogKey>(
     key: K,
     value: DialogType[K]
   ) => {
-    setDialog((prev) => ({
+    setDialog(prev => ({
       ...prev,
-      [key]: value,
+      [key]: value
     }));
   };
 
@@ -45,6 +47,8 @@ export default function Popup() {
         <AlarmList
           onChangeAlarm={onChangeAlarm}
           onChangeDialog={onChangeDialog}
+          type={type}
+          onChangeType={type => setType(type)}
         />
       )}
     </div>

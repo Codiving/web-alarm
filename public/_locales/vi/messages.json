@@ -32,5 +32,7 @@
   "alarm": { "message": "Báo thức" },
   "closeAlarmMessage": {
     "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
-  }
+  },
+  "all": { "message": "Tất cả" },
+  "normalAlarm": { "message": "Báo thức thông thường" }
 }

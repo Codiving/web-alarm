@@ -30,5 +30,7 @@
   "pastTimeNotAllowed": { "message": "과거 시간으로 설정할 수 없습니다." },
   "everyday": { "message": "매일" },
   "alarm": { "message": "알람" },
-  "closeAlarmMessage": { "message": "화면을 클릭하면 알람 창이 닫힙니다." }
+  "closeAlarmMessage": { "message": "화면을 클릭하면 알람 창이 닫힙니다." },
+  "all": { "message": "전체" },
+  "normalAlarm": { "message": "일반 알람" }
 }

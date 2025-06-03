@@ -30,5 +30,7 @@
   "pastTimeNotAllowed": { "message": "ไม่อนุญาตให้เลือกเวลาที่ผ่านมาแล้ว" },
   "everyday": { "message": "ทุกวัน" },
   "alarm": { "message": "ปลุก" },
-  "closeAlarmMessage": { "message": "คลิกที่หน้าจอเพื่อปิดหน้าต่างแจ้งเตือน" }
+  "closeAlarmMessage": { "message": "คลิกที่หน้าจอเพื่อปิดหน้าต่างแจ้งเตือน" },
+  "all": { "message": "ทั้งหมด" },
+  "normalAlarm": { "message": "นาฬิกาปลุกปกติ" }
 }

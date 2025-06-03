@@ -27,7 +27,9 @@ type LocaleKey =
   | "everyday"
   | "message"
   | "alarm"
-  | "closeAlarmMessage";
+  | "closeAlarmMessage"
+  | "all"
+  | "normalAlarm";
 
 export function t(key: LocaleKey): string {
   return chrome.i18n.getMessage(key) || key;

@@ -30,5 +30,7 @@
   "pastTimeNotAllowed": { "message": "不允许选择过去的时间" },
   "everyday": { "message": "每天" },
   "alarm": { "message": "闹钟" },
-  "closeAlarmMessage": { "message": "点击屏幕关闭闹钟窗口。" }
+  "closeAlarmMessage": { "message": "点击屏幕关闭闹钟窗口。" },
+  "all": { "message": "全部" },
+  "normalAlarm": { "message": "普通闹钟" }
 }

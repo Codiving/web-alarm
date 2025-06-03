@@ -32,5 +32,7 @@
   "alarm": { "message": "Alarm" },
   "closeAlarmMessage": {
     "message": "Klicken Sie auf den Bildschirm, um das Alarmfenster zu schließen."
-  }
+  },
+  "all": { "message": "Alle" },
+  "normalAlarm": { "message": "Normaler Alarm" }
 }

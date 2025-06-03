@@ -32,5 +32,7 @@
   "alarm": { "message": "アラーム" },
   "closeAlarmMessage": {
     "message": "画面をクリックするとアラームウィンドウが閉じます。"
-  }
+  },
+  "all": { "message": "全体" },
+  "normalAlarm": { "message": "通常アラーム" }
 }

@@ -32,5 +32,7 @@
   "alarm": { "message": "Alarm" },
   "closeAlarmMessage": {
     "message": "Click the screen to close the alarm window."
-  }
+  },
+  "all": { "message": "All" },
+  "normalAlarm": { "message": "Normal Alarm" }
 }

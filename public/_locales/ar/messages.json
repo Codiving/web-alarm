@@ -30,5 +30,7 @@
   "pastTimeNotAllowed": { "message": "لا يمكن ضبط وقت في الماضي" },
   "everyday": { "message": "يوميًا" },
   "alarm": { "message": "منبه" },
-  "closeAlarmMessage": { "message": "انقر على الشاشة لإغلاق نافذة التنبيه." }
+  "closeAlarmMessage": { "message": "انقر على الشاشة لإغلاق نافذة التنبيه." },
+  "all": { "message": "الكل" },
+  "normalAlarm": { "message": "منبه عادي" }
 }

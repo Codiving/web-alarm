@@ -36,5 +36,7 @@
   "alarm": { "message": "Alarme" },
   "closeAlarmMessage": {
     "message": "Cliquez sur l'écran pour fermer la fenêtre d'alarme."
-  }
+  },
+  "all": { "message": "Tous" },
+  "normalAlarm": { "message": "Alarme normale" }
 }

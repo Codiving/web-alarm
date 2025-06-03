@@ -32,5 +32,7 @@
   "alarm": { "message": "अलार्म" },
   "closeAlarmMessage": {
     "message": "अलार्म विंडो बंद करने के लिए स्क्रीन पर क्लिक करें।"
-  }
+  },
+  "all": { "message": "सभी" },
+  "normalAlarm": { "message": "सामान्य अलार्म" }
 }

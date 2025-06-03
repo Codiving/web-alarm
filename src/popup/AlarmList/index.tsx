@@ -12,11 +12,17 @@ import Memo from "./Memo";
 interface AlarmListProps {
   onChangeDialog: OnChangeDialog;
   onChangeAlarm: (alarm: EditAlarm) => void;
+  type: string;
+  onChangeType: (type: string) => void;
 }
+
+const TYPES = [t("all"), t("normalAlarm"), t("oneTimeAlarm")] as const;
 
 export default function AlarmList({
   onChangeDialog,
-  onChangeAlarm
+  onChangeAlarm,
+  type: upperType,
+  onChangeType
 }: AlarmListProps) {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
@@ -55,10 +61,35 @@ export default function AlarmList({
       <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
         {t("extName")}
       </h1>
+      <div className="flex gap-[4px]">
+        {TYPES.map(type => {
+          return (
+            <button
+              onClick={() => {
+                onChangeType(type);
+              }}
+              className="cursor-pointer text-[14px] text-white py-[4px] px-[8px] rounded-[4px]"
+              style={{
+                backgroundColor: type === upperType ? "#0000005c" : "#5c5c5c"
+              }}
+            >
+              {type}
+            </button>
+          );
+        })}
+      </div>
       <div className="scrollbar-hide overflow-auto flex-1 flex flex-col gap-[8px]">
         {alarms.map(alarm => {
           const { id, days, isOneTime, memo } = alarm;
           const { hour, minute, meridiem } = getTimeInfo(alarm);
+
+          if (upperType === t("oneTimeAlarm")) {
+            if (!isOneTime) return null;
+          }
+
+          if (upperType === t("normalAlarm")) {
+            if (isOneTime) return null;
+          }
 
           return (
             <div
