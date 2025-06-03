@@ -29,6 +29,10 @@ export default function SaveButton({
   return (
     <button
       onClick={async () => {
+        const map = {
+          [t("am")]: "오전",
+          [t("pm")]: "오후"
+        };
         // TimePicker 애니메이션 시간 확보
         if (!canSave) {
           return;
@@ -55,7 +59,7 @@ export default function SaveButton({
           ? nHourRefValue < 12
             ? "오전"
             : "오후"
-          : ampmRef.current;
+          : map[ampmRef.current!];
 
         const time = getHHMM(
           ampmRefValue === "오전",

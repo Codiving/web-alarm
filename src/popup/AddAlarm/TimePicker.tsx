@@ -3,7 +3,7 @@ import { Alarm, EditAlarm } from "../../type/alarm";
 import { t } from "../../utils/i18n";
 
 const TEMP = "" as const;
-const AM_PM = ["오전", "오후"];
+const AM_PM = [t("am"), t("pm")];
 const paddedAMPM = [TEMP, ...AM_PM, TEMP];
 
 const HOURS_12 = Array.from({ length: 12 }, (_, i) => String(i + 1));
