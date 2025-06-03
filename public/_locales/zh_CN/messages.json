@@ -28,5 +28,7 @@
   "invalidDate": { "message": "无效日期" },
   "pastDateNotAllowed": { "message": "不允许选择过去的日期" },
   "pastTimeNotAllowed": { "message": "不允许选择过去的时间" },
-  "everyday": { "message": "每天" }
+  "everyday": { "message": "每天" },
+  "alarm": { "message": "闹钟" },
+  "closeAlarmMessage": { "message": "点击屏幕关闭闹钟窗口。" }
 }

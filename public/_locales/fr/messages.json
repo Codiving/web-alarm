@@ -32,5 +32,9 @@
   "pastTimeNotAllowed": {
     "message": "Les heures passées ne sont pas autorisées"
   },
-  "everyday": { "message": "Tous les jours" }
+  "everyday": { "message": "Tous les jours" },
+  "alarm": { "message": "Alarme" },
+  "closeAlarmMessage": {
+    "message": "Cliquez sur l'écran pour fermer la fenêtre d'alarme."
+  }
 }

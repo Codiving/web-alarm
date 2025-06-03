@@ -1,3 +1,5 @@
+import { t } from "../utils/i18n";
+
 let originalBodyOverflow: any = null;
 const overlayMap = new Map();
 
@@ -10,14 +12,10 @@ function createOverlay(alarm: any) {
   overlay.innerHTML = `
     <div class="message-box">
       <p class="current-time"></p>
-      <p class="alarm-time">${chrome.i18n.getMessage("content_js_alarm")} : ${
-    alarm.time
-  }</p>
+      <p class="alarm-time">${t("alarm")} : ${alarm.time}</p>
       ${alarm.memo ? `<p class="alarm-memo">${alarm.memo}</p>` : ""}
     </div>
-    <p class="alarm-close-message">${chrome.i18n.getMessage(
-      "content_js_alarm_close"
-    )}</p>
+    <p class="alarm-close-message">${t("closeAlarmMessage")}</p>
   `;
 
   return overlay;
@@ -26,7 +24,7 @@ function createOverlay(alarm: any) {
 function getCurrentTime() {
   const date = new Date();
   return [date.getHours(), date.getMinutes(), date.getSeconds()]
-    .map((u) => String(u).padStart(2, "0"))
+    .map(u => String(u).padStart(2, "0"))
     .join(":");
 }
 
@@ -98,7 +96,7 @@ function handleOverlayClick(alarm: any, overlay: any, intervalId: any) {
   const alarmId = alarm.id;
   const closedTime = new Date(Date.now() + 60 * 1000).toISOString();
 
-  chrome.storage.local.get(["alarms", "closedAlarms"], (result) => {
+  chrome.storage.local.get(["alarms", "closedAlarms"], result => {
     const alarms = result.alarms || [];
     const closedAlarms = result.closedAlarms || {};
 
@@ -124,5 +122,5 @@ export {
   removeOverlay,
   removeOverlayEntry,
   showOverlay,
-  updateOverlayVisibility,
+  updateOverlayVisibility
 };

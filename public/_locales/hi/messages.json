@@ -28,5 +28,9 @@
   "invalidDate": { "message": "अमान्य तिथि" },
   "pastDateNotAllowed": { "message": "अतीत की तिथि स्वीकार नहीं है" },
   "pastTimeNotAllowed": { "message": "अतीत का समय स्वीकार नहीं है" },
-  "everyday": { "message": "हर दिन" }
+  "everyday": { "message": "हर दिन" },
+  "alarm": { "message": "अलार्म" },
+  "closeAlarmMessage": {
+    "message": "अलार्म विंडो बंद करने के लिए स्क्रीन पर क्लिक करें।"
+  }
 }

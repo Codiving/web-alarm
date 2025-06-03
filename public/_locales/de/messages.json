@@ -28,5 +28,9 @@
   "invalidDate": { "message": "Ungültiges Datum" },
   "pastDateNotAllowed": { "message": "Vergangenes Datum ist nicht erlaubt" },
   "pastTimeNotAllowed": { "message": "Vergangene Zeit ist nicht erlaubt" },
-  "everyday": { "message": "Täglich" }
+  "everyday": { "message": "Täglich" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Klicken Sie auf den Bildschirm, um das Alarmfenster zu schließen."
+  }
 }

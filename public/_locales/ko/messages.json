@@ -28,5 +28,7 @@
   "invalidDate": { "message": "올바른 날짜가 아닙니다." },
   "pastDateNotAllowed": { "message": "과거 날짜로 설정할 수 없습니다." },
   "pastTimeNotAllowed": { "message": "과거 시간으로 설정할 수 없습니다." },
-  "everyday": { "message": "매일" }
+  "everyday": { "message": "매일" },
+  "alarm": { "message": "알람" },
+  "closeAlarmMessage": { "message": "화면을 클릭하면 알람 창이 닫힙니다." }
 }

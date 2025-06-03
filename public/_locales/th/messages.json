@@ -28,5 +28,7 @@
   "invalidDate": { "message": "วันที่ไม่ถูกต้อง" },
   "pastDateNotAllowed": { "message": "ไม่อนุญาตให้เลือกวันที่ในอดีต" },
   "pastTimeNotAllowed": { "message": "ไม่อนุญาตให้เลือกเวลาที่ผ่านมาแล้ว" },
-  "everyday": { "message": "ทุกวัน" }
+  "everyday": { "message": "ทุกวัน" },
+  "alarm": { "message": "ปลุก" },
+  "closeAlarmMessage": { "message": "คลิกที่หน้าจอเพื่อปิดหน้าต่างแจ้งเตือน" }
 }

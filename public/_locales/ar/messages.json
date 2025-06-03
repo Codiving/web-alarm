@@ -28,5 +28,7 @@
   "invalidDate": { "message": "تاريخ غير صالح" },
   "pastDateNotAllowed": { "message": "لا يمكن ضبط تاريخ في الماضي" },
   "pastTimeNotAllowed": { "message": "لا يمكن ضبط وقت في الماضي" },
-  "everyday": { "message": "يوميًا" }
+  "everyday": { "message": "يوميًا" },
+  "alarm": { "message": "منبه" },
+  "closeAlarmMessage": { "message": "انقر على الشاشة لإغلاق نافذة التنبيه." }
 }

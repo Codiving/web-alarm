@@ -28,5 +28,9 @@
   "invalidDate": { "message": "Invalid date" },
   "pastDateNotAllowed": { "message": "Past dates are not allowed" },
   "pastTimeNotAllowed": { "message": "Past times are not allowed" },
-  "everyday": { "message": "Everyday" }
+  "everyday": { "message": "Everyday" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Click the screen to close the alarm window."
+  }
 }

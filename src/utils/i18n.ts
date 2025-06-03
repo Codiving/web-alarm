@@ -24,7 +24,10 @@ type LocaleKey =
   | "invalidDate"
   | "pastDateNotAllowed"
   | "pastTimeNotAllowed"
-  | "everyday";
+  | "everyday"
+  | "message"
+  | "alarm"
+  | "closeAlarmMessage";
 
 export function t(key: LocaleKey): string {
   return chrome.i18n.getMessage(key) || key;

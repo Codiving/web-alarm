@@ -28,5 +28,9 @@
   "invalidDate": { "message": "Ngày không hợp lệ" },
   "pastDateNotAllowed": { "message": "Không cho phép chọn ngày trong quá khứ" },
   "pastTimeNotAllowed": { "message": "Không cho phép chọn thời gian đã qua" },
-  "everyday": { "message": "Hàng ngày" }
+  "everyday": { "message": "Hàng ngày" },
+  "alarm": { "message": "Báo thức" },
+  "closeAlarmMessage": {
+    "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
+  }
 }
