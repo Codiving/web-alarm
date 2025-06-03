@@ -89,14 +89,14 @@ export default function SaveButton({
             return newAlarm;
           });
 
-          console.log("newAlarm : ", newAlarm);
-
           await setToStorage<Alarm[]>("alarms", newAlarms);
         }
         // 생성
         else {
           await setToStorage<Alarm[]>("alarms", [...dbAlarms, newAlarm]);
         }
+
+        await setToStorage("lastSelectedDays", newAlarm.days);
 
         onClose();
       }}

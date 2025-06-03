@@ -10,6 +10,7 @@ import SaveButton from "./SaveButton";
 import TimePicker from "./TimePicker";
 import ToggleSwitch from "./ToggleSwitch";
 import { t } from "../../utils/i18n";
+import { getFromStorage } from "../storage";
 
 interface AlarmListProps {
   alarm: EditAlarm | null;
@@ -75,6 +76,25 @@ export default function AddAlarm({
     return () => {
       onChangeAlarm(null);
     };
+  }, []);
+
+  useEffect(() => {
+    (async () => {
+      if (upperAlarm) return;
+
+      const days = (await getFromStorage<string[]>("lastSelectedDays")) || [
+        "월",
+        "화",
+        "수",
+        "목",
+        "금"
+      ];
+
+      setAlarm(prev => ({
+        ...prev,
+        days
+      }));
+    })();
   }, []);
 
   return (
