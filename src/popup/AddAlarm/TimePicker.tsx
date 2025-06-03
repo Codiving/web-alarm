@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
+import { t } from "../../utils/i18n";
 
 const TEMP = "" as const;
 const AM_PM = ["오전", "오후"];
@@ -33,7 +34,7 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
     if (index >= 0 && ref.current) {
       ref.current.scrollTo({
         top: totalHeightAt(index),
-        behavior: "auto",
+        behavior: "auto"
       });
       setCenterIndex(index);
     }
@@ -59,7 +60,7 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
       style={{
         scrollbarWidth: "none",
         WebkitOverflowScrolling: "touch",
-        height: OTHER_ITEM_HEIGHT * 2 + CENTER_ITEM_HEIGHT,
+        height: OTHER_ITEM_HEIGHT * 2 + CENTER_ITEM_HEIGHT
       }}
     >
       {items.map((item, idx) => {
@@ -79,7 +80,7 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
               fontSize,
               color,
               opacity,
-              transition: "all 0.2s ease",
+              transition: "all 0.2s ease"
             }}
           >
             {text}
@@ -101,7 +102,7 @@ const getTimeInfo = (alarm: EditAlarm) => {
     return {
       isAM,
       hour: hours12,
-      minute: currentMinutes,
+      minute: currentMinutes
     };
   }
 
@@ -115,13 +116,12 @@ const getTimeInfo = (alarm: EditAlarm) => {
   return {
     isAM,
     hour,
-    minute,
+    minute
   };
 };
 
 interface TimePickerProps {
   alarm: Alarm;
-  onChangeAlarm: (alarm: Alarm) => void;
   ampmRef: React.RefObject<string | null>;
   hourRef: React.RefObject<string | null>;
   minuteRef: React.RefObject<string | null>;
@@ -129,13 +129,12 @@ interface TimePickerProps {
 
 export default function TimePicker({
   alarm,
-  onChangeAlarm,
   ampmRef,
   hourRef,
-  minuteRef,
+  minuteRef
 }: TimePickerProps) {
   const { isAM, hour, minute } = getTimeInfo(alarm);
-  const ampm = isAM ? "오전" : "오후";
+  const ampm = isAM ? t("am") : t("pm");
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">

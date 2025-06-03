@@ -9,6 +9,7 @@ import MemoInput from "./MemoInput";
 import SaveButton from "./SaveButton";
 import TimePicker from "./TimePicker";
 import ToggleSwitch from "./ToggleSwitch";
+import { t } from "../../utils/i18n";
 
 interface AlarmListProps {
   alarm: EditAlarm | null;
@@ -85,7 +86,6 @@ export default function AddAlarm({
         <Header alarm={alarm} onChangeDialog={onChangeDialog} />
         <TimePicker
           alarm={alarm}
-          onChangeAlarm={setAlarm}
           ampmRef={ampmRef}
           hourRef={hourRef}
           minuteRef={minuteRef}
@@ -95,7 +95,7 @@ export default function AddAlarm({
         <ToggleSwitch isOneTime={isOneTime} onToggle={handleToggle} />
         <div className="flex flex-col gap-[4px]">
           <p className="pl-[10px] text-white font-bold text-[14px]">
-            {isOneTime ? "활성화된 요일" : "활성화된 날짜"}
+            {isOneTime ? t("activeDays") : t("activeDate")}
           </p>
           <div className="rounded-[12px] mx-[8px]">
             {!isOneTime && <AlarmDays days={days} onChangeDays={handleDays} />}

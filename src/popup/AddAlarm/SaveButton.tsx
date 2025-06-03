@@ -1,6 +1,7 @@
 import { IDate, isPastTime, isValidDate } from "../../utils/time";
 import { Alarm } from "../../type/alarm";
 import { getFromStorage, setToStorage } from "../storage";
+import { t } from "../../utils/i18n";
 
 interface SaveButtonProps {
   isUpdate: boolean;
@@ -49,11 +50,11 @@ export default function SaveButton({
           const dateValidation = isValidDate(date);
 
           if (dateValidation === "falsyDate") {
-            alert("올바른 날짜가 아닙니다.");
+            alert(t("invalidDate"));
             return;
           }
           if (dateValidation === "cantBeforeDate") {
-            alert("과거 날짜로 설정할 수 없습니다.");
+            alert(t("pastDateNotAllowed"));
             return;
           }
 
@@ -64,7 +65,7 @@ export default function SaveButton({
               minute
             });
             if (isPast) {
-              alert("과거 시간으로 설정할 수 없습니다.");
+              alert(t("pastTimeNotAllowed"));
               return;
             }
           }
@@ -96,11 +97,11 @@ export default function SaveButton({
           await setToStorage<Alarm[]>("alarms", [...dbAlarms, newAlarm]);
         }
 
-        // onClose();
+        onClose();
       }}
       className="hover:duration-300 hover:bg-[#2d2a2a] text-center bg-[#434040] mt-auto mx-[8px] mb-[12px] p-[8px] rounded-[12px] font-bold text-white cursor-pointer"
     >
-      저장
+      {t("save")}
     </button>
   );
 }

@@ -1,3 +1,5 @@
+import { t } from "../../utils/i18n";
+
 interface ToggleSwitchProps {
   isOneTime: boolean;
   onToggle: (newState: boolean) => void;
@@ -5,7 +7,7 @@ interface ToggleSwitchProps {
 
 export default function ToggleSwitch({
   isOneTime,
-  onToggle,
+  onToggle
 }: ToggleSwitchProps) {
   const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) =>
     onToggle(e.target.checked);
@@ -13,9 +15,7 @@ export default function ToggleSwitch({
   return (
     <div className="flex justify-end items-center gap-[4px]">
       <div className="tooltip">
-        <span className="tooltiptext">
-          설정된 요일과 상관 없이 1번 발생하고 삭제됩니다.
-        </span>
+        <span className="tooltiptext">{t("oneTimeAlarmTooltip")}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20px"
@@ -42,7 +42,7 @@ export default function ToggleSwitch({
           htmlFor="oneTimeAlarm"
           className="text-[14px] text-white font-bold"
         >
-          1회용 알람
+          {t("oneTimeAlarm")}
         </label>
         <label className="switch">
           <input

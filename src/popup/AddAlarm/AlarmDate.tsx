@@ -1,3 +1,5 @@
+import { t } from "../../utils/i18n";
+
 interface AlarmDateProps {
   date: {
     day: string;
@@ -11,7 +13,7 @@ export default function AlarmDate({ date, onChangeDate }: AlarmDateProps) {
   return (
     <div className="h-[50px] grid grid-cols-3 gap-[4px]">
       <div className="flex flex-col gap-[3px]">
-        <p className="text-white text-[12px] tracking-[1.2px]">DAY</p>
+        <p className="text-white text-[12px] tracking-[1.2px]">{t("day")}</p>
         <input
           name="day"
           value={date.day}
@@ -23,7 +25,7 @@ export default function AlarmDate({ date, onChangeDate }: AlarmDateProps) {
         />
       </div>
       <div className="flex flex-col gap-[3px]">
-        <p className="text-white text-[12px] tracking-[1.2px]">MONTH</p>
+        <p className="text-white text-[12px] tracking-[1.2px]">{t("month")}</p>
         <input
           name="month"
           value={date.month}
@@ -35,7 +37,7 @@ export default function AlarmDate({ date, onChangeDate }: AlarmDateProps) {
         />
       </div>
       <div className="flex flex-col gap-[3px]">
-        <p className="text-white text-[12px] tracking-[1.2px]">YEAR</p>
+        <p className="text-white text-[12px] tracking-[1.2px]">{t("year")}</p>
         <input
           name="year"
           value={date.year}

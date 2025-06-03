@@ -1,3 +1,4 @@
+import { t } from "../../utils/i18n";
 import { EditAlarm } from "../../type/alarm";
 import { OnChangeDialog } from "../Popup";
 
@@ -27,7 +28,7 @@ export default function Header({ alarm, onChangeDialog }: HeaderProps) {
         />
       </svg>
       <span className="text-white font-bold text-[16px]">
-        {alarm ? "알람 수정" : "알람 추가"}
+        {alarm ? t("editAlarm") : t("addAlarm")}
       </span>
       <svg
         className="invisible"
