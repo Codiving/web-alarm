@@ -33,13 +33,14 @@ export default function SaveButton({
         if (!hourRef.current) return;
         if (!minuteRef.current) return;
 
-        const ampm = ampmRef.current;
-        const hour =
-          ampm === "오전"
-            ? String(Number(hourRef.current))
-            : String(Number(hourRef.current) + 12);
+        const hours24 = Number(hourRef.current);
+        const hour12 = hours24 % 12 === 0 ? 12 : hours24 % 12;
+
         const minute = minuteRef.current;
-        const time = `${hour}:${minute}`;
+        const time = `${String(hour12).padStart(2, "0")}:${minute.padStart(
+          2,
+          "0"
+        )}`;
 
         const newAlarm = {
           ...alarm,
@@ -61,7 +62,7 @@ export default function SaveButton({
           // 오늘인 경우 시간까지 검사
           if (dateValidation === "today") {
             const isPast = isPastTime({
-              hour,
+              hour: String(hours24),
               minute
             });
             if (isPast) {
