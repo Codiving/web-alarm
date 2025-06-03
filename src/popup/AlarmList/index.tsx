@@ -47,11 +47,27 @@ export default function AlarmList({
     setAlarms(dbAlarms);
   }, []);
 
-  useEffect(() => {
-    (async () => {
-      await fetchAlarms();
-    })();
+  const loadAlarms = useCallback(async () => {
+    await fetchAlarms();
   }, [fetchAlarms]);
+
+  useEffect(() => {
+    loadAlarms();
+  }, [loadAlarms]);
+
+  useEffect(() => {
+    const handleMessage = (message: any) => {
+      if (message.type === "ALARM_CLOSED") {
+        console.log("일회성 알람이 종료되었습니다:", message.alarms);
+        loadAlarms();
+      }
+    };
+
+    chrome.runtime.onMessage.addListener(handleMessage);
+    return () => {
+      chrome.runtime.onMessage.removeListener(handleMessage);
+    };
+  }, [loadAlarms]);
 
   return (
     <div

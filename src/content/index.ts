@@ -51,8 +51,11 @@ function checkAlarms() {
         if (currentDate !== date) {
           return;
         }
-      }
-      if (
+
+        if (alarmHours === hour && alarmMinutes === minute) {
+          showOverlay(alarm);
+        }
+      } else if (
         alarmHours === hour &&
         alarmMinutes === minute &&
         days.includes(todayKorean)
