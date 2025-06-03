@@ -1,72 +1,31 @@
 {
   "extName": { "message": "Web Alarm" },
-  "extDescription": { "message": "Provides silent alarms on websites." },
-  "popup_html_alarm_setting_label": {
-    "message": "Set Alarm"
+  "extDescription": {
+    "message": "Get a silent alarm from the website when sound is not allowed. The notification will appear at the exact time."
   },
-  "popup_html_alarm_edit_label": {
-    "message": "Edit Alarm"
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Sun" },
+  "mon": { "message": "Mon" },
+  "tue": { "message": "Tue" },
+  "wed": { "message": "Wed" },
+  "thu": { "message": "Thu" },
+  "fri": { "message": "Fri" },
+  "sat": { "message": "Sat" },
+  "oneTimeAlarm": { "message": "One-Time Alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "The alarm will trigger once and then be automatically deleted."
   },
-  "popup_html_time_label": {
-    "message": "Alarm Time"
-  },
-  "popup_html_day_select_label": {
-    "message": "Select Days"
-  },
-  "popup_html_memo_label": {
-    "message": "Memo"
-  },
-  "popup_html_set_alarm_button": {
-    "message": "Add Alarm"
-  },
-  "popup_html_alarm_list_label": {
-    "message": "Set Alarms"
-  },
-  "sun": {
-    "message": "Sun"
-  },
-  "mon": {
-    "message": "Mon"
-  },
-  "tue": {
-    "message": "Tue"
-  },
-  "wed": {
-    "message": "Wed"
-  },
-  "thu": {
-    "message": "Thu"
-  },
-  "fri": {
-    "message": "Fri"
-  },
-  "sat": {
-    "message": "Sat"
-  },
-  "popup_html_exist_time": {
-    "message": "An alarm already exists for that time."
-  },
-  "popup_html_save": {
-    "message": "Save"
-  },
-  "popup_html_cancel": {
-    "message": "Cancel"
-  },
-  "time_label": { "message": "Time" },
-  "everyday_label": { "message": "Everyday" },
-  "memo_label": { "message": "Memo" },
-  "alert_input_time": { "message": "Please enter a repeat alarm time." },
-  "alert_empty_day": {
-    "message": "Please select the days you want to set the alarm for."
-  },
-  "content_js_alarm": {
-    "message": "Alarm"
-  },
-  "content_js_alarm_close": {
-    "message": "Clicking the screen will close the alarm window."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Occurs once regardless of the set weekday and then is deleted."
-  },
-  "popup_html_oneTime_alarm": { "message": "One-time alarm" }
+  "activeDays": { "message": "Active Days" },
+  "activeDate": { "message": "Active Date" },
+  "save": { "message": "Save" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "Edit Alarm" },
+  "addAlarm": { "message": "Add Alarm" },
+  "day": { "message": "Day" },
+  "month": { "message": "Month" },
+  "year": { "message": "Year" },
+  "invalidDate": { "message": "Invalid date" },
+  "pastDateNotAllowed": { "message": "Past dates are not allowed" },
+  "pastTimeNotAllowed": { "message": "Past times are not allowed" }
 }

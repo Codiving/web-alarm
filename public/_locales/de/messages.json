@@ -1,13 +1,10 @@
 {
-  "extName": { "message": "Web-Alarm" },
-  "extDescription": { "message": "Stellt stille Alarme auf Websites bereit." },
-  "popup_html_alarm_setting_label": { "message": "Alarm einstellen" },
-  "popup_html_alarm_edit_label": { "message": "Alarm bearbeiten" },
-  "popup_html_time_label": { "message": "Alarmzeit" },
-  "popup_html_day_select_label": { "message": "Wochentage auswählen" },
-  "popup_html_memo_label": { "message": "Notiz" },
-  "popup_html_set_alarm_button": { "message": "Alarm hinzufügen" },
-  "popup_html_alarm_list_label": { "message": "Eingestellte Alarme" },
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Erhalten Sie stumme Alarme auf der Website, wenn kein Ton erlaubt ist. Die Benachrichtigung erscheint zur eingestellten Zeit."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
   "sun": { "message": "So" },
   "mon": { "message": "Mo" },
   "tue": { "message": "Di" },
@@ -15,24 +12,20 @@
   "thu": { "message": "Do" },
   "fri": { "message": "Fr" },
   "sat": { "message": "Sa" },
-  "popup_html_exist_time": {
-    "message": "Zu dieser Zeit ist bereits ein Alarm gesetzt."
+  "oneTimeAlarm": { "message": "Einmaliger Alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "Alarm wird ausgelöst und danach automatisch gelöscht."
   },
-  "popup_html_save": { "message": "Speichern" },
-  "popup_html_cancel": { "message": "Abbrechen" },
-  "time_label": { "message": "Zeit" },
-  "everyday_label": { "message": "Jeden Tag" },
-  "memo_label": { "message": "Notiz" },
-  "alert_input_time": {
-    "message": "Bitte geben Sie eine Wiederholungszeit ein."
-  },
-  "alert_empty_day": { "message": "Bitte wählen Sie die Tage für den Alarm." },
-  "content_js_alarm": { "message": "Alarm" },
-  "content_js_alarm_close": {
-    "message": "Ein Klick auf den Bildschirm schließt das Alarmfenster."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Wird einmal ausgelöst, unabhängig vom eingestellten Wochentag, und danach gelöscht."
-  },
-  "popup_html_oneTime_alarm": { "message": "Einmaliger Alarm" }
+  "activeDays": { "message": "Aktive Tage" },
+  "activeDate": { "message": "Aktives Datum" },
+  "save": { "message": "Speichern" },
+  "memo": { "message": "Notiz" },
+  "editAlarm": { "message": "Alarm bearbeiten" },
+  "addAlarm": { "message": "Alarm hinzufügen" },
+  "day": { "message": "Tag" },
+  "month": { "message": "Monat" },
+  "year": { "message": "Jahr" },
+  "invalidDate": { "message": "Ungültiges Datum" },
+  "pastDateNotAllowed": { "message": "Vergangenes Datum ist nicht erlaubt" },
+  "pastTimeNotAllowed": { "message": "Vergangene Zeit ist nicht erlaubt" }
 }

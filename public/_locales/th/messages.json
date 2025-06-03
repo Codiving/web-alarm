@@ -1,13 +1,10 @@
 {
-  "extName": { "message": "นาฬิกาปลุกเว็บ" },
-  "extDescription": { "message": "ให้บริการนาฬิกาปลุกแบบเงียบบนเว็บไซต์" },
-  "popup_html_alarm_setting_label": { "message": "ตั้งค่านาฬิกาปลุก" },
-  "popup_html_alarm_edit_label": { "message": "แก้ไขนาฬิกาปลุก" },
-  "popup_html_time_label": { "message": "เวลานาฬิกาปลุก" },
-  "popup_html_day_select_label": { "message": "เลือกวัน" },
-  "popup_html_memo_label": { "message": "บันทึก" },
-  "popup_html_set_alarm_button": { "message": "เพิ่มนาฬิกาปลุก" },
-  "popup_html_alarm_list_label": { "message": "นาฬิกาปลุกที่ตั้งไว้" },
+  "extName": { "message": "เว็บนาฬิกาปลุก" },
+  "extDescription": {
+    "message": "รับการแจ้งเตือนแบบเงียบจากเว็บไซต์เมื่อไม่อนุญาตให้มีเสียง การแจ้งเตือนจะแสดงในเวลาที่กำหนด"
+  },
+  "am": { "message": "ก่อนเที่ยง" },
+  "pm": { "message": "หลังเที่ยง" },
   "sun": { "message": "อา" },
   "mon": { "message": "จ" },
   "tue": { "message": "อ" },
@@ -15,20 +12,20 @@
   "thu": { "message": "พฤ" },
   "fri": { "message": "ศ" },
   "sat": { "message": "ส" },
-  "popup_html_exist_time": { "message": "มีการตั้งนาฬิกาปลุกในเวลานี้แล้ว" },
-  "popup_html_save": { "message": "บันทึก" },
-  "popup_html_cancel": { "message": "ยกเลิก" },
-  "time_label": { "message": "เวลา" },
-  "everyday_label": { "message": "ทุกวัน" },
-  "memo_label": { "message": "บันทึก" },
-  "alert_input_time": { "message": "กรุณาใส่เวลาสำหรับนาฬิกาปลุกที่ทำซ้ำ" },
-  "alert_empty_day": { "message": "กรุณาเลือกวันที่คุณต้องการตั้งนาฬิกาปลุก" },
-  "content_js_alarm": { "message": "นาฬิกาปลุก" },
-  "content_js_alarm_close": {
-    "message": "การคลิกที่หน้าจอจะปิดหน้าต่างนาฬิกาปลุก"
+  "oneTimeAlarm": { "message": "นาฬิกาปลุกครั้งเดียว" },
+  "oneTimeAlarmTooltip": {
+    "message": "นาฬิกาปลุกจะทำงานครั้งเดียวและถูกลบโดยอัตโนมัติ"
   },
-  "popup_html_oneTime_tooltip": {
-    "message": "จะทำงานเพียงครั้งเดียวโดยไม่คำนึงถึงวันในสัปดาห์ที่ตั้งไว้ แล้วจะถูกลบ"
-  },
-  "popup_html_oneTime_alarm": { "message": "การเตือนครั้งเดียว" }
+  "activeDays": { "message": "วันที่ใช้งาน" },
+  "activeDate": { "message": "วันที่ใช้งาน" },
+  "save": { "message": "บันทึก" },
+  "memo": { "message": "บันทึกช่วยจำ" },
+  "editAlarm": { "message": "แก้ไขนาฬิกาปลุก" },
+  "addAlarm": { "message": "เพิ่มนาฬิกาปลุก" },
+  "day": { "message": "วัน" },
+  "month": { "message": "เดือน" },
+  "year": { "message": "ปี" },
+  "invalidDate": { "message": "วันที่ไม่ถูกต้อง" },
+  "pastDateNotAllowed": { "message": "ไม่อนุญาตให้เลือกวันที่ในอดีต" },
+  "pastTimeNotAllowed": { "message": "ไม่อนุญาตให้เลือกเวลาที่ผ่านมาแล้ว" }
 }

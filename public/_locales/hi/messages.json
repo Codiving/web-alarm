@@ -1,36 +1,31 @@
 {
-  "extName": { "message": "Báo thức Web" },
-  "extDescription": { "message": "Cung cấp báo thức im lặng trên trang web." },
-  "popup_html_alarm_setting_label": { "message": "Cài đặt báo thức" },
-  "popup_html_alarm_edit_label": { "message": "Chỉnh sửa báo thức" },
-  "popup_html_time_label": { "message": "Thời gian báo thức" },
-  "popup_html_day_select_label": { "message": "Chọn ngày" },
-  "popup_html_memo_label": { "message": "Ghi chú" },
-  "popup_html_set_alarm_button": { "message": "Thêm báo thức" },
-  "popup_html_alarm_list_label": { "message": "Báo thức đã đặt" },
-  "sun": { "message": "CN" },
-  "mon": { "message": "T2" },
-  "tue": { "message": "T3" },
-  "wed": { "message": "T4" },
-  "thu": { "message": "T5" },
-  "fri": { "message": "T6" },
-  "sat": { "message": "T7" },
-  "popup_html_exist_time": { "message": "Đã có báo thức vào thời gian đó." },
-  "popup_html_save": { "message": "Lưu" },
-  "popup_html_cancel": { "message": "Hủy" },
-  "time_label": { "message": "Thời gian" },
-  "everyday_label": { "message": "Mỗi ngày" },
-  "memo_label": { "message": "Ghi chú" },
-  "alert_input_time": {
-    "message": "Vui lòng nhập thời gian lặp lại báo thức."
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "जब ध्वनि की अनुमति न हो, तब वेबसाइट से मूक अलार्म प्राप्त करें। अधिसूचना निर्धारित समय पर दिखाई देगी।"
   },
-  "alert_empty_day": { "message": "Vui lòng chọn ngày để đặt báo thức." },
-  "content_js_alarm": { "message": "Báo thức" },
-  "content_js_alarm_close": {
-    "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
+  "am": { "message": "पूर्वाह्न" },
+  "pm": { "message": "अपराह्न" },
+  "sun": { "message": "रवि" },
+  "mon": { "message": "सोम" },
+  "tue": { "message": "मंगल" },
+  "wed": { "message": "बुध" },
+  "thu": { "message": "गुरु" },
+  "fri": { "message": "शुक्र" },
+  "sat": { "message": "शनि" },
+  "oneTimeAlarm": { "message": "एक बार का अलार्म" },
+  "oneTimeAlarmTooltip": {
+    "message": "अलार्म एक बार सक्रिय होगा और फिर स्वचालित रूप से हट जाएगा।"
   },
-  "popup_html_oneTime_tooltip": {
-    "message": "निर्धारित सप्ताह के दिन की परवाह किए बिना यह एक बार सक्रिय होगा और फिर हटा दिया जाएगा।"
-  },
-  "popup_html_oneTime_alarm": { "message": "एक बार का अलार्म" }
+  "activeDays": { "message": "सक्रिय दिन" },
+  "activeDate": { "message": "सक्रिय तिथि" },
+  "save": { "message": "सहेजें" },
+  "memo": { "message": "नोट" },
+  "editAlarm": { "message": "अलार्म संपादित करें" },
+  "addAlarm": { "message": "अलार्म जोड़ें" },
+  "day": { "message": "दिन" },
+  "month": { "message": "महीना" },
+  "year": { "message": "साल" },
+  "invalidDate": { "message": "अमान्य तिथि" },
+  "pastDateNotAllowed": { "message": "अतीत की तिथि स्वीकार नहीं है" },
+  "pastTimeNotAllowed": { "message": "अतीत का समय स्वीकार नहीं है" }
 }

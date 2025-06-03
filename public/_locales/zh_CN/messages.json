@@ -1,75 +1,31 @@
 {
-  "extName": { "message": "Web Alarm" },
-  "extDescription": { "message": "Provides silent alarms on websites." },
-  "popup_html": { "message": "---------------------------------------------" },
-  "popup_html_alarm_setting_label": {
-    "message": "Set Alarm"
+  "extName": { "message": "网页闹钟" },
+  "extDescription": {
+    "message": "在无法发出声音时，从网站接收静音闹钟。通知将在准确时间出现。"
   },
-  "popup_html_alarm_edit_label": {
-    "message": "Edit Alarm"
+  "am": { "message": "上午" },
+  "pm": { "message": "下午" },
+  "sun": { "message": "日" },
+  "mon": { "message": "一" },
+  "tue": { "message": "二" },
+  "wed": { "message": "三" },
+  "thu": { "message": "四" },
+  "fri": { "message": "五" },
+  "sat": { "message": "六" },
+  "oneTimeAlarm": { "message": "一次性闹钟" },
+  "oneTimeAlarmTooltip": {
+    "message": "闹钟触发一次后将自动删除。"
   },
-  "popup_html_time_label": {
-    "message": "Alarm Time"
-  },
-  "popup_html_day_select_label": {
-    "message": "Select Days"
-  },
-  "popup_html_memo_label": {
-    "message": "Memo"
-  },
-  "popup_html_set_alarm_button": {
-    "message": "Add Alarm"
-  },
-  "popup_html_alarm_list_label": {
-    "message": "Set Alarms"
-  },
-  "sun": {
-    "message": "Sun"
-  },
-  "mon": {
-    "message": "Mon"
-  },
-  "tue": {
-    "message": "Tue"
-  },
-  "wed": {
-    "message": "Wed"
-  },
-  "thu": {
-    "message": "Thu"
-  },
-  "fri": {
-    "message": "Fri"
-  },
-  "sat": {
-    "message": "Sat"
-  },
-  "popup_html_exist_time": {
-    "message": "An alarm already exists for that time."
-  },
-  "popup_html_save": {
-    "message": "Save"
-  },
-  "popup_html_cancel": {
-    "message": "Cancel"
-  },
-  "popup_js": { "message": "---------------------------------------------" },
-  "time_label": { "message": "Time" },
-  "everyday_label": { "message": "Everyday" },
-  "memo_label": { "message": "Memo" },
-  "alert_input_time": { "message": "Please enter a repeat alarm time." },
-  "alert_empty_day": {
-    "message": "Please select the days you want to set the alarm for."
-  },
-  "content_js": { "message": "---------------------------------------------" },
-  "content_js_alarm": {
-    "message": "Alarm"
-  },
-  "content_js_alarm_close": {
-    "message": "Clicking the screen will close the alarm window."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "无论设定的星期几，都会仅响一次，然后被删除。"
-  },
-  "popup_html_oneTime_alarm": { "message": "一次性闹钟" }
+  "activeDays": { "message": "激活的日期" },
+  "activeDate": { "message": "激活日期" },
+  "save": { "message": "保存" },
+  "memo": { "message": "备忘" },
+  "editAlarm": { "message": "编辑闹钟" },
+  "addAlarm": { "message": "添加闹钟" },
+  "day": { "message": "日" },
+  "month": { "message": "月" },
+  "year": { "message": "年" },
+  "invalidDate": { "message": "无效日期" },
+  "pastDateNotAllowed": { "message": "不允许选择过去的日期" },
+  "pastTimeNotAllowed": { "message": "不允许选择过去的时间" }
 }

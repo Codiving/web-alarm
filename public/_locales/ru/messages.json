@@ -1,15 +1,10 @@
 {
-  "extName": { "message": "Веб-будильник" },
+  "extName": { "message": "Web Alarm" },
   "extDescription": {
-    "message": "Предоставляет бесшумные будильники на веб-сайтах."
+    "message": "Получайте бесшумное оповещение с сайта, когда звук недоступен. Уведомление появится точно в назначенное время."
   },
-  "popup_html_alarm_setting_label": { "message": "Установить будильник" },
-  "popup_html_alarm_edit_label": { "message": "Редактировать будильник" },
-  "popup_html_time_label": { "message": "Время будильника" },
-  "popup_html_day_select_label": { "message": "Выбрать дни" },
-  "popup_html_memo_label": { "message": "Заметка" },
-  "popup_html_set_alarm_button": { "message": "Добавить будильник" },
-  "popup_html_alarm_list_label": { "message": "Установленные будильники" },
+  "am": { "message": "ДП" },
+  "pm": { "message": "ПП" },
   "sun": { "message": "Вс" },
   "mon": { "message": "Пн" },
   "tue": { "message": "Вт" },
@@ -17,26 +12,20 @@
   "thu": { "message": "Чт" },
   "fri": { "message": "Пт" },
   "sat": { "message": "Сб" },
-  "popup_html_exist_time": {
-    "message": "Будильник уже установлен на это время."
+  "oneTimeAlarm": { "message": "Одноразовый будильник" },
+  "oneTimeAlarmTooltip": {
+    "message": "Будильник сработает один раз и будет автоматически удалён."
   },
-  "popup_html_save": { "message": "Сохранить" },
-  "popup_html_cancel": { "message": "Отмена" },
-  "time_label": { "message": "Время" },
-  "everyday_label": { "message": "Каждый день" },
-  "memo_label": { "message": "Заметка" },
-  "alert_input_time": {
-    "message": "Пожалуйста, введите время для повторяющегося будильника."
-  },
-  "alert_empty_day": {
-    "message": "Пожалуйста, выберите дни, на которые вы хотите установить будильник."
-  },
-  "content_js_alarm": { "message": "Будильник" },
-  "content_js_alarm_close": {
-    "message": "Щелчок по экрану закроет окно будильника."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Срабатывает один раз независимо от установленного дня недели и затем удаляется."
-  },
-  "popup_html_oneTime_alarm": { "message": "Одноразовый будильник" }
+  "activeDays": { "message": "Активные дни" },
+  "activeDate": { "message": "Активная дата" },
+  "save": { "message": "Сохранить" },
+  "memo": { "message": "Заметка" },
+  "editAlarm": { "message": "Редактировать будильник" },
+  "addAlarm": { "message": "Добавить будильник" },
+  "day": { "message": "День" },
+  "month": { "message": "Месяц" },
+  "year": { "message": "Год" },
+  "invalidDate": { "message": "Недопустимая дата" },
+  "pastDateNotAllowed": { "message": "Установка прошедшей даты запрещена" },
+  "pastTimeNotAllowed": { "message": "Установка прошедшего времени запрещена" }
 }

@@ -1,15 +1,10 @@
 {
-  "extName": { "message": "Alarme Web" },
+  "extName": { "message": "Web Alarm" },
   "extDescription": {
-    "message": "Fournit des alarmes silencieuses sur les sites Web."
+    "message": "Recevez une alarme silencieuse depuis le site web lorsque le son est désactivé. La notification apparaîtra à l'heure exacte."
   },
-  "popup_html_alarm_setting_label": { "message": "Définir l'alarme" },
-  "popup_html_alarm_edit_label": { "message": "Modifier l'alarme" },
-  "popup_html_time_label": { "message": "Heure de l'alarme" },
-  "popup_html_day_select_label": { "message": "Sélectionner les jours" },
-  "popup_html_memo_label": { "message": "Mémo" },
-  "popup_html_set_alarm_button": { "message": "Ajouter une alarme" },
-  "popup_html_alarm_list_label": { "message": "Alarmes définies" },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
   "sun": { "message": "Dim" },
   "mon": { "message": "Lun" },
   "tue": { "message": "Mar" },
@@ -17,26 +12,24 @@
   "thu": { "message": "Jeu" },
   "fri": { "message": "Ven" },
   "sat": { "message": "Sam" },
-  "popup_html_exist_time": {
-    "message": "Une alarme existe déjà pour cette heure."
+  "oneTimeAlarm": { "message": "Alarme unique" },
+  "oneTimeAlarmTooltip": {
+    "message": "L'alarme se déclenche une fois puis est automatiquement supprimée."
   },
-  "popup_html_save": { "message": "Enregistrer" },
-  "popup_html_cancel": { "message": "Annuler" },
-  "time_label": { "message": "Heure" },
-  "everyday_label": { "message": "Tous les jours" },
-  "memo_label": { "message": "Mémo" },
-  "alert_input_time": {
-    "message": "Veuillez entrer une heure pour l'alarme répétée."
+  "activeDays": { "message": "Jours actifs" },
+  "activeDate": { "message": "Date active" },
+  "save": { "message": "Enregistrer" },
+  "memo": { "message": "Mémo" },
+  "editAlarm": { "message": "Modifier l'alarme" },
+  "addAlarm": { "message": "Ajouter une alarme" },
+  "day": { "message": "Jour" },
+  "month": { "message": "Mois" },
+  "year": { "message": "Année" },
+  "invalidDate": { "message": "Date invalide" },
+  "pastDateNotAllowed": {
+    "message": "Les dates passées ne sont pas autorisées"
   },
-  "alert_empty_day": {
-    "message": "Veuillez sélectionner les jours pour lesquels vous souhaitez définir l'alarme."
-  },
-  "content_js_alarm": { "message": "Alarme" },
-  "content_js_alarm_close": {
-    "message": "Cliquer sur l'écran fermera la fenêtre d'alarme."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Se déclenche une seule fois, quel que soit le jour défini, puis est supprimé."
-  },
-  "popup_html_oneTime_alarm": { "message": "Alarme unique" }
+  "pastTimeNotAllowed": {
+    "message": "Les heures passées ne sont pas autorisées"
+  }
 }

@@ -1,66 +1,31 @@
 {
   "extName": { "message": "Web Alarm" },
-  "extDescription": { "message": "웹사이트에서 무음 알람을 제공합니다." },
-  "popup_html_alarm_setting_label": {
-    "message": "알람 설정"
+  "extDescription": {
+    "message": "조용한 환경에서 소리를 낼 수 없을 때, 웹사이트에서 무음 알람을 받아보세요. 정확한 시간에 알림이 표시됩니다."
   },
-  "popup_html_alarm_edit_label": {
-    "message": "알람 수정"
+  "am": { "message": "오전" },
+  "pm": { "message": "오후" },
+  "sun": { "message": "일" },
+  "mon": { "message": "월" },
+  "tue": { "message": "화" },
+  "wed": { "message": "수" },
+  "thu": { "message": "목" },
+  "fri": { "message": "금" },
+  "sat": { "message": "토" },
+  "oneTimeAlarm": { "message": "1회용 알람" },
+  "oneTimeAlarmTooltip": {
+    "message": "알람 발생 후 자동으로 삭제됩니다."
   },
-  "popup_html_time_label": {
-    "message": "알람 시간"
-  },
-  "popup_html_day_select_label": {
-    "message": "요일 선택"
-  },
-  "popup_html_memo_label": {
-    "message": "메모"
-  },
-  "popup_html_set_alarm_button": {
-    "message": "알람 추가"
-  },
-  "popup_html_alarm_list_label": {
-    "message": "설정된 알람"
-  },
-  "sun": {
-    "message": "일"
-  },
-  "mon": {
-    "message": "월"
-  },
-  "tue": {
-    "message": "화"
-  },
-  "wed": {
-    "message": "수"
-  },
-  "thu": {
-    "message": "목"
-  },
-  "fri": {
-    "message": "금"
-  },
-  "sat": {
-    "message": "토"
-  },
-  "popup_html_exist_time": {
-    "message": "해당 시간에 이미 알람이 설정되어 있습니다."
-  },
-  "popup_html_save": {
-    "message": "저장"
-  },
-  "popup_html_cancel": {
-    "message": "취소"
-  },
-  "time_label": { "message": "시간" },
-  "everyday_label": { "message": "매일" },
-  "memo_label": { "message": "메모" },
-  "alert_input_time": { "message": "반복 알람 시간을 입력해 주세요." },
-  "alert_empty_day": {
-    "message": "알람을 설정할 요일을 선택해 주세요."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "설정된 요일과 상관 없이 1번 발생하고 삭제됩니다."
-  },
-  "popup_html_oneTime_alarm": { "message": "1회용 알람" }
+  "activeDays": { "message": "활성화된 요일" },
+  "activeDate": { "message": "활성화된 날짜" },
+  "save": { "message": "저장" },
+  "memo": { "message": "메모" },
+  "editAlarm": { "message": "알람 수정" },
+  "addAlarm": { "message": "알람 추가" },
+  "day": { "message": "일" },
+  "month": { "message": "월" },
+  "year": { "message": "년" },
+  "invalidDate": { "message": "올바른 날짜가 아닙니다." },
+  "pastDateNotAllowed": { "message": "과거 날짜로 설정할 수 없습니다." },
+  "pastTimeNotAllowed": { "message": "과거 시간으로 설정할 수 없습니다." }
 }

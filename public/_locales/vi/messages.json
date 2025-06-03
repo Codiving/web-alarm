@@ -1,38 +1,31 @@
 {
-  "extName": { "message": "वेब अलार्म" },
-  "extDescription": { "message": "वेबसाइटों पर मूक अलार्म प्रदान करता है।" },
-  "popup_html_alarm_setting_label": { "message": "अलार्म सेट करें" },
-  "popup_html_alarm_edit_label": { "message": "अलार्म संपादित करें" },
-  "popup_html_time_label": { "message": "अलार्म समय" },
-  "popup_html_day_select_label": { "message": "दिन चुनें" },
-  "popup_html_memo_label": { "message": "नोट" },
-  "popup_html_set_alarm_button": { "message": "अलार्म जोड़ें" },
-  "popup_html_alarm_list_label": { "message": "सेट किए गए अलार्म" },
-  "sun": { "message": "रवि" },
-  "mon": { "message": "सोम" },
-  "tue": { "message": "मंगल" },
-  "wed": { "message": "बुध" },
-  "thu": { "message": "गुरु" },
-  "fri": { "message": "शुक्र" },
-  "sat": { "message": "शनि" },
-  "popup_html_exist_time": {
-    "message": "इस समय के लिए पहले से अलार्म सेट है।"
+  "extName": { "message": "Báo thức Web" },
+  "extDescription": {
+    "message": "Nhận báo thức im lặng từ trang web khi âm thanh không được phép. Thông báo sẽ xuất hiện đúng thời gian."
   },
-  "popup_html_save": { "message": "सहेजें" },
-  "popup_html_cancel": { "message": "रद्द करें" },
-  "time_label": { "message": "समय" },
-  "everyday_label": { "message": "हर दिन" },
-  "memo_label": { "message": "नोट" },
-  "alert_input_time": {
-    "message": "कृपया दोहराने वाले अलार्म का समय दर्ज करें।"
+  "am": { "message": "SA" },
+  "pm": { "message": "CH" },
+  "sun": { "message": "CN" },
+  "mon": { "message": "T2" },
+  "tue": { "message": "T3" },
+  "wed": { "message": "T4" },
+  "thu": { "message": "T5" },
+  "fri": { "message": "T6" },
+  "sat": { "message": "T7" },
+  "oneTimeAlarm": { "message": "Báo thức một lần" },
+  "oneTimeAlarmTooltip": {
+    "message": "Báo thức sẽ kích hoạt một lần rồi tự động xóa."
   },
-  "alert_empty_day": { "message": "कृपया अलार्म के लिए दिन चुनें।" },
-  "content_js_alarm": { "message": "अलार्म" },
-  "content_js_alarm_close": {
-    "message": "स्क्रीन पर क्लिक करने से अलार्म विंडो बंद हो जाएगी।"
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Kích hoạt một lần bất kể ngày trong tuần đã đặt, sau đó sẽ bị xóa."
-  },
-  "popup_html_oneTime_alarm": { "message": "Báo thức một lần" }
+  "activeDays": { "message": "Ngày hoạt động" },
+  "activeDate": { "message": "Ngày hoạt động" },
+  "save": { "message": "Lưu" },
+  "memo": { "message": "Ghi chú" },
+  "editAlarm": { "message": "Chỉnh sửa báo thức" },
+  "addAlarm": { "message": "Thêm báo thức" },
+  "day": { "message": "Ngày" },
+  "month": { "message": "Tháng" },
+  "year": { "message": "Năm" },
+  "invalidDate": { "message": "Ngày không hợp lệ" },
+  "pastDateNotAllowed": { "message": "Không cho phép chọn ngày trong quá khứ" },
+  "pastTimeNotAllowed": { "message": "Không cho phép chọn thời gian đã qua" }
 }

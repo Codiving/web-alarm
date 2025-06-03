@@ -1,15 +1,10 @@
 {
-  "extName": { "message": "Alarma Web" },
+  "extName": { "message": "Web Alarm" },
   "extDescription": {
-    "message": "Proporciona alarmas silenciosas en sitios web."
+    "message": "Recibe una alarma silenciosa desde el sitio web cuando no se permite el sonido. La notificación aparecerá a la hora exacta."
   },
-  "popup_html_alarm_setting_label": { "message": "Configurar alarma" },
-  "popup_html_alarm_edit_label": { "message": "Editar alarma" },
-  "popup_html_time_label": { "message": "Hora de la alarma" },
-  "popup_html_day_select_label": { "message": "Seleccionar días" },
-  "popup_html_memo_label": { "message": "Nota" },
-  "popup_html_set_alarm_button": { "message": "Agregar alarma" },
-  "popup_html_alarm_list_label": { "message": "Alarmas configuradas" },
+  "am": { "message": "a. m." },
+  "pm": { "message": "p. m." },
   "sun": { "message": "Dom" },
   "mon": { "message": "Lun" },
   "tue": { "message": "Mar" },
@@ -17,24 +12,20 @@
   "thu": { "message": "Jue" },
   "fri": { "message": "Vie" },
   "sat": { "message": "Sáb" },
-  "popup_html_exist_time": { "message": "Ya existe una alarma para esa hora." },
-  "popup_html_save": { "message": "Guardar" },
-  "popup_html_cancel": { "message": "Cancelar" },
-  "time_label": { "message": "Hora" },
-  "everyday_label": { "message": "Todos los días" },
-  "memo_label": { "message": "Nota" },
-  "alert_input_time": {
-    "message": "Por favor, introduce la hora de repetición de la alarma."
+  "oneTimeAlarm": { "message": "Alarma única" },
+  "oneTimeAlarmTooltip": {
+    "message": "La alarma se activa una vez y luego se elimina automáticamente."
   },
-  "alert_empty_day": {
-    "message": "Selecciona los días para configurar la alarma."
-  },
-  "content_js_alarm": { "message": "Alarma" },
-  "content_js_alarm_close": {
-    "message": "Haz clic en la pantalla para cerrar la ventana de alarma."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Se activa una vez independientemente del día de la semana establecido y luego se elimina."
-  },
-  "popup_html_oneTime_alarm": { "message": "Alarma de una sola vez" }
+  "activeDays": { "message": "Días activos" },
+  "activeDate": { "message": "Fecha activa" },
+  "save": { "message": "Guardar" },
+  "memo": { "message": "Nota" },
+  "editAlarm": { "message": "Editar alarma" },
+  "addAlarm": { "message": "Agregar alarma" },
+  "day": { "message": "Día" },
+  "month": { "message": "Mes" },
+  "year": { "message": "Año" },
+  "invalidDate": { "message": "Fecha inválida" },
+  "pastDateNotAllowed": { "message": "No se permiten fechas pasadas" },
+  "pastTimeNotAllowed": { "message": "No se permiten horas pasadas" }
 }

@@ -1,13 +1,10 @@
 {
-  "extName": { "message": "Allarme Web" },
-  "extDescription": { "message": "Fornisce allarmi silenziosi sui siti web." },
-  "popup_html_alarm_setting_label": { "message": "Imposta allarme" },
-  "popup_html_alarm_edit_label": { "message": "Modifica allarme" },
-  "popup_html_time_label": { "message": "Ora dell'allarme" },
-  "popup_html_day_select_label": { "message": "Seleziona giorni" },
-  "popup_html_memo_label": { "message": "Memo" },
-  "popup_html_set_alarm_button": { "message": "Aggiungi allarme" },
-  "popup_html_alarm_list_label": { "message": "Allarmi impostati" },
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Ricevi un allarme silenzioso dal sito quando l'audio non è consentito. La notifica apparirà all'ora esatta."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
   "sun": { "message": "Dom" },
   "mon": { "message": "Lun" },
   "tue": { "message": "Mar" },
@@ -15,24 +12,20 @@
   "thu": { "message": "Gio" },
   "fri": { "message": "Ven" },
   "sat": { "message": "Sab" },
-  "popup_html_exist_time": {
-    "message": "Esiste già un allarme per quell'ora."
+  "oneTimeAlarm": { "message": "Allarme singolo" },
+  "oneTimeAlarmTooltip": {
+    "message": "L'allarme si attiva una volta e poi viene eliminato automaticamente."
   },
-  "popup_html_save": { "message": "Salva" },
-  "popup_html_cancel": { "message": "Annulla" },
-  "time_label": { "message": "Ora" },
-  "everyday_label": { "message": "Ogni giorno" },
-  "memo_label": { "message": "Memo" },
-  "alert_input_time": { "message": "Inserisci un'ora per l'allarme ripetuto." },
-  "alert_empty_day": {
-    "message": "Seleziona i giorni per cui desideri impostare l'allarme."
-  },
-  "content_js_alarm": { "message": "Allarme" },
-  "content_js_alarm_close": {
-    "message": "Cliccando sullo schermo si chiuderà la finestra dell'allarme."
-  },
-  "popup_html_oneTime_tooltip": {
-    "message": "Si attiva una sola volta indipendentemente dal giorno impostato, poi viene eliminato."
-  },
-  "popup_html_oneTime_alarm": { "message": "Allarme singolo" }
+  "activeDays": { "message": "Giorni attivi" },
+  "activeDate": { "message": "Data attiva" },
+  "save": { "message": "Salva" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "Modifica allarme" },
+  "addAlarm": { "message": "Aggiungi allarme" },
+  "day": { "message": "Giorno" },
+  "month": { "message": "Mese" },
+  "year": { "message": "Anno" },
+  "invalidDate": { "message": "Data non valida" },
+  "pastDateNotAllowed": { "message": "Date passate non consentite" },
+  "pastTimeNotAllowed": { "message": "Orari passati non consentiti" }
 }
