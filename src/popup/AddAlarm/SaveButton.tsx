@@ -33,14 +33,13 @@ export default function SaveButton({
         if (!hourRef.current) return;
         if (!minuteRef.current) return;
 
-        const hour = hourRef.current;
-        const minute = minuteRef.current;
-
         const time = getHHMM(
           ampmRef.current === "오전",
           hourRef.current,
           minuteRef.current
         );
+
+        const [hour, minute] = time.split(":");
 
         const newAlarm = {
           ...alarm,

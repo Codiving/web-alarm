@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
-import { DAY_LOCALE_MAP } from "../../type/day";
+import { DATE_ORDER_BY_LOCALE, DAY_LOCALE_MAP, Lang } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";
@@ -17,6 +17,25 @@ interface AlarmListProps {
 }
 
 const TYPES = [t("all"), t("normalAlarm"), t("oneTimeAlarm")] as const;
+
+const getDate = (date: string) => {
+  const lang = chrome.i18n.getUILanguage() as Lang;
+  const format = DATE_ORDER_BY_LOCALE[lang] || {
+    order: ["year", "month", "day"],
+    separator: "-"
+  };
+
+  const [year, month, day] = date.split("-");
+  const dateParts = {
+    year,
+    month,
+    day
+  };
+
+  const reordered = format.order.map(key => dateParts[key]);
+
+  return reordered.join(format.separator);
+};
 
 export default function AlarmList({
   onChangeDialog,
@@ -132,7 +151,7 @@ export default function AlarmList({
                     </svg>
                     <p className="text-[14px]">
                       {isOneTime
-                        ? t("oneTimeAlarm")
+                        ? `${t("oneTimeAlarm")} / ${getDate(alarm.date)}`
                         : days.length === 7
                         ? t("everyday")
                         : days.map(day => DAY_LOCALE_MAP[day]).join(", ")}
