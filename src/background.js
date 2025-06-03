@@ -6,24 +6,22 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 
     // 알람 개수가 줄었는지 확인
     if (newValue.length < oldValue.length) {
-      console.log("알람 개수가 줄었습니다.");
-      const newValueIds = newValue.map((el) => el.id);
-      const filteredAlarm = oldValue.filter(
-        (el) => !newValueIds.includes(el.id)
-      );
+      // console.log("알람 개수가 줄었습니다.");
+      const newValueIds = newValue.map(el => el.id);
+      const filteredAlarm = oldValue.filter(el => !newValueIds.includes(el.id));
 
       if (filteredAlarm.length) {
         const deletedAlarm = filteredAlarm[0];
 
         // 일회성 알람인 경우에만 메시지 전송
         if (deletedAlarm?.isOneTime) {
-          console.log("삭제된 알람은 일회성 알람입니다.");
+          // console.log("삭제된 알람은 일회성 알람입니다.");
           chrome.runtime.sendMessage({
             type: "ALARM_CLOSED",
-            alarms: deletedAlarm,
+            alarms: deletedAlarm
           });
         } else {
-          console.log("삭제된 알람은 일회성 알람이 아닙니다.");
+          // console.log("삭제된 알람은 일회성 알람이 아닙니다.");
         }
       }
     }
@@ -36,12 +34,12 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
  */
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.tabs.query({}, (tabs) => {
+  chrome.tabs.query({}, tabs => {
     for (const tab of tabs) {
       if (tab.url && tab.url.startsWith("http")) {
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
-          files: ["content.js"],
+          files: ["content.js"]
         });
       }
     }
