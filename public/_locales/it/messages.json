@@ -34,5 +34,7 @@
     "message": "Fai clic sullo schermo per chiudere la finestra dell'allarme."
   },
   "all": { "message": "Tutti" },
-  "normalAlarm": { "message": "Allarme normale" }
+  "normalAlarm": { "message": "Allarme normale" },
+  "twentyFourHourFormat": { "message": "24h" },
+  "twelveHourFormat": { "message": "12h" }
 }

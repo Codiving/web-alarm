@@ -110,7 +110,7 @@ export default function AlarmList({
             backgroundColor: is24HourFormat ? "#0000005c" : "#5c5c5c"
           }}
         >
-          24시간
+          {t("twentyFourHourFormat")}
         </button>
         <button
           onClick={async () => {
@@ -121,7 +121,7 @@ export default function AlarmList({
             backgroundColor: !is24HourFormat ? "#0000005c" : "#5c5c5c"
           }}
         >
-          12시간
+          {t("twelveHourFormat")}
         </button>
       </div>
       <div className="flex gap-[4px]">

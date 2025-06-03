@@ -34,5 +34,7 @@
     "message": "Click the screen to close the alarm window."
   },
   "all": { "message": "All" },
-  "normalAlarm": { "message": "Normal Alarm" }
+  "normalAlarm": { "message": "Normal Alarm" },
+  "twentyFourHourFormat": { "message": "24h" },
+  "twelveHourFormat": { "message": "12h" }
 }

@@ -32,5 +32,7 @@
   "alarm": { "message": "알람" },
   "closeAlarmMessage": { "message": "화면을 클릭하면 알람 창이 닫힙니다." },
   "all": { "message": "전체" },
-  "normalAlarm": { "message": "일반 알람" }
+  "normalAlarm": { "message": "일반 알람" },
+  "twentyFourHourFormat": { "message": "24시간" },
+  "twelveHourFormat": { "message": "12시간" }
 }

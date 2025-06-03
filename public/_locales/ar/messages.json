@@ -32,5 +32,7 @@
   "alarm": { "message": "منبه" },
   "closeAlarmMessage": { "message": "انقر على الشاشة لإغلاق نافذة التنبيه." },
   "all": { "message": "الكل" },
-  "normalAlarm": { "message": "منبه عادي" }
+  "normalAlarm": { "message": "منبه عادي" },
+  "twentyFourHourFormat": { "message": "24 ساعة" },
+  "twelveHourFormat": { "message": "12 ساعة" }
 }

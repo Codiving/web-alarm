@@ -34,5 +34,7 @@
     "message": "Haga clic en la pantalla para cerrar la ventana de alarma."
   },
   "all": { "message": "Todos" },
-  "normalAlarm": { "message": "Alarma normal" }
+  "normalAlarm": { "message": "Alarma normal" },
+  "twentyFourHourFormat": { "message": "24 h" },
+  "twelveHourFormat": { "message": "12 h" }
 }

@@ -34,5 +34,7 @@
     "message": "Нажмите на экран, чтобы закрыть окно будильника."
   },
   "all": { "message": "Все" },
-  "normalAlarm": { "message": "Обычный будильник" }
+  "normalAlarm": { "message": "Обычный будильник" },
+  "twentyFourHourFormat": { "message": "24ч" },
+  "twelveHourFormat": { "message": "12ч" }
 }

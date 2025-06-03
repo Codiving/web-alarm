@@ -29,7 +29,9 @@ type LocaleKey =
   | "alarm"
   | "closeAlarmMessage"
   | "all"
-  | "normalAlarm";
+  | "normalAlarm"
+  | "twentyFourHourFormat"
+  | "twelveHourFormat";
 
 export function t(key: LocaleKey): string {
   return chrome.i18n.getMessage(key) || key;
