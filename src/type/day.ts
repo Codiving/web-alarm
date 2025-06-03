@@ -35,18 +35,44 @@ export type Day = (typeof DAYS)[number];
 export type Lang = keyof typeof DATE_ORDER_BY_LOCALE;
 
 export const DATE_ORDER_BY_LOCALE = {
-  ar: { order: ["day", "month", "year"], separator: "-" },
-  de: { order: ["day", "month", "year"], separator: "." },
-  en: { order: ["month", "day", "year"], separator: "/" },
-  es: { order: ["day", "month", "year"], separator: "/" },
-  fr: { order: ["day", "month", "year"], separator: "/" },
-  hi: { order: ["day", "month", "year"], separator: "-" },
-  it: { order: ["day", "month", "year"], separator: "/" },
-  ja: { order: ["year", "month", "day"], separator: "-" },
-  ko: { order: ["year", "month", "day"], separator: "-" },
-  pt_BR: { order: ["day", "month", "year"], separator: "/" },
-  ru: { order: ["day", "month", "year"], separator: "." },
-  th: { order: ["day", "month", "year"], separator: "/" },
-  vi: { order: ["day", "month", "year"], separator: "/" },
-  zh_CN: { order: ["year", "month", "day"], separator: "-" }
+  ar: { order: ["day", "month", "year"], separator: "-", is24HourFormat: true },
+  de: { order: ["day", "month", "year"], separator: ".", is24HourFormat: true },
+  en: {
+    order: ["month", "day", "year"],
+    separator: "/",
+    is24HourFormat: false
+  },
+  es: { order: ["day", "month", "year"], separator: "/", is24HourFormat: true },
+  fr: { order: ["day", "month", "year"], separator: "/", is24HourFormat: true },
+  hi: {
+    order: ["day", "month", "year"],
+    separator: "-",
+    is24HourFormat: false
+  },
+  it: { order: ["day", "month", "year"], separator: "/", is24HourFormat: true },
+  ja: { order: ["year", "month", "day"], separator: "-", is24HourFormat: true },
+  ko: { order: ["year", "month", "day"], separator: "-", is24HourFormat: true },
+  pt_BR: {
+    order: ["day", "month", "year"],
+    separator: "/",
+    is24HourFormat: false
+  },
+  ru: { order: ["day", "month", "year"], separator: ".", is24HourFormat: true },
+  th: {
+    order: ["day", "month", "year"],
+    separator: "/",
+    is24HourFormat: false
+  },
+  vi: { order: ["day", "month", "year"], separator: "/", is24HourFormat: true },
+  zh_CN: {
+    order: ["year", "month", "day"],
+    separator: "-",
+    is24HourFormat: true
+  }
 } as const;
+
+export const getIs24HourFormat = () => {
+  const lang = chrome.i18n.getUILanguage() as Lang;
+  const { is24HourFormat } = DATE_ORDER_BY_LOCALE[lang];
+  return is24HourFormat;
+};

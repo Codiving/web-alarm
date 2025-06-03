@@ -2,6 +2,7 @@ import { getHHMM, IDate, isPastTime, isValidDate } from "../../utils/time";
 import { Alarm } from "../../type/alarm";
 import { getFromStorage, setToStorage } from "../storage";
 import { t } from "../../utils/i18n";
+import { getIs24HourFormat } from "../../type/day";
 
 interface SaveButtonProps {
   isUpdate: boolean;
@@ -24,18 +25,41 @@ export default function SaveButton({
   hourRef,
   minuteRef
 }: SaveButtonProps) {
+  const is24HourFormat = getIs24HourFormat();
   return (
     <button
       onClick={async () => {
         // TimePicker 애니메이션 시간 확보
-        if (!canSave) return;
-        if (!ampmRef.current) return;
-        if (!hourRef.current) return;
-        if (!minuteRef.current) return;
+        if (!canSave) {
+          return;
+        }
+        if (!is24HourFormat && !ampmRef.current) {
+          return;
+        }
+        if (!hourRef.current) {
+          return;
+        }
+        if (!minuteRef.current) {
+          return;
+        }
+
+        const nHourRefValue = Number(hourRef.current);
+        const hourRefValue = is24HourFormat
+          ? nHourRefValue === 0
+            ? "12"
+            : nHourRefValue > 12
+            ? nHourRefValue % 12
+            : nHourRefValue
+          : nHourRefValue;
+        const ampmRefValue = is24HourFormat
+          ? nHourRefValue < 12
+            ? "오전"
+            : "오후"
+          : ampmRef.current;
 
         const time = getHHMM(
-          ampmRef.current === "오전",
-          hourRef.current,
+          ampmRefValue === "오전",
+          String(hourRefValue),
           minuteRef.current
         );
 

@@ -1,6 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
-import { DATE_ORDER_BY_LOCALE, DAY_LOCALE_MAP, Lang } from "../../type/day";
+import {
+  DATE_ORDER_BY_LOCALE,
+  DAY_LOCALE_MAP,
+  getIs24HourFormat,
+  Lang
+} from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
 import { OnChangeDialog } from "../Popup";
@@ -43,6 +48,7 @@ export default function AlarmList({
   type: upperType,
   onChangeType
 }: AlarmListProps) {
+  const is24HourFormat = getIs24HourFormat();
   const [alarms, setAlarms] = useState<Alarm[]>([]);
 
   const openAddAlarmLayer = () => onChangeDialog("add", { open: true });
@@ -116,7 +122,7 @@ export default function AlarmList({
       <div className="scrollbar-hide overflow-auto flex-1 flex flex-col gap-[8px]">
         {alarms.map(alarm => {
           const { id, days, isOneTime, memo } = alarm;
-          const { hour, minute, meridiem } = getTimeInfo(alarm);
+          const { hour, minute, meridiem, isAM } = getTimeInfo(alarm);
 
           if (upperType === t("oneTimeAlarm")) {
             if (!isOneTime) return null;
@@ -158,8 +164,18 @@ export default function AlarmList({
                     </p>
                   </div>
                   <div className="flex items-end gap-[14px]">
-                    <span>{meridiem}</span>
-                    <span className="text-[24px] mb-[-4px]">{`${hour}:${minute}`}</span>
+                    {!is24HourFormat && <span>{meridiem}</span>}
+                    <span className="text-[24px] mb-[-4px]">{`${
+                      !is24HourFormat
+                        ? hour
+                        : isAM
+                        ? hour === "12"
+                          ? "00"
+                          : hour
+                        : hour === "12"
+                        ? "12"
+                        : Number(hour) + 12
+                    }:${minute}`}</span>
                   </div>
                 </div>
                 <EditDeleteButton

@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Alarm, EditAlarm } from "../../type/alarm";
 import { t } from "../../utils/i18n";
+import { getIs24HourFormat } from "../../type/day";
 
 const TEMP = "" as const;
 const AM_PM = ["오전", "오후"];
 const paddedAMPM = [TEMP, ...AM_PM, TEMP];
 
-const HOURS = Array.from({ length: 12 }, (_, i) => String(i + 1));
-const paddedHOURS = [TEMP, ...HOURS, TEMP];
+const HOURS_12 = Array.from({ length: 12 }, (_, i) => String(i + 1));
+const HOURS_24 = Array.from({ length: 24 }, (_, i) => String(i));
+const paddedHOURS_12 = [TEMP, ...HOURS_12, TEMP];
+const paddedHOURS_24 = [TEMP, ...HOURS_24, TEMP];
 
 const MINUTES = Array.from({ length: 60 }, (_, i) => String(i));
 const paddedMINUTES = [TEMP, ...MINUTES, TEMP];
@@ -47,7 +50,6 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
     const index = Math.round(
       (visibleCenter - OTHER_ITEM_HEIGHT) / OTHER_ITEM_HEIGHT
     );
-
     valueRef.current = items[index];
     setCenterIndex(index);
   };
@@ -66,7 +68,13 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
       {items.map((item, idx) => {
         const isCenter = idx === centerIndex;
         const height = isCenter ? CENTER_ITEM_HEIGHT : OTHER_ITEM_HEIGHT;
-        const fontSize = isCenter ? (label ? "20px" : "28px") : "16px";
+        const fontSize = label
+          ? isCenter
+            ? "20px"
+            : "16px"
+          : isCenter
+          ? "28px"
+          : "16px";
         const color = isCenter ? "white" : "gray";
         const opacity = isCenter ? 1 : 0.6;
         const text = item === TEMP ? "" : item.padStart(2, "0");
@@ -74,7 +82,7 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
         return (
           <div
             key={item + idx}
-            className={"flex items-center justify-center snap-center"}
+            className="flex items-center justify-center snap-center"
             style={{
               height,
               fontSize,
@@ -91,31 +99,43 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
   );
 };
 
-const getTimeInfo = (alarm: EditAlarm) => {
+const getTimeInfo = (alarm: EditAlarm, is24: boolean) => {
   if (!alarm) {
     const now = new Date();
-    const currentHours = now.getHours();
-    const isAM = currentHours < 12;
-    const hours12 = currentHours % 12 === 0 ? "12" : String(currentHours % 12);
-    const currentMinutes = String(now.getMinutes());
+    const hour24 = now.getHours();
+    const minute = String(now.getMinutes());
 
+    if (is24) {
+      return {
+        hour: String(hour24),
+        minute
+      };
+    }
+
+    const isAM = hour24 < 12;
+    const hour12 = hour24 % 12 === 0 ? "12" : String(hour24 % 12);
     return {
       isAM,
-      hour: hours12,
-      minute: currentMinutes
+      hour: hour12,
+      minute
     };
   }
 
-  const { time } = alarm;
-  const [hour24, numberMinute] = time.split(":").map(Number);
-  const hour12 = hour24 % 12 === 0 ? "12" : String(hour24 % 12);
-  const hour = String(hour12);
-  const minute = String(numberMinute);
-  const isAM = hour24 < 12;
+  const [hour24, min] = alarm.time.split(":").map(Number);
+  const minute = String(min);
 
+  if (is24) {
+    return {
+      hour: String(hour24),
+      minute
+    };
+  }
+
+  const isAM = hour24 < 12;
+  const hour12 = hour24 % 12 === 0 ? "12" : String(hour24 % 12);
   return {
     isAM,
-    hour,
+    hour: hour12,
     minute
   };
 };
@@ -133,18 +153,31 @@ export default function TimePicker({
   hourRef,
   minuteRef
 }: TimePickerProps) {
-  const { isAM, hour, minute } = getTimeInfo(alarm);
-  const ampm = isAM ? t("am") : t("pm");
+  const is24HourFormat = getIs24HourFormat();
+  const timeInfo = getTimeInfo(alarm, is24HourFormat);
+  const hour = timeInfo.hour;
+  const minute = timeInfo.minute;
+
+  if (is24HourFormat) {
+    return (
+      <div className="grid grid-cols-2 gap-2 w-full text-center font-bold">
+        <List valueRef={hourRef} items={paddedHOURS_24} selected={hour} />
+        <List valueRef={minuteRef} items={paddedMINUTES} selected={minute} />
+      </div>
+    );
+  }
+
+  const ampm = timeInfo.isAM ? t("am") : t("pm");
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full text-center font-bold">
       <List
-        valueRef={ampmRef}
+        valueRef={ampmRef!}
         label="meridiem"
         items={paddedAMPM}
         selected={ampm}
       />
-      <List valueRef={hourRef} items={paddedHOURS} selected={hour} />
+      <List valueRef={hourRef} items={paddedHOURS_12} selected={hour} />
       <List valueRef={minuteRef} items={paddedMINUTES} selected={minute} />
     </div>
   );

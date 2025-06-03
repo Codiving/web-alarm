@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { EditAlarm } from "../type/alarm";
+import { t } from "../utils/i18n";
 import AddAlarm from "./AddAlarm";
 import AlarmList from "./AlarmList";
-import { t } from "../utils/i18n";
 
 const DIALOG = {
   add: {

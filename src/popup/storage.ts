@@ -1,4 +1,4 @@
-type Key = "lastSelectedDays" | "alarms" | "closedAlarms";
+type Key = "is24HourFormat" | "lastSelectedDays" | "alarms" | "closedAlarms";
 
 export const getFromStorage = <T = unknown>(key: Key): Promise<T | null> => {
   return new Promise(resolve => {
