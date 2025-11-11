@@ -17,19 +17,30 @@ interface AlarmListProps {
   onChangeAlarm: (id: EditAlarm | null) => void;
   is24HourFormat: boolean;
   onChangeDialog: (dialog: Dialog) => void;
+  currentType: string;
 }
 
 export default function AddAlarm({
   alarm: upperAlarm,
   onChangeAlarm,
   onChangeDialog,
-  is24HourFormat
+  is24HourFormat,
+  currentType
 }: AlarmListProps) {
   const [canSave, setCanSave] = useState(false);
   const [date, setDate] = useState(
     upperAlarm?.date ? getDateInfo(upperAlarm.date) : getInitDate()
   );
-  const [alarm, setAlarm] = useState(upperAlarm ?? getInitAlarm());
+  const [alarm, setAlarm] = useState(() => {
+    if (upperAlarm) return upperAlarm;
+
+    const initAlarm = getInitAlarm();
+    // 일회용 알람 탭에서 열린 경우 일회용 알람으로 초기화
+    if (currentType === t("oneTimeAlarm")) {
+      return { ...initAlarm, isOneTime: true, days: [] };
+    }
+    return initAlarm;
+  });
 
   const { days, isOneTime, memo } = alarm;
 

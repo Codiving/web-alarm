@@ -41,6 +41,7 @@ export default function Popup() {
           onChangeAlarm={onChangeAlarm}
           onChangeDialog={onChangeDialog}
           is24HourFormat={is24HourFormat}
+          currentType={type}
         />
       )}
       {dialog === "list" && (
