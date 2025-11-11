@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Λάβετε ένα σιωπηλό ξυπνητήρι από τον ιστότοπο όταν δεν επιτρέπεται ο ήχος. Η ειδοποίηση θα εμφανιστεί την ακριβή ώρα."
+  },
+  "am": { "message": "ΠΜ" },
+  "pm": { "message": "ΜΜ" },
+  "sun": { "message": "Κυρ" },
+  "mon": { "message": "Δευ" },
+  "tue": { "message": "Τρί" },
+  "wed": { "message": "Τετ" },
+  "thu": { "message": "Πέμ" },
+  "fri": { "message": "Παρ" },
+  "sat": { "message": "Σάβ" },
+  "oneTimeAlarm": { "message": "Μίας χρήσης ξυπνητήρι" },
+  "oneTimeAlarmTooltip": {
+    "message": "Το ξυπνητήρι θα χτυπήσει μία φορά και στη συνέχεια θα διαγραφεί αυτόματα."
+  },
+  "activeDays": { "message": "Ενεργές ημέρες" },
+  "activeDate": { "message": "Ενεργή ημερομηνία" },
+  "save": { "message": "Αποθήκευση" },
+  "memo": { "message": "Σημείωση" },
+  "editAlarm": { "message": "Επεξεργασία ξυπνητηριού" },
+  "addAlarm": { "message": "Προσθήκη ξυπνητηριού" },
+  "day": { "message": "Ημέρα" },
+  "month": { "message": "Μήνας" },
+  "year": { "message": "Έτος" },
+  "invalidDate": { "message": "Μη έγκυρη ημερομηνία" },
+  "pastDateNotAllowed": { "message": "Παλαιές ημερομηνίες δεν επιτρέπονται" },
+  "pastTimeNotAllowed": { "message": "Παλαιές ώρες δεν επιτρέπονται" },
+  "everyday": { "message": "Κάθε μέρα" },
+  "alarm": { "message": "Ξυπνητήρι" },
+  "closeAlarmMessage": {
+    "message": "Κάντε κλικ στην οθόνη για να κλείσετε το παράθυρο του ξυπνητηριού."
+  },
+  "all": { "message": "Όλα" },
+  "normalAlarm": { "message": "Κανονικό ξυπνητήρι" },
+  "twentyFourHourFormat": { "message": "24ω" },
+  "twelveHourFormat": { "message": "12ω" },
+  "timeFormat": { "message": "Μορφή ώρας" },
+  "setting": { "message": "Ρύθμιση" }
+}

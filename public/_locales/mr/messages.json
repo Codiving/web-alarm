@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "जेव्हा आवाजाची परवानगी नसते तेव्हा वेबसाइटवरून शांत अलार्म मिळवा. अचूक वेळी सूचना दिसेल."
+  },
+  "am": { "message": "म.पू." },
+  "pm": { "message": "म.नं." },
+  "sun": { "message": "रवि" },
+  "mon": { "message": "सोम" },
+  "tue": { "message": "मंगळ" },
+  "wed": { "message": "बुध" },
+  "thu": { "message": "गुरु" },
+  "fri": { "message": "शुक्र" },
+  "sat": { "message": "शनि" },
+  "oneTimeAlarm": { "message": "एकदाचा अलार्म" },
+  "oneTimeAlarmTooltip": {
+    "message": "अलार्म एकदाच वाजेल आणि नंतर आपोआप हटवला जाईल."
+  },
+  "activeDays": { "message": "सक्रिय दिवस" },
+  "activeDate": { "message": "सक्रिय तारीख" },
+  "save": { "message": "जतन करा" },
+  "memo": { "message": "मेमो" },
+  "editAlarm": { "message": "अलार्म संपादित करा" },
+  "addAlarm": { "message": "अलार्म जोडा" },
+  "day": { "message": "दिवस" },
+  "month": { "message": "महिना" },
+  "year": { "message": "वर्ष" },
+  "invalidDate": { "message": "अवैध तारीख" },
+  "pastDateNotAllowed": { "message": "मागील तारखांना परवानगी नाही" },
+  "pastTimeNotAllowed": { "message": "मागील वेळेला परवानगी नाही" },
+  "everyday": { "message": "दररोज" },
+  "alarm": { "message": "अलार्म" },
+  "closeAlarmMessage": {
+    "message": "अलार्म विंडो बंद करण्यासाठी स्क्रीनवर क्लिक करा."
+  },
+  "all": { "message": "सर्व" },
+  "normalAlarm": { "message": "सामान्य अलार्म" },
+  "twentyFourHourFormat": { "message": "24तास" },
+  "twelveHourFormat": { "message": "12तास" },
+  "timeFormat": { "message": "वेळ स्वरूप" },
+  "setting": { "message": "सेटिंग" }
+}

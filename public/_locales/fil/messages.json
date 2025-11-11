@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Kumuha ng tahimik na alarm mula sa website kapag hindi pinapayagan ang tunog. Lalabas ang notification sa eksaktong oras."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Lin" },
+  "mon": { "message": "Lun" },
+  "tue": { "message": "Mar" },
+  "wed": { "message": "Miy" },
+  "thu": { "message": "Huw" },
+  "fri": { "message": "Biy" },
+  "sat": { "message": "Sab" },
+  "oneTimeAlarm": { "message": "Isang-Beses na Alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "Ang alarm ay tutunog nang isang beses at pagkatapos ay awtomatikong tatanggalin."
+  },
+  "activeDays": { "message": "Aktibong Araw" },
+  "activeDate": { "message": "Aktibong Petsa" },
+  "save": { "message": "I-save" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "I-edit ang Alarm" },
+  "addAlarm": { "message": "Magdagdag ng Alarm" },
+  "day": { "message": "Araw" },
+  "month": { "message": "Buwan" },
+  "year": { "message": "Taon" },
+  "invalidDate": { "message": "Hindi wastong petsa" },
+  "pastDateNotAllowed": { "message": "Hindi pinapayagan ang mga nakaraang petsa" },
+  "pastTimeNotAllowed": { "message": "Hindi pinapayagan ang mga nakaraang oras" },
+  "everyday": { "message": "Araw-araw" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "I-click ang screen para isara ang alarm window."
+  },
+  "all": { "message": "Lahat" },
+  "normalAlarm": { "message": "Normal na Alarm" },
+  "twentyFourHourFormat": { "message": "24o" },
+  "twelveHourFormat": { "message": "12o" },
+  "timeFormat": { "message": "Format ng Oras" },
+  "setting": { "message": "Setting" }
+}

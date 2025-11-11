@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Gaukite tylų signalą iš svetainės, kai garsas neleidžiamas. Pranešimas pasirodys tiksliu laiku."
+  },
+  "am": { "message": "priešpiet" },
+  "pm": { "message": "popiet" },
+  "sun": { "message": "Sek" },
+  "mon": { "message": "Pir" },
+  "tue": { "message": "Ant" },
+  "wed": { "message": "Tre" },
+  "thu": { "message": "Ket" },
+  "fri": { "message": "Pen" },
+  "sat": { "message": "Šeš" },
+  "oneTimeAlarm": { "message": "Vienkartinis signalas" },
+  "oneTimeAlarmTooltip": {
+    "message": "Signalas suveiks vieną kartą ir tada bus automatiškai ištrintas."
+  },
+  "activeDays": { "message": "Aktyvios dienos" },
+  "activeDate": { "message": "Aktyvi data" },
+  "save": { "message": "Išsaugoti" },
+  "memo": { "message": "Atmintinė" },
+  "editAlarm": { "message": "Redaguoti signalą" },
+  "addAlarm": { "message": "Pridėti signalą" },
+  "day": { "message": "Diena" },
+  "month": { "message": "Mėnuo" },
+  "year": { "message": "Metai" },
+  "invalidDate": { "message": "Neteisinga data" },
+  "pastDateNotAllowed": { "message": "Praeities datos neleidžiamos" },
+  "pastTimeNotAllowed": { "message": "Praeities laikas neleidžiamas" },
+  "everyday": { "message": "Kasdien" },
+  "alarm": { "message": "Signalas" },
+  "closeAlarmMessage": {
+    "message": "Spustelėkite ekraną, kad uždarytumėte signalo langą."
+  },
+  "all": { "message": "Visi" },
+  "normalAlarm": { "message": "Įprastas signalas" },
+  "twentyFourHourFormat": { "message": "24val" },
+  "twelveHourFormat": { "message": "12val" },
+  "timeFormat": { "message": "Laiko formatas" },
+  "setting": { "message": "Nustatymai" }
+}

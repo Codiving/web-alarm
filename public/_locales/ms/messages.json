@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Dapatkan penggera senyap dari laman web apabila bunyi tidak dibenarkan. Pemberitahuan akan muncul pada masa yang tepat."
+  },
+  "am": { "message": "PG" },
+  "pm": { "message": "PTG" },
+  "sun": { "message": "Ahd" },
+  "mon": { "message": "Isn" },
+  "tue": { "message": "Sel" },
+  "wed": { "message": "Rab" },
+  "thu": { "message": "Kha" },
+  "fri": { "message": "Jum" },
+  "sat": { "message": "Sab" },
+  "oneTimeAlarm": { "message": "Penggera Sekali" },
+  "oneTimeAlarmTooltip": {
+    "message": "Penggera akan berbunyi sekali dan kemudian dipadam secara automatik."
+  },
+  "activeDays": { "message": "Hari Aktif" },
+  "activeDate": { "message": "Tarikh Aktif" },
+  "save": { "message": "Simpan" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "Edit Penggera" },
+  "addAlarm": { "message": "Tambah Penggera" },
+  "day": { "message": "Hari" },
+  "month": { "message": "Bulan" },
+  "year": { "message": "Tahun" },
+  "invalidDate": { "message": "Tarikh tidak sah" },
+  "pastDateNotAllowed": { "message": "Tarikh lepas tidak dibenarkan" },
+  "pastTimeNotAllowed": { "message": "Masa lepas tidak dibenarkan" },
+  "everyday": { "message": "Setiap hari" },
+  "alarm": { "message": "Penggera" },
+  "closeAlarmMessage": {
+    "message": "Klik skrin untuk menutup tetingkap penggera."
+  },
+  "all": { "message": "Semua" },
+  "normalAlarm": { "message": "Penggera Biasa" },
+  "twentyFourHourFormat": { "message": "24j" },
+  "twelveHourFormat": { "message": "12j" },
+  "timeFormat": { "message": "Format Masa" },
+  "setting": { "message": "Tetapan" }
+}

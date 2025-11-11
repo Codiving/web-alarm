@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "هنگامی که صدا مجاز نیست، یک هشدار بی‌صدا از وب‌سایت دریافت کنید. اعلان در زمان دقیق ظاهر می‌شود."
+  },
+  "am": { "message": "ق.ظ" },
+  "pm": { "message": "ب.ظ" },
+  "sun": { "message": "ی" },
+  "mon": { "message": "د" },
+  "tue": { "message": "س" },
+  "wed": { "message": "چ" },
+  "thu": { "message": "پ" },
+  "fri": { "message": "ج" },
+  "sat": { "message": "ش" },
+  "oneTimeAlarm": { "message": "هشدار یک‌بار مصرف" },
+  "oneTimeAlarmTooltip": {
+    "message": "هشدار یک بار فعال می‌شود و سپس به طور خودکار حذف می‌شود."
+  },
+  "activeDays": { "message": "روزهای فعال" },
+  "activeDate": { "message": "تاریخ فعال" },
+  "save": { "message": "ذخیره" },
+  "memo": { "message": "یادداشت" },
+  "editAlarm": { "message": "ویرایش هشدار" },
+  "addAlarm": { "message": "افزودن هشدار" },
+  "day": { "message": "روز" },
+  "month": { "message": "ماه" },
+  "year": { "message": "سال" },
+  "invalidDate": { "message": "تاریخ نامعتبر" },
+  "pastDateNotAllowed": { "message": "تاریخ‌های گذشته مجاز نیستند" },
+  "pastTimeNotAllowed": { "message": "زمان‌های گذشته مجاز نیستند" },
+  "everyday": { "message": "هر روز" },
+  "alarm": { "message": "هشدار" },
+  "closeAlarmMessage": {
+    "message": "برای بستن پنجره هشدار، روی صفحه کلیک کنید."
+  },
+  "all": { "message": "همه" },
+  "normalAlarm": { "message": "هشدار عادی" },
+  "twentyFourHourFormat": { "message": "۲۴س" },
+  "twelveHourFormat": { "message": "۱۲س" },
+  "timeFormat": { "message": "قالب زمان" },
+  "setting": { "message": "تنظیمات" }
+}

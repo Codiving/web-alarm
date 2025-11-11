@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Otrzymaj cichy alarm ze strony internetowej, gdy dźwięk nie jest dozwolony. Powiadomienie pojawi się o dokładnej godzinie."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Ndz" },
+  "mon": { "message": "Pon" },
+  "tue": { "message": "Wt" },
+  "wed": { "message": "Śr" },
+  "thu": { "message": "Czw" },
+  "fri": { "message": "Pt" },
+  "sat": { "message": "Sob" },
+  "oneTimeAlarm": { "message": "Alarm jednorazowy" },
+  "oneTimeAlarmTooltip": {
+    "message": "Alarm włączy się raz, a następnie zostanie automatycznie usunięty."
+  },
+  "activeDays": { "message": "Aktywne dni" },
+  "activeDate": { "message": "Aktywna data" },
+  "save": { "message": "Zapisz" },
+  "memo": { "message": "Notatka" },
+  "editAlarm": { "message": "Edytuj alarm" },
+  "addAlarm": { "message": "Dodaj alarm" },
+  "day": { "message": "Dzień" },
+  "month": { "message": "Miesiąc" },
+  "year": { "message": "Rok" },
+  "invalidDate": { "message": "Nieprawidłowa data" },
+  "pastDateNotAllowed": { "message": "Daty z przeszłości nie są dozwolone" },
+  "pastTimeNotAllowed": { "message": "Czasy z przeszłości nie są dozwolone" },
+  "everyday": { "message": "Codziennie" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Kliknij ekran, aby zamknąć okno alarmu."
+  },
+  "all": { "message": "Wszystkie" },
+  "normalAlarm": { "message": "Normalny alarm" },
+  "twentyFourHourFormat": { "message": "24g" },
+  "twelveHourFormat": { "message": "12g" },
+  "timeFormat": { "message": "Format czasu" },
+  "setting": { "message": "Ustawienia" }
+}

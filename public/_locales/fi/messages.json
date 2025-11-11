@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Saat hiljaisen hälytyksen verkkosivustolta, kun ääni ei ole sallittu. Ilmoitus näkyy tarkasti oikeaan aikaan."
+  },
+  "am": { "message": "AP" },
+  "pm": { "message": "IP" },
+  "sun": { "message": "Su" },
+  "mon": { "message": "Ma" },
+  "tue": { "message": "Ti" },
+  "wed": { "message": "Ke" },
+  "thu": { "message": "To" },
+  "fri": { "message": "Pe" },
+  "sat": { "message": "La" },
+  "oneTimeAlarm": { "message": "Kertakäyttöinen hälytys" },
+  "oneTimeAlarmTooltip": {
+    "message": "Hälytys laukeaa kerran ja poistetaan sitten automaattisesti."
+  },
+  "activeDays": { "message": "Aktiiviset päivät" },
+  "activeDate": { "message": "Aktiivinen päivämäärä" },
+  "save": { "message": "Tallenna" },
+  "memo": { "message": "Muistio" },
+  "editAlarm": { "message": "Muokkaa hälytystä" },
+  "addAlarm": { "message": "Lisää hälytys" },
+  "day": { "message": "Päivä" },
+  "month": { "message": "Kuukausi" },
+  "year": { "message": "Vuosi" },
+  "invalidDate": { "message": "Virheellinen päivämäärä" },
+  "pastDateNotAllowed": { "message": "Menneet päivämäärät eivät ole sallittuja" },
+  "pastTimeNotAllowed": { "message": "Menneet ajat eivät ole sallittuja" },
+  "everyday": { "message": "Joka päivä" },
+  "alarm": { "message": "Hälytys" },
+  "closeAlarmMessage": {
+    "message": "Sulje hälytysikkuna napsauttamalla näyttöä."
+  },
+  "all": { "message": "Kaikki" },
+  "normalAlarm": { "message": "Normaali hälytys" },
+  "twentyFourHourFormat": { "message": "24t" },
+  "twelveHourFormat": { "message": "12t" },
+  "timeFormat": { "message": "Aikamuoto" },
+  "setting": { "message": "Asetus" }
+}

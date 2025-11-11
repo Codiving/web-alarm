@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Добијте тихи аларм са веб локације када звук није дозвољен. Обавештење ће се појавити у тачно време."
+  },
+  "am": { "message": "пре подне" },
+  "pm": { "message": "по подне" },
+  "sun": { "message": "Нед" },
+  "mon": { "message": "Пон" },
+  "tue": { "message": "Уто" },
+  "wed": { "message": "Сре" },
+  "thu": { "message": "Чет" },
+  "fri": { "message": "Пет" },
+  "sat": { "message": "Суб" },
+  "oneTimeAlarm": { "message": "Једнократни аларм" },
+  "oneTimeAlarmTooltip": {
+    "message": "Аларм ће се активирати једном, а затим ће бити аутоматски избрисан."
+  },
+  "activeDays": { "message": "Активни дани" },
+  "activeDate": { "message": "Активан датум" },
+  "save": { "message": "Сачувај" },
+  "memo": { "message": "Белешка" },
+  "editAlarm": { "message": "Измени аларм" },
+  "addAlarm": { "message": "Додај аларм" },
+  "day": { "message": "Дан" },
+  "month": { "message": "Месец" },
+  "year": { "message": "Година" },
+  "invalidDate": { "message": "Неважећи датум" },
+  "pastDateNotAllowed": { "message": "Прошли датуми нису дозвољени" },
+  "pastTimeNotAllowed": { "message": "Прошла времена нису дозвољена" },
+  "everyday": { "message": "Сваког дана" },
+  "alarm": { "message": "Аларм" },
+  "closeAlarmMessage": {
+    "message": "Кликните на екран да затворите прозор аларма."
+  },
+  "all": { "message": "Све" },
+  "normalAlarm": { "message": "Нормални аларм" },
+  "twentyFourHourFormat": { "message": "24ч" },
+  "twelveHourFormat": { "message": "12ч" },
+  "timeFormat": { "message": "Формат времена" },
+  "setting": { "message": "Подешавања" }
+}

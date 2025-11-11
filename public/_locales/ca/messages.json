@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Obteniu una alarma silenciosa del lloc web quan no es permet el so. La notificació apareixerà a l'hora exacta."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Dg" },
+  "mon": { "message": "Dl" },
+  "tue": { "message": "Dt" },
+  "wed": { "message": "Dc" },
+  "thu": { "message": "Dj" },
+  "fri": { "message": "Dv" },
+  "sat": { "message": "Ds" },
+  "oneTimeAlarm": { "message": "Alarma d'una sola vegada" },
+  "oneTimeAlarmTooltip": {
+    "message": "L'alarma s'activarà una vegada i després s'eliminarà automàticament."
+  },
+  "activeDays": { "message": "Dies actius" },
+  "activeDate": { "message": "Data activa" },
+  "save": { "message": "Desa" },
+  "memo": { "message": "Nota" },
+  "editAlarm": { "message": "Edita l'alarma" },
+  "addAlarm": { "message": "Afegeix una alarma" },
+  "day": { "message": "Dia" },
+  "month": { "message": "Mes" },
+  "year": { "message": "Any" },
+  "invalidDate": { "message": "Data no vàlida" },
+  "pastDateNotAllowed": { "message": "No es permeten dates passades" },
+  "pastTimeNotAllowed": { "message": "No es permeten hores passades" },
+  "everyday": { "message": "Cada dia" },
+  "alarm": { "message": "Alarma" },
+  "closeAlarmMessage": {
+    "message": "Feu clic a la pantalla per tancar la finestra d'alarma."
+  },
+  "all": { "message": "Tot" },
+  "normalAlarm": { "message": "Alarma normal" },
+  "twentyFourHourFormat": { "message": "24h" },
+  "twelveHourFormat": { "message": "12h" },
+  "timeFormat": { "message": "Format d'hora" },
+  "setting": { "message": "Configuració" }
+}

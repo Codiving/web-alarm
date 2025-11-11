@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "ድምፅ የማይፈቀድበት ጊዜ ከድረ-ገጽ ጸጥታ ማንቂያ ያግኙ። ማሳወቂያው በትክክለኛው ጊዜ ይታያል።"
+  },
+  "am": { "message": "ጥዋት" },
+  "pm": { "message": "ከሰዓት" },
+  "sun": { "message": "እሁድ" },
+  "mon": { "message": "ሰኞ" },
+  "tue": { "message": "ማክሰኞ" },
+  "wed": { "message": "ረቡዕ" },
+  "thu": { "message": "ሐሙስ" },
+  "fri": { "message": "አርብ" },
+  "sat": { "message": "ቅዳሜ" },
+  "oneTimeAlarm": { "message": "አንድ ጊዜ ማንቂያ" },
+  "oneTimeAlarmTooltip": {
+    "message": "ማንቂያው አንድ ጊዜ ይሰራል እና ከዚያ በራስ-ሰር ይሰረዛል።"
+  },
+  "activeDays": { "message": "ንቁ ቀናት" },
+  "activeDate": { "message": "ንቁ ቀን" },
+  "save": { "message": "አስቀምጥ" },
+  "memo": { "message": "ማስታወሻ" },
+  "editAlarm": { "message": "ማንቂያ አርትዕ" },
+  "addAlarm": { "message": "ማንቂያ አክል" },
+  "day": { "message": "ቀን" },
+  "month": { "message": "ወር" },
+  "year": { "message": "ዓመት" },
+  "invalidDate": { "message": "ልክ ያልሆነ ቀን" },
+  "pastDateNotAllowed": { "message": "ያለፉ ቀናት አይፈቀዱም" },
+  "pastTimeNotAllowed": { "message": "ያለፈ ጊዜ አይፈቀድም" },
+  "everyday": { "message": "በየቀኑ" },
+  "alarm": { "message": "ማንቂያ" },
+  "closeAlarmMessage": {
+    "message": "የማንቂያ መስኮቱን ለመዝጋት ማያ ገጹን ይንኩ።"
+  },
+  "all": { "message": "ሁሉም" },
+  "normalAlarm": { "message": "መደበኛ ማንቂያ" },
+  "twentyFourHourFormat": { "message": "24ሰ" },
+  "twelveHourFormat": { "message": "12ሰ" },
+  "timeFormat": { "message": "የጊዜ ቅርጸት" },
+  "setting": { "message": "ቅንብር" }
+}

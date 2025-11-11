@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "ஒலி அனுமதிக்கப்படாதபோது வலைத்தளத்திலிருந்து அமைதியான அலாரத்தைப் பெறுங்கள். அறிவிப்பு சரியான நேரத்தில் தோன்றும்."
+  },
+  "am": { "message": "காலை" },
+  "pm": { "message": "மாலை" },
+  "sun": { "message": "ஞாயி" },
+  "mon": { "message": "திங்" },
+  "tue": { "message": "செவ்" },
+  "wed": { "message": "புத" },
+  "thu": { "message": "வியா" },
+  "fri": { "message": "வெள்" },
+  "sat": { "message": "சனி" },
+  "oneTimeAlarm": { "message": "ஒரு முறை அலாரம்" },
+  "oneTimeAlarmTooltip": {
+    "message": "அலாரம் ஒரு முறை ஒலிக்கும் பின்னர் தானாகவே நீக்கப்படும்."
+  },
+  "activeDays": { "message": "செயலில் உள்ள நாட்கள்" },
+  "activeDate": { "message": "செயலில் உள்ள தேதி" },
+  "save": { "message": "சேமி" },
+  "memo": { "message": "குறிப்பு" },
+  "editAlarm": { "message": "அலாரத்தைத் திருத்து" },
+  "addAlarm": { "message": "அலாரத்தைச் சேர்" },
+  "day": { "message": "நாள்" },
+  "month": { "message": "மாதம்" },
+  "year": { "message": "ஆண்டு" },
+  "invalidDate": { "message": "தவறான தேதி" },
+  "pastDateNotAllowed": { "message": "கடந்த தேதிகள் அனுமதிக்கப்படவில்லை" },
+  "pastTimeNotAllowed": { "message": "கடந்த நேரங்கள் அனுமதிக்கப்படவில்லை" },
+  "everyday": { "message": "தினமும்" },
+  "alarm": { "message": "அலாரம்" },
+  "closeAlarmMessage": {
+    "message": "அலாரம் சாளரத்தை மூட திரையைக் கிளிக் செய்யவும்."
+  },
+  "all": { "message": "அனைத்தும்" },
+  "normalAlarm": { "message": "சாதாரண அலாரம்" },
+  "twentyFourHourFormat": { "message": "24ம" },
+  "twelveHourFormat": { "message": "12ம" },
+  "timeFormat": { "message": "நேர வடிவம்" },
+  "setting": { "message": "அமைப்பு" }
+}

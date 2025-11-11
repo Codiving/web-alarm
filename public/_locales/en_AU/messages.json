@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Get a silent alarm from the website when sound is not allowed. The notification will appear at the exact time."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Sun" },
+  "mon": { "message": "Mon" },
+  "tue": { "message": "Tue" },
+  "wed": { "message": "Wed" },
+  "thu": { "message": "Thu" },
+  "fri": { "message": "Fri" },
+  "sat": { "message": "Sat" },
+  "oneTimeAlarm": { "message": "One-Time Alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "The alarm will trigger once and then be automatically deleted."
+  },
+  "activeDays": { "message": "Active Days" },
+  "activeDate": { "message": "Active Date" },
+  "save": { "message": "Save" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "Edit Alarm" },
+  "addAlarm": { "message": "Add Alarm" },
+  "day": { "message": "Day" },
+  "month": { "message": "Month" },
+  "year": { "message": "Year" },
+  "invalidDate": { "message": "Invalid date" },
+  "pastDateNotAllowed": { "message": "Past dates are not allowed" },
+  "pastTimeNotAllowed": { "message": "Past times are not allowed" },
+  "everyday": { "message": "Everyday" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Click the screen to close the alarm window."
+  },
+  "all": { "message": "All" },
+  "normalAlarm": { "message": "Normal Alarm" },
+  "twentyFourHourFormat": { "message": "24h" },
+  "twelveHourFormat": { "message": "12h" },
+  "timeFormat": { "message": "Time Format" },
+  "setting": { "message": "Setting" }
+}

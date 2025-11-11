@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "ಧ್ವನಿ ಅನುಮತಿಸದಿದ್ದಾಗ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಮೌನ ಅಲಾರಂ ಪಡೆಯಿರಿ. ನಿಖರ ಸಮಯದಲ್ಲಿ ಅಧಿಸೂಚನೆ ಕಾಣಿಸುತ್ತದೆ."
+  },
+  "am": { "message": "ಪೂರ್ವಾಹ್ನ" },
+  "pm": { "message": "ಅಪರಾಹ್ನ" },
+  "sun": { "message": "ಭಾನು" },
+  "mon": { "message": "ಸೋಮ" },
+  "tue": { "message": "ಮಂಗಳ" },
+  "wed": { "message": "ಬುಧ" },
+  "thu": { "message": "ಗುರು" },
+  "fri": { "message": "ಶುಕ್ರ" },
+  "sat": { "message": "ಶನಿ" },
+  "oneTimeAlarm": { "message": "ಒಂದು-ಬಾರಿ ಅಲಾರಂ" },
+  "oneTimeAlarmTooltip": {
+    "message": "ಅಲಾರಂ ಒಮ್ಮೆ ಮಾತ್ರ ಮೊಳಗುತ್ತದೆ ಮತ್ತು ನಂತರ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ."
+  },
+  "activeDays": { "message": "ಸಕ್ರಿಯ ದಿನಗಳು" },
+  "activeDate": { "message": "ಸಕ್ರಿಯ ದಿನಾಂಕ" },
+  "save": { "message": "ಉಳಿಸಿ" },
+  "memo": { "message": "ಮೆಮೊ" },
+  "editAlarm": { "message": "ಅಲಾರಂ ಸಂಪಾದಿಸಿ" },
+  "addAlarm": { "message": "ಅಲಾರಂ ಸೇರಿಸಿ" },
+  "day": { "message": "ದಿನ" },
+  "month": { "message": "ತಿಂಗಳು" },
+  "year": { "message": "ವರ್ಷ" },
+  "invalidDate": { "message": "ಅಮಾನ್ಯ ದಿನಾಂಕ" },
+  "pastDateNotAllowed": { "message": "ಹಿಂದಿನ ದಿನಾಂಕಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ" },
+  "pastTimeNotAllowed": { "message": "ಹಿಂದಿನ ಸಮಯಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ" },
+  "everyday": { "message": "ಪ್ರತಿದಿನ" },
+  "alarm": { "message": "ಅಲಾರಂ" },
+  "closeAlarmMessage": {
+    "message": "ಅಲಾರಂ ವಿಂಡೋ ಮುಚ್ಚಲು ಪರದೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
+  },
+  "all": { "message": "ಎಲ್ಲಾ" },
+  "normalAlarm": { "message": "ಸಾಮಾನ್ಯ ಅಲಾರಂ" },
+  "twentyFourHourFormat": { "message": "24ಗಂ" },
+  "twelveHourFormat": { "message": "12ಗಂ" },
+  "timeFormat": { "message": "ಸಮಯ ಸ್ವರೂಪ" },
+  "setting": { "message": "ಸೆಟ್ಟಿಂಗ್" }
+}

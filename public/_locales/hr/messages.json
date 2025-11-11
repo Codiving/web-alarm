@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Dobijte tihi alarm s web stranice kada zvuk nije dopušten. Obavijest će se pojaviti u točno vrijeme."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Ned" },
+  "mon": { "message": "Pon" },
+  "tue": { "message": "Uto" },
+  "wed": { "message": "Sri" },
+  "thu": { "message": "Čet" },
+  "fri": { "message": "Pet" },
+  "sat": { "message": "Sub" },
+  "oneTimeAlarm": { "message": "Jednokratni alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "Alarm će se aktivirati jednom i zatim će biti automatski izbrisan."
+  },
+  "activeDays": { "message": "Aktivni dani" },
+  "activeDate": { "message": "Aktivni datum" },
+  "save": { "message": "Spremi" },
+  "memo": { "message": "Bilješka" },
+  "editAlarm": { "message": "Uredi alarm" },
+  "addAlarm": { "message": "Dodaj alarm" },
+  "day": { "message": "Dan" },
+  "month": { "message": "Mjesec" },
+  "year": { "message": "Godina" },
+  "invalidDate": { "message": "Nevažeći datum" },
+  "pastDateNotAllowed": { "message": "Prošli datumi nisu dopušteni" },
+  "pastTimeNotAllowed": { "message": "Prošla vremena nisu dopuštena" },
+  "everyday": { "message": "Svaki dan" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Kliknite na ekran za zatvaranje prozora alarma."
+  },
+  "all": { "message": "Sve" },
+  "normalAlarm": { "message": "Normalni alarm" },
+  "twentyFourHourFormat": { "message": "24s" },
+  "twelveHourFormat": { "message": "12s" },
+  "timeFormat": { "message": "Format vremena" },
+  "setting": { "message": "Postavke" }
+}

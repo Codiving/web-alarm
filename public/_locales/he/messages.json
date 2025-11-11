@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "קבל התראה שקטה מהאתר כאשר צליל אינו מורשה. ההודעה תופיע בזמן המדויק."
+  },
+  "am": { "message": "לפנה\"צ" },
+  "pm": { "message": "אחה\"צ" },
+  "sun": { "message": "א'" },
+  "mon": { "message": "ב'" },
+  "tue": { "message": "ג'" },
+  "wed": { "message": "ד'" },
+  "thu": { "message": "ה'" },
+  "fri": { "message": "ו'" },
+  "sat": { "message": "ש'" },
+  "oneTimeAlarm": { "message": "התראה חד-פעמית" },
+  "oneTimeAlarmTooltip": {
+    "message": "ההתראה תופעל פעם אחת ולאחר מכן תימחק אוטומטית."
+  },
+  "activeDays": { "message": "ימים פעילים" },
+  "activeDate": { "message": "תאריך פעיל" },
+  "save": { "message": "שמור" },
+  "memo": { "message": "תזכורת" },
+  "editAlarm": { "message": "ערוך התראה" },
+  "addAlarm": { "message": "הוסף התראה" },
+  "day": { "message": "יום" },
+  "month": { "message": "חודש" },
+  "year": { "message": "שנה" },
+  "invalidDate": { "message": "תאריך לא חוקי" },
+  "pastDateNotAllowed": { "message": "תאריכים בעבר אינם מורשים" },
+  "pastTimeNotAllowed": { "message": "זמנים בעבר אינם מורשים" },
+  "everyday": { "message": "כל יום" },
+  "alarm": { "message": "התראה" },
+  "closeAlarmMessage": {
+    "message": "לחץ על המסך כדי לסגור את חלון ההתראה."
+  },
+  "all": { "message": "הכל" },
+  "normalAlarm": { "message": "התראה רגילה" },
+  "twentyFourHourFormat": { "message": "24ש" },
+  "twelveHourFormat": { "message": "12ש" },
+  "timeFormat": { "message": "פורמט זמן" },
+  "setting": { "message": "הגדרות" }
+}

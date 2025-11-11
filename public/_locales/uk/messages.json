@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Отримайте тихий будильник з веб-сайту, коли звук заборонено. Сповіщення з'явиться в точний час."
+  },
+  "am": { "message": "ДП" },
+  "pm": { "message": "ПП" },
+  "sun": { "message": "Нд" },
+  "mon": { "message": "Пн" },
+  "tue": { "message": "Вт" },
+  "wed": { "message": "Ср" },
+  "thu": { "message": "Чт" },
+  "fri": { "message": "Пт" },
+  "sat": { "message": "Сб" },
+  "oneTimeAlarm": { "message": "Одноразовий будильник" },
+  "oneTimeAlarmTooltip": {
+    "message": "Будильник спрацює один раз, а потім буде автоматично видалено."
+  },
+  "activeDays": { "message": "Активні дні" },
+  "activeDate": { "message": "Активна дата" },
+  "save": { "message": "Зберегти" },
+  "memo": { "message": "Примітка" },
+  "editAlarm": { "message": "Редагувати будильник" },
+  "addAlarm": { "message": "Додати будильник" },
+  "day": { "message": "День" },
+  "month": { "message": "Місяць" },
+  "year": { "message": "Рік" },
+  "invalidDate": { "message": "Недійсна дата" },
+  "pastDateNotAllowed": { "message": "Минулі дати не дозволені" },
+  "pastTimeNotAllowed": { "message": "Минулий час не дозволений" },
+  "everyday": { "message": "Щодня" },
+  "alarm": { "message": "Будильник" },
+  "closeAlarmMessage": {
+    "message": "Натисніть на екран, щоб закрити вікно будильника."
+  },
+  "all": { "message": "Усі" },
+  "normalAlarm": { "message": "Звичайний будильник" },
+  "twentyFourHourFormat": { "message": "24г" },
+  "twelveHourFormat": { "message": "12г" },
+  "timeFormat": { "message": "Формат часу" },
+  "setting": { "message": "Налаштування" }
+}

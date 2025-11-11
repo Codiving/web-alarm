@@ -1,0 +1,42 @@
+{
+  "extName": { "message": "Web Alarm" },
+  "extDescription": {
+    "message": "Ontvang een stil alarm van de website wanneer geluid niet is toegestaan. De melding verschijnt op het exacte tijdstip."
+  },
+  "am": { "message": "AM" },
+  "pm": { "message": "PM" },
+  "sun": { "message": "Zo" },
+  "mon": { "message": "Ma" },
+  "tue": { "message": "Di" },
+  "wed": { "message": "Wo" },
+  "thu": { "message": "Do" },
+  "fri": { "message": "Vr" },
+  "sat": { "message": "Za" },
+  "oneTimeAlarm": { "message": "Eenmalig alarm" },
+  "oneTimeAlarmTooltip": {
+    "message": "Het alarm gaat één keer af en wordt daarna automatisch verwijderd."
+  },
+  "activeDays": { "message": "Actieve dagen" },
+  "activeDate": { "message": "Actieve datum" },
+  "save": { "message": "Opslaan" },
+  "memo": { "message": "Memo" },
+  "editAlarm": { "message": "Alarm bewerken" },
+  "addAlarm": { "message": "Alarm toevoegen" },
+  "day": { "message": "Dag" },
+  "month": { "message": "Maand" },
+  "year": { "message": "Jaar" },
+  "invalidDate": { "message": "Ongeldige datum" },
+  "pastDateNotAllowed": { "message": "Datums in het verleden zijn niet toegestaan" },
+  "pastTimeNotAllowed": { "message": "Tijden in het verleden zijn niet toegestaan" },
+  "everyday": { "message": "Elke dag" },
+  "alarm": { "message": "Alarm" },
+  "closeAlarmMessage": {
+    "message": "Klik op het scherm om het alarmvenster te sluiten."
+  },
+  "all": { "message": "Alle" },
+  "normalAlarm": { "message": "Normaal alarm" },
+  "twentyFourHourFormat": { "message": "24u" },
+  "twelveHourFormat": { "message": "12u" },
+  "timeFormat": { "message": "Tijdformaat" },
+  "setting": { "message": "Instelling" }
+}
