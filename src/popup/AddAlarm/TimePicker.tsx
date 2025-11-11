@@ -53,6 +53,18 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
     setCenterIndex(index);
   };
 
+  const handleItemClick = (index: number) => {
+    if (!ref.current) return;
+    const value = items[index];
+    if (value === TEMP) return;
+    ref.current.scrollTo({
+      top: totalHeightAt(index),
+      behavior: "smooth"
+    });
+    valueRef.current = items[index];
+    setCenterIndex(index);
+  };
+
   return (
     <div
       ref={ref}
@@ -81,13 +93,16 @@ const List = ({ items, selected, label, valueRef }: ListProps) => {
         return (
           <div
             key={item + idx}
-            className="flex items-center justify-center snap-center"
+            className="flex items-center justify-center snap-center  cursor-pointer"
             style={{
               height,
               fontSize,
               color,
               opacity,
               transition: "all 0.2s ease"
+            }}
+            onClick={() => {
+              handleItemClick(idx);
             }}
           >
             {text}
