@@ -4,7 +4,7 @@ import { t } from "../utils/i18n";
 import {
   cleanExpiredTrash,
   restoreFromTrash,
-  deleteFromTrash,
+  deleteFromTrash
 } from "../utils/trash";
 import { getFromStorage } from "./storage";
 import { Dialog } from "./Popup";
@@ -26,10 +26,10 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
       (await getFromStorage<TrashedAlarm[]>("trashedAlarms")) || [];
     setTrashedAlarms(trashed);
     // 삭제된 항목이 선택되어 있으면 선택 해제
-    setSelectedIds((prev) => {
+    setSelectedIds(prev => {
       const newSet = new Set(prev);
-      const trashedIds = new Set(trashed.map((a) => a.id));
-      Array.from(newSet).forEach((id) => {
+      const trashedIds = new Set(trashed.map(a => a.id));
+      Array.from(newSet).forEach(id => {
         if (!trashedIds.has(id)) {
           newSet.delete(id);
         }
@@ -43,7 +43,7 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
   }, []);
 
   const toggleSelection = (id: string) => {
-    setSelectedIds((prev) => {
+    setSelectedIds(prev => {
       const newSet = new Set(prev);
       if (newSet.has(id)) {
         newSet.delete(id);
@@ -135,7 +135,7 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
           </div>
         ) : (
           <div className="flex flex-col gap-[8px]">
-            {trashedAlarms.map((alarm) => {
+            {trashedAlarms.map(alarm => {
               const { hour, minute, isAM } = getTimeInfo(alarm);
               const daysRemaining = getDaysRemaining(alarm.deletedAt);
               const isSelected = selectedIds.has(alarm.id);
@@ -144,7 +144,7 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
                 <div
                   key={alarm.id}
                   onClick={() => toggleSelection(alarm.id)}
-                  className={`rounded-[8px] p-[12px] cursor-pointer transition-all ${
+                  className={`rounded-[8px] p-[8px] cursor-pointer transition-all ${
                     isSelected
                       ? "bg-[#4a4a4a] border-2 border-[#FFC107]"
                       : "bg-[#3a3a3a] border-2 border-transparent"
@@ -204,13 +204,11 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
                         </p>
                       )}
                       {/* Days Remaining */}
-                      <div className="mt-[8px]">
-                        <span className="text-[#FFC107] text-[11px] font-medium bg-[#2a2a2a] px-[8px] py-[2px] rounded-[4px]">
-                          {daysRemaining > 0
-                            ? `${daysRemaining}${t("daysRemaining")}`
-                            : t("willBeDeletedToday")}
-                        </span>
-                      </div>
+                      <span className="text-[#FFC107] text-[11px] font-medium bg-[#2a2a2a] px-[8px] py-[2px] rounded-[4px]">
+                        {daysRemaining > 0
+                          ? `${daysRemaining}${t("daysRemaining")}`
+                          : t("willBeDeletedToday")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -224,7 +222,7 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
       {selectedIds.size > 0 && (
         <div className="py-[8px] px-[12px] bg-[#2a2a2a] border-t-2 border-[#1a1a1a] flex gap-[8px]">
           <button
-            onClick={(e) => {
+            onClick={e => {
               e.stopPropagation();
               handleRestoreSelected();
             }}
@@ -249,7 +247,7 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
             </span>
           </button>
           <button
-            onClick={(e) => {
+            onClick={e => {
               e.stopPropagation();
               handleDeleteSelected();
             }}
