@@ -22,12 +22,12 @@ async function cleanExpiredTrash() {
 }
 
 /**
- * 매일 자정에 휴지통 정리 알람 생성
+ * 매일 자정에 휴지통 정리 알람 생성 (테스트용: 1분마다)
  */
 chrome.runtime.onStartup.addListener(() => {
   chrome.alarms.create("cleanTrash", {
-    when: getNextMidnight(),
-    periodInMinutes: 1440 // 24시간마다 반복
+    when: Date.now() + 60000, // 테스트용: 1분 후 시작 (원래는 자정)
+    periodInMinutes: 1 // 테스트용: 1분마다 반복 (원래는 1440)
   });
 });
 
@@ -88,10 +88,10 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
  */
 
 chrome.runtime.onInstalled.addListener(() => {
-  // 휴지통 자동 정리 알람 생성
+  // 휴지통 자동 정리 알람 생성 (테스트용: 1분마다)
   chrome.alarms.create("cleanTrash", {
-    when: getNextMidnight(),
-    periodInMinutes: 1440 // 24시간마다 반복
+    when: Date.now() + 60000, // 테스트용: 1분 후 시작 (원래는 자정)
+    periodInMinutes: 1 // 테스트용: 1분마다 반복 (원래는 1440)
   });
 
   // 기존 탭에 content script 주입
