@@ -82,7 +82,8 @@ export default function Trash({ onChangeDialog, is24HourFormat }: TrashProps) {
     const diffTime = today.getTime() - deletedDate.getTime();
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-    return 7 - diffDays;
+    // 테스트용: 약 1.5분 (원래는 7일)
+    return 0.001 - diffDays;
   };
 
   return (

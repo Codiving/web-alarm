@@ -43,8 +43,8 @@ export const cleanExpiredTrash = async (): Promise<void> => {
     const diffTime = today.getTime() - deletedDate.getTime();
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-    // 7일 이상 지났으면 제거
-    return diffDays < 7;
+    // 테스트용: 약 1.5분으로 변경 (원래는 7일)
+    return diffDays < 0.001;
   });
 
   await setToStorage("trashedAlarms", filtered);

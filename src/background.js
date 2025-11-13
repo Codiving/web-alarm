@@ -15,7 +15,7 @@ async function cleanExpiredTrash() {
     deletedDate.setHours(0, 0, 0, 0);
     const diffTime = today.getTime() - deletedDate.getTime();
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays < 7; // 7일 미만인 항목만 유지
+    return diffDays < 0.001; // 테스트용: 약 1.5분 (원래는 7일)
   });
 
   await chrome.storage.local.set({ trashedAlarms: filtered });
