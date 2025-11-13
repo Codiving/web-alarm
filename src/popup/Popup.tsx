@@ -15,6 +15,7 @@ export default function Popup() {
   const [alarm, setAlarm] = useState<EditAlarm>(null);
   const [type, setType] = useState<string>(t("all"));
   const [is24HourFormat, setIs24HourFormat] = useState<boolean | null>(null);
+  const [isSidePanel, setIsSidePanel] = useState<boolean>(false);
 
   const onChangeDialog = (dialog: Dialog) => setDialog(dialog);
 
@@ -29,13 +30,23 @@ export default function Popup() {
     (async () => {
       const result = await getIs24HourFormat();
       setIs24HourFormat(result);
+
+      // 사이드 패널인지 확인
+      // @ts-ignore - sidePanel API는 타입 정의가 없을 수 있음
+      if (chrome.sidePanel && window.location.pathname.includes("sidepanel")) {
+        setIsSidePanel(true);
+      }
     })();
   }, []);
 
   if (is24HourFormat === null) return null;
 
   return (
-    <div className="relative w-[330px] h-[450px] bg-[#434040] overflow-hidden">
+    <div
+      className={`relative bg-[#434040] overflow-hidden ${
+        isSidePanel ? "w-full h-screen" : "w-[330px] h-[450px]"
+      }`}
+    >
       {dialog === "add" && (
         <AddAlarm
           alarm={alarm}
@@ -52,6 +63,7 @@ export default function Popup() {
           type={type}
           onChangeType={type => setType(type)}
           is24HourFormat={is24HourFormat}
+          isSidePanel={isSidePanel}
         />
       )}
       {dialog === "setting" && (

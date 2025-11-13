@@ -10,6 +10,7 @@ export default defineConfig({
       treeshake: false,
       input: {
         popup: resolve(__dirname, "popup.html"),
+        sidepanel: resolve(__dirname, "sidepanel.html"),
         background: resolve(__dirname, "src/background.js"),
         content: resolve(__dirname, "src/content/index.js"),
         popupCss: resolve(__dirname, "src/popup/popup.css"),
