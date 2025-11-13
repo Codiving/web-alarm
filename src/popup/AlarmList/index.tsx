@@ -8,11 +8,13 @@ import {
 } from "../../type/day";
 import { t } from "../../utils/i18n";
 import { getTimeInfo } from "../../utils/time";
+import { moveToTrash, cleanExpiredTrash } from "../../utils/trash";
 import { getFromStorage, setToStorage } from "../storage";
 import EditDeleteButton from "./EditDeleteButton";
 import FloatingAddButton from "./FloatingAddButton";
 import Memo from "./Memo";
 import SettingButton from "./SettingButton";
+import TrashButton from "./TrashButton";
 import { Dialog } from "../Popup";
 
 interface AlarmListProps {
@@ -73,6 +75,7 @@ export default function AlarmList({
   }, []);
 
   const loadAlarms = useCallback(async () => {
+    await cleanExpiredTrash(); // 팝업 열 때마다 만료된 휴지통 항목 정리
     await fetchAlarms();
   }, [fetchAlarms]);
 
@@ -100,7 +103,12 @@ export default function AlarmList({
       className="select-none flex flex-col gap-[8px] px-[12px] py-[8px] h-[450px]"
     >
       <div className="flex justify-between items-center">
-        <SettingButton className="invisible" />
+        <TrashButton
+          className="cursor-pointer"
+          onClick={() => {
+            onChangeDialog("trash");
+          }}
+        />
         <h1 className="text-center text-[22px] font-bold text-white sticky top-0">
           {t("extName")}
         </h1>
@@ -199,6 +207,8 @@ export default function AlarmList({
                     openEditAlarmLayer(alarm);
                   }}
                   onDelete={async () => {
+                    // 알람을 휴지통으로 이동
+                    await moveToTrash(alarm);
                     const filtered = alarms.filter(a => a.id !== alarm.id);
                     await setToStorage("alarms", filtered);
                     await fetchAlarms();

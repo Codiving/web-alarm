@@ -98,25 +98,41 @@ function handleOverlayClick(alarm: any, overlay: any, intervalId: any) {
   const alarmId = alarm.id;
   const closedTime = new Date(Date.now() + 60 * 1000).toISOString();
 
-  chrome.storage.local.get(["alarms", "closedAlarms"], result => {
-    const alarms = result.alarms || [];
-    const closedAlarms = result.closedAlarms || {};
+  chrome.storage.local.get(
+    ["alarms", "closedAlarms", "trashedAlarms"],
+    result => {
+      const alarms = result.alarms || [];
+      const closedAlarms = result.closedAlarms || {};
+      const trashedAlarms = result.trashedAlarms || [];
 
-    const index = alarms.findIndex((a: any) => a.id === alarmId);
-    const foundAlarm = alarms[index];
+      const index = alarms.findIndex((a: any) => a.id === alarmId);
+      const foundAlarm = alarms[index];
 
-    if (foundAlarm?.isOneTime) {
-      alarms.splice(index, 1);
+      if (foundAlarm?.isOneTime) {
+        // 일회용 알람을 휴지통으로 이동
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, "0");
+        const dd = String(today.getDate()).padStart(2, "0");
+        const deletedAt = `${yyyy}-${mm}-${dd}`;
+
+        trashedAlarms.push({
+          ...foundAlarm,
+          deletedAt
+        });
+
+        alarms.splice(index, 1);
+      }
+      closedAlarms[alarmId] = closedTime;
+
+      chrome.storage.local.set({ alarms, closedAlarms, trashedAlarms });
+
+      clearInterval(intervalId);
+      overlayMap.delete(alarmId);
+
+      updateOverlayVisibility();
     }
-    closedAlarms[alarmId] = closedTime;
-
-    chrome.storage.local.set({ alarms, closedAlarms });
-
-    clearInterval(intervalId);
-    overlayMap.delete(alarmId);
-
-    updateOverlayVisibility();
-  });
+  );
 }
 
 export {

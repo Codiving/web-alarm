@@ -6,8 +6,9 @@ import AlarmList from "./AlarmList";
 import { getIs24HourFormat } from "../type/day";
 import { setToStorage } from "./storage";
 import Setting from "./Setting";
+import Trash from "./Trash";
 
-export type Dialog = "add" | "list" | "setting";
+export type Dialog = "add" | "list" | "setting" | "trash";
 
 export default function Popup() {
   const [dialog, setDialog] = useState<Dialog>("list");
@@ -58,6 +59,12 @@ export default function Popup() {
           onChangeDialog={onChangeDialog}
           is24HourFormat={is24HourFormat}
           onChangeIs24HourFormat={onChangeIs24HourFormat}
+        />
+      )}
+      {dialog === "trash" && (
+        <Trash
+          onChangeDialog={onChangeDialog}
+          is24HourFormat={is24HourFormat}
         />
       )}
     </div>

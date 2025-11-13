@@ -33,7 +33,16 @@ type LocaleKey =
   | "twentyFourHourFormat"
   | "twelveHourFormat"
   | "timeFormat"
-  | "setting";
+  | "setting"
+  | "trash"
+  | "emptyTrashMessage"
+  | "confirmDeletePermanently"
+  | "daysRemaining"
+  | "willBeDeletedToday"
+  | "restore"
+  | "deletePermanently"
+  | "restoreSelected"
+  | "deleteSelected";
 
 export function t(key: LocaleKey): string {
   return chrome.i18n.getMessage(key) || key;
