@@ -23,12 +23,11 @@ async function cleanExpiredTrash() {
 
 /**
  * 매일 자정에 휴지통 정리 알람 생성
+ * 브라우저 시작 시 만료된 휴지통 항목도 정리
  */
 chrome.runtime.onStartup.addListener(() => {
-  chrome.alarms.create("cleanTrash", {
-    when: getNextMidnight(),
-    periodInMinutes: 1440 // 24시간마다 반복
-  });
+  cleanExpiredTrash(); // 놓친 자정이 있을 수 있으니 바로 정리
+  createCleanTrashAlarm();
 });
 
 /**
@@ -40,6 +39,16 @@ function getNextMidnight() {
   tomorrow.setDate(tomorrow.getDate() + 1);
   tomorrow.setHours(0, 0, 0, 0);
   return tomorrow.getTime();
+}
+
+/**
+ * cleanTrash 알람 생성
+ */
+function createCleanTrashAlarm() {
+  chrome.alarms.create("cleanTrash", {
+    when: getNextMidnight(),
+    periodInMinutes: 1440 // 24시간마다 반복
+  });
 }
 
 /**
@@ -89,10 +98,7 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 
 chrome.runtime.onInstalled.addListener(() => {
   // 휴지통 자동 정리 알람 생성
-  chrome.alarms.create("cleanTrash", {
-    when: getNextMidnight(),
-    periodInMinutes: 1440 // 24시간마다 반복
-  });
+  createCleanTrashAlarm();
 
   // 기존 탭에 content script 주입
   chrome.tabs.query({}, tabs => {
@@ -105,4 +111,16 @@ chrome.runtime.onInstalled.addListener(() => {
       }
     }
   });
+});
+
+/**
+ * 확장 프로그램이 깨어날 때마다 알람 존재 여부 확인 및 만료 항목 정리
+ * service worker가 재시작될 때 알람이 사라지는 것을 방지하고
+ * 놓친 자정이 있을 경우를 대비하여 바로 정리 실행
+ */
+chrome.alarms.get("cleanTrash", (alarm) => {
+  if (!alarm) {
+    cleanExpiredTrash(); // 놓친 자정이 있을 수 있으니 바로 정리
+    createCleanTrashAlarm();
+  }
 });
