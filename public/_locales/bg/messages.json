@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Получете тих аларма от уебсайта, когато звукът не е позволен. Известието ще се появи в точното време."
   },
-  "am": { "message": "ПП" },
-  "pm": { "message": "СП" },
-  "sun": { "message": "Нед" },
-  "mon": { "message": "Пон" },
-  "tue": { "message": "Вто" },
-  "wed": { "message": "Сря" },
-  "thu": { "message": "Чет" },
-  "fri": { "message": "Пет" },
-  "sat": { "message": "Съб" },
-  "oneTimeAlarm": { "message": "Еднократна аларма" },
+  "am": {
+    "message": "ПП"
+  },
+  "pm": {
+    "message": "СП"
+  },
+  "sun": {
+    "message": "Нед"
+  },
+  "mon": {
+    "message": "Пон"
+  },
+  "tue": {
+    "message": "Вто"
+  },
+  "wed": {
+    "message": "Сря"
+  },
+  "thu": {
+    "message": "Чет"
+  },
+  "fri": {
+    "message": "Пет"
+  },
+  "sat": {
+    "message": "Съб"
+  },
+  "oneTimeAlarm": {
+    "message": "Еднократна аларма"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Алармата ще се задейства веднъж и след това ще бъде автоматично изтрита."
   },
-  "activeDays": { "message": "Активни дни" },
-  "activeDate": { "message": "Активна дата" },
-  "save": { "message": "Запази" },
-  "memo": { "message": "Бележка" },
-  "editAlarm": { "message": "Редактиране на аларма" },
-  "addAlarm": { "message": "Добавяне на аларма" },
-  "day": { "message": "Ден" },
-  "month": { "message": "Месец" },
-  "year": { "message": "Година" },
-  "invalidDate": { "message": "Невалидна дата" },
-  "pastDateNotAllowed": { "message": "Минали дати не са позволени" },
-  "pastTimeNotAllowed": { "message": "Минало време не е позволено" },
-  "everyday": { "message": "Всеки ден" },
-  "alarm": { "message": "Аларма" },
+  "activeDays": {
+    "message": "Активни дни"
+  },
+  "activeDate": {
+    "message": "Активна дата"
+  },
+  "save": {
+    "message": "Запази"
+  },
+  "memo": {
+    "message": "Бележка"
+  },
+  "editAlarm": {
+    "message": "Редактиране на аларма"
+  },
+  "addAlarm": {
+    "message": "Добавяне на аларма"
+  },
+  "day": {
+    "message": "Ден"
+  },
+  "month": {
+    "message": "Месец"
+  },
+  "year": {
+    "message": "Година"
+  },
+  "invalidDate": {
+    "message": "Невалидна дата"
+  },
+  "pastDateNotAllowed": {
+    "message": "Минали дати не са позволени"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Минало време не е позволено"
+  },
+  "everyday": {
+    "message": "Всеки ден"
+  },
+  "alarm": {
+    "message": "Аларма"
+  },
   "closeAlarmMessage": {
     "message": "Щракнете върху екрана, за да затворите прозореца с алармата."
   },
-  "all": { "message": "Всички" },
-  "normalAlarm": { "message": "Нормална аларма" },
-  "twentyFourHourFormat": { "message": "24ч" },
-  "twelveHourFormat": { "message": "12ч" },
-  "timeFormat": { "message": "Формат на времето" },
-  "setting": { "message": "Настройки" }
+  "all": {
+    "message": "Всички"
+  },
+  "normalAlarm": {
+    "message": "Нормална аларма"
+  },
+  "twentyFourHourFormat": {
+    "message": "24ч"
+  },
+  "twelveHourFormat": {
+    "message": "12ч"
+  },
+  "timeFormat": {
+    "message": "Формат на времето"
+  },
+  "setting": {
+    "message": "Настройки"
+  },
+  "trash": {
+    "message": "Кошче"
+  },
+  "emptyTrash": {
+    "message": "Изпразни всичко"
+  },
+  "emptyTrashMessage": {
+    "message": "Кошчето е празно"
+  },
+  "confirmEmptyTrash": {
+    "message": "Сигурни ли сте, че искате да изпразните кошчето? Това действие не може да бъде отменено."
+  },
+  "confirmDeletePermanently": {
+    "message": "Сигурни ли сте, че искате да изтриете завинаги? Това действие не може да бъде отменено."
+  },
+  "daysRemaining": {
+    "message": " дни до автоматично изтриване"
+  },
+  "willBeDeletedToday": {
+    "message": "Ще бъде изтрито днес"
+  },
+  "restore": {
+    "message": "Възстанови"
+  },
+  "deletePermanently": {
+    "message": "Изтрий завинаги"
+  },
+  "restoreSelected": {
+    "message": "Възстанови"
+  },
+  "deleteSelected": {
+    "message": "Изтрий"
+  }
 }

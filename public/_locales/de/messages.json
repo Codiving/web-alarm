@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Erhalten Sie stumme Alarme auf der Website, wenn kein Ton erlaubt ist. Die Benachrichtigung erscheint zur eingestellten Zeit."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "So" },
-  "mon": { "message": "Mo" },
-  "tue": { "message": "Di" },
-  "wed": { "message": "Mi" },
-  "thu": { "message": "Do" },
-  "fri": { "message": "Fr" },
-  "sat": { "message": "Sa" },
-  "oneTimeAlarm": { "message": "Einmaliger Alarm" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "So"
+  },
+  "mon": {
+    "message": "Mo"
+  },
+  "tue": {
+    "message": "Di"
+  },
+  "wed": {
+    "message": "Mi"
+  },
+  "thu": {
+    "message": "Do"
+  },
+  "fri": {
+    "message": "Fr"
+  },
+  "sat": {
+    "message": "Sa"
+  },
+  "oneTimeAlarm": {
+    "message": "Einmaliger Alarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarm wird ausgelöst und danach automatisch gelöscht."
   },
-  "activeDays": { "message": "Aktive Tage" },
-  "activeDate": { "message": "Aktives Datum" },
-  "save": { "message": "Speichern" },
-  "memo": { "message": "Notiz" },
-  "editAlarm": { "message": "Alarm bearbeiten" },
-  "addAlarm": { "message": "Alarm hinzufügen" },
-  "day": { "message": "Tag" },
-  "month": { "message": "Monat" },
-  "year": { "message": "Jahr" },
-  "invalidDate": { "message": "Ungültiges Datum" },
-  "pastDateNotAllowed": { "message": "Vergangenes Datum ist nicht erlaubt" },
-  "pastTimeNotAllowed": { "message": "Vergangene Zeit ist nicht erlaubt" },
-  "everyday": { "message": "Täglich" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Aktive Tage"
+  },
+  "activeDate": {
+    "message": "Aktives Datum"
+  },
+  "save": {
+    "message": "Speichern"
+  },
+  "memo": {
+    "message": "Notiz"
+  },
+  "editAlarm": {
+    "message": "Alarm bearbeiten"
+  },
+  "addAlarm": {
+    "message": "Alarm hinzufügen"
+  },
+  "day": {
+    "message": "Tag"
+  },
+  "month": {
+    "message": "Monat"
+  },
+  "year": {
+    "message": "Jahr"
+  },
+  "invalidDate": {
+    "message": "Ungültiges Datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Vergangenes Datum ist nicht erlaubt"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Vergangene Zeit ist nicht erlaubt"
+  },
+  "everyday": {
+    "message": "Täglich"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Klicken Sie auf den Bildschirm, um das Alarmfenster zu schließen."
   },
-  "all": { "message": "Alle" },
-  "normalAlarm": { "message": "Normaler Alarm" },
-  "twentyFourHourFormat": { "message": "24 Std." },
-  "twelveHourFormat": { "message": "12 Std." },
-  "timeFormat": { "message": "Zeitformat" },
-  "setting": { "message": "Einstellungen" }
+  "all": {
+    "message": "Alle"
+  },
+  "normalAlarm": {
+    "message": "Normaler Alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 Std."
+  },
+  "twelveHourFormat": {
+    "message": "12 Std."
+  },
+  "timeFormat": {
+    "message": "Zeitformat"
+  },
+  "setting": {
+    "message": "Einstellungen"
+  },
+  "trash": {
+    "message": "Papierkorb"
+  },
+  "emptyTrash": {
+    "message": "Alle löschen"
+  },
+  "emptyTrashMessage": {
+    "message": "Papierkorb ist leer"
+  },
+  "confirmEmptyTrash": {
+    "message": "Möchten Sie den Papierkorb wirklich leeren? Dies kann nicht rückgängig gemacht werden."
+  },
+  "confirmDeletePermanently": {
+    "message": "Möchten Sie diese Elemente endgültig löschen? Dies kann nicht rückgängig gemacht werden."
+  },
+  "daysRemaining": {
+    "message": " Tage bis zur automatischen Löschung"
+  },
+  "willBeDeletedToday": {
+    "message": "Wird heute gelöscht"
+  },
+  "restore": {
+    "message": "Wiederherstellen"
+  },
+  "deletePermanently": {
+    "message": "Endgültig löschen"
+  },
+  "restoreSelected": {
+    "message": "Wiederherstellen"
+  },
+  "deleteSelected": {
+    "message": "Löschen"
+  }
 }

@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "જ્યારે અવાજની મંજૂરી ન હોય ત્યારે વેબસાઇટથી શાંત એલાર્મ મેળવો. સૂચના ચોક્કસ સમયે દેખાશે."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "રવિ" },
-  "mon": { "message": "સોમ" },
-  "tue": { "message": "મંગળ" },
-  "wed": { "message": "બુધ" },
-  "thu": { "message": "ગુરુ" },
-  "fri": { "message": "શુક્ર" },
-  "sat": { "message": "શનિ" },
-  "oneTimeAlarm": { "message": "એક વખતનો એલાર્મ" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "રવિ"
+  },
+  "mon": {
+    "message": "સોમ"
+  },
+  "tue": {
+    "message": "મંગળ"
+  },
+  "wed": {
+    "message": "બુધ"
+  },
+  "thu": {
+    "message": "ગુરુ"
+  },
+  "fri": {
+    "message": "શુક્ર"
+  },
+  "sat": {
+    "message": "શનિ"
+  },
+  "oneTimeAlarm": {
+    "message": "એક વખતનો એલાર્મ"
+  },
   "oneTimeAlarmTooltip": {
     "message": "એલાર્મ એક વખત વાગશે અને પછી આપમેળે કાઢી નાખવામાં આવશે."
   },
-  "activeDays": { "message": "સક્રિય દિવસો" },
-  "activeDate": { "message": "સક્રિય તારીખ" },
-  "save": { "message": "સાચવો" },
-  "memo": { "message": "મેમો" },
-  "editAlarm": { "message": "એલાર્મ સંપાદિત કરો" },
-  "addAlarm": { "message": "એલાર્મ ઉમેરો" },
-  "day": { "message": "દિવસ" },
-  "month": { "message": "મહિનો" },
-  "year": { "message": "વર્ષ" },
-  "invalidDate": { "message": "અમાન્ય તારીખ" },
-  "pastDateNotAllowed": { "message": "ભૂતકાળની તારીખોની મંજૂરી નથી" },
-  "pastTimeNotAllowed": { "message": "ભૂતકાળના સમયની મંજૂરી નથી" },
-  "everyday": { "message": "દરરોજ" },
-  "alarm": { "message": "એલાર્મ" },
+  "activeDays": {
+    "message": "સક્રિય દિવસો"
+  },
+  "activeDate": {
+    "message": "સક્રિય તારીખ"
+  },
+  "save": {
+    "message": "સાચવો"
+  },
+  "memo": {
+    "message": "મેમો"
+  },
+  "editAlarm": {
+    "message": "એલાર્મ સંપાદિત કરો"
+  },
+  "addAlarm": {
+    "message": "એલાર્મ ઉમેરો"
+  },
+  "day": {
+    "message": "દિવસ"
+  },
+  "month": {
+    "message": "મહિનો"
+  },
+  "year": {
+    "message": "વર્ષ"
+  },
+  "invalidDate": {
+    "message": "અમાન્ય તારીખ"
+  },
+  "pastDateNotAllowed": {
+    "message": "ભૂતકાળની તારીખોની મંજૂરી નથી"
+  },
+  "pastTimeNotAllowed": {
+    "message": "ભૂતકાળના સમયની મંજૂરી નથી"
+  },
+  "everyday": {
+    "message": "દરરોજ"
+  },
+  "alarm": {
+    "message": "એલાર્મ"
+  },
   "closeAlarmMessage": {
     "message": "એલાર્મ વિન્ડો બંધ કરવા સ્ક્રીન પર ક્લિક કરો."
   },
-  "all": { "message": "બધા" },
-  "normalAlarm": { "message": "સામાન્ય એલાર્મ" },
-  "twentyFourHourFormat": { "message": "24કલાક" },
-  "twelveHourFormat": { "message": "12કલાક" },
-  "timeFormat": { "message": "સમય ફોર્મેટ" },
-  "setting": { "message": "સેટિંગ" }
+  "all": {
+    "message": "બધા"
+  },
+  "normalAlarm": {
+    "message": "સામાન્ય એલાર્મ"
+  },
+  "twentyFourHourFormat": {
+    "message": "24કલાક"
+  },
+  "twelveHourFormat": {
+    "message": "12કલાક"
+  },
+  "timeFormat": {
+    "message": "સમય ફોર્મેટ"
+  },
+  "setting": {
+    "message": "સેટિંગ"
+  },
+  "trash": {
+    "message": "કચરાપેટી"
+  },
+  "emptyTrash": {
+    "message": "બધું ખાલી કરો"
+  },
+  "emptyTrashMessage": {
+    "message": "કચરાપેટી ખાલી છે"
+  },
+  "confirmEmptyTrash": {
+    "message": "શું તમે ખરેખર કચરાપેટી ખાલી કરવા માંગો છો? આ ક્રિયા પૂર્વવત્ કરી શકાશે નહીં."
+  },
+  "confirmDeletePermanently": {
+    "message": "શું તમે ખરેખર કાયમી રીતે કાઢી નાખવા માંગો છો? આ ક્રિયા પૂર્વવત્ કરી શકાશે નહીં."
+  },
+  "daysRemaining": {
+    "message": " દિવસ પછી આપોઆપ કાઢી નાખાશે"
+  },
+  "willBeDeletedToday": {
+    "message": "આજે કાઢી નાખવામાં આવશે"
+  },
+  "restore": {
+    "message": "પુનઃસ્થાપિત કરો"
+  },
+  "deletePermanently": {
+    "message": "કાયમી રીતે કાઢી નાખો"
+  },
+  "restoreSelected": {
+    "message": "પુનઃસ્થાપિત કરો"
+  },
+  "deleteSelected": {
+    "message": "કાઢી નાખો"
+  }
 }

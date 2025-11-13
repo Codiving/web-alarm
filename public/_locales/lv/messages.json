@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Saņemiet klusu modinātāju no tīmekļa vietnes, kad skaņa nav atļauta. Paziņojums parādīsies precīzā laikā."
   },
-  "am": { "message": "priekšpusdienā" },
-  "pm": { "message": "pēcpusdienā" },
-  "sun": { "message": "Sv" },
-  "mon": { "message": "Pr" },
-  "tue": { "message": "Ot" },
-  "wed": { "message": "Tr" },
-  "thu": { "message": "Ce" },
-  "fri": { "message": "Pk" },
-  "sat": { "message": "Se" },
-  "oneTimeAlarm": { "message": "Vienreizējs modinātājs" },
+  "am": {
+    "message": "priekšpusdienā"
+  },
+  "pm": {
+    "message": "pēcpusdienā"
+  },
+  "sun": {
+    "message": "Sv"
+  },
+  "mon": {
+    "message": "Pr"
+  },
+  "tue": {
+    "message": "Ot"
+  },
+  "wed": {
+    "message": "Tr"
+  },
+  "thu": {
+    "message": "Ce"
+  },
+  "fri": {
+    "message": "Pk"
+  },
+  "sat": {
+    "message": "Se"
+  },
+  "oneTimeAlarm": {
+    "message": "Vienreizējs modinātājs"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Modinātājs atskanēs vienu reizi un pēc tam tiks automātiski izdzēsts."
   },
-  "activeDays": { "message": "Aktīvās dienas" },
-  "activeDate": { "message": "Aktīvais datums" },
-  "save": { "message": "Saglabāt" },
-  "memo": { "message": "Piezīme" },
-  "editAlarm": { "message": "Rediģēt modinātāju" },
-  "addAlarm": { "message": "Pievienot modinātāju" },
-  "day": { "message": "Diena" },
-  "month": { "message": "Mēnesis" },
-  "year": { "message": "Gads" },
-  "invalidDate": { "message": "Nederīgs datums" },
-  "pastDateNotAllowed": { "message": "Pagātnes datumi nav atļauti" },
-  "pastTimeNotAllowed": { "message": "Pagātnes laiki nav atļauti" },
-  "everyday": { "message": "Katru dienu" },
-  "alarm": { "message": "Modinātājs" },
+  "activeDays": {
+    "message": "Aktīvās dienas"
+  },
+  "activeDate": {
+    "message": "Aktīvais datums"
+  },
+  "save": {
+    "message": "Saglabāt"
+  },
+  "memo": {
+    "message": "Piezīme"
+  },
+  "editAlarm": {
+    "message": "Rediģēt modinātāju"
+  },
+  "addAlarm": {
+    "message": "Pievienot modinātāju"
+  },
+  "day": {
+    "message": "Diena"
+  },
+  "month": {
+    "message": "Mēnesis"
+  },
+  "year": {
+    "message": "Gads"
+  },
+  "invalidDate": {
+    "message": "Nederīgs datums"
+  },
+  "pastDateNotAllowed": {
+    "message": "Pagātnes datumi nav atļauti"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Pagātnes laiki nav atļauti"
+  },
+  "everyday": {
+    "message": "Katru dienu"
+  },
+  "alarm": {
+    "message": "Modinātājs"
+  },
   "closeAlarmMessage": {
     "message": "Noklikšķiniet uz ekrāna, lai aizvērtu modinātāja logu."
   },
-  "all": { "message": "Visi" },
-  "normalAlarm": { "message": "Parastais modinātājs" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Laika formāts" },
-  "setting": { "message": "Iestatījums" }
+  "all": {
+    "message": "Visi"
+  },
+  "normalAlarm": {
+    "message": "Parastais modinātājs"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Laika formāts"
+  },
+  "setting": {
+    "message": "Iestatījums"
+  },
+  "trash": {
+    "message": "Miskaste"
+  },
+  "emptyTrash": {
+    "message": "Iztukšot visu"
+  },
+  "emptyTrashMessage": {
+    "message": "Miskaste ir tukša"
+  },
+  "confirmEmptyTrash": {
+    "message": "Vai tiešām vēlaties iztukšot miskasti? Šo darbību nevar atsaukt."
+  },
+  "confirmDeletePermanently": {
+    "message": "Vai tiešām vēlaties dzēst pavisam? Šo darbību nevar atsaukt."
+  },
+  "daysRemaining": {
+    "message": " dienas līdz automātiskai dzēšanai"
+  },
+  "willBeDeletedToday": {
+    "message": "Tiks dzēsts šodien"
+  },
+  "restore": {
+    "message": "Atjaunot"
+  },
+  "deletePermanently": {
+    "message": "Dzēst pavisam"
+  },
+  "restoreSelected": {
+    "message": "Atjaunot"
+  },
+  "deleteSelected": {
+    "message": "Dzēst"
+  }
 }

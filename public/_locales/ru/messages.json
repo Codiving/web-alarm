@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Получайте бесшумное оповещение с сайта, когда звук недоступен. Уведомление появится точно в назначенное время."
   },
-  "am": { "message": "ДП" },
-  "pm": { "message": "ПП" },
-  "sun": { "message": "Вс" },
-  "mon": { "message": "Пн" },
-  "tue": { "message": "Вт" },
-  "wed": { "message": "Ср" },
-  "thu": { "message": "Чт" },
-  "fri": { "message": "Пт" },
-  "sat": { "message": "Сб" },
-  "oneTimeAlarm": { "message": "Одноразовый будильник" },
+  "am": {
+    "message": "ДП"
+  },
+  "pm": {
+    "message": "ПП"
+  },
+  "sun": {
+    "message": "Вс"
+  },
+  "mon": {
+    "message": "Пн"
+  },
+  "tue": {
+    "message": "Вт"
+  },
+  "wed": {
+    "message": "Ср"
+  },
+  "thu": {
+    "message": "Чт"
+  },
+  "fri": {
+    "message": "Пт"
+  },
+  "sat": {
+    "message": "Сб"
+  },
+  "oneTimeAlarm": {
+    "message": "Одноразовый будильник"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Будильник сработает один раз и будет автоматически удалён."
   },
-  "activeDays": { "message": "Активные дни" },
-  "activeDate": { "message": "Активная дата" },
-  "save": { "message": "Сохранить" },
-  "memo": { "message": "Заметка" },
-  "editAlarm": { "message": "Редактировать будильник" },
-  "addAlarm": { "message": "Добавить будильник" },
-  "day": { "message": "День" },
-  "month": { "message": "Месяц" },
-  "year": { "message": "Год" },
-  "invalidDate": { "message": "Недопустимая дата" },
-  "pastDateNotAllowed": { "message": "Установка прошедшей даты запрещена" },
-  "pastTimeNotAllowed": { "message": "Установка прошедшего времени запрещена" },
-  "everyday": { "message": "Каждый день" },
-  "alarm": { "message": "Будильник" },
+  "activeDays": {
+    "message": "Активные дни"
+  },
+  "activeDate": {
+    "message": "Активная дата"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "memo": {
+    "message": "Заметка"
+  },
+  "editAlarm": {
+    "message": "Редактировать будильник"
+  },
+  "addAlarm": {
+    "message": "Добавить будильник"
+  },
+  "day": {
+    "message": "День"
+  },
+  "month": {
+    "message": "Месяц"
+  },
+  "year": {
+    "message": "Год"
+  },
+  "invalidDate": {
+    "message": "Недопустимая дата"
+  },
+  "pastDateNotAllowed": {
+    "message": "Установка прошедшей даты запрещена"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Установка прошедшего времени запрещена"
+  },
+  "everyday": {
+    "message": "Каждый день"
+  },
+  "alarm": {
+    "message": "Будильник"
+  },
   "closeAlarmMessage": {
     "message": "Нажмите на экран, чтобы закрыть окно будильника."
   },
-  "all": { "message": "Все" },
-  "normalAlarm": { "message": "Обычный будильник" },
-  "twentyFourHourFormat": { "message": "24ч" },
-  "twelveHourFormat": { "message": "12ч" },
-  "timeFormat": { "message": "Формат времени" },
-  "setting": { "message": "Настройка" }
+  "all": {
+    "message": "Все"
+  },
+  "normalAlarm": {
+    "message": "Обычный будильник"
+  },
+  "twentyFourHourFormat": {
+    "message": "24ч"
+  },
+  "twelveHourFormat": {
+    "message": "12ч"
+  },
+  "timeFormat": {
+    "message": "Формат времени"
+  },
+  "setting": {
+    "message": "Настройка"
+  },
+  "trash": {
+    "message": "Корзина"
+  },
+  "emptyTrash": {
+    "message": "Очистить всё"
+  },
+  "emptyTrashMessage": {
+    "message": "Корзина пуста"
+  },
+  "confirmEmptyTrash": {
+    "message": "Вы уверены, что хотите очистить корзину? Это действие нельзя отменить."
+  },
+  "confirmDeletePermanently": {
+    "message": "Вы уверены, что хотите удалить навсегда? Это действие нельзя отменить."
+  },
+  "daysRemaining": {
+    "message": " дней до автоматического удаления"
+  },
+  "willBeDeletedToday": {
+    "message": "Будет удалено сегодня"
+  },
+  "restore": {
+    "message": "Восстановить"
+  },
+  "deletePermanently": {
+    "message": "Удалить навсегда"
+  },
+  "restoreSelected": {
+    "message": "Восстановить"
+  },
+  "deleteSelected": {
+    "message": "Удалить"
+  }
 }

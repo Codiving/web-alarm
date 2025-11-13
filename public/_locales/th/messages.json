@@ -1,40 +1,137 @@
 {
-  "extName": { "message": "เว็บนาฬิกาปลุก" },
+  "extName": {
+    "message": "เว็บนาฬิกาปลุก"
+  },
   "extDescription": {
     "message": "รับการแจ้งเตือนแบบเงียบจากเว็บไซต์เมื่อไม่อนุญาตให้มีเสียง การแจ้งเตือนจะแสดงในเวลาที่กำหนด"
   },
-  "am": { "message": "ก่อนเที่ยง" },
-  "pm": { "message": "หลังเที่ยง" },
-  "sun": { "message": "อา" },
-  "mon": { "message": "จ" },
-  "tue": { "message": "อ" },
-  "wed": { "message": "พ" },
-  "thu": { "message": "พฤ" },
-  "fri": { "message": "ศ" },
-  "sat": { "message": "ส" },
-  "oneTimeAlarm": { "message": "นาฬิกาปลุกครั้งเดียว" },
+  "am": {
+    "message": "ก่อนเที่ยง"
+  },
+  "pm": {
+    "message": "หลังเที่ยง"
+  },
+  "sun": {
+    "message": "อา"
+  },
+  "mon": {
+    "message": "จ"
+  },
+  "tue": {
+    "message": "อ"
+  },
+  "wed": {
+    "message": "พ"
+  },
+  "thu": {
+    "message": "พฤ"
+  },
+  "fri": {
+    "message": "ศ"
+  },
+  "sat": {
+    "message": "ส"
+  },
+  "oneTimeAlarm": {
+    "message": "นาฬิกาปลุกครั้งเดียว"
+  },
   "oneTimeAlarmTooltip": {
     "message": "นาฬิกาปลุกจะทำงานครั้งเดียวและถูกลบโดยอัตโนมัติ"
   },
-  "activeDays": { "message": "วันที่ใช้งาน" },
-  "activeDate": { "message": "วันที่ใช้งาน" },
-  "save": { "message": "บันทึก" },
-  "memo": { "message": "บันทึกช่วยจำ" },
-  "editAlarm": { "message": "แก้ไขนาฬิกาปลุก" },
-  "addAlarm": { "message": "เพิ่มนาฬิกาปลุก" },
-  "day": { "message": "วัน" },
-  "month": { "message": "เดือน" },
-  "year": { "message": "ปี" },
-  "invalidDate": { "message": "วันที่ไม่ถูกต้อง" },
-  "pastDateNotAllowed": { "message": "ไม่อนุญาตให้เลือกวันที่ในอดีต" },
-  "pastTimeNotAllowed": { "message": "ไม่อนุญาตให้เลือกเวลาที่ผ่านมาแล้ว" },
-  "everyday": { "message": "ทุกวัน" },
-  "alarm": { "message": "ปลุก" },
-  "closeAlarmMessage": { "message": "คลิกที่หน้าจอเพื่อปิดหน้าต่างแจ้งเตือน" },
-  "all": { "message": "ทั้งหมด" },
-  "normalAlarm": { "message": "นาฬิกาปลุกปกติ" },
-  "twentyFourHourFormat": { "message": "24 ชม." },
-  "twelveHourFormat": { "message": "12 ชม." },
-  "timeFormat": { "message": "รูปแบบเวลา" },
-  "setting": { "message": "การตั้งค่า" }
+  "activeDays": {
+    "message": "วันที่ใช้งาน"
+  },
+  "activeDate": {
+    "message": "วันที่ใช้งาน"
+  },
+  "save": {
+    "message": "บันทึก"
+  },
+  "memo": {
+    "message": "บันทึกช่วยจำ"
+  },
+  "editAlarm": {
+    "message": "แก้ไขนาฬิกาปลุก"
+  },
+  "addAlarm": {
+    "message": "เพิ่มนาฬิกาปลุก"
+  },
+  "day": {
+    "message": "วัน"
+  },
+  "month": {
+    "message": "เดือน"
+  },
+  "year": {
+    "message": "ปี"
+  },
+  "invalidDate": {
+    "message": "วันที่ไม่ถูกต้อง"
+  },
+  "pastDateNotAllowed": {
+    "message": "ไม่อนุญาตให้เลือกวันที่ในอดีต"
+  },
+  "pastTimeNotAllowed": {
+    "message": "ไม่อนุญาตให้เลือกเวลาที่ผ่านมาแล้ว"
+  },
+  "everyday": {
+    "message": "ทุกวัน"
+  },
+  "alarm": {
+    "message": "ปลุก"
+  },
+  "closeAlarmMessage": {
+    "message": "คลิกที่หน้าจอเพื่อปิดหน้าต่างแจ้งเตือน"
+  },
+  "all": {
+    "message": "ทั้งหมด"
+  },
+  "normalAlarm": {
+    "message": "นาฬิกาปลุกปกติ"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 ชม."
+  },
+  "twelveHourFormat": {
+    "message": "12 ชม."
+  },
+  "timeFormat": {
+    "message": "รูปแบบเวลา"
+  },
+  "setting": {
+    "message": "การตั้งค่า"
+  },
+  "trash": {
+    "message": "ถังขยะ"
+  },
+  "emptyTrash": {
+    "message": "ล้างทั้งหมด"
+  },
+  "emptyTrashMessage": {
+    "message": "ถังขยะว่างเปล่า"
+  },
+  "confirmEmptyTrash": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการล้างถังขยะ? การดำเนินการนี้ไม่สามารถย้อนกลับได้"
+  },
+  "confirmDeletePermanently": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบอย่างถาวร? การดำเนินการนี้ไม่สามารถย้อนกลับได้"
+  },
+  "daysRemaining": {
+    "message": " วันจนกว่าจะลบอัตโนมัติ"
+  },
+  "willBeDeletedToday": {
+    "message": "จะถูกลบวันนี้"
+  },
+  "restore": {
+    "message": "กู้คืน"
+  },
+  "deletePermanently": {
+    "message": "ลบอย่างถาวร"
+  },
+  "restoreSelected": {
+    "message": "กู้คืน"
+  },
+  "deleteSelected": {
+    "message": "ลบ"
+  }
 }

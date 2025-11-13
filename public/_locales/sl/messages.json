@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Prejmite tiho budilko s spletne strani, ko zvok ni dovoljen. Obvestilo se bo prikazalo ob natančnem času."
   },
-  "am": { "message": "dop." },
-  "pm": { "message": "pop." },
-  "sun": { "message": "Ned" },
-  "mon": { "message": "Pon" },
-  "tue": { "message": "Tor" },
-  "wed": { "message": "Sre" },
-  "thu": { "message": "Čet" },
-  "fri": { "message": "Pet" },
-  "sat": { "message": "Sob" },
-  "oneTimeAlarm": { "message": "Enkratna budilka" },
+  "am": {
+    "message": "dop."
+  },
+  "pm": {
+    "message": "pop."
+  },
+  "sun": {
+    "message": "Ned"
+  },
+  "mon": {
+    "message": "Pon"
+  },
+  "tue": {
+    "message": "Tor"
+  },
+  "wed": {
+    "message": "Sre"
+  },
+  "thu": {
+    "message": "Čet"
+  },
+  "fri": {
+    "message": "Pet"
+  },
+  "sat": {
+    "message": "Sob"
+  },
+  "oneTimeAlarm": {
+    "message": "Enkratna budilka"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Budilka se bo sprožila enkrat in nato samodejno izbrisana."
   },
-  "activeDays": { "message": "Aktivni dnevi" },
-  "activeDate": { "message": "Aktivni datum" },
-  "save": { "message": "Shrani" },
-  "memo": { "message": "Opomba" },
-  "editAlarm": { "message": "Uredi budilko" },
-  "addAlarm": { "message": "Dodaj budilko" },
-  "day": { "message": "Dan" },
-  "month": { "message": "Mesec" },
-  "year": { "message": "Leto" },
-  "invalidDate": { "message": "Neveljaven datum" },
-  "pastDateNotAllowed": { "message": "Pretekli datumi niso dovoljeni" },
-  "pastTimeNotAllowed": { "message": "Pretekli časi niso dovoljeni" },
-  "everyday": { "message": "Vsak dan" },
-  "alarm": { "message": "Budilka" },
+  "activeDays": {
+    "message": "Aktivni dnevi"
+  },
+  "activeDate": {
+    "message": "Aktivni datum"
+  },
+  "save": {
+    "message": "Shrani"
+  },
+  "memo": {
+    "message": "Opomba"
+  },
+  "editAlarm": {
+    "message": "Uredi budilko"
+  },
+  "addAlarm": {
+    "message": "Dodaj budilko"
+  },
+  "day": {
+    "message": "Dan"
+  },
+  "month": {
+    "message": "Mesec"
+  },
+  "year": {
+    "message": "Leto"
+  },
+  "invalidDate": {
+    "message": "Neveljaven datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Pretekli datumi niso dovoljeni"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Pretekli časi niso dovoljeni"
+  },
+  "everyday": {
+    "message": "Vsak dan"
+  },
+  "alarm": {
+    "message": "Budilka"
+  },
   "closeAlarmMessage": {
     "message": "Kliknite na zaslon, da zaprete okno budilke."
   },
-  "all": { "message": "Vse" },
-  "normalAlarm": { "message": "Normalna budilka" },
-  "twentyFourHourFormat": { "message": "24u" },
-  "twelveHourFormat": { "message": "12u" },
-  "timeFormat": { "message": "Oblika časa" },
-  "setting": { "message": "Nastavitve" }
+  "all": {
+    "message": "Vse"
+  },
+  "normalAlarm": {
+    "message": "Normalna budilka"
+  },
+  "twentyFourHourFormat": {
+    "message": "24u"
+  },
+  "twelveHourFormat": {
+    "message": "12u"
+  },
+  "timeFormat": {
+    "message": "Oblika časa"
+  },
+  "setting": {
+    "message": "Nastavitve"
+  },
+  "trash": {
+    "message": "Koš"
+  },
+  "emptyTrash": {
+    "message": "Izprazni vse"
+  },
+  "emptyTrashMessage": {
+    "message": "Koš je prazen"
+  },
+  "confirmEmptyTrash": {
+    "message": "Ali ste prepričani, da želite izprazniti koš? Tega dejanja ni mogoče razveljaviti."
+  },
+  "confirmDeletePermanently": {
+    "message": "Ali ste prepričani, da želite trajno izbrisati? Tega dejanja ni mogoče razveljaviti."
+  },
+  "daysRemaining": {
+    "message": " dni do samodejnega brisanja"
+  },
+  "willBeDeletedToday": {
+    "message": "Bo izbrisano danes"
+  },
+  "restore": {
+    "message": "Obnovi"
+  },
+  "deletePermanently": {
+    "message": "Trajno izbriši"
+  },
+  "restoreSelected": {
+    "message": "Obnovi"
+  },
+  "deleteSelected": {
+    "message": "Izbriši"
+  }
 }

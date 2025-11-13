@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Ses izni olmadığında web sitesinden sessiz alarm alın. Bildirim tam zamanında görünecektir."
   },
-  "am": { "message": "ÖÖ" },
-  "pm": { "message": "ÖS" },
-  "sun": { "message": "Paz" },
-  "mon": { "message": "Pzt" },
-  "tue": { "message": "Sal" },
-  "wed": { "message": "Çar" },
-  "thu": { "message": "Per" },
-  "fri": { "message": "Cum" },
-  "sat": { "message": "Cmt" },
-  "oneTimeAlarm": { "message": "Tek Seferlik Alarm" },
+  "am": {
+    "message": "ÖÖ"
+  },
+  "pm": {
+    "message": "ÖS"
+  },
+  "sun": {
+    "message": "Paz"
+  },
+  "mon": {
+    "message": "Pzt"
+  },
+  "tue": {
+    "message": "Sal"
+  },
+  "wed": {
+    "message": "Çar"
+  },
+  "thu": {
+    "message": "Per"
+  },
+  "fri": {
+    "message": "Cum"
+  },
+  "sat": {
+    "message": "Cmt"
+  },
+  "oneTimeAlarm": {
+    "message": "Tek Seferlik Alarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarm bir kez çalacak ve ardından otomatik olarak silinecektir."
   },
-  "activeDays": { "message": "Aktif Günler" },
-  "activeDate": { "message": "Aktif Tarih" },
-  "save": { "message": "Kaydet" },
-  "memo": { "message": "Not" },
-  "editAlarm": { "message": "Alarmı Düzenle" },
-  "addAlarm": { "message": "Alarm Ekle" },
-  "day": { "message": "Gün" },
-  "month": { "message": "Ay" },
-  "year": { "message": "Yıl" },
-  "invalidDate": { "message": "Geçersiz tarih" },
-  "pastDateNotAllowed": { "message": "Geçmiş tarihlere izin verilmez" },
-  "pastTimeNotAllowed": { "message": "Geçmiş saatlere izin verilmez" },
-  "everyday": { "message": "Her gün" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Aktif Günler"
+  },
+  "activeDate": {
+    "message": "Aktif Tarih"
+  },
+  "save": {
+    "message": "Kaydet"
+  },
+  "memo": {
+    "message": "Not"
+  },
+  "editAlarm": {
+    "message": "Alarmı Düzenle"
+  },
+  "addAlarm": {
+    "message": "Alarm Ekle"
+  },
+  "day": {
+    "message": "Gün"
+  },
+  "month": {
+    "message": "Ay"
+  },
+  "year": {
+    "message": "Yıl"
+  },
+  "invalidDate": {
+    "message": "Geçersiz tarih"
+  },
+  "pastDateNotAllowed": {
+    "message": "Geçmiş tarihlere izin verilmez"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Geçmiş saatlere izin verilmez"
+  },
+  "everyday": {
+    "message": "Her gün"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Alarm penceresini kapatmak için ekrana tıklayın."
   },
-  "all": { "message": "Tümü" },
-  "normalAlarm": { "message": "Normal Alarm" },
-  "twentyFourHourFormat": { "message": "24s" },
-  "twelveHourFormat": { "message": "12s" },
-  "timeFormat": { "message": "Saat Formatı" },
-  "setting": { "message": "Ayar" }
+  "all": {
+    "message": "Tümü"
+  },
+  "normalAlarm": {
+    "message": "Normal Alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24s"
+  },
+  "twelveHourFormat": {
+    "message": "12s"
+  },
+  "timeFormat": {
+    "message": "Saat Formatı"
+  },
+  "setting": {
+    "message": "Ayar"
+  },
+  "trash": {
+    "message": "Çöp Kutusu"
+  },
+  "emptyTrash": {
+    "message": "Tümünü boşalt"
+  },
+  "emptyTrashMessage": {
+    "message": "Çöp kutusu boş"
+  },
+  "confirmEmptyTrash": {
+    "message": "Çöp kutusunu boşaltmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
+  },
+  "confirmDeletePermanently": {
+    "message": "Kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+  },
+  "daysRemaining": {
+    "message": " gün sonra otomatik silinecek"
+  },
+  "willBeDeletedToday": {
+    "message": "Bugün silinecek"
+  },
+  "restore": {
+    "message": "Geri yükle"
+  },
+  "deletePermanently": {
+    "message": "Kalıcı olarak sil"
+  },
+  "restoreSelected": {
+    "message": "Geri yükle"
+  },
+  "deleteSelected": {
+    "message": "Sil"
+  }
 }

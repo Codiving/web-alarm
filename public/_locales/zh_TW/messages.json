@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "當不允許聲音時，從網站獲取靜音鬧鐘。通知將在確切時間顯示。"
   },
-  "am": { "message": "上午" },
-  "pm": { "message": "下午" },
-  "sun": { "message": "日" },
-  "mon": { "message": "一" },
-  "tue": { "message": "二" },
-  "wed": { "message": "三" },
-  "thu": { "message": "四" },
-  "fri": { "message": "五" },
-  "sat": { "message": "六" },
-  "oneTimeAlarm": { "message": "一次性鬧鐘" },
+  "am": {
+    "message": "上午"
+  },
+  "pm": {
+    "message": "下午"
+  },
+  "sun": {
+    "message": "日"
+  },
+  "mon": {
+    "message": "一"
+  },
+  "tue": {
+    "message": "二"
+  },
+  "wed": {
+    "message": "三"
+  },
+  "thu": {
+    "message": "四"
+  },
+  "fri": {
+    "message": "五"
+  },
+  "sat": {
+    "message": "六"
+  },
+  "oneTimeAlarm": {
+    "message": "一次性鬧鐘"
+  },
   "oneTimeAlarmTooltip": {
     "message": "鬧鐘將觸發一次，然後自動刪除。"
   },
-  "activeDays": { "message": "活動日期" },
-  "activeDate": { "message": "活動日期" },
-  "save": { "message": "儲存" },
-  "memo": { "message": "備忘錄" },
-  "editAlarm": { "message": "編輯鬧鐘" },
-  "addAlarm": { "message": "新增鬧鐘" },
-  "day": { "message": "日" },
-  "month": { "message": "月" },
-  "year": { "message": "年" },
-  "invalidDate": { "message": "無效日期" },
-  "pastDateNotAllowed": { "message": "不允許過去的日期" },
-  "pastTimeNotAllowed": { "message": "不允許過去的時間" },
-  "everyday": { "message": "每天" },
-  "alarm": { "message": "鬧鐘" },
+  "activeDays": {
+    "message": "活動日期"
+  },
+  "activeDate": {
+    "message": "活動日期"
+  },
+  "save": {
+    "message": "儲存"
+  },
+  "memo": {
+    "message": "備忘錄"
+  },
+  "editAlarm": {
+    "message": "編輯鬧鐘"
+  },
+  "addAlarm": {
+    "message": "新增鬧鐘"
+  },
+  "day": {
+    "message": "日"
+  },
+  "month": {
+    "message": "月"
+  },
+  "year": {
+    "message": "年"
+  },
+  "invalidDate": {
+    "message": "無效日期"
+  },
+  "pastDateNotAllowed": {
+    "message": "不允許過去的日期"
+  },
+  "pastTimeNotAllowed": {
+    "message": "不允許過去的時間"
+  },
+  "everyday": {
+    "message": "每天"
+  },
+  "alarm": {
+    "message": "鬧鐘"
+  },
   "closeAlarmMessage": {
     "message": "點擊螢幕關閉鬧鐘視窗。"
   },
-  "all": { "message": "全部" },
-  "normalAlarm": { "message": "一般鬧鐘" },
-  "twentyFourHourFormat": { "message": "24小時" },
-  "twelveHourFormat": { "message": "12小時" },
-  "timeFormat": { "message": "時間格式" },
-  "setting": { "message": "設定" }
+  "all": {
+    "message": "全部"
+  },
+  "normalAlarm": {
+    "message": "一般鬧鐘"
+  },
+  "twentyFourHourFormat": {
+    "message": "24小時"
+  },
+  "twelveHourFormat": {
+    "message": "12小時"
+  },
+  "timeFormat": {
+    "message": "時間格式"
+  },
+  "setting": {
+    "message": "設定"
+  },
+  "trash": {
+    "message": "資源回收筒"
+  },
+  "emptyTrash": {
+    "message": "全部清空"
+  },
+  "emptyTrashMessage": {
+    "message": "資源回收筒為空"
+  },
+  "confirmEmptyTrash": {
+    "message": "確定要清空資源回收筒嗎？此操作無法復原。"
+  },
+  "confirmDeletePermanently": {
+    "message": "確定要永久刪除嗎？此操作無法復原。"
+  },
+  "daysRemaining": {
+    "message": "天後自動刪除"
+  },
+  "willBeDeletedToday": {
+    "message": "今天將自動刪除"
+  },
+  "restore": {
+    "message": "還原"
+  },
+  "deletePermanently": {
+    "message": "永久刪除"
+  },
+  "restoreSelected": {
+    "message": "還原"
+  },
+  "deleteSelected": {
+    "message": "刪除"
+  }
 }

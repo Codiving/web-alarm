@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Primiți o alarmă silențioasă de pe site atunci când sunetul nu este permis. Notificarea va apărea la momentul exact."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Dum" },
-  "mon": { "message": "Lun" },
-  "tue": { "message": "Mar" },
-  "wed": { "message": "Mie" },
-  "thu": { "message": "Joi" },
-  "fri": { "message": "Vin" },
-  "sat": { "message": "Sâm" },
-  "oneTimeAlarm": { "message": "Alarmă unică" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Dum"
+  },
+  "mon": {
+    "message": "Lun"
+  },
+  "tue": {
+    "message": "Mar"
+  },
+  "wed": {
+    "message": "Mie"
+  },
+  "thu": {
+    "message": "Joi"
+  },
+  "fri": {
+    "message": "Vin"
+  },
+  "sat": {
+    "message": "Sâm"
+  },
+  "oneTimeAlarm": {
+    "message": "Alarmă unică"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarma se va declanșa o dată și apoi va fi ștearsă automat."
   },
-  "activeDays": { "message": "Zile active" },
-  "activeDate": { "message": "Dată activă" },
-  "save": { "message": "Salvează" },
-  "memo": { "message": "Notă" },
-  "editAlarm": { "message": "Editează alarma" },
-  "addAlarm": { "message": "Adaugă alarmă" },
-  "day": { "message": "Zi" },
-  "month": { "message": "Lună" },
-  "year": { "message": "An" },
-  "invalidDate": { "message": "Dată nevalidă" },
-  "pastDateNotAllowed": { "message": "Datele trecute nu sunt permise" },
-  "pastTimeNotAllowed": { "message": "Orele trecute nu sunt permise" },
-  "everyday": { "message": "În fiecare zi" },
-  "alarm": { "message": "Alarmă" },
+  "activeDays": {
+    "message": "Zile active"
+  },
+  "activeDate": {
+    "message": "Dată activă"
+  },
+  "save": {
+    "message": "Salvează"
+  },
+  "memo": {
+    "message": "Notă"
+  },
+  "editAlarm": {
+    "message": "Editează alarma"
+  },
+  "addAlarm": {
+    "message": "Adaugă alarmă"
+  },
+  "day": {
+    "message": "Zi"
+  },
+  "month": {
+    "message": "Lună"
+  },
+  "year": {
+    "message": "An"
+  },
+  "invalidDate": {
+    "message": "Dată nevalidă"
+  },
+  "pastDateNotAllowed": {
+    "message": "Datele trecute nu sunt permise"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Orele trecute nu sunt permise"
+  },
+  "everyday": {
+    "message": "În fiecare zi"
+  },
+  "alarm": {
+    "message": "Alarmă"
+  },
   "closeAlarmMessage": {
     "message": "Faceți clic pe ecran pentru a închide fereastra alarmei."
   },
-  "all": { "message": "Toate" },
-  "normalAlarm": { "message": "Alarmă normală" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Format oră" },
-  "setting": { "message": "Setări" }
+  "all": {
+    "message": "Toate"
+  },
+  "normalAlarm": {
+    "message": "Alarmă normală"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Format oră"
+  },
+  "setting": {
+    "message": "Setări"
+  },
+  "trash": {
+    "message": "Coș de gunoi"
+  },
+  "emptyTrash": {
+    "message": "Golește tot"
+  },
+  "emptyTrashMessage": {
+    "message": "Coșul de gunoi este gol"
+  },
+  "confirmEmptyTrash": {
+    "message": "Sigur doriți să goliți coșul de gunoi? Această acțiune nu poate fi anulată."
+  },
+  "confirmDeletePermanently": {
+    "message": "Sigur doriți să ștergeți definitiv? Această acțiune nu poate fi anulată."
+  },
+  "daysRemaining": {
+    "message": " zile până la ștergerea automată"
+  },
+  "willBeDeletedToday": {
+    "message": "Va fi șters astăzi"
+  },
+  "restore": {
+    "message": "Restaurează"
+  },
+  "deletePermanently": {
+    "message": "Șterge definitiv"
+  },
+  "restoreSelected": {
+    "message": "Restaurează"
+  },
+  "deleteSelected": {
+    "message": "Șterge"
+  }
 }

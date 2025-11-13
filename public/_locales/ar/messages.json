@@ -1,40 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "احصل على تنبيه صامت من الموقع عند عدم القدرة على إصدار صوت. سيتم عرض التنبيه في الوقت المحدد."
   },
-  "am": { "message": "ص" },
-  "pm": { "message": "م" },
-  "sun": { "message": "أح" },
-  "mon": { "message": "اث" },
-  "tue": { "message": "ثل" },
-  "wed": { "message": "أر" },
-  "thu": { "message": "خم" },
-  "fri": { "message": "جم" },
-  "sat": { "message": "سب" },
-  "oneTimeAlarm": { "message": "تنبيه لمرة واحدة" },
+  "am": {
+    "message": "ص"
+  },
+  "pm": {
+    "message": "م"
+  },
+  "sun": {
+    "message": "أح"
+  },
+  "mon": {
+    "message": "اث"
+  },
+  "tue": {
+    "message": "ثل"
+  },
+  "wed": {
+    "message": "أر"
+  },
+  "thu": {
+    "message": "خم"
+  },
+  "fri": {
+    "message": "جم"
+  },
+  "sat": {
+    "message": "سب"
+  },
+  "oneTimeAlarm": {
+    "message": "تنبيه لمرة واحدة"
+  },
   "oneTimeAlarmTooltip": {
     "message": "يعمل التنبيه مرة واحدة ثم يتم حذفه تلقائيًا."
   },
-  "activeDays": { "message": "الأيام النشطة" },
-  "activeDate": { "message": "التاريخ النشط" },
-  "save": { "message": "حفظ" },
-  "memo": { "message": "ملاحظة" },
-  "editAlarm": { "message": "تعديل التنبيه" },
-  "addAlarm": { "message": "إضافة تنبيه" },
-  "day": { "message": "يوم" },
-  "month": { "message": "شهر" },
-  "year": { "message": "سنة" },
-  "invalidDate": { "message": "تاريخ غير صالح" },
-  "pastDateNotAllowed": { "message": "لا يمكن ضبط تاريخ في الماضي" },
-  "pastTimeNotAllowed": { "message": "لا يمكن ضبط وقت في الماضي" },
-  "everyday": { "message": "يوميًا" },
-  "alarm": { "message": "منبه" },
-  "closeAlarmMessage": { "message": "انقر على الشاشة لإغلاق نافذة التنبيه." },
-  "all": { "message": "الكل" },
-  "normalAlarm": { "message": "منبه عادي" },
-  "twentyFourHourFormat": { "message": "24 ساعة" },
-  "twelveHourFormat": { "message": "12 ساعة" },
-  "timeFormat": { "message": "تنسيق الوقت" },
-  "setting": { "message": "الإعدادات" }
+  "activeDays": {
+    "message": "الأيام النشطة"
+  },
+  "activeDate": {
+    "message": "التاريخ النشط"
+  },
+  "save": {
+    "message": "حفظ"
+  },
+  "memo": {
+    "message": "ملاحظة"
+  },
+  "editAlarm": {
+    "message": "تعديل التنبيه"
+  },
+  "addAlarm": {
+    "message": "إضافة تنبيه"
+  },
+  "day": {
+    "message": "يوم"
+  },
+  "month": {
+    "message": "شهر"
+  },
+  "year": {
+    "message": "سنة"
+  },
+  "invalidDate": {
+    "message": "تاريخ غير صالح"
+  },
+  "pastDateNotAllowed": {
+    "message": "لا يمكن ضبط تاريخ في الماضي"
+  },
+  "pastTimeNotAllowed": {
+    "message": "لا يمكن ضبط وقت في الماضي"
+  },
+  "everyday": {
+    "message": "يوميًا"
+  },
+  "alarm": {
+    "message": "منبه"
+  },
+  "closeAlarmMessage": {
+    "message": "انقر على الشاشة لإغلاق نافذة التنبيه."
+  },
+  "all": {
+    "message": "الكل"
+  },
+  "normalAlarm": {
+    "message": "منبه عادي"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 ساعة"
+  },
+  "twelveHourFormat": {
+    "message": "12 ساعة"
+  },
+  "timeFormat": {
+    "message": "تنسيق الوقت"
+  },
+  "setting": {
+    "message": "الإعدادات"
+  },
+  "trash": {
+    "message": "سلة المهملات"
+  },
+  "emptyTrash": {
+    "message": "إفراغ الكل"
+  },
+  "emptyTrashMessage": {
+    "message": "سلة المهملات فارغة"
+  },
+  "confirmEmptyTrash": {
+    "message": "هل أنت متأكد من إفراغ سلة المهملات؟ لا يمكن التراجع عن هذا الإجراء."
+  },
+  "confirmDeletePermanently": {
+    "message": "هل أنت متأكد من الحذف الدائم؟ لا يمكن التراجع عن هذا الإجراء."
+  },
+  "daysRemaining": {
+    "message": " أيام حتى الحذف التلقائي"
+  },
+  "willBeDeletedToday": {
+    "message": "سيتم الحذف اليوم"
+  },
+  "restore": {
+    "message": "استعادة"
+  },
+  "deletePermanently": {
+    "message": "حذف نهائي"
+  },
+  "restoreSelected": {
+    "message": "استعادة"
+  },
+  "deleteSelected": {
+    "message": "حذف"
+  }
 }

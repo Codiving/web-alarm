@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Saate veebisaidilt vaikse äratuse, kui heli pole lubatud. Teatis kuvatakse täpsel ajal."
   },
-  "am": { "message": "EL" },
-  "pm": { "message": "PL" },
-  "sun": { "message": "P" },
-  "mon": { "message": "E" },
-  "tue": { "message": "T" },
-  "wed": { "message": "K" },
-  "thu": { "message": "N" },
-  "fri": { "message": "R" },
-  "sat": { "message": "L" },
-  "oneTimeAlarm": { "message": "Ühekordne äratus" },
+  "am": {
+    "message": "EL"
+  },
+  "pm": {
+    "message": "PL"
+  },
+  "sun": {
+    "message": "P"
+  },
+  "mon": {
+    "message": "E"
+  },
+  "tue": {
+    "message": "T"
+  },
+  "wed": {
+    "message": "K"
+  },
+  "thu": {
+    "message": "N"
+  },
+  "fri": {
+    "message": "R"
+  },
+  "sat": {
+    "message": "L"
+  },
+  "oneTimeAlarm": {
+    "message": "Ühekordne äratus"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Äratus käivitub üks kord ja kustutatakse seejärel automaatselt."
   },
-  "activeDays": { "message": "Aktiivsed päevad" },
-  "activeDate": { "message": "Aktiivne kuupäev" },
-  "save": { "message": "Salvesta" },
-  "memo": { "message": "Märkus" },
-  "editAlarm": { "message": "Muuda äratust" },
-  "addAlarm": { "message": "Lisa äratus" },
-  "day": { "message": "Päev" },
-  "month": { "message": "Kuu" },
-  "year": { "message": "Aasta" },
-  "invalidDate": { "message": "Kehtetu kuupäev" },
-  "pastDateNotAllowed": { "message": "Varasemad kuupäevad pole lubatud" },
-  "pastTimeNotAllowed": { "message": "Varasemad ajad pole lubatud" },
-  "everyday": { "message": "Iga päev" },
-  "alarm": { "message": "Äratus" },
+  "activeDays": {
+    "message": "Aktiivsed päevad"
+  },
+  "activeDate": {
+    "message": "Aktiivne kuupäev"
+  },
+  "save": {
+    "message": "Salvesta"
+  },
+  "memo": {
+    "message": "Märkus"
+  },
+  "editAlarm": {
+    "message": "Muuda äratust"
+  },
+  "addAlarm": {
+    "message": "Lisa äratus"
+  },
+  "day": {
+    "message": "Päev"
+  },
+  "month": {
+    "message": "Kuu"
+  },
+  "year": {
+    "message": "Aasta"
+  },
+  "invalidDate": {
+    "message": "Kehtetu kuupäev"
+  },
+  "pastDateNotAllowed": {
+    "message": "Varasemad kuupäevad pole lubatud"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Varasemad ajad pole lubatud"
+  },
+  "everyday": {
+    "message": "Iga päev"
+  },
+  "alarm": {
+    "message": "Äratus"
+  },
   "closeAlarmMessage": {
     "message": "Äratuse akna sulgemiseks klõpsake ekraani."
   },
-  "all": { "message": "Kõik" },
-  "normalAlarm": { "message": "Tavaline äratus" },
-  "twentyFourHourFormat": { "message": "24t" },
-  "twelveHourFormat": { "message": "12t" },
-  "timeFormat": { "message": "Aja vorming" },
-  "setting": { "message": "Seade" }
+  "all": {
+    "message": "Kõik"
+  },
+  "normalAlarm": {
+    "message": "Tavaline äratus"
+  },
+  "twentyFourHourFormat": {
+    "message": "24t"
+  },
+  "twelveHourFormat": {
+    "message": "12t"
+  },
+  "timeFormat": {
+    "message": "Aja vorming"
+  },
+  "setting": {
+    "message": "Seade"
+  },
+  "trash": {
+    "message": "Prügikast"
+  },
+  "emptyTrash": {
+    "message": "Tühjenda kõik"
+  },
+  "emptyTrashMessage": {
+    "message": "Prügikast on tühi"
+  },
+  "confirmEmptyTrash": {
+    "message": "Kas olete kindel, et soovite prügikasti tühjendada? Seda tegevust ei saa tagasi võtta."
+  },
+  "confirmDeletePermanently": {
+    "message": "Kas olete kindel, et soovite jäädavalt kustutada? Seda tegevust ei saa tagasi võtta."
+  },
+  "daysRemaining": {
+    "message": " päeva automaatse kustutamiseni"
+  },
+  "willBeDeletedToday": {
+    "message": "Kustutatakse täna"
+  },
+  "restore": {
+    "message": "Taasta"
+  },
+  "deletePermanently": {
+    "message": "Kustuta jäädavalt"
+  },
+  "restoreSelected": {
+    "message": "Taasta"
+  },
+  "deleteSelected": {
+    "message": "Kustuta"
+  }
 }

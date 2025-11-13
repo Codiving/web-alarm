@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Få en lydløs alarm fra hjemmesiden, når lyd ikke er tilladt. Notifikationen vises på det nøjagtige tidspunkt."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Søn" },
-  "mon": { "message": "Man" },
-  "tue": { "message": "Tir" },
-  "wed": { "message": "Ons" },
-  "thu": { "message": "Tor" },
-  "fri": { "message": "Fre" },
-  "sat": { "message": "Lør" },
-  "oneTimeAlarm": { "message": "Engangsalarm" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Søn"
+  },
+  "mon": {
+    "message": "Man"
+  },
+  "tue": {
+    "message": "Tir"
+  },
+  "wed": {
+    "message": "Ons"
+  },
+  "thu": {
+    "message": "Tor"
+  },
+  "fri": {
+    "message": "Fre"
+  },
+  "sat": {
+    "message": "Lør"
+  },
+  "oneTimeAlarm": {
+    "message": "Engangsalarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarmen aktiveres én gang og slettes derefter automatisk."
   },
-  "activeDays": { "message": "Aktive dage" },
-  "activeDate": { "message": "Aktiv dato" },
-  "save": { "message": "Gem" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "Rediger alarm" },
-  "addAlarm": { "message": "Tilføj alarm" },
-  "day": { "message": "Dag" },
-  "month": { "message": "Måned" },
-  "year": { "message": "År" },
-  "invalidDate": { "message": "Ugyldig dato" },
-  "pastDateNotAllowed": { "message": "Tidligere datoer er ikke tilladt" },
-  "pastTimeNotAllowed": { "message": "Tidligere tidspunkter er ikke tilladt" },
-  "everyday": { "message": "Hver dag" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Aktive dage"
+  },
+  "activeDate": {
+    "message": "Aktiv dato"
+  },
+  "save": {
+    "message": "Gem"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "Rediger alarm"
+  },
+  "addAlarm": {
+    "message": "Tilføj alarm"
+  },
+  "day": {
+    "message": "Dag"
+  },
+  "month": {
+    "message": "Måned"
+  },
+  "year": {
+    "message": "År"
+  },
+  "invalidDate": {
+    "message": "Ugyldig dato"
+  },
+  "pastDateNotAllowed": {
+    "message": "Tidligere datoer er ikke tilladt"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Tidligere tidspunkter er ikke tilladt"
+  },
+  "everyday": {
+    "message": "Hver dag"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Klik på skærmen for at lukke alarmvinduet."
   },
-  "all": { "message": "Alle" },
-  "normalAlarm": { "message": "Normal alarm" },
-  "twentyFourHourFormat": { "message": "24t" },
-  "twelveHourFormat": { "message": "12t" },
-  "timeFormat": { "message": "Tidsformat" },
-  "setting": { "message": "Indstilling" }
+  "all": {
+    "message": "Alle"
+  },
+  "normalAlarm": {
+    "message": "Normal alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24t"
+  },
+  "twelveHourFormat": {
+    "message": "12t"
+  },
+  "timeFormat": {
+    "message": "Tidsformat"
+  },
+  "setting": {
+    "message": "Indstilling"
+  },
+  "trash": {
+    "message": "Papirkurv"
+  },
+  "emptyTrash": {
+    "message": "Tøm alle"
+  },
+  "emptyTrashMessage": {
+    "message": "Papirkurven er tom"
+  },
+  "confirmEmptyTrash": {
+    "message": "Er du sikker på, at du vil tømme papirkurven? Dette kan ikke fortrydes."
+  },
+  "confirmDeletePermanently": {
+    "message": "Er du sikker på, at du vil slette permanent? Dette kan ikke fortrydes."
+  },
+  "daysRemaining": {
+    "message": " dage indtil automatisk sletning"
+  },
+  "willBeDeletedToday": {
+    "message": "Slettes i dag"
+  },
+  "restore": {
+    "message": "Gendan"
+  },
+  "deletePermanently": {
+    "message": "Slet permanent"
+  },
+  "restoreSelected": {
+    "message": "Gendan"
+  },
+  "deleteSelected": {
+    "message": "Slet"
+  }
 }

@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Dapatkan penggera senyap dari laman web apabila bunyi tidak dibenarkan. Pemberitahuan akan muncul pada masa yang tepat."
   },
-  "am": { "message": "PG" },
-  "pm": { "message": "PTG" },
-  "sun": { "message": "Ahd" },
-  "mon": { "message": "Isn" },
-  "tue": { "message": "Sel" },
-  "wed": { "message": "Rab" },
-  "thu": { "message": "Kha" },
-  "fri": { "message": "Jum" },
-  "sat": { "message": "Sab" },
-  "oneTimeAlarm": { "message": "Penggera Sekali" },
+  "am": {
+    "message": "PG"
+  },
+  "pm": {
+    "message": "PTG"
+  },
+  "sun": {
+    "message": "Ahd"
+  },
+  "mon": {
+    "message": "Isn"
+  },
+  "tue": {
+    "message": "Sel"
+  },
+  "wed": {
+    "message": "Rab"
+  },
+  "thu": {
+    "message": "Kha"
+  },
+  "fri": {
+    "message": "Jum"
+  },
+  "sat": {
+    "message": "Sab"
+  },
+  "oneTimeAlarm": {
+    "message": "Penggera Sekali"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Penggera akan berbunyi sekali dan kemudian dipadam secara automatik."
   },
-  "activeDays": { "message": "Hari Aktif" },
-  "activeDate": { "message": "Tarikh Aktif" },
-  "save": { "message": "Simpan" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "Edit Penggera" },
-  "addAlarm": { "message": "Tambah Penggera" },
-  "day": { "message": "Hari" },
-  "month": { "message": "Bulan" },
-  "year": { "message": "Tahun" },
-  "invalidDate": { "message": "Tarikh tidak sah" },
-  "pastDateNotAllowed": { "message": "Tarikh lepas tidak dibenarkan" },
-  "pastTimeNotAllowed": { "message": "Masa lepas tidak dibenarkan" },
-  "everyday": { "message": "Setiap hari" },
-  "alarm": { "message": "Penggera" },
+  "activeDays": {
+    "message": "Hari Aktif"
+  },
+  "activeDate": {
+    "message": "Tarikh Aktif"
+  },
+  "save": {
+    "message": "Simpan"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "Edit Penggera"
+  },
+  "addAlarm": {
+    "message": "Tambah Penggera"
+  },
+  "day": {
+    "message": "Hari"
+  },
+  "month": {
+    "message": "Bulan"
+  },
+  "year": {
+    "message": "Tahun"
+  },
+  "invalidDate": {
+    "message": "Tarikh tidak sah"
+  },
+  "pastDateNotAllowed": {
+    "message": "Tarikh lepas tidak dibenarkan"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Masa lepas tidak dibenarkan"
+  },
+  "everyday": {
+    "message": "Setiap hari"
+  },
+  "alarm": {
+    "message": "Penggera"
+  },
   "closeAlarmMessage": {
     "message": "Klik skrin untuk menutup tetingkap penggera."
   },
-  "all": { "message": "Semua" },
-  "normalAlarm": { "message": "Penggera Biasa" },
-  "twentyFourHourFormat": { "message": "24j" },
-  "twelveHourFormat": { "message": "12j" },
-  "timeFormat": { "message": "Format Masa" },
-  "setting": { "message": "Tetapan" }
+  "all": {
+    "message": "Semua"
+  },
+  "normalAlarm": {
+    "message": "Penggera Biasa"
+  },
+  "twentyFourHourFormat": {
+    "message": "24j"
+  },
+  "twelveHourFormat": {
+    "message": "12j"
+  },
+  "timeFormat": {
+    "message": "Format Masa"
+  },
+  "setting": {
+    "message": "Tetapan"
+  },
+  "trash": {
+    "message": "Tong Sampah"
+  },
+  "emptyTrash": {
+    "message": "Kosongkan semua"
+  },
+  "emptyTrashMessage": {
+    "message": "Tong sampah kosong"
+  },
+  "confirmEmptyTrash": {
+    "message": "Adakah anda pasti mahu mengosongkan tong sampah? Tindakan ini tidak boleh dibatalkan."
+  },
+  "confirmDeletePermanently": {
+    "message": "Adakah anda pasti mahu memadam secara kekal? Tindakan ini tidak boleh dibatalkan."
+  },
+  "daysRemaining": {
+    "message": " hari sehingga pemadaman automatik"
+  },
+  "willBeDeletedToday": {
+    "message": "Akan dipadamkan hari ini"
+  },
+  "restore": {
+    "message": "Pulihkan"
+  },
+  "deletePermanently": {
+    "message": "Padam secara kekal"
+  },
+  "restoreSelected": {
+    "message": "Pulihkan"
+  },
+  "deleteSelected": {
+    "message": "Padam"
+  }
 }

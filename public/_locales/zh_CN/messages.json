@@ -1,40 +1,137 @@
 {
-  "extName": { "message": "网页闹钟" },
+  "extName": {
+    "message": "网页闹钟"
+  },
   "extDescription": {
     "message": "在无法发出声音时，从网站接收静音闹钟。通知将在准确时间出现。"
   },
-  "am": { "message": "上午" },
-  "pm": { "message": "下午" },
-  "sun": { "message": "日" },
-  "mon": { "message": "一" },
-  "tue": { "message": "二" },
-  "wed": { "message": "三" },
-  "thu": { "message": "四" },
-  "fri": { "message": "五" },
-  "sat": { "message": "六" },
-  "oneTimeAlarm": { "message": "一次性闹钟" },
+  "am": {
+    "message": "上午"
+  },
+  "pm": {
+    "message": "下午"
+  },
+  "sun": {
+    "message": "日"
+  },
+  "mon": {
+    "message": "一"
+  },
+  "tue": {
+    "message": "二"
+  },
+  "wed": {
+    "message": "三"
+  },
+  "thu": {
+    "message": "四"
+  },
+  "fri": {
+    "message": "五"
+  },
+  "sat": {
+    "message": "六"
+  },
+  "oneTimeAlarm": {
+    "message": "一次性闹钟"
+  },
   "oneTimeAlarmTooltip": {
     "message": "闹钟触发一次后将自动删除。"
   },
-  "activeDays": { "message": "激活的日期" },
-  "activeDate": { "message": "激活日期" },
-  "save": { "message": "保存" },
-  "memo": { "message": "备忘" },
-  "editAlarm": { "message": "编辑闹钟" },
-  "addAlarm": { "message": "添加闹钟" },
-  "day": { "message": "日" },
-  "month": { "message": "月" },
-  "year": { "message": "年" },
-  "invalidDate": { "message": "无效日期" },
-  "pastDateNotAllowed": { "message": "不允许选择过去的日期" },
-  "pastTimeNotAllowed": { "message": "不允许选择过去的时间" },
-  "everyday": { "message": "每天" },
-  "alarm": { "message": "闹钟" },
-  "closeAlarmMessage": { "message": "点击屏幕关闭闹钟窗口。" },
-  "all": { "message": "全部" },
-  "normalAlarm": { "message": "普通闹钟" },
-  "twentyFourHourFormat": { "message": "24小时" },
-  "twelveHourFormat": { "message": "12小时" },
-  "timeFormat": { "message": "时间格式" },
-  "setting": { "message": "设置" }
+  "activeDays": {
+    "message": "激活的日期"
+  },
+  "activeDate": {
+    "message": "激活日期"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "memo": {
+    "message": "备忘"
+  },
+  "editAlarm": {
+    "message": "编辑闹钟"
+  },
+  "addAlarm": {
+    "message": "添加闹钟"
+  },
+  "day": {
+    "message": "日"
+  },
+  "month": {
+    "message": "月"
+  },
+  "year": {
+    "message": "年"
+  },
+  "invalidDate": {
+    "message": "无效日期"
+  },
+  "pastDateNotAllowed": {
+    "message": "不允许选择过去的日期"
+  },
+  "pastTimeNotAllowed": {
+    "message": "不允许选择过去的时间"
+  },
+  "everyday": {
+    "message": "每天"
+  },
+  "alarm": {
+    "message": "闹钟"
+  },
+  "closeAlarmMessage": {
+    "message": "点击屏幕关闭闹钟窗口。"
+  },
+  "all": {
+    "message": "全部"
+  },
+  "normalAlarm": {
+    "message": "普通闹钟"
+  },
+  "twentyFourHourFormat": {
+    "message": "24小时"
+  },
+  "twelveHourFormat": {
+    "message": "12小时"
+  },
+  "timeFormat": {
+    "message": "时间格式"
+  },
+  "setting": {
+    "message": "设置"
+  },
+  "trash": {
+    "message": "回收站"
+  },
+  "emptyTrash": {
+    "message": "全部清空"
+  },
+  "emptyTrashMessage": {
+    "message": "回收站为空"
+  },
+  "confirmEmptyTrash": {
+    "message": "确定要清空回收站吗？此操作无法撤销。"
+  },
+  "confirmDeletePermanently": {
+    "message": "确定要永久删除吗？此操作无法撤销。"
+  },
+  "daysRemaining": {
+    "message": "天后自动删除"
+  },
+  "willBeDeletedToday": {
+    "message": "今天将自动删除"
+  },
+  "restore": {
+    "message": "恢复"
+  },
+  "deletePermanently": {
+    "message": "永久删除"
+  },
+  "restoreSelected": {
+    "message": "恢复"
+  },
+  "deleteSelected": {
+    "message": "删除"
+  }
 }

@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Receba um alarme silencioso do website quando o som não é permitido. A notificação aparecerá no momento exato."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Dom" },
-  "mon": { "message": "Seg" },
-  "tue": { "message": "Ter" },
-  "wed": { "message": "Qua" },
-  "thu": { "message": "Qui" },
-  "fri": { "message": "Sex" },
-  "sat": { "message": "Sáb" },
-  "oneTimeAlarm": { "message": "Alarme único" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Dom"
+  },
+  "mon": {
+    "message": "Seg"
+  },
+  "tue": {
+    "message": "Ter"
+  },
+  "wed": {
+    "message": "Qua"
+  },
+  "thu": {
+    "message": "Qui"
+  },
+  "fri": {
+    "message": "Sex"
+  },
+  "sat": {
+    "message": "Sáb"
+  },
+  "oneTimeAlarm": {
+    "message": "Alarme único"
+  },
   "oneTimeAlarmTooltip": {
     "message": "O alarme tocará uma vez e depois será automaticamente eliminado."
   },
-  "activeDays": { "message": "Dias ativos" },
-  "activeDate": { "message": "Data ativa" },
-  "save": { "message": "Guardar" },
-  "memo": { "message": "Nota" },
-  "editAlarm": { "message": "Editar alarme" },
-  "addAlarm": { "message": "Adicionar alarme" },
-  "day": { "message": "Dia" },
-  "month": { "message": "Mês" },
-  "year": { "message": "Ano" },
-  "invalidDate": { "message": "Data inválida" },
-  "pastDateNotAllowed": { "message": "Datas passadas não são permitidas" },
-  "pastTimeNotAllowed": { "message": "Horas passadas não são permitidas" },
-  "everyday": { "message": "Todos os dias" },
-  "alarm": { "message": "Alarme" },
+  "activeDays": {
+    "message": "Dias ativos"
+  },
+  "activeDate": {
+    "message": "Data ativa"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "memo": {
+    "message": "Nota"
+  },
+  "editAlarm": {
+    "message": "Editar alarme"
+  },
+  "addAlarm": {
+    "message": "Adicionar alarme"
+  },
+  "day": {
+    "message": "Dia"
+  },
+  "month": {
+    "message": "Mês"
+  },
+  "year": {
+    "message": "Ano"
+  },
+  "invalidDate": {
+    "message": "Data inválida"
+  },
+  "pastDateNotAllowed": {
+    "message": "Datas passadas não são permitidas"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Horas passadas não são permitidas"
+  },
+  "everyday": {
+    "message": "Todos os dias"
+  },
+  "alarm": {
+    "message": "Alarme"
+  },
   "closeAlarmMessage": {
     "message": "Clique no ecrã para fechar a janela do alarme."
   },
-  "all": { "message": "Todos" },
-  "normalAlarm": { "message": "Alarme normal" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Formato de hora" },
-  "setting": { "message": "Definições" }
+  "all": {
+    "message": "Todos"
+  },
+  "normalAlarm": {
+    "message": "Alarme normal"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Formato de hora"
+  },
+  "setting": {
+    "message": "Definições"
+  },
+  "trash": {
+    "message": "Lixo"
+  },
+  "emptyTrash": {
+    "message": "Esvaziar tudo"
+  },
+  "emptyTrashMessage": {
+    "message": "O lixo está vazio"
+  },
+  "confirmEmptyTrash": {
+    "message": "Tem a certeza de que quer esvaziar o lixo? Esta ação não pode ser revertida."
+  },
+  "confirmDeletePermanently": {
+    "message": "Tem a certeza de que quer eliminar permanentemente? Esta ação não pode ser revertida."
+  },
+  "daysRemaining": {
+    "message": " dias até à eliminação automática"
+  },
+  "willBeDeletedToday": {
+    "message": "Será eliminado hoje"
+  },
+  "restore": {
+    "message": "Restaurar"
+  },
+  "deletePermanently": {
+    "message": "Eliminar permanentemente"
+  },
+  "restoreSelected": {
+    "message": "Restaurar"
+  },
+  "deleteSelected": {
+    "message": "Eliminar"
+  }
 }

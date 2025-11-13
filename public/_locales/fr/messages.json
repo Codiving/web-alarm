@@ -1,46 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Recevez une alarme silencieuse depuis le site web lorsque le son est désactivé. La notification apparaîtra à l'heure exacte."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Dim" },
-  "mon": { "message": "Lun" },
-  "tue": { "message": "Mar" },
-  "wed": { "message": "Mer" },
-  "thu": { "message": "Jeu" },
-  "fri": { "message": "Ven" },
-  "sat": { "message": "Sam" },
-  "oneTimeAlarm": { "message": "Alarme unique" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Dim"
+  },
+  "mon": {
+    "message": "Lun"
+  },
+  "tue": {
+    "message": "Mar"
+  },
+  "wed": {
+    "message": "Mer"
+  },
+  "thu": {
+    "message": "Jeu"
+  },
+  "fri": {
+    "message": "Ven"
+  },
+  "sat": {
+    "message": "Sam"
+  },
+  "oneTimeAlarm": {
+    "message": "Alarme unique"
+  },
   "oneTimeAlarmTooltip": {
     "message": "L'alarme se déclenche une fois puis est automatiquement supprimée."
   },
-  "activeDays": { "message": "Jours actifs" },
-  "activeDate": { "message": "Date active" },
-  "save": { "message": "Enregistrer" },
-  "memo": { "message": "Mémo" },
-  "editAlarm": { "message": "Modifier l'alarme" },
-  "addAlarm": { "message": "Ajouter une alarme" },
-  "day": { "message": "Jour" },
-  "month": { "message": "Mois" },
-  "year": { "message": "Année" },
-  "invalidDate": { "message": "Date invalide" },
+  "activeDays": {
+    "message": "Jours actifs"
+  },
+  "activeDate": {
+    "message": "Date active"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "memo": {
+    "message": "Mémo"
+  },
+  "editAlarm": {
+    "message": "Modifier l'alarme"
+  },
+  "addAlarm": {
+    "message": "Ajouter une alarme"
+  },
+  "day": {
+    "message": "Jour"
+  },
+  "month": {
+    "message": "Mois"
+  },
+  "year": {
+    "message": "Année"
+  },
+  "invalidDate": {
+    "message": "Date invalide"
+  },
   "pastDateNotAllowed": {
     "message": "Les dates passées ne sont pas autorisées"
   },
   "pastTimeNotAllowed": {
     "message": "Les heures passées ne sont pas autorisées"
   },
-  "everyday": { "message": "Tous les jours" },
-  "alarm": { "message": "Alarme" },
+  "everyday": {
+    "message": "Tous les jours"
+  },
+  "alarm": {
+    "message": "Alarme"
+  },
   "closeAlarmMessage": {
     "message": "Cliquez sur l'écran pour fermer la fenêtre d'alarme."
   },
-  "all": { "message": "Tous" },
-  "normalAlarm": { "message": "Alarme normale" },
-  "twentyFourHourFormat": { "message": "24 h" },
-  "twelveHourFormat": { "message": "12 h" },
-  "timeFormat": { "message": "Format de l'heure" },
-  "setting": { "message": "Paramètre" }
+  "all": {
+    "message": "Tous"
+  },
+  "normalAlarm": {
+    "message": "Alarme normale"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 h"
+  },
+  "twelveHourFormat": {
+    "message": "12 h"
+  },
+  "timeFormat": {
+    "message": "Format de l'heure"
+  },
+  "setting": {
+    "message": "Paramètre"
+  },
+  "trash": {
+    "message": "Corbeille"
+  },
+  "emptyTrash": {
+    "message": "Tout supprimer"
+  },
+  "emptyTrashMessage": {
+    "message": "La corbeille est vide"
+  },
+  "confirmEmptyTrash": {
+    "message": "Êtes-vous sûr de vouloir vider la corbeille ? Cette action est irréversible."
+  },
+  "confirmDeletePermanently": {
+    "message": "Êtes-vous sûr de vouloir supprimer définitivement ? Cette action est irréversible."
+  },
+  "daysRemaining": {
+    "message": " jours avant la suppression automatique"
+  },
+  "willBeDeletedToday": {
+    "message": "Sera supprimé aujourd'hui"
+  },
+  "restore": {
+    "message": "Restaurer"
+  },
+  "deletePermanently": {
+    "message": "Supprimer définitivement"
+  },
+  "restoreSelected": {
+    "message": "Restaurer"
+  },
+  "deleteSelected": {
+    "message": "Supprimer"
+  }
 }

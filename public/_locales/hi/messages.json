@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "जब ध्वनि की अनुमति न हो, तब वेबसाइट से मूक अलार्म प्राप्त करें। अधिसूचना निर्धारित समय पर दिखाई देगी।"
   },
-  "am": { "message": "पूर्वाह्न" },
-  "pm": { "message": "अपराह्न" },
-  "sun": { "message": "रवि" },
-  "mon": { "message": "सोम" },
-  "tue": { "message": "मंगल" },
-  "wed": { "message": "बुध" },
-  "thu": { "message": "गुरु" },
-  "fri": { "message": "शुक्र" },
-  "sat": { "message": "शनि" },
-  "oneTimeAlarm": { "message": "एक बार का अलार्म" },
+  "am": {
+    "message": "पूर्वाह्न"
+  },
+  "pm": {
+    "message": "अपराह्न"
+  },
+  "sun": {
+    "message": "रवि"
+  },
+  "mon": {
+    "message": "सोम"
+  },
+  "tue": {
+    "message": "मंगल"
+  },
+  "wed": {
+    "message": "बुध"
+  },
+  "thu": {
+    "message": "गुरु"
+  },
+  "fri": {
+    "message": "शुक्र"
+  },
+  "sat": {
+    "message": "शनि"
+  },
+  "oneTimeAlarm": {
+    "message": "एक बार का अलार्म"
+  },
   "oneTimeAlarmTooltip": {
     "message": "अलार्म एक बार सक्रिय होगा और फिर स्वचालित रूप से हट जाएगा।"
   },
-  "activeDays": { "message": "सक्रिय दिन" },
-  "activeDate": { "message": "सक्रिय तिथि" },
-  "save": { "message": "सहेजें" },
-  "memo": { "message": "नोट" },
-  "editAlarm": { "message": "अलार्म संपादित करें" },
-  "addAlarm": { "message": "अलार्म जोड़ें" },
-  "day": { "message": "दिन" },
-  "month": { "message": "महीना" },
-  "year": { "message": "साल" },
-  "invalidDate": { "message": "अमान्य तिथि" },
-  "pastDateNotAllowed": { "message": "अतीत की तिथि स्वीकार नहीं है" },
-  "pastTimeNotAllowed": { "message": "अतीत का समय स्वीकार नहीं है" },
-  "everyday": { "message": "हर दिन" },
-  "alarm": { "message": "अलार्म" },
+  "activeDays": {
+    "message": "सक्रिय दिन"
+  },
+  "activeDate": {
+    "message": "सक्रिय तिथि"
+  },
+  "save": {
+    "message": "सहेजें"
+  },
+  "memo": {
+    "message": "नोट"
+  },
+  "editAlarm": {
+    "message": "अलार्म संपादित करें"
+  },
+  "addAlarm": {
+    "message": "अलार्म जोड़ें"
+  },
+  "day": {
+    "message": "दिन"
+  },
+  "month": {
+    "message": "महीना"
+  },
+  "year": {
+    "message": "साल"
+  },
+  "invalidDate": {
+    "message": "अमान्य तिथि"
+  },
+  "pastDateNotAllowed": {
+    "message": "अतीत की तिथि स्वीकार नहीं है"
+  },
+  "pastTimeNotAllowed": {
+    "message": "अतीत का समय स्वीकार नहीं है"
+  },
+  "everyday": {
+    "message": "हर दिन"
+  },
+  "alarm": {
+    "message": "अलार्म"
+  },
   "closeAlarmMessage": {
     "message": "अलार्म विंडो बंद करने के लिए स्क्रीन पर क्लिक करें।"
   },
-  "all": { "message": "सभी" },
-  "normalAlarm": { "message": "सामान्य अलार्म" },
-  "twentyFourHourFormat": { "message": "24 घंटे" },
-  "twelveHourFormat": { "message": "12 घंटे" },
-  "timeFormat": { "message": "समय प्रारूप" },
-  "setting": { "message": "सेटिंग" }
+  "all": {
+    "message": "सभी"
+  },
+  "normalAlarm": {
+    "message": "सामान्य अलार्म"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 घंटे"
+  },
+  "twelveHourFormat": {
+    "message": "12 घंटे"
+  },
+  "timeFormat": {
+    "message": "समय प्रारूप"
+  },
+  "setting": {
+    "message": "सेटिंग"
+  },
+  "trash": {
+    "message": "कचरा"
+  },
+  "emptyTrash": {
+    "message": "सभी हटाएं"
+  },
+  "emptyTrashMessage": {
+    "message": "कचरा खाली है"
+  },
+  "confirmEmptyTrash": {
+    "message": "क्या आप वाकई कचरा खाली करना चाहते हैं? इसे पूर्ववत नहीं किया जा सकता।"
+  },
+  "confirmDeletePermanently": {
+    "message": "क्या आप वाकई स्थायी रूप से हटाना चाहते हैं? इसे पूर्ववत नहीं किया जा सकता।"
+  },
+  "daysRemaining": {
+    "message": " दिन बाद स्वतः हटा दिया जाएगा"
+  },
+  "willBeDeletedToday": {
+    "message": "आज हटा दिया जाएगा"
+  },
+  "restore": {
+    "message": "पुनर्स्थापित करें"
+  },
+  "deletePermanently": {
+    "message": "स्थायी रूप से हटाएं"
+  },
+  "restoreSelected": {
+    "message": "पुनर्स्थापित करें"
+  },
+  "deleteSelected": {
+    "message": "हटाएं"
+  }
 }

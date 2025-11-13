@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Dapatkan alarm senyap dari situs web saat suara tidak diperbolehkan. Notifikasi akan muncul pada waktu yang tepat."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Min" },
-  "mon": { "message": "Sen" },
-  "tue": { "message": "Sel" },
-  "wed": { "message": "Rab" },
-  "thu": { "message": "Kam" },
-  "fri": { "message": "Jum" },
-  "sat": { "message": "Sab" },
-  "oneTimeAlarm": { "message": "Alarm Sekali Pakai" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Min"
+  },
+  "mon": {
+    "message": "Sen"
+  },
+  "tue": {
+    "message": "Sel"
+  },
+  "wed": {
+    "message": "Rab"
+  },
+  "thu": {
+    "message": "Kam"
+  },
+  "fri": {
+    "message": "Jum"
+  },
+  "sat": {
+    "message": "Sab"
+  },
+  "oneTimeAlarm": {
+    "message": "Alarm Sekali Pakai"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarm akan berbunyi sekali dan kemudian akan dihapus secara otomatis."
   },
-  "activeDays": { "message": "Hari Aktif" },
-  "activeDate": { "message": "Tanggal Aktif" },
-  "save": { "message": "Simpan" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "Edit Alarm" },
-  "addAlarm": { "message": "Tambah Alarm" },
-  "day": { "message": "Hari" },
-  "month": { "message": "Bulan" },
-  "year": { "message": "Tahun" },
-  "invalidDate": { "message": "Tanggal tidak valid" },
-  "pastDateNotAllowed": { "message": "Tanggal lampau tidak diperbolehkan" },
-  "pastTimeNotAllowed": { "message": "Waktu lampau tidak diperbolehkan" },
-  "everyday": { "message": "Setiap hari" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Hari Aktif"
+  },
+  "activeDate": {
+    "message": "Tanggal Aktif"
+  },
+  "save": {
+    "message": "Simpan"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "Edit Alarm"
+  },
+  "addAlarm": {
+    "message": "Tambah Alarm"
+  },
+  "day": {
+    "message": "Hari"
+  },
+  "month": {
+    "message": "Bulan"
+  },
+  "year": {
+    "message": "Tahun"
+  },
+  "invalidDate": {
+    "message": "Tanggal tidak valid"
+  },
+  "pastDateNotAllowed": {
+    "message": "Tanggal lampau tidak diperbolehkan"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Waktu lampau tidak diperbolehkan"
+  },
+  "everyday": {
+    "message": "Setiap hari"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Klik layar untuk menutup jendela alarm."
   },
-  "all": { "message": "Semua" },
-  "normalAlarm": { "message": "Alarm Normal" },
-  "twentyFourHourFormat": { "message": "24j" },
-  "twelveHourFormat": { "message": "12j" },
-  "timeFormat": { "message": "Format Waktu" },
-  "setting": { "message": "Pengaturan" }
+  "all": {
+    "message": "Semua"
+  },
+  "normalAlarm": {
+    "message": "Alarm Normal"
+  },
+  "twentyFourHourFormat": {
+    "message": "24j"
+  },
+  "twelveHourFormat": {
+    "message": "12j"
+  },
+  "timeFormat": {
+    "message": "Format Waktu"
+  },
+  "setting": {
+    "message": "Pengaturan"
+  },
+  "trash": {
+    "message": "Tempat Sampah"
+  },
+  "emptyTrash": {
+    "message": "Kosongkan semua"
+  },
+  "emptyTrashMessage": {
+    "message": "Tempat sampah kosong"
+  },
+  "confirmEmptyTrash": {
+    "message": "Apakah Anda yakin ingin mengosongkan tempat sampah? Tindakan ini tidak dapat dibatalkan."
+  },
+  "confirmDeletePermanently": {
+    "message": "Apakah Anda yakin ingin menghapus permanen? Tindakan ini tidak dapat dibatalkan."
+  },
+  "daysRemaining": {
+    "message": " hari hingga penghapusan otomatis"
+  },
+  "willBeDeletedToday": {
+    "message": "Akan dihapus hari ini"
+  },
+  "restore": {
+    "message": "Pulihkan"
+  },
+  "deletePermanently": {
+    "message": "Hapus permanen"
+  },
+  "restoreSelected": {
+    "message": "Pulihkan"
+  },
+  "deleteSelected": {
+    "message": "Hapus"
+  }
 }

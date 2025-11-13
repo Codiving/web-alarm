@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "శబ్దం అనుమతించబడనప్పుడు వెబ్‌సైట్ నుండి నిశ్శబ్ద అలారం పొందండి. ఖచ్చితమైన సమయంలో నోటిఫికేషన్ కనిపిస్తుంది."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "ఆది" },
-  "mon": { "message": "సోమ" },
-  "tue": { "message": "మంగళ" },
-  "wed": { "message": "బుధ" },
-  "thu": { "message": "గురు" },
-  "fri": { "message": "శుక్ర" },
-  "sat": { "message": "శని" },
-  "oneTimeAlarm": { "message": "ఒకసారి అలారం" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "ఆది"
+  },
+  "mon": {
+    "message": "సోమ"
+  },
+  "tue": {
+    "message": "మంగళ"
+  },
+  "wed": {
+    "message": "బుధ"
+  },
+  "thu": {
+    "message": "గురు"
+  },
+  "fri": {
+    "message": "శుక్ర"
+  },
+  "sat": {
+    "message": "శని"
+  },
+  "oneTimeAlarm": {
+    "message": "ఒకసారి అలారం"
+  },
   "oneTimeAlarmTooltip": {
     "message": "అలారం ఒకసారి మోగుతుంది మరియు తర్వాత స్వయంచాలకంగా తొలగించబడుతుంది."
   },
-  "activeDays": { "message": "క్రియాశీల రోజులు" },
-  "activeDate": { "message": "క్రియాశీల తేదీ" },
-  "save": { "message": "సేవ్ చేయండి" },
-  "memo": { "message": "మెమో" },
-  "editAlarm": { "message": "అలారాన్ని సవరించండి" },
-  "addAlarm": { "message": "అలారం జోడించండి" },
-  "day": { "message": "రోజు" },
-  "month": { "message": "నెల" },
-  "year": { "message": "సంవత్సరం" },
-  "invalidDate": { "message": "చెల్లని తేదీ" },
-  "pastDateNotAllowed": { "message": "గత తేదీలు అనుమతించబడవు" },
-  "pastTimeNotAllowed": { "message": "గత సమయాలు అనుమతించబడవు" },
-  "everyday": { "message": "ప్రతిరోజూ" },
-  "alarm": { "message": "అలారం" },
+  "activeDays": {
+    "message": "క్రియాశీల రోజులు"
+  },
+  "activeDate": {
+    "message": "క్రియాశీల తేదీ"
+  },
+  "save": {
+    "message": "సేవ్ చేయండి"
+  },
+  "memo": {
+    "message": "మెమో"
+  },
+  "editAlarm": {
+    "message": "అలారాన్ని సవరించండి"
+  },
+  "addAlarm": {
+    "message": "అలారం జోడించండి"
+  },
+  "day": {
+    "message": "రోజు"
+  },
+  "month": {
+    "message": "నెల"
+  },
+  "year": {
+    "message": "సంవత్సరం"
+  },
+  "invalidDate": {
+    "message": "చెల్లని తేదీ"
+  },
+  "pastDateNotAllowed": {
+    "message": "గత తేదీలు అనుమతించబడవు"
+  },
+  "pastTimeNotAllowed": {
+    "message": "గత సమయాలు అనుమతించబడవు"
+  },
+  "everyday": {
+    "message": "ప్రతిరోజూ"
+  },
+  "alarm": {
+    "message": "అలారం"
+  },
   "closeAlarmMessage": {
     "message": "అలారం విండోను మూసివేయడానికి స్క్రీన్‌పై క్లిక్ చేయండి."
   },
-  "all": { "message": "అన్నీ" },
-  "normalAlarm": { "message": "సాధారణ అలారం" },
-  "twentyFourHourFormat": { "message": "24గం" },
-  "twelveHourFormat": { "message": "12గం" },
-  "timeFormat": { "message": "సమయ ఫార్మాట్" },
-  "setting": { "message": "సెట్టింగ్" }
+  "all": {
+    "message": "అన్నీ"
+  },
+  "normalAlarm": {
+    "message": "సాధారణ అలారం"
+  },
+  "twentyFourHourFormat": {
+    "message": "24గం"
+  },
+  "twelveHourFormat": {
+    "message": "12గం"
+  },
+  "timeFormat": {
+    "message": "సమయ ఫార్మాట్"
+  },
+  "setting": {
+    "message": "సెట్టింగ్"
+  },
+  "trash": {
+    "message": "చెత్తబుట్ట"
+  },
+  "emptyTrash": {
+    "message": "అన్నీ ఖాళీ చేయి"
+  },
+  "emptyTrashMessage": {
+    "message": "చెత్తబుట్ట ఖాళీగా ఉంది"
+  },
+  "confirmEmptyTrash": {
+    "message": "మీరు చెత్తబుట్టను ఖాళీ చేయాలనుకుంటున్నారా? దీన్ని రద్దు చేయలేము."
+  },
+  "confirmDeletePermanently": {
+    "message": "మీరు శాశ్వతంగా తొలగించాలనుకుంటున్నారా? దీన్ని రద్దు చేయలేము."
+  },
+  "daysRemaining": {
+    "message": " రోజుల తర్వాత స్వయంచాలకంగా తొలగించబడుతుంది"
+  },
+  "willBeDeletedToday": {
+    "message": "ఈరోజు తొలగించబడుతుంది"
+  },
+  "restore": {
+    "message": "పునరుద్ధరించు"
+  },
+  "deletePermanently": {
+    "message": "శాశ్వతంగా తొలగించు"
+  },
+  "restoreSelected": {
+    "message": "పునరుద్ధరించు"
+  },
+  "deleteSelected": {
+    "message": "తొలగించు"
+  }
 }

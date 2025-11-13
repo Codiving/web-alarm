@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "ಧ್ವನಿ ಅನುಮತಿಸದಿದ್ದಾಗ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಮೌನ ಅಲಾರಂ ಪಡೆಯಿರಿ. ನಿಖರ ಸಮಯದಲ್ಲಿ ಅಧಿಸೂಚನೆ ಕಾಣಿಸುತ್ತದೆ."
   },
-  "am": { "message": "ಪೂರ್ವಾಹ್ನ" },
-  "pm": { "message": "ಅಪರಾಹ್ನ" },
-  "sun": { "message": "ಭಾನು" },
-  "mon": { "message": "ಸೋಮ" },
-  "tue": { "message": "ಮಂಗಳ" },
-  "wed": { "message": "ಬುಧ" },
-  "thu": { "message": "ಗುರು" },
-  "fri": { "message": "ಶುಕ್ರ" },
-  "sat": { "message": "ಶನಿ" },
-  "oneTimeAlarm": { "message": "ಒಂದು-ಬಾರಿ ಅಲಾರಂ" },
+  "am": {
+    "message": "ಪೂರ್ವಾಹ್ನ"
+  },
+  "pm": {
+    "message": "ಅಪರಾಹ್ನ"
+  },
+  "sun": {
+    "message": "ಭಾನು"
+  },
+  "mon": {
+    "message": "ಸೋಮ"
+  },
+  "tue": {
+    "message": "ಮಂಗಳ"
+  },
+  "wed": {
+    "message": "ಬುಧ"
+  },
+  "thu": {
+    "message": "ಗುರು"
+  },
+  "fri": {
+    "message": "ಶುಕ್ರ"
+  },
+  "sat": {
+    "message": "ಶನಿ"
+  },
+  "oneTimeAlarm": {
+    "message": "ಒಂದು-ಬಾರಿ ಅಲಾರಂ"
+  },
   "oneTimeAlarmTooltip": {
     "message": "ಅಲಾರಂ ಒಮ್ಮೆ ಮಾತ್ರ ಮೊಳಗುತ್ತದೆ ಮತ್ತು ನಂತರ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ."
   },
-  "activeDays": { "message": "ಸಕ್ರಿಯ ದಿನಗಳು" },
-  "activeDate": { "message": "ಸಕ್ರಿಯ ದಿನಾಂಕ" },
-  "save": { "message": "ಉಳಿಸಿ" },
-  "memo": { "message": "ಮೆಮೊ" },
-  "editAlarm": { "message": "ಅಲಾರಂ ಸಂಪಾದಿಸಿ" },
-  "addAlarm": { "message": "ಅಲಾರಂ ಸೇರಿಸಿ" },
-  "day": { "message": "ದಿನ" },
-  "month": { "message": "ತಿಂಗಳು" },
-  "year": { "message": "ವರ್ಷ" },
-  "invalidDate": { "message": "ಅಮಾನ್ಯ ದಿನಾಂಕ" },
-  "pastDateNotAllowed": { "message": "ಹಿಂದಿನ ದಿನಾಂಕಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ" },
-  "pastTimeNotAllowed": { "message": "ಹಿಂದಿನ ಸಮಯಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ" },
-  "everyday": { "message": "ಪ್ರತಿದಿನ" },
-  "alarm": { "message": "ಅಲಾರಂ" },
+  "activeDays": {
+    "message": "ಸಕ್ರಿಯ ದಿನಗಳು"
+  },
+  "activeDate": {
+    "message": "ಸಕ್ರಿಯ ದಿನಾಂಕ"
+  },
+  "save": {
+    "message": "ಉಳಿಸಿ"
+  },
+  "memo": {
+    "message": "ಮೆಮೊ"
+  },
+  "editAlarm": {
+    "message": "ಅಲಾರಂ ಸಂಪಾದಿಸಿ"
+  },
+  "addAlarm": {
+    "message": "ಅಲಾರಂ ಸೇರಿಸಿ"
+  },
+  "day": {
+    "message": "ದಿನ"
+  },
+  "month": {
+    "message": "ತಿಂಗಳು"
+  },
+  "year": {
+    "message": "ವರ್ಷ"
+  },
+  "invalidDate": {
+    "message": "ಅಮಾನ್ಯ ದಿನಾಂಕ"
+  },
+  "pastDateNotAllowed": {
+    "message": "ಹಿಂದಿನ ದಿನಾಂಕಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ"
+  },
+  "pastTimeNotAllowed": {
+    "message": "ಹಿಂದಿನ ಸಮಯಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ"
+  },
+  "everyday": {
+    "message": "ಪ್ರತಿದಿನ"
+  },
+  "alarm": {
+    "message": "ಅಲಾರಂ"
+  },
   "closeAlarmMessage": {
     "message": "ಅಲಾರಂ ವಿಂಡೋ ಮುಚ್ಚಲು ಪರದೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
-  "all": { "message": "ಎಲ್ಲಾ" },
-  "normalAlarm": { "message": "ಸಾಮಾನ್ಯ ಅಲಾರಂ" },
-  "twentyFourHourFormat": { "message": "24ಗಂ" },
-  "twelveHourFormat": { "message": "12ಗಂ" },
-  "timeFormat": { "message": "ಸಮಯ ಸ್ವರೂಪ" },
-  "setting": { "message": "ಸೆಟ್ಟಿಂಗ್" }
+  "all": {
+    "message": "ಎಲ್ಲಾ"
+  },
+  "normalAlarm": {
+    "message": "ಸಾಮಾನ್ಯ ಅಲಾರಂ"
+  },
+  "twentyFourHourFormat": {
+    "message": "24ಗಂ"
+  },
+  "twelveHourFormat": {
+    "message": "12ಗಂ"
+  },
+  "timeFormat": {
+    "message": "ಸಮಯ ಸ್ವರೂಪ"
+  },
+  "setting": {
+    "message": "ಸೆಟ್ಟಿಂಗ್"
+  },
+  "trash": {
+    "message": "ಕಸದ ಬುಟ್ಟಿ"
+  },
+  "emptyTrash": {
+    "message": "ಎಲ್ಲಾ ಖಾಲಿ ಮಾಡಿ"
+  },
+  "emptyTrashMessage": {
+    "message": "ಕಸದ ಬುಟ್ಟಿ ಖಾಲಿಯಾಗಿದೆ"
+  },
+  "confirmEmptyTrash": {
+    "message": "ನೀವು ನಿಜವಾಗಿಯೂ ಕಸದ ಬುಟ್ಟಿ ಖಾಲಿ ಮಾಡಲು ಬಯಸುವಿರಾ? ಇದನ್ನು ರದ್ದು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "confirmDeletePermanently": {
+    "message": "ನೀವು ನಿಜವಾಗಿಯೂ ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲು ಬಯಸುವಿರಾ? ಇದನ್ನು ರದ್ದು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "daysRemaining": {
+    "message": " ದಿನಗಳ ನಂತರ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ"
+  },
+  "willBeDeletedToday": {
+    "message": "ಇಂದು ಅಳಿಸಲಾಗುವುದು"
+  },
+  "restore": {
+    "message": "ಮರುಸ್ಥಾಪಿಸಿ"
+  },
+  "deletePermanently": {
+    "message": "ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಿ"
+  },
+  "restoreSelected": {
+    "message": "ಮರುಸ್ಥಾಪಿಸಿ"
+  },
+  "deleteSelected": {
+    "message": "ಅಳಿಸಿ"
+  }
 }

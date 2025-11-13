@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "هنگامی که صدا مجاز نیست، یک هشدار بی‌صدا از وب‌سایت دریافت کنید. اعلان در زمان دقیق ظاهر می‌شود."
   },
-  "am": { "message": "ق.ظ" },
-  "pm": { "message": "ب.ظ" },
-  "sun": { "message": "ی" },
-  "mon": { "message": "د" },
-  "tue": { "message": "س" },
-  "wed": { "message": "چ" },
-  "thu": { "message": "پ" },
-  "fri": { "message": "ج" },
-  "sat": { "message": "ش" },
-  "oneTimeAlarm": { "message": "هشدار یک‌بار مصرف" },
+  "am": {
+    "message": "ق.ظ"
+  },
+  "pm": {
+    "message": "ب.ظ"
+  },
+  "sun": {
+    "message": "ی"
+  },
+  "mon": {
+    "message": "د"
+  },
+  "tue": {
+    "message": "س"
+  },
+  "wed": {
+    "message": "چ"
+  },
+  "thu": {
+    "message": "پ"
+  },
+  "fri": {
+    "message": "ج"
+  },
+  "sat": {
+    "message": "ش"
+  },
+  "oneTimeAlarm": {
+    "message": "هشدار یک‌بار مصرف"
+  },
   "oneTimeAlarmTooltip": {
     "message": "هشدار یک بار فعال می‌شود و سپس به طور خودکار حذف می‌شود."
   },
-  "activeDays": { "message": "روزهای فعال" },
-  "activeDate": { "message": "تاریخ فعال" },
-  "save": { "message": "ذخیره" },
-  "memo": { "message": "یادداشت" },
-  "editAlarm": { "message": "ویرایش هشدار" },
-  "addAlarm": { "message": "افزودن هشدار" },
-  "day": { "message": "روز" },
-  "month": { "message": "ماه" },
-  "year": { "message": "سال" },
-  "invalidDate": { "message": "تاریخ نامعتبر" },
-  "pastDateNotAllowed": { "message": "تاریخ‌های گذشته مجاز نیستند" },
-  "pastTimeNotAllowed": { "message": "زمان‌های گذشته مجاز نیستند" },
-  "everyday": { "message": "هر روز" },
-  "alarm": { "message": "هشدار" },
+  "activeDays": {
+    "message": "روزهای فعال"
+  },
+  "activeDate": {
+    "message": "تاریخ فعال"
+  },
+  "save": {
+    "message": "ذخیره"
+  },
+  "memo": {
+    "message": "یادداشت"
+  },
+  "editAlarm": {
+    "message": "ویرایش هشدار"
+  },
+  "addAlarm": {
+    "message": "افزودن هشدار"
+  },
+  "day": {
+    "message": "روز"
+  },
+  "month": {
+    "message": "ماه"
+  },
+  "year": {
+    "message": "سال"
+  },
+  "invalidDate": {
+    "message": "تاریخ نامعتبر"
+  },
+  "pastDateNotAllowed": {
+    "message": "تاریخ‌های گذشته مجاز نیستند"
+  },
+  "pastTimeNotAllowed": {
+    "message": "زمان‌های گذشته مجاز نیستند"
+  },
+  "everyday": {
+    "message": "هر روز"
+  },
+  "alarm": {
+    "message": "هشدار"
+  },
   "closeAlarmMessage": {
     "message": "برای بستن پنجره هشدار، روی صفحه کلیک کنید."
   },
-  "all": { "message": "همه" },
-  "normalAlarm": { "message": "هشدار عادی" },
-  "twentyFourHourFormat": { "message": "۲۴س" },
-  "twelveHourFormat": { "message": "۱۲س" },
-  "timeFormat": { "message": "قالب زمان" },
-  "setting": { "message": "تنظیمات" }
+  "all": {
+    "message": "همه"
+  },
+  "normalAlarm": {
+    "message": "هشدار عادی"
+  },
+  "twentyFourHourFormat": {
+    "message": "۲۴س"
+  },
+  "twelveHourFormat": {
+    "message": "۱۲س"
+  },
+  "timeFormat": {
+    "message": "قالب زمان"
+  },
+  "setting": {
+    "message": "تنظیمات"
+  },
+  "trash": {
+    "message": "سطل زباله"
+  },
+  "emptyTrash": {
+    "message": "خالی کردن همه"
+  },
+  "emptyTrashMessage": {
+    "message": "سطل زباله خالی است"
+  },
+  "confirmEmptyTrash": {
+    "message": "آیا مطمئن هستید که می‌خواهید سطل زباله را خالی کنید؟ این عمل قابل بازگشت نیست."
+  },
+  "confirmDeletePermanently": {
+    "message": "آیا مطمئن هستید که می‌خواهید برای همیشه حذف کنید؟ این عمل قابل بازگشت نیست."
+  },
+  "daysRemaining": {
+    "message": " روز تا حذف خودکار"
+  },
+  "willBeDeletedToday": {
+    "message": "امروز حذف خواهد شد"
+  },
+  "restore": {
+    "message": "بازیابی"
+  },
+  "deletePermanently": {
+    "message": "حذف دائمی"
+  },
+  "restoreSelected": {
+    "message": "بازیابی"
+  },
+  "deleteSelected": {
+    "message": "حذف"
+  }
 }

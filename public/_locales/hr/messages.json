@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Dobijte tihi alarm s web stranice kada zvuk nije dopušten. Obavijest će se pojaviti u točno vrijeme."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Ned" },
-  "mon": { "message": "Pon" },
-  "tue": { "message": "Uto" },
-  "wed": { "message": "Sri" },
-  "thu": { "message": "Čet" },
-  "fri": { "message": "Pet" },
-  "sat": { "message": "Sub" },
-  "oneTimeAlarm": { "message": "Jednokratni alarm" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Ned"
+  },
+  "mon": {
+    "message": "Pon"
+  },
+  "tue": {
+    "message": "Uto"
+  },
+  "wed": {
+    "message": "Sri"
+  },
+  "thu": {
+    "message": "Čet"
+  },
+  "fri": {
+    "message": "Pet"
+  },
+  "sat": {
+    "message": "Sub"
+  },
+  "oneTimeAlarm": {
+    "message": "Jednokratni alarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Alarm će se aktivirati jednom i zatim će biti automatski izbrisan."
   },
-  "activeDays": { "message": "Aktivni dani" },
-  "activeDate": { "message": "Aktivni datum" },
-  "save": { "message": "Spremi" },
-  "memo": { "message": "Bilješka" },
-  "editAlarm": { "message": "Uredi alarm" },
-  "addAlarm": { "message": "Dodaj alarm" },
-  "day": { "message": "Dan" },
-  "month": { "message": "Mjesec" },
-  "year": { "message": "Godina" },
-  "invalidDate": { "message": "Nevažeći datum" },
-  "pastDateNotAllowed": { "message": "Prošli datumi nisu dopušteni" },
-  "pastTimeNotAllowed": { "message": "Prošla vremena nisu dopuštena" },
-  "everyday": { "message": "Svaki dan" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Aktivni dani"
+  },
+  "activeDate": {
+    "message": "Aktivni datum"
+  },
+  "save": {
+    "message": "Spremi"
+  },
+  "memo": {
+    "message": "Bilješka"
+  },
+  "editAlarm": {
+    "message": "Uredi alarm"
+  },
+  "addAlarm": {
+    "message": "Dodaj alarm"
+  },
+  "day": {
+    "message": "Dan"
+  },
+  "month": {
+    "message": "Mjesec"
+  },
+  "year": {
+    "message": "Godina"
+  },
+  "invalidDate": {
+    "message": "Nevažeći datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Prošli datumi nisu dopušteni"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Prošla vremena nisu dopuštena"
+  },
+  "everyday": {
+    "message": "Svaki dan"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Kliknite na ekran za zatvaranje prozora alarma."
   },
-  "all": { "message": "Sve" },
-  "normalAlarm": { "message": "Normalni alarm" },
-  "twentyFourHourFormat": { "message": "24s" },
-  "twelveHourFormat": { "message": "12s" },
-  "timeFormat": { "message": "Format vremena" },
-  "setting": { "message": "Postavke" }
+  "all": {
+    "message": "Sve"
+  },
+  "normalAlarm": {
+    "message": "Normalni alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24s"
+  },
+  "twelveHourFormat": {
+    "message": "12s"
+  },
+  "timeFormat": {
+    "message": "Format vremena"
+  },
+  "setting": {
+    "message": "Postavke"
+  },
+  "trash": {
+    "message": "Smeće"
+  },
+  "emptyTrash": {
+    "message": "Isprazni sve"
+  },
+  "emptyTrashMessage": {
+    "message": "Smeće je prazno"
+  },
+  "confirmEmptyTrash": {
+    "message": "Jeste li sigurni da želite isprazniti smeće? Ova radnja se ne može poništiti."
+  },
+  "confirmDeletePermanently": {
+    "message": "Jeste li sigurni da želite trajno izbrisati? Ova radnja se ne može poništiti."
+  },
+  "daysRemaining": {
+    "message": " dana do automatskog brisanja"
+  },
+  "willBeDeletedToday": {
+    "message": "Bit će izbrisano danas"
+  },
+  "restore": {
+    "message": "Vrati"
+  },
+  "deletePermanently": {
+    "message": "Trajno izbriši"
+  },
+  "restoreSelected": {
+    "message": "Vrati"
+  },
+  "deleteSelected": {
+    "message": "Izbriši"
+  }
 }

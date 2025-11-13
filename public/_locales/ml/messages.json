@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "ശബ്ദം അനുവദനീയമല്ലാത്തപ്പോൾ വെബ്‌സൈറ്റിൽ നിന്ന് നിശബ്ദ അലാറം നേടുക. കൃത്യമായ സമയത്ത് അറിയിപ്പ് ദൃശ്യമാകും."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "ഞായർ" },
-  "mon": { "message": "തിങ്കൾ" },
-  "tue": { "message": "ചൊവ്വ" },
-  "wed": { "message": "ബുധൻ" },
-  "thu": { "message": "വ്യാഴം" },
-  "fri": { "message": "വെള്ളി" },
-  "sat": { "message": "ശനി" },
-  "oneTimeAlarm": { "message": "ഒറ്റത്തവണ അലാറം" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "ഞായർ"
+  },
+  "mon": {
+    "message": "തിങ്കൾ"
+  },
+  "tue": {
+    "message": "ചൊവ്വ"
+  },
+  "wed": {
+    "message": "ബുധൻ"
+  },
+  "thu": {
+    "message": "വ്യാഴം"
+  },
+  "fri": {
+    "message": "വെള്ളി"
+  },
+  "sat": {
+    "message": "ശനി"
+  },
+  "oneTimeAlarm": {
+    "message": "ഒറ്റത്തവണ അലാറം"
+  },
   "oneTimeAlarmTooltip": {
     "message": "അലാറം ഒരിക്കൽ മാത്രം പ്രവർത്തിക്കുകയും പിന്നീട് സ്വയമേവ ഇല്ലാതാക്കുകയും ചെയ്യും."
   },
-  "activeDays": { "message": "സജീവ ദിവസങ്ങൾ" },
-  "activeDate": { "message": "സജീവ തീയതി" },
-  "save": { "message": "സേവ് ചെയ്യുക" },
-  "memo": { "message": "മെമ്മോ" },
-  "editAlarm": { "message": "അലാറം എഡിറ്റ് ചെയ്യുക" },
-  "addAlarm": { "message": "അലാറം ചേർക്കുക" },
-  "day": { "message": "ദിവസം" },
-  "month": { "message": "മാസം" },
-  "year": { "message": "വർഷം" },
-  "invalidDate": { "message": "അസാധുവായ തീയതി" },
-  "pastDateNotAllowed": { "message": "കഴിഞ്ഞ തീയതികൾ അനുവദനീയമല്ല" },
-  "pastTimeNotAllowed": { "message": "കഴിഞ്ഞ സമയങ്ങൾ അനുവദനീയമല്ല" },
-  "everyday": { "message": "എല്ലാ ദിവസവും" },
-  "alarm": { "message": "അലാറം" },
+  "activeDays": {
+    "message": "സജീവ ദിവസങ്ങൾ"
+  },
+  "activeDate": {
+    "message": "സജീവ തീയതി"
+  },
+  "save": {
+    "message": "സേവ് ചെയ്യുക"
+  },
+  "memo": {
+    "message": "മെമ്മോ"
+  },
+  "editAlarm": {
+    "message": "അലാറം എഡിറ്റ് ചെയ്യുക"
+  },
+  "addAlarm": {
+    "message": "അലാറം ചേർക്കുക"
+  },
+  "day": {
+    "message": "ദിവസം"
+  },
+  "month": {
+    "message": "മാസം"
+  },
+  "year": {
+    "message": "വർഷം"
+  },
+  "invalidDate": {
+    "message": "അസാധുവായ തീയതി"
+  },
+  "pastDateNotAllowed": {
+    "message": "കഴിഞ്ഞ തീയതികൾ അനുവദനീയമല്ല"
+  },
+  "pastTimeNotAllowed": {
+    "message": "കഴിഞ്ഞ സമയങ്ങൾ അനുവദനീയമല്ല"
+  },
+  "everyday": {
+    "message": "എല്ലാ ദിവസവും"
+  },
+  "alarm": {
+    "message": "അലാറം"
+  },
   "closeAlarmMessage": {
     "message": "അലാറം വിൻഡോ അടയ്ക്കാൻ സ്ക്രീനിൽ ക്ലിക്ക് ചെയ്യുക."
   },
-  "all": { "message": "എല്ലാം" },
-  "normalAlarm": { "message": "സാധാരണ അലാറം" },
-  "twentyFourHourFormat": { "message": "24മ" },
-  "twelveHourFormat": { "message": "12മ" },
-  "timeFormat": { "message": "സമയ ഫോർമാറ്റ്" },
-  "setting": { "message": "ക്രമീകരണം" }
+  "all": {
+    "message": "എല്ലാം"
+  },
+  "normalAlarm": {
+    "message": "സാധാരണ അലാറം"
+  },
+  "twentyFourHourFormat": {
+    "message": "24മ"
+  },
+  "twelveHourFormat": {
+    "message": "12മ"
+  },
+  "timeFormat": {
+    "message": "സമയ ഫോർമാറ്റ്"
+  },
+  "setting": {
+    "message": "ക്രമീകരണം"
+  },
+  "trash": {
+    "message": "ചവറ്റുകുട്ട"
+  },
+  "emptyTrash": {
+    "message": "എല്ലാം ശൂന്യമാക്കുക"
+  },
+  "emptyTrashMessage": {
+    "message": "ചവറ്റുകുട്ട ശൂന്യമാണ്"
+  },
+  "confirmEmptyTrash": {
+    "message": "നിങ്ങൾക്ക് ചവറ്റുകുട്ട ശൂന്യമാക്കണമെന്ന് ഉറപ്പാണോ? ഇത് പഴയപടിയാക്കാൻ കഴിയില്ല."
+  },
+  "confirmDeletePermanently": {
+    "message": "നിങ്ങൾക്ക് ശാശ്വതമായി ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ? ഇത് പഴയപടിയാക്കാൻ കഴിയില്ല."
+  },
+  "daysRemaining": {
+    "message": " ദിവസത്തിനുശേഷം സ്വയം ഇല്ലാതാക്കും"
+  },
+  "willBeDeletedToday": {
+    "message": "ഇന്ന് ഇല്ലാതാക്കും"
+  },
+  "restore": {
+    "message": "പുനഃസ്ഥാപിക്കുക"
+  },
+  "deletePermanently": {
+    "message": "ശാശ്വതമായി ഇല്ലാതാക്കുക"
+  },
+  "restoreSelected": {
+    "message": "പുനഃസ്ഥാപിക്കുക"
+  },
+  "deleteSelected": {
+    "message": "ഇല്ലാതാക്കുക"
+  }
 }

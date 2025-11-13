@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Kumuha ng tahimik na alarm mula sa website kapag hindi pinapayagan ang tunog. Lalabas ang notification sa eksaktong oras."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Lin" },
-  "mon": { "message": "Lun" },
-  "tue": { "message": "Mar" },
-  "wed": { "message": "Miy" },
-  "thu": { "message": "Huw" },
-  "fri": { "message": "Biy" },
-  "sat": { "message": "Sab" },
-  "oneTimeAlarm": { "message": "Isang-Beses na Alarm" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Lin"
+  },
+  "mon": {
+    "message": "Lun"
+  },
+  "tue": {
+    "message": "Mar"
+  },
+  "wed": {
+    "message": "Miy"
+  },
+  "thu": {
+    "message": "Huw"
+  },
+  "fri": {
+    "message": "Biy"
+  },
+  "sat": {
+    "message": "Sab"
+  },
+  "oneTimeAlarm": {
+    "message": "Isang-Beses na Alarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Ang alarm ay tutunog nang isang beses at pagkatapos ay awtomatikong tatanggalin."
   },
-  "activeDays": { "message": "Aktibong Araw" },
-  "activeDate": { "message": "Aktibong Petsa" },
-  "save": { "message": "I-save" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "I-edit ang Alarm" },
-  "addAlarm": { "message": "Magdagdag ng Alarm" },
-  "day": { "message": "Araw" },
-  "month": { "message": "Buwan" },
-  "year": { "message": "Taon" },
-  "invalidDate": { "message": "Hindi wastong petsa" },
-  "pastDateNotAllowed": { "message": "Hindi pinapayagan ang mga nakaraang petsa" },
-  "pastTimeNotAllowed": { "message": "Hindi pinapayagan ang mga nakaraang oras" },
-  "everyday": { "message": "Araw-araw" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Aktibong Araw"
+  },
+  "activeDate": {
+    "message": "Aktibong Petsa"
+  },
+  "save": {
+    "message": "I-save"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "I-edit ang Alarm"
+  },
+  "addAlarm": {
+    "message": "Magdagdag ng Alarm"
+  },
+  "day": {
+    "message": "Araw"
+  },
+  "month": {
+    "message": "Buwan"
+  },
+  "year": {
+    "message": "Taon"
+  },
+  "invalidDate": {
+    "message": "Hindi wastong petsa"
+  },
+  "pastDateNotAllowed": {
+    "message": "Hindi pinapayagan ang mga nakaraang petsa"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Hindi pinapayagan ang mga nakaraang oras"
+  },
+  "everyday": {
+    "message": "Araw-araw"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "I-click ang screen para isara ang alarm window."
   },
-  "all": { "message": "Lahat" },
-  "normalAlarm": { "message": "Normal na Alarm" },
-  "twentyFourHourFormat": { "message": "24o" },
-  "twelveHourFormat": { "message": "12o" },
-  "timeFormat": { "message": "Format ng Oras" },
-  "setting": { "message": "Setting" }
+  "all": {
+    "message": "Lahat"
+  },
+  "normalAlarm": {
+    "message": "Normal na Alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24o"
+  },
+  "twelveHourFormat": {
+    "message": "12o"
+  },
+  "timeFormat": {
+    "message": "Format ng Oras"
+  },
+  "setting": {
+    "message": "Setting"
+  },
+  "trash": {
+    "message": "Basurahan"
+  },
+  "emptyTrash": {
+    "message": "Walisan lahat"
+  },
+  "emptyTrashMessage": {
+    "message": "Walang laman ang basurahan"
+  },
+  "confirmEmptyTrash": {
+    "message": "Sigurado ka bang gusto mong walisan ang basurahan? Hindi na ito maibabalik."
+  },
+  "confirmDeletePermanently": {
+    "message": "Sigurado ka bang gusto mong permanenteng tanggalin? Hindi na ito maibabalik."
+  },
+  "daysRemaining": {
+    "message": " araw bago awtomatikong tanggalin"
+  },
+  "willBeDeletedToday": {
+    "message": "Tatanggalin ngayong araw"
+  },
+  "restore": {
+    "message": "Ibalik"
+  },
+  "deletePermanently": {
+    "message": "Permanenteng tanggalin"
+  },
+  "restoreSelected": {
+    "message": "Ibalik"
+  },
+  "deleteSelected": {
+    "message": "Tanggalin"
+  }
 }

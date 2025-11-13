@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "যখন শব্দ অনুমোদিত নয় তখন ওয়েবসাইট থেকে একটি নীরব অ্যালার্ম পান। ঠিক সময়ে বিজ্ঞপ্তি প্রদর্শিত হবে।"
   },
-  "am": { "message": "পূর্বাহ্ন" },
-  "pm": { "message": "অপরাহ্ন" },
-  "sun": { "message": "রবি" },
-  "mon": { "message": "সোম" },
-  "tue": { "message": "মঙ্গল" },
-  "wed": { "message": "বুধ" },
-  "thu": { "message": "বৃহ" },
-  "fri": { "message": "শুক্র" },
-  "sat": { "message": "শনি" },
-  "oneTimeAlarm": { "message": "এক-সময়ের অ্যালার্ম" },
+  "am": {
+    "message": "পূর্বাহ্ন"
+  },
+  "pm": {
+    "message": "অপরাহ্ন"
+  },
+  "sun": {
+    "message": "রবি"
+  },
+  "mon": {
+    "message": "সোম"
+  },
+  "tue": {
+    "message": "মঙ্গল"
+  },
+  "wed": {
+    "message": "বুধ"
+  },
+  "thu": {
+    "message": "বৃহ"
+  },
+  "fri": {
+    "message": "শুক্র"
+  },
+  "sat": {
+    "message": "শনি"
+  },
+  "oneTimeAlarm": {
+    "message": "এক-সময়ের অ্যালার্ম"
+  },
   "oneTimeAlarmTooltip": {
     "message": "অ্যালার্মটি একবার সক্রিয় হবে এবং তারপর স্বয়ংক্রিয়ভাবে মুছে যাবে।"
   },
-  "activeDays": { "message": "সক্রিয় দিন" },
-  "activeDate": { "message": "সক্রিয় তারিখ" },
-  "save": { "message": "সংরক্ষণ" },
-  "memo": { "message": "মেমো" },
-  "editAlarm": { "message": "অ্যালার্ম সম্পাদনা" },
-  "addAlarm": { "message": "অ্যালার্ম যোগ করুন" },
-  "day": { "message": "দিন" },
-  "month": { "message": "মাস" },
-  "year": { "message": "বছর" },
-  "invalidDate": { "message": "অবৈধ তারিখ" },
-  "pastDateNotAllowed": { "message": "অতীত তারিখ অনুমোদিত নয়" },
-  "pastTimeNotAllowed": { "message": "অতীত সময় অনুমোদিত নয়" },
-  "everyday": { "message": "প্রতিদিন" },
-  "alarm": { "message": "অ্যালার্ম" },
+  "activeDays": {
+    "message": "সক্রিয় দিন"
+  },
+  "activeDate": {
+    "message": "সক্রিয় তারিখ"
+  },
+  "save": {
+    "message": "সংরক্ষণ"
+  },
+  "memo": {
+    "message": "মেমো"
+  },
+  "editAlarm": {
+    "message": "অ্যালার্ম সম্পাদনা"
+  },
+  "addAlarm": {
+    "message": "অ্যালার্ম যোগ করুন"
+  },
+  "day": {
+    "message": "দিন"
+  },
+  "month": {
+    "message": "মাস"
+  },
+  "year": {
+    "message": "বছর"
+  },
+  "invalidDate": {
+    "message": "অবৈধ তারিখ"
+  },
+  "pastDateNotAllowed": {
+    "message": "অতীত তারিখ অনুমোদিত নয়"
+  },
+  "pastTimeNotAllowed": {
+    "message": "অতীত সময় অনুমোদিত নয়"
+  },
+  "everyday": {
+    "message": "প্রতিদিন"
+  },
+  "alarm": {
+    "message": "অ্যালার্ম"
+  },
   "closeAlarmMessage": {
     "message": "অ্যালার্ম উইন্ডো বন্ধ করতে স্ক্রিনে ক্লিক করুন।"
   },
-  "all": { "message": "সব" },
-  "normalAlarm": { "message": "সাধারণ অ্যালার্ম" },
-  "twentyFourHourFormat": { "message": "২৪ঘ" },
-  "twelveHourFormat": { "message": "১২ঘ" },
-  "timeFormat": { "message": "সময় ফরম্যাট" },
-  "setting": { "message": "সেটিং" }
+  "all": {
+    "message": "সব"
+  },
+  "normalAlarm": {
+    "message": "সাধারণ অ্যালার্ম"
+  },
+  "twentyFourHourFormat": {
+    "message": "২৪ঘ"
+  },
+  "twelveHourFormat": {
+    "message": "১২ঘ"
+  },
+  "timeFormat": {
+    "message": "সময় ফরম্যাট"
+  },
+  "setting": {
+    "message": "সেটিং"
+  },
+  "trash": {
+    "message": "ট্র্যাশ"
+  },
+  "emptyTrash": {
+    "message": "সব মুছুন"
+  },
+  "emptyTrashMessage": {
+    "message": "ট্র্যাশ খালি"
+  },
+  "confirmEmptyTrash": {
+    "message": "আপনি কি নিশ্চিত যে আপনি ট্র্যাশ খালি করতে চান? এটি পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "confirmDeletePermanently": {
+    "message": "আপনি কি নিশ্চিত যে আপনি স্থায়ীভাবে মুছতে চান? এটি পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "daysRemaining": {
+    "message": " দিন পরে স্বয়ংক্রিয়ভাবে মুছে যাবে"
+  },
+  "willBeDeletedToday": {
+    "message": "আজ মুছে ফেলা হবে"
+  },
+  "restore": {
+    "message": "পুনরুদ্ধার করুন"
+  },
+  "deletePermanently": {
+    "message": "স্থায়ীভাবে মুছুন"
+  },
+  "restoreSelected": {
+    "message": "পুনরুদ্ধার করুন"
+  },
+  "deleteSelected": {
+    "message": "মুছুন"
+  }
 }

@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Få ett tyst larm från webbplatsen när ljud inte är tillåtet. Meddelandet visas vid exakt tid."
   },
-  "am": { "message": "FM" },
-  "pm": { "message": "EM" },
-  "sun": { "message": "Sön" },
-  "mon": { "message": "Mån" },
-  "tue": { "message": "Tis" },
-  "wed": { "message": "Ons" },
-  "thu": { "message": "Tor" },
-  "fri": { "message": "Fre" },
-  "sat": { "message": "Lör" },
-  "oneTimeAlarm": { "message": "Engångslarm" },
+  "am": {
+    "message": "FM"
+  },
+  "pm": {
+    "message": "EM"
+  },
+  "sun": {
+    "message": "Sön"
+  },
+  "mon": {
+    "message": "Mån"
+  },
+  "tue": {
+    "message": "Tis"
+  },
+  "wed": {
+    "message": "Ons"
+  },
+  "thu": {
+    "message": "Tor"
+  },
+  "fri": {
+    "message": "Fre"
+  },
+  "sat": {
+    "message": "Lör"
+  },
+  "oneTimeAlarm": {
+    "message": "Engångslarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Larmet utlöses en gång och raderas sedan automatiskt."
   },
-  "activeDays": { "message": "Aktiva dagar" },
-  "activeDate": { "message": "Aktivt datum" },
-  "save": { "message": "Spara" },
-  "memo": { "message": "Anteckning" },
-  "editAlarm": { "message": "Redigera larm" },
-  "addAlarm": { "message": "Lägg till larm" },
-  "day": { "message": "Dag" },
-  "month": { "message": "Månad" },
-  "year": { "message": "År" },
-  "invalidDate": { "message": "Ogiltigt datum" },
-  "pastDateNotAllowed": { "message": "Tidigare datum är inte tillåtna" },
-  "pastTimeNotAllowed": { "message": "Tidigare tider är inte tillåtna" },
-  "everyday": { "message": "Varje dag" },
-  "alarm": { "message": "Larm" },
+  "activeDays": {
+    "message": "Aktiva dagar"
+  },
+  "activeDate": {
+    "message": "Aktivt datum"
+  },
+  "save": {
+    "message": "Spara"
+  },
+  "memo": {
+    "message": "Anteckning"
+  },
+  "editAlarm": {
+    "message": "Redigera larm"
+  },
+  "addAlarm": {
+    "message": "Lägg till larm"
+  },
+  "day": {
+    "message": "Dag"
+  },
+  "month": {
+    "message": "Månad"
+  },
+  "year": {
+    "message": "År"
+  },
+  "invalidDate": {
+    "message": "Ogiltigt datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Tidigare datum är inte tillåtna"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Tidigare tider är inte tillåtna"
+  },
+  "everyday": {
+    "message": "Varje dag"
+  },
+  "alarm": {
+    "message": "Larm"
+  },
   "closeAlarmMessage": {
     "message": "Klicka på skärmen för att stänga larmfönstret."
   },
-  "all": { "message": "Alla" },
-  "normalAlarm": { "message": "Normalt larm" },
-  "twentyFourHourFormat": { "message": "24t" },
-  "twelveHourFormat": { "message": "12t" },
-  "timeFormat": { "message": "Tidsformat" },
-  "setting": { "message": "Inställning" }
+  "all": {
+    "message": "Alla"
+  },
+  "normalAlarm": {
+    "message": "Normalt larm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24t"
+  },
+  "twelveHourFormat": {
+    "message": "12t"
+  },
+  "timeFormat": {
+    "message": "Tidsformat"
+  },
+  "setting": {
+    "message": "Inställning"
+  },
+  "trash": {
+    "message": "Papperskorgen"
+  },
+  "emptyTrash": {
+    "message": "Töm alla"
+  },
+  "emptyTrashMessage": {
+    "message": "Papperskorgen är tom"
+  },
+  "confirmEmptyTrash": {
+    "message": "Är du säker på att du vill tömma papperskorgen? Detta går inte att ångra."
+  },
+  "confirmDeletePermanently": {
+    "message": "Är du säker på att du vill ta bort permanent? Detta går inte att ångra."
+  },
+  "daysRemaining": {
+    "message": " dagar tills automatisk borttagning"
+  },
+  "willBeDeletedToday": {
+    "message": "Kommer att raderas idag"
+  },
+  "restore": {
+    "message": "Återställ"
+  },
+  "deletePermanently": {
+    "message": "Ta bort permanent"
+  },
+  "restoreSelected": {
+    "message": "Återställ"
+  },
+  "deleteSelected": {
+    "message": "Ta bort"
+  }
 }

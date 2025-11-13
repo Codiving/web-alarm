@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Báo thức Web" },
+  "extName": {
+    "message": "Báo thức Web"
+  },
   "extDescription": {
     "message": "Nhận báo thức im lặng từ trang web khi âm thanh không được phép. Thông báo sẽ xuất hiện đúng thời gian."
   },
-  "am": { "message": "SA" },
-  "pm": { "message": "CH" },
-  "sun": { "message": "CN" },
-  "mon": { "message": "T2" },
-  "tue": { "message": "T3" },
-  "wed": { "message": "T4" },
-  "thu": { "message": "T5" },
-  "fri": { "message": "T6" },
-  "sat": { "message": "T7" },
-  "oneTimeAlarm": { "message": "Báo thức một lần" },
+  "am": {
+    "message": "SA"
+  },
+  "pm": {
+    "message": "CH"
+  },
+  "sun": {
+    "message": "CN"
+  },
+  "mon": {
+    "message": "T2"
+  },
+  "tue": {
+    "message": "T3"
+  },
+  "wed": {
+    "message": "T4"
+  },
+  "thu": {
+    "message": "T5"
+  },
+  "fri": {
+    "message": "T6"
+  },
+  "sat": {
+    "message": "T7"
+  },
+  "oneTimeAlarm": {
+    "message": "Báo thức một lần"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Báo thức sẽ kích hoạt một lần rồi tự động xóa."
   },
-  "activeDays": { "message": "Ngày hoạt động" },
-  "activeDate": { "message": "Ngày hoạt động" },
-  "save": { "message": "Lưu" },
-  "memo": { "message": "Ghi chú" },
-  "editAlarm": { "message": "Chỉnh sửa báo thức" },
-  "addAlarm": { "message": "Thêm báo thức" },
-  "day": { "message": "Ngày" },
-  "month": { "message": "Tháng" },
-  "year": { "message": "Năm" },
-  "invalidDate": { "message": "Ngày không hợp lệ" },
-  "pastDateNotAllowed": { "message": "Không cho phép chọn ngày trong quá khứ" },
-  "pastTimeNotAllowed": { "message": "Không cho phép chọn thời gian đã qua" },
-  "everyday": { "message": "Hàng ngày" },
-  "alarm": { "message": "Báo thức" },
+  "activeDays": {
+    "message": "Ngày hoạt động"
+  },
+  "activeDate": {
+    "message": "Ngày hoạt động"
+  },
+  "save": {
+    "message": "Lưu"
+  },
+  "memo": {
+    "message": "Ghi chú"
+  },
+  "editAlarm": {
+    "message": "Chỉnh sửa báo thức"
+  },
+  "addAlarm": {
+    "message": "Thêm báo thức"
+  },
+  "day": {
+    "message": "Ngày"
+  },
+  "month": {
+    "message": "Tháng"
+  },
+  "year": {
+    "message": "Năm"
+  },
+  "invalidDate": {
+    "message": "Ngày không hợp lệ"
+  },
+  "pastDateNotAllowed": {
+    "message": "Không cho phép chọn ngày trong quá khứ"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Không cho phép chọn thời gian đã qua"
+  },
+  "everyday": {
+    "message": "Hàng ngày"
+  },
+  "alarm": {
+    "message": "Báo thức"
+  },
   "closeAlarmMessage": {
     "message": "Nhấn vào màn hình để đóng cửa sổ báo thức."
   },
-  "all": { "message": "Tất cả" },
-  "normalAlarm": { "message": "Báo thức thông thường" },
-  "twentyFourHourFormat": { "message": "24 giờ" },
-  "twelveHourFormat": { "message": "12 giờ" },
-  "timeFormat": { "message": "Định dạng thời gian" },
-  "setting": { "message": "Cài đặt" }
+  "all": {
+    "message": "Tất cả"
+  },
+  "normalAlarm": {
+    "message": "Báo thức thông thường"
+  },
+  "twentyFourHourFormat": {
+    "message": "24 giờ"
+  },
+  "twelveHourFormat": {
+    "message": "12 giờ"
+  },
+  "timeFormat": {
+    "message": "Định dạng thời gian"
+  },
+  "setting": {
+    "message": "Cài đặt"
+  },
+  "trash": {
+    "message": "Thùng rác"
+  },
+  "emptyTrash": {
+    "message": "Xóa tất cả"
+  },
+  "emptyTrashMessage": {
+    "message": "Thùng rác trống"
+  },
+  "confirmEmptyTrash": {
+    "message": "Bạn có chắc chắn muốn xóa sạch thùng rác? Hành động này không thể hoàn tác."
+  },
+  "confirmDeletePermanently": {
+    "message": "Bạn có chắc chắn muốn xóa vĩnh viễn? Hành động này không thể hoàn tác."
+  },
+  "daysRemaining": {
+    "message": " ngày nữa sẽ tự động xóa"
+  },
+  "willBeDeletedToday": {
+    "message": "Sẽ bị xóa hôm nay"
+  },
+  "restore": {
+    "message": "Khôi phục"
+  },
+  "deletePermanently": {
+    "message": "Xóa vĩnh viễn"
+  },
+  "restoreSelected": {
+    "message": "Khôi phục"
+  },
+  "deleteSelected": {
+    "message": "Xóa"
+  }
 }

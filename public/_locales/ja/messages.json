@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "音が出せない環境で、ウェブサイトから無音アラームを受け取ることができます。設定した時間に通知が表示されます。"
   },
-  "am": { "message": "午前" },
-  "pm": { "message": "午後" },
-  "sun": { "message": "日" },
-  "mon": { "message": "月" },
-  "tue": { "message": "火" },
-  "wed": { "message": "水" },
-  "thu": { "message": "木" },
-  "fri": { "message": "金" },
-  "sat": { "message": "土" },
-  "oneTimeAlarm": { "message": "1回のみのアラーム" },
+  "am": {
+    "message": "午前"
+  },
+  "pm": {
+    "message": "午後"
+  },
+  "sun": {
+    "message": "日"
+  },
+  "mon": {
+    "message": "月"
+  },
+  "tue": {
+    "message": "火"
+  },
+  "wed": {
+    "message": "水"
+  },
+  "thu": {
+    "message": "木"
+  },
+  "fri": {
+    "message": "金"
+  },
+  "sat": {
+    "message": "土"
+  },
+  "oneTimeAlarm": {
+    "message": "1回のみのアラーム"
+  },
   "oneTimeAlarmTooltip": {
     "message": "アラームは一度だけ作動し、その後自動的に削除されます。"
   },
-  "activeDays": { "message": "有効な曜日" },
-  "activeDate": { "message": "有効な日付" },
-  "save": { "message": "保存" },
-  "memo": { "message": "メモ" },
-  "editAlarm": { "message": "アラーム編集" },
-  "addAlarm": { "message": "アラーム追加" },
-  "day": { "message": "日" },
-  "month": { "message": "月" },
-  "year": { "message": "年" },
-  "invalidDate": { "message": "無効な日付です" },
-  "pastDateNotAllowed": { "message": "過去の日付は設定できません" },
-  "pastTimeNotAllowed": { "message": "過去の時間は設定できません" },
-  "everyday": { "message": "毎日" },
-  "alarm": { "message": "アラーム" },
+  "activeDays": {
+    "message": "有効な曜日"
+  },
+  "activeDate": {
+    "message": "有効な日付"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "memo": {
+    "message": "メモ"
+  },
+  "editAlarm": {
+    "message": "アラーム編集"
+  },
+  "addAlarm": {
+    "message": "アラーム追加"
+  },
+  "day": {
+    "message": "日"
+  },
+  "month": {
+    "message": "月"
+  },
+  "year": {
+    "message": "年"
+  },
+  "invalidDate": {
+    "message": "無効な日付です"
+  },
+  "pastDateNotAllowed": {
+    "message": "過去の日付は設定できません"
+  },
+  "pastTimeNotAllowed": {
+    "message": "過去の時間は設定できません"
+  },
+  "everyday": {
+    "message": "毎日"
+  },
+  "alarm": {
+    "message": "アラーム"
+  },
   "closeAlarmMessage": {
     "message": "画面をクリックするとアラームウィンドウが閉じます。"
   },
-  "all": { "message": "全体" },
-  "normalAlarm": { "message": "通常アラーム" },
-  "twentyFourHourFormat": { "message": "24時間" },
-  "twelveHourFormat": { "message": "12時間" },
-  "timeFormat": { "message": "時刻形式" },
-  "setting": { "message": "設定" }
+  "all": {
+    "message": "全体"
+  },
+  "normalAlarm": {
+    "message": "通常アラーム"
+  },
+  "twentyFourHourFormat": {
+    "message": "24時間"
+  },
+  "twelveHourFormat": {
+    "message": "12時間"
+  },
+  "timeFormat": {
+    "message": "時刻形式"
+  },
+  "setting": {
+    "message": "設定"
+  },
+  "trash": {
+    "message": "ゴミ箱"
+  },
+  "emptyTrash": {
+    "message": "すべて削除"
+  },
+  "emptyTrashMessage": {
+    "message": "ゴミ箱は空です"
+  },
+  "confirmEmptyTrash": {
+    "message": "ゴミ箱を空にしますか？元に戻せません。"
+  },
+  "confirmDeletePermanently": {
+    "message": "完全に削除しますか？元に戻せません。"
+  },
+  "daysRemaining": {
+    "message": "日後に自動削除"
+  },
+  "willBeDeletedToday": {
+    "message": "本日中に自動削除されます"
+  },
+  "restore": {
+    "message": "復元"
+  },
+  "deletePermanently": {
+    "message": "完全削除"
+  },
+  "restoreSelected": {
+    "message": "復元"
+  },
+  "deleteSelected": {
+    "message": "削除"
+  }
 }

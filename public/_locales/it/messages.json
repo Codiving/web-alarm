@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Ricevi un allarme silenzioso dal sito quando l'audio non è consentito. La notifica apparirà all'ora esatta."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Dom" },
-  "mon": { "message": "Lun" },
-  "tue": { "message": "Mar" },
-  "wed": { "message": "Mer" },
-  "thu": { "message": "Gio" },
-  "fri": { "message": "Ven" },
-  "sat": { "message": "Sab" },
-  "oneTimeAlarm": { "message": "Allarme singolo" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Dom"
+  },
+  "mon": {
+    "message": "Lun"
+  },
+  "tue": {
+    "message": "Mar"
+  },
+  "wed": {
+    "message": "Mer"
+  },
+  "thu": {
+    "message": "Gio"
+  },
+  "fri": {
+    "message": "Ven"
+  },
+  "sat": {
+    "message": "Sab"
+  },
+  "oneTimeAlarm": {
+    "message": "Allarme singolo"
+  },
   "oneTimeAlarmTooltip": {
     "message": "L'allarme si attiva una volta e poi viene eliminato automaticamente."
   },
-  "activeDays": { "message": "Giorni attivi" },
-  "activeDate": { "message": "Data attiva" },
-  "save": { "message": "Salva" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "Modifica allarme" },
-  "addAlarm": { "message": "Aggiungi allarme" },
-  "day": { "message": "Giorno" },
-  "month": { "message": "Mese" },
-  "year": { "message": "Anno" },
-  "invalidDate": { "message": "Data non valida" },
-  "pastDateNotAllowed": { "message": "Date passate non consentite" },
-  "pastTimeNotAllowed": { "message": "Orari passati non consentiti" },
-  "everyday": { "message": "Ogni giorno" },
-  "alarm": { "message": "Allarme" },
+  "activeDays": {
+    "message": "Giorni attivi"
+  },
+  "activeDate": {
+    "message": "Data attiva"
+  },
+  "save": {
+    "message": "Salva"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "Modifica allarme"
+  },
+  "addAlarm": {
+    "message": "Aggiungi allarme"
+  },
+  "day": {
+    "message": "Giorno"
+  },
+  "month": {
+    "message": "Mese"
+  },
+  "year": {
+    "message": "Anno"
+  },
+  "invalidDate": {
+    "message": "Data non valida"
+  },
+  "pastDateNotAllowed": {
+    "message": "Date passate non consentite"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Orari passati non consentiti"
+  },
+  "everyday": {
+    "message": "Ogni giorno"
+  },
+  "alarm": {
+    "message": "Allarme"
+  },
   "closeAlarmMessage": {
     "message": "Fai clic sullo schermo per chiudere la finestra dell'allarme."
   },
-  "all": { "message": "Tutti" },
-  "normalAlarm": { "message": "Allarme normale" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Formato orario" },
-  "setting": { "message": "Impostazione" }
+  "all": {
+    "message": "Tutti"
+  },
+  "normalAlarm": {
+    "message": "Allarme normale"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Formato orario"
+  },
+  "setting": {
+    "message": "Impostazione"
+  },
+  "trash": {
+    "message": "Cestino"
+  },
+  "emptyTrash": {
+    "message": "Svuota tutto"
+  },
+  "emptyTrashMessage": {
+    "message": "Il cestino è vuoto"
+  },
+  "confirmEmptyTrash": {
+    "message": "Sei sicuro di voler svuotare il cestino? Questa azione non può essere annullata."
+  },
+  "confirmDeletePermanently": {
+    "message": "Sei sicuro di voler eliminare definitivamente? Questa azione non può essere annullata."
+  },
+  "daysRemaining": {
+    "message": " giorni prima dell'eliminazione automatica"
+  },
+  "willBeDeletedToday": {
+    "message": "Verrà eliminato oggi"
+  },
+  "restore": {
+    "message": "Ripristina"
+  },
+  "deletePermanently": {
+    "message": "Elimina definitivamente"
+  },
+  "restoreSelected": {
+    "message": "Ripristina"
+  },
+  "deleteSelected": {
+    "message": "Elimina"
+  }
 }

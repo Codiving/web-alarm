@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Ontvang een stil alarm van de website wanneer geluid niet is toegestaan. De melding verschijnt op het exacte tijdstip."
   },
-  "am": { "message": "AM" },
-  "pm": { "message": "PM" },
-  "sun": { "message": "Zo" },
-  "mon": { "message": "Ma" },
-  "tue": { "message": "Di" },
-  "wed": { "message": "Wo" },
-  "thu": { "message": "Do" },
-  "fri": { "message": "Vr" },
-  "sat": { "message": "Za" },
-  "oneTimeAlarm": { "message": "Eenmalig alarm" },
+  "am": {
+    "message": "AM"
+  },
+  "pm": {
+    "message": "PM"
+  },
+  "sun": {
+    "message": "Zo"
+  },
+  "mon": {
+    "message": "Ma"
+  },
+  "tue": {
+    "message": "Di"
+  },
+  "wed": {
+    "message": "Wo"
+  },
+  "thu": {
+    "message": "Do"
+  },
+  "fri": {
+    "message": "Vr"
+  },
+  "sat": {
+    "message": "Za"
+  },
+  "oneTimeAlarm": {
+    "message": "Eenmalig alarm"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Het alarm gaat één keer af en wordt daarna automatisch verwijderd."
   },
-  "activeDays": { "message": "Actieve dagen" },
-  "activeDate": { "message": "Actieve datum" },
-  "save": { "message": "Opslaan" },
-  "memo": { "message": "Memo" },
-  "editAlarm": { "message": "Alarm bewerken" },
-  "addAlarm": { "message": "Alarm toevoegen" },
-  "day": { "message": "Dag" },
-  "month": { "message": "Maand" },
-  "year": { "message": "Jaar" },
-  "invalidDate": { "message": "Ongeldige datum" },
-  "pastDateNotAllowed": { "message": "Datums in het verleden zijn niet toegestaan" },
-  "pastTimeNotAllowed": { "message": "Tijden in het verleden zijn niet toegestaan" },
-  "everyday": { "message": "Elke dag" },
-  "alarm": { "message": "Alarm" },
+  "activeDays": {
+    "message": "Actieve dagen"
+  },
+  "activeDate": {
+    "message": "Actieve datum"
+  },
+  "save": {
+    "message": "Opslaan"
+  },
+  "memo": {
+    "message": "Memo"
+  },
+  "editAlarm": {
+    "message": "Alarm bewerken"
+  },
+  "addAlarm": {
+    "message": "Alarm toevoegen"
+  },
+  "day": {
+    "message": "Dag"
+  },
+  "month": {
+    "message": "Maand"
+  },
+  "year": {
+    "message": "Jaar"
+  },
+  "invalidDate": {
+    "message": "Ongeldige datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Datums in het verleden zijn niet toegestaan"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Tijden in het verleden zijn niet toegestaan"
+  },
+  "everyday": {
+    "message": "Elke dag"
+  },
+  "alarm": {
+    "message": "Alarm"
+  },
   "closeAlarmMessage": {
     "message": "Klik op het scherm om het alarmvenster te sluiten."
   },
-  "all": { "message": "Alle" },
-  "normalAlarm": { "message": "Normaal alarm" },
-  "twentyFourHourFormat": { "message": "24u" },
-  "twelveHourFormat": { "message": "12u" },
-  "timeFormat": { "message": "Tijdformaat" },
-  "setting": { "message": "Instelling" }
+  "all": {
+    "message": "Alle"
+  },
+  "normalAlarm": {
+    "message": "Normaal alarm"
+  },
+  "twentyFourHourFormat": {
+    "message": "24u"
+  },
+  "twelveHourFormat": {
+    "message": "12u"
+  },
+  "timeFormat": {
+    "message": "Tijdformaat"
+  },
+  "setting": {
+    "message": "Instelling"
+  },
+  "trash": {
+    "message": "Prullenbak"
+  },
+  "emptyTrash": {
+    "message": "Alles leegmaken"
+  },
+  "emptyTrashMessage": {
+    "message": "Prullenbak is leeg"
+  },
+  "confirmEmptyTrash": {
+    "message": "Weet je zeker dat je de prullenbak wilt legen? Dit kan niet ongedaan worden gemaakt."
+  },
+  "confirmDeletePermanently": {
+    "message": "Weet je zeker dat je permanent wilt verwijderen? Dit kan niet ongedaan worden gemaakt."
+  },
+  "daysRemaining": {
+    "message": " dagen tot automatische verwijdering"
+  },
+  "willBeDeletedToday": {
+    "message": "Wordt vandaag verwijderd"
+  },
+  "restore": {
+    "message": "Herstellen"
+  },
+  "deletePermanently": {
+    "message": "Definitief verwijderen"
+  },
+  "restoreSelected": {
+    "message": "Herstellen"
+  },
+  "deleteSelected": {
+    "message": "Verwijderen"
+  }
 }

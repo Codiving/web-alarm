@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Obtenga una alarma silenciosa del sitio web cuando no se permita el sonido. La notificación aparecerá en el momento exacto."
   },
-  "am": { "message": "a. m." },
-  "pm": { "message": "p. m." },
-  "sun": { "message": "Dom" },
-  "mon": { "message": "Lun" },
-  "tue": { "message": "Mar" },
-  "wed": { "message": "Mié" },
-  "thu": { "message": "Jue" },
-  "fri": { "message": "Vie" },
-  "sat": { "message": "Sáb" },
-  "oneTimeAlarm": { "message": "Alarma de una sola vez" },
+  "am": {
+    "message": "a. m."
+  },
+  "pm": {
+    "message": "p. m."
+  },
+  "sun": {
+    "message": "Dom"
+  },
+  "mon": {
+    "message": "Lun"
+  },
+  "tue": {
+    "message": "Mar"
+  },
+  "wed": {
+    "message": "Mié"
+  },
+  "thu": {
+    "message": "Jue"
+  },
+  "fri": {
+    "message": "Vie"
+  },
+  "sat": {
+    "message": "Sáb"
+  },
+  "oneTimeAlarm": {
+    "message": "Alarma de una sola vez"
+  },
   "oneTimeAlarmTooltip": {
     "message": "La alarma se activará una vez y luego se eliminará automáticamente."
   },
-  "activeDays": { "message": "Días activos" },
-  "activeDate": { "message": "Fecha activa" },
-  "save": { "message": "Guardar" },
-  "memo": { "message": "Nota" },
-  "editAlarm": { "message": "Editar alarma" },
-  "addAlarm": { "message": "Agregar alarma" },
-  "day": { "message": "Día" },
-  "month": { "message": "Mes" },
-  "year": { "message": "Año" },
-  "invalidDate": { "message": "Fecha inválida" },
-  "pastDateNotAllowed": { "message": "No se permiten fechas pasadas" },
-  "pastTimeNotAllowed": { "message": "No se permiten horarios pasados" },
-  "everyday": { "message": "Todos los días" },
-  "alarm": { "message": "Alarma" },
+  "activeDays": {
+    "message": "Días activos"
+  },
+  "activeDate": {
+    "message": "Fecha activa"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "memo": {
+    "message": "Nota"
+  },
+  "editAlarm": {
+    "message": "Editar alarma"
+  },
+  "addAlarm": {
+    "message": "Agregar alarma"
+  },
+  "day": {
+    "message": "Día"
+  },
+  "month": {
+    "message": "Mes"
+  },
+  "year": {
+    "message": "Año"
+  },
+  "invalidDate": {
+    "message": "Fecha inválida"
+  },
+  "pastDateNotAllowed": {
+    "message": "No se permiten fechas pasadas"
+  },
+  "pastTimeNotAllowed": {
+    "message": "No se permiten horarios pasados"
+  },
+  "everyday": {
+    "message": "Todos los días"
+  },
+  "alarm": {
+    "message": "Alarma"
+  },
   "closeAlarmMessage": {
     "message": "Haz clic en la pantalla para cerrar la ventana de alarma."
   },
-  "all": { "message": "Todas" },
-  "normalAlarm": { "message": "Alarma normal" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Formato de hora" },
-  "setting": { "message": "Configuración" }
+  "all": {
+    "message": "Todas"
+  },
+  "normalAlarm": {
+    "message": "Alarma normal"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Formato de hora"
+  },
+  "setting": {
+    "message": "Configuración"
+  },
+  "trash": {
+    "message": "Papelera"
+  },
+  "emptyTrash": {
+    "message": "Vaciar todo"
+  },
+  "emptyTrashMessage": {
+    "message": "La papelera está vacía"
+  },
+  "confirmEmptyTrash": {
+    "message": "¿Estás seguro de que querés vaciar la papelera? Esta acción no se puede deshacer."
+  },
+  "confirmDeletePermanently": {
+    "message": "¿Estás seguro de que querés eliminar permanentemente? Esta acción no se puede deshacer."
+  },
+  "daysRemaining": {
+    "message": " días hasta la eliminación automática"
+  },
+  "willBeDeletedToday": {
+    "message": "Se eliminará hoy"
+  },
+  "restore": {
+    "message": "Restaurar"
+  },
+  "deletePermanently": {
+    "message": "Eliminar permanentemente"
+  },
+  "restoreSelected": {
+    "message": "Restaurar"
+  },
+  "deleteSelected": {
+    "message": "Eliminar"
+  }
 }

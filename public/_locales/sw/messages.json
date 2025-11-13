@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Pata kengele ya kimya kutoka kwenye tovuti sauti inapokuwa hairuhusiwi. Arifa itaonekana kwa wakati halisi."
   },
-  "am": { "message": "Asubuhi" },
-  "pm": { "message": "Alasiri" },
-  "sun": { "message": "Jum" },
-  "mon": { "message": "Jtt" },
-  "tue": { "message": "Jnn" },
-  "wed": { "message": "Jtn" },
-  "thu": { "message": "Alh" },
-  "fri": { "message": "Iju" },
-  "sat": { "message": "Jmo" },
-  "oneTimeAlarm": { "message": "Kengele ya Mara Moja" },
+  "am": {
+    "message": "Asubuhi"
+  },
+  "pm": {
+    "message": "Alasiri"
+  },
+  "sun": {
+    "message": "Jum"
+  },
+  "mon": {
+    "message": "Jtt"
+  },
+  "tue": {
+    "message": "Jnn"
+  },
+  "wed": {
+    "message": "Jtn"
+  },
+  "thu": {
+    "message": "Alh"
+  },
+  "fri": {
+    "message": "Iju"
+  },
+  "sat": {
+    "message": "Jmo"
+  },
+  "oneTimeAlarm": {
+    "message": "Kengele ya Mara Moja"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Kengele itaring'a mara moja na kisha itafutwa kiotomatiki."
   },
-  "activeDays": { "message": "Siku za Uhai" },
-  "activeDate": { "message": "Tarehe ya Uhai" },
-  "save": { "message": "Hifadhi" },
-  "memo": { "message": "Kumbukumbu" },
-  "editAlarm": { "message": "Hariri Kengele" },
-  "addAlarm": { "message": "Ongeza Kengele" },
-  "day": { "message": "Siku" },
-  "month": { "message": "Mwezi" },
-  "year": { "message": "Mwaka" },
-  "invalidDate": { "message": "Tarehe batili" },
-  "pastDateNotAllowed": { "message": "Tarehe zilizopita haziruhusiwi" },
-  "pastTimeNotAllowed": { "message": "Nyakati zilizopita haziruhusiwi" },
-  "everyday": { "message": "Kila siku" },
-  "alarm": { "message": "Kengele" },
+  "activeDays": {
+    "message": "Siku za Uhai"
+  },
+  "activeDate": {
+    "message": "Tarehe ya Uhai"
+  },
+  "save": {
+    "message": "Hifadhi"
+  },
+  "memo": {
+    "message": "Kumbukumbu"
+  },
+  "editAlarm": {
+    "message": "Hariri Kengele"
+  },
+  "addAlarm": {
+    "message": "Ongeza Kengele"
+  },
+  "day": {
+    "message": "Siku"
+  },
+  "month": {
+    "message": "Mwezi"
+  },
+  "year": {
+    "message": "Mwaka"
+  },
+  "invalidDate": {
+    "message": "Tarehe batili"
+  },
+  "pastDateNotAllowed": {
+    "message": "Tarehe zilizopita haziruhusiwi"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Nyakati zilizopita haziruhusiwi"
+  },
+  "everyday": {
+    "message": "Kila siku"
+  },
+  "alarm": {
+    "message": "Kengele"
+  },
   "closeAlarmMessage": {
     "message": "Bonyeza skrini ili kufunga dirisha la kengele."
   },
-  "all": { "message": "Zote" },
-  "normalAlarm": { "message": "Kengele ya Kawaida" },
-  "twentyFourHourFormat": { "message": "24s" },
-  "twelveHourFormat": { "message": "12s" },
-  "timeFormat": { "message": "Muundo wa Muda" },
-  "setting": { "message": "Mipangilio" }
+  "all": {
+    "message": "Zote"
+  },
+  "normalAlarm": {
+    "message": "Kengele ya Kawaida"
+  },
+  "twentyFourHourFormat": {
+    "message": "24s"
+  },
+  "twelveHourFormat": {
+    "message": "12s"
+  },
+  "timeFormat": {
+    "message": "Muundo wa Muda"
+  },
+  "setting": {
+    "message": "Mipangilio"
+  },
+  "trash": {
+    "message": "Takataka"
+  },
+  "emptyTrash": {
+    "message": "Futa zote"
+  },
+  "emptyTrashMessage": {
+    "message": "Takataka ni tupu"
+  },
+  "confirmEmptyTrash": {
+    "message": "Una uhakika unataka kufuta takataka? Hatua hii haiwezi kutenduliwa."
+  },
+  "confirmDeletePermanently": {
+    "message": "Una uhakika unataka kufuta kabisa? Hatua hii haiwezi kutenduliwa."
+  },
+  "daysRemaining": {
+    "message": " siku hadi kufuta kiotomatiki"
+  },
+  "willBeDeletedToday": {
+    "message": "Itafutwa leo"
+  },
+  "restore": {
+    "message": "Rejesha"
+  },
+  "deletePermanently": {
+    "message": "Futa kabisa"
+  },
+  "restoreSelected": {
+    "message": "Rejesha"
+  },
+  "deleteSelected": {
+    "message": "Futa"
+  }
 }

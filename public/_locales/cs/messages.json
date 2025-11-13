@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Získejte tichý budík z webové stránky, když není povolený zvuk. Oznámení se zobrazí v přesný čas."
   },
-  "am": { "message": "dop." },
-  "pm": { "message": "odp." },
-  "sun": { "message": "Ne" },
-  "mon": { "message": "Po" },
-  "tue": { "message": "Út" },
-  "wed": { "message": "St" },
-  "thu": { "message": "Čt" },
-  "fri": { "message": "Pá" },
-  "sat": { "message": "So" },
-  "oneTimeAlarm": { "message": "Jednorázový budík" },
+  "am": {
+    "message": "dop."
+  },
+  "pm": {
+    "message": "odp."
+  },
+  "sun": {
+    "message": "Ne"
+  },
+  "mon": {
+    "message": "Po"
+  },
+  "tue": {
+    "message": "Út"
+  },
+  "wed": {
+    "message": "St"
+  },
+  "thu": {
+    "message": "Čt"
+  },
+  "fri": {
+    "message": "Pá"
+  },
+  "sat": {
+    "message": "So"
+  },
+  "oneTimeAlarm": {
+    "message": "Jednorázový budík"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Budík se spustí jednou a poté bude automaticky odstraněn."
   },
-  "activeDays": { "message": "Aktivní dny" },
-  "activeDate": { "message": "Aktivní datum" },
-  "save": { "message": "Uložit" },
-  "memo": { "message": "Poznámka" },
-  "editAlarm": { "message": "Upravit budík" },
-  "addAlarm": { "message": "Přidat budík" },
-  "day": { "message": "Den" },
-  "month": { "message": "Měsíc" },
-  "year": { "message": "Rok" },
-  "invalidDate": { "message": "Neplatné datum" },
-  "pastDateNotAllowed": { "message": "Minulá data nejsou povolena" },
-  "pastTimeNotAllowed": { "message": "Minulý čas není povolen" },
-  "everyday": { "message": "Každý den" },
-  "alarm": { "message": "Budík" },
+  "activeDays": {
+    "message": "Aktivní dny"
+  },
+  "activeDate": {
+    "message": "Aktivní datum"
+  },
+  "save": {
+    "message": "Uložit"
+  },
+  "memo": {
+    "message": "Poznámka"
+  },
+  "editAlarm": {
+    "message": "Upravit budík"
+  },
+  "addAlarm": {
+    "message": "Přidat budík"
+  },
+  "day": {
+    "message": "Den"
+  },
+  "month": {
+    "message": "Měsíc"
+  },
+  "year": {
+    "message": "Rok"
+  },
+  "invalidDate": {
+    "message": "Neplatné datum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Minulá data nejsou povolena"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Minulý čas není povolen"
+  },
+  "everyday": {
+    "message": "Každý den"
+  },
+  "alarm": {
+    "message": "Budík"
+  },
   "closeAlarmMessage": {
     "message": "Klepnutím na obrazovku zavřete okno s budíkem."
   },
-  "all": { "message": "Vše" },
-  "normalAlarm": { "message": "Normální budík" },
-  "twentyFourHourFormat": { "message": "24h" },
-  "twelveHourFormat": { "message": "12h" },
-  "timeFormat": { "message": "Formát času" },
-  "setting": { "message": "Nastavení" }
+  "all": {
+    "message": "Vše"
+  },
+  "normalAlarm": {
+    "message": "Normální budík"
+  },
+  "twentyFourHourFormat": {
+    "message": "24h"
+  },
+  "twelveHourFormat": {
+    "message": "12h"
+  },
+  "timeFormat": {
+    "message": "Formát času"
+  },
+  "setting": {
+    "message": "Nastavení"
+  },
+  "trash": {
+    "message": "Koš"
+  },
+  "emptyTrash": {
+    "message": "Vysypat vše"
+  },
+  "emptyTrashMessage": {
+    "message": "Koš je prázdný"
+  },
+  "confirmEmptyTrash": {
+    "message": "Opravdu chcete vyprázdnit koš? Tuto akci nelze vrátit zpět."
+  },
+  "confirmDeletePermanently": {
+    "message": "Opravdu chcete trvale odstranit? Tuto akci nelze vrátit zpět."
+  },
+  "daysRemaining": {
+    "message": " dní do automatického smazání"
+  },
+  "willBeDeletedToday": {
+    "message": "Bude odstraněno dnes"
+  },
+  "restore": {
+    "message": "Obnovit"
+  },
+  "deletePermanently": {
+    "message": "Trvale odstranit"
+  },
+  "restoreSelected": {
+    "message": "Obnovit"
+  },
+  "deleteSelected": {
+    "message": "Odstranit"
+  }
 }

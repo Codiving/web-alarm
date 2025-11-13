@@ -1,42 +1,137 @@
 {
-  "extName": { "message": "Web Alarm" },
+  "extName": {
+    "message": "Web Alarm"
+  },
   "extDescription": {
     "message": "Csendes ébresztést kaphat a webhelyről, amikor a hang nem engedélyezett. Az értesítés pontosan a megadott időben jelenik meg."
   },
-  "am": { "message": "DE" },
-  "pm": { "message": "DU" },
-  "sun": { "message": "V" },
-  "mon": { "message": "H" },
-  "tue": { "message": "K" },
-  "wed": { "message": "Sze" },
-  "thu": { "message": "Cs" },
-  "fri": { "message": "P" },
-  "sat": { "message": "Szo" },
-  "oneTimeAlarm": { "message": "Egyszeri ébresztés" },
+  "am": {
+    "message": "DE"
+  },
+  "pm": {
+    "message": "DU"
+  },
+  "sun": {
+    "message": "V"
+  },
+  "mon": {
+    "message": "H"
+  },
+  "tue": {
+    "message": "K"
+  },
+  "wed": {
+    "message": "Sze"
+  },
+  "thu": {
+    "message": "Cs"
+  },
+  "fri": {
+    "message": "P"
+  },
+  "sat": {
+    "message": "Szo"
+  },
+  "oneTimeAlarm": {
+    "message": "Egyszeri ébresztés"
+  },
   "oneTimeAlarmTooltip": {
     "message": "Az ébresztés egyszer aktiválódik, majd automatikusan törlődik."
   },
-  "activeDays": { "message": "Aktív napok" },
-  "activeDate": { "message": "Aktív dátum" },
-  "save": { "message": "Mentés" },
-  "memo": { "message": "Jegyzet" },
-  "editAlarm": { "message": "Ébresztés szerkesztése" },
-  "addAlarm": { "message": "Ébresztés hozzáadása" },
-  "day": { "message": "Nap" },
-  "month": { "message": "Hónap" },
-  "year": { "message": "Év" },
-  "invalidDate": { "message": "Érvénytelen dátum" },
-  "pastDateNotAllowed": { "message": "Múltbeli dátumok nem engedélyezettek" },
-  "pastTimeNotAllowed": { "message": "Múltbeli időpontok nem engedélyezettek" },
-  "everyday": { "message": "Minden nap" },
-  "alarm": { "message": "Ébresztés" },
+  "activeDays": {
+    "message": "Aktív napok"
+  },
+  "activeDate": {
+    "message": "Aktív dátum"
+  },
+  "save": {
+    "message": "Mentés"
+  },
+  "memo": {
+    "message": "Jegyzet"
+  },
+  "editAlarm": {
+    "message": "Ébresztés szerkesztése"
+  },
+  "addAlarm": {
+    "message": "Ébresztés hozzáadása"
+  },
+  "day": {
+    "message": "Nap"
+  },
+  "month": {
+    "message": "Hónap"
+  },
+  "year": {
+    "message": "Év"
+  },
+  "invalidDate": {
+    "message": "Érvénytelen dátum"
+  },
+  "pastDateNotAllowed": {
+    "message": "Múltbeli dátumok nem engedélyezettek"
+  },
+  "pastTimeNotAllowed": {
+    "message": "Múltbeli időpontok nem engedélyezettek"
+  },
+  "everyday": {
+    "message": "Minden nap"
+  },
+  "alarm": {
+    "message": "Ébresztés"
+  },
   "closeAlarmMessage": {
     "message": "Kattintson a képernyőre az ébresztési ablak bezárásához."
   },
-  "all": { "message": "Összes" },
-  "normalAlarm": { "message": "Normál ébresztés" },
-  "twentyFourHourFormat": { "message": "24ó" },
-  "twelveHourFormat": { "message": "12ó" },
-  "timeFormat": { "message": "Időformátum" },
-  "setting": { "message": "Beállítás" }
+  "all": {
+    "message": "Összes"
+  },
+  "normalAlarm": {
+    "message": "Normál ébresztés"
+  },
+  "twentyFourHourFormat": {
+    "message": "24ó"
+  },
+  "twelveHourFormat": {
+    "message": "12ó"
+  },
+  "timeFormat": {
+    "message": "Időformátum"
+  },
+  "setting": {
+    "message": "Beállítás"
+  },
+  "trash": {
+    "message": "Kuka"
+  },
+  "emptyTrash": {
+    "message": "Összes kiürítése"
+  },
+  "emptyTrashMessage": {
+    "message": "A kuka üres"
+  },
+  "confirmEmptyTrash": {
+    "message": "Biztosan ki szeretné üríteni a kukát? Ez a művelet nem vonható vissza."
+  },
+  "confirmDeletePermanently": {
+    "message": "Biztosan véglegesen törölni szeretné? Ez a művelet nem vonható vissza."
+  },
+  "daysRemaining": {
+    "message": " nap múlva automatikus törlés"
+  },
+  "willBeDeletedToday": {
+    "message": "Ma törlésre kerül"
+  },
+  "restore": {
+    "message": "Visszaállítás"
+  },
+  "deletePermanently": {
+    "message": "Végleges törlés"
+  },
+  "restoreSelected": {
+    "message": "Visszaállítás"
+  },
+  "deleteSelected": {
+    "message": "Törlés"
+  }
 }
