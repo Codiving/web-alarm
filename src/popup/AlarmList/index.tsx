@@ -118,10 +118,17 @@ export default function AlarmList({
           {t("extName")}
         </h1>
         <div className="flex gap-[8px]">
-          {!isSidePanel && (
-            <SidePanelButton
-              className="cursor-pointer"
-              onClick={async () => {
+          <SidePanelButton
+            className="cursor-pointer"
+            onClick={async () => {
+              if (isSidePanel) {
+                // 사이드바에서 일반 팝업으로 전환
+                await chrome.storage.local.set({ lastViewMode: "popup" });
+                // background에 팝업 열기 요청
+                chrome.runtime.sendMessage({ type: "OPEN_POPUP" });
+                window.close();
+              } else {
+                // 일반 팝업에서 사이드바로 전환
                 const [tab] = await chrome.tabs.query({
                   active: true,
                   currentWindow: true
@@ -130,9 +137,9 @@ export default function AlarmList({
                   await chrome.sidePanel.open({ windowId: tab.windowId });
                   window.close();
                 }
-              }}
-            />
-          )}
+              }
+            }}
+          />
           <SettingButton
             className="cursor-pointer"
             onClick={() => {

@@ -126,9 +126,49 @@ chrome.alarms.get("cleanTrash", (alarm) => {
 });
 
 /**
- * 확장 프로그램 아이콘 클릭 시 사이드 패널 열기
+ * 마지막 사용 모드에 따라 action 동작 설정
+ */
+async function setupActionBehavior() {
+  const result = await chrome.storage.local.get(["lastViewMode"]);
+  const lastViewMode = result.lastViewMode || "popup"; // 기본값은 팝업
+
+  if (lastViewMode === "popup") {
+    // 일반 팝업 모드로 설정
+    await chrome.action.setPopup({ popup: "popup.html" });
+  } else {
+    // 사이드 패널 모드로 설정 (팝업 비활성화)
+    await chrome.action.setPopup({ popup: "" });
+  }
+}
+
+/**
+ * 확장 프로그램 아이콘 클릭 시 사이드 패널 열기 (팝업이 비활성화된 경우에만 동작)
  */
 chrome.action.onClicked.addListener(async (tab) => {
-  // 현재 탭에서 사이드 패널 열기
+  // 사이드 패널 모드로 열기
   await chrome.sidePanel.open({ tabId: tab.id });
+});
+
+/**
+ * 저장소 변경 감지하여 action 동작 업데이트
+ */
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  if (areaName === "local" && changes.lastViewMode) {
+    setupActionBehavior();
+  }
+});
+
+// 초기 설정
+setupActionBehavior();
+
+/**
+ * 메시지 리스너 - 사이드바에서 일반 팝업으로 전환 요청 처리
+ */
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.type === "OPEN_POPUP") {
+    // 팝업 모드로 전환 후 팝업 열기
+    chrome.action.setPopup({ popup: "popup.html" }).then(() => {
+      chrome.action.openPopup();
+    });
+  }
 });

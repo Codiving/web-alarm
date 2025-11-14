@@ -35,6 +35,11 @@ export default function Popup() {
       // @ts-ignore - sidePanel API는 타입 정의가 없을 수 있음
       if (chrome.sidePanel && window.location.pathname.includes("sidepanel")) {
         setIsSidePanel(true);
+        // 사이드 패널 모드로 열렸음을 저장
+        await chrome.storage.local.set({ lastViewMode: "sidepanel" });
+      } else {
+        // 일반 팝업 모드로 열렸음을 저장
+        await chrome.storage.local.set({ lastViewMode: "popup" });
       }
     })();
   }, []);
